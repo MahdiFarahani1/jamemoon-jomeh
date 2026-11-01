@@ -13,12 +13,10 @@ class AppTheme {
         primary: AppColors.primary,
         secondary: AppColors.secondary,
         surface: AppColors.surface,
-        background: AppColors.background,
         error: AppColors.error,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
         onSurface: AppColors.textHeadline,
-        onBackground: AppColors.textHeadline,
       ),
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.transparent,
@@ -27,7 +25,7 @@ class AppTheme {
         titleTextStyle: AppTypography.headlineLarge,
         iconTheme: IconThemeData(color: AppColors.textHeadline),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.surface,
         elevation: 6,
         shape: RoundedRectangleBorder(

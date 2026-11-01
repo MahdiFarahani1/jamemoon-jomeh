@@ -29,7 +29,7 @@ class AnimatedPartyBackground extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.primary.withOpacity(0.15),
+                  AppColors.primary.withValues(alpha: 0.15),
                   Colors.transparent,
                 ],
               ),
@@ -46,7 +46,7 @@ class AnimatedPartyBackground extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.secondary.withOpacity(0.12),
+                  AppColors.secondary.withValues(alpha: 0.12),
                   Colors.transparent,
                 ],
               ),
@@ -75,11 +75,11 @@ class _PartyShapesPainter extends CustomPainter {
     final paint = Paint()..style = PaintingStyle.fill;
 
     final colors = [
-      AppColors.primary.withOpacity(0.12),
-      AppColors.secondary.withOpacity(0.12),
-      AppColors.accent.withOpacity(0.10),
-      AppColors.success.withOpacity(0.10),
-      AppColors.info.withOpacity(0.10),
+      AppColors.primary.withValues(alpha: 0.12),
+      AppColors.secondary.withValues(alpha: 0.12),
+      AppColors.accent.withValues(alpha: 0.10),
+      AppColors.success.withValues(alpha: 0.10),
+      AppColors.info.withValues(alpha: 0.10),
     ];
 
     for (int i = 0; i < 24; i++) {

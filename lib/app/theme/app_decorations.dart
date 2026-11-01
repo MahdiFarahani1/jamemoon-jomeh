@@ -17,7 +17,7 @@ class AppDecorations {
     border: Border.all(color: AppColors.surfaceBorder, width: 1.5),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.35),
+        color: Colors.black.withValues(alpha: 0.35),
         blurRadius: 16,
         offset: const Offset(0, 8),
       ),
@@ -30,7 +30,7 @@ class AppDecorations {
       borderRadius: borderRadiusLarge,
       boxShadow: [
         BoxShadow(
-          color: Colors.black.withOpacity(0.4),
+          color: Colors.black.withValues(alpha: 0.4),
           blurRadius: 18,
           offset: const Offset(0, 10),
         ),
@@ -42,7 +42,7 @@ class AppDecorations {
     required Color color,
     Color? shadowColor,
   }) {
-    final baseShadow = shadowColor ?? Color.lerp(color, Colors.black, 0.4)!;
+    final baseShadow = shadowColor ?? Color.lerp(color, Colors.black, 0.45)!;
     return BoxDecoration(
       color: color,
       borderRadius: borderRadiusMedium,
