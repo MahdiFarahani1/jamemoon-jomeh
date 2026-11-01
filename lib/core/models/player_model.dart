@@ -49,3 +49,4 @@ class Player extends Equatable {
   @override
   List<Object?> get props => [id, name, teamId, awardedTitle];
 }
+

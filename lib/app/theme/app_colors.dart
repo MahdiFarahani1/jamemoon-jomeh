@@ -96,3 +96,4 @@ class AppColors {
     Color(0xFFFFAB40), // Orange
   ];
 }
+

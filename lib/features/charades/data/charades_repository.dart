@@ -37,3 +37,4 @@ class CharadesRepository {
 
   int get totalWords => _allWords.length;
 }
+

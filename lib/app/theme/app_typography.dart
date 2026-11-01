@@ -94,3 +94,4 @@ class AppTypography {
     height: 1.1,
   );
 }
+

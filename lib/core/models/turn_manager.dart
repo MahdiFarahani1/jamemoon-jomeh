@@ -52,3 +52,4 @@ class TurnManager {
     return list;
   }
 }
+

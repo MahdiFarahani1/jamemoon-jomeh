@@ -25,3 +25,4 @@ class CharadesWord extends Equatable {
   @override
   List<Object?> get props => [id, word, category, points];
 }
+

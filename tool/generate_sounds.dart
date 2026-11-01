@@ -127,3 +127,4 @@ void generateWav({
 
   File(path).writeAsBytesSync(bytes.toBytes());
 }
+

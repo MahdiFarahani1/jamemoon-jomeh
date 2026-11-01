@@ -22,3 +22,4 @@ class FiveSecondsQuestion extends Equatable {
   @override
   List<Object?> get props => [id, question, category];
 }
+

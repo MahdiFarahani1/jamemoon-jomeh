@@ -31,3 +31,4 @@ class FiveSecondsRepository {
 
   int get totalQuestions => _allQuestions.length;
 }
+

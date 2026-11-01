@@ -91,3 +91,4 @@ class CharadesState extends Equatable {
         isQuickMode,
       ];
 }
+

@@ -31,3 +31,4 @@ class HotPotatoRepository {
 
   int get totalTopics => _allTopics.length;
 }
+

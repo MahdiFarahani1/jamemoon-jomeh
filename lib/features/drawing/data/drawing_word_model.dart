@@ -25,3 +25,4 @@ class DrawingWord extends Equatable {
   @override
   List<Object?> get props => [id, word, category, difficulty];
 }
+

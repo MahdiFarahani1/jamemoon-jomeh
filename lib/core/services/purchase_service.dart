@@ -98,3 +98,4 @@ class MockPurchaseService implements PurchaseService {
     return true;
   }
 }
+

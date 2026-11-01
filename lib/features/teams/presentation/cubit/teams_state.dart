@@ -28,3 +28,4 @@ class TeamsState extends Equatable {
   @override
   List<Object?> get props => [teams, players, isLoading];
 }
+

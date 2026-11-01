@@ -125,3 +125,4 @@ class _DrawingPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _DrawingPainter oldDelegate) => true;
 }
+

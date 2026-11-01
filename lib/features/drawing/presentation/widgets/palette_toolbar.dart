@@ -120,3 +120,4 @@ class PaletteToolbar extends StatelessWidget {
     );
   }
 }
+

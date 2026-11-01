@@ -55,3 +55,4 @@ class Team extends Equatable {
   @override
   List<Object?> get props => [id, name, colorValue, score, iconKey];
 }
+

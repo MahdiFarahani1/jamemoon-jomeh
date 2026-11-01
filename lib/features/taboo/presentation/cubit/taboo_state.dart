@@ -91,3 +91,4 @@ class TabooState extends Equatable {
         isQuickMode,
       ];
 }
+

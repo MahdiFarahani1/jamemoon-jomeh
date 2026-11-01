@@ -98,3 +98,4 @@ class TeamsCubit extends Cubit<TeamsState> {
     _storageService.savePlayers(players.map((p) => p.toJson()).toList());
   }
 }
+

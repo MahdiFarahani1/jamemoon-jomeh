@@ -31,3 +31,4 @@ class TabooRepository {
 
   int get totalCards => _allCards.length;
 }
+

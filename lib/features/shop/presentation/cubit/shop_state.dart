@@ -31,3 +31,4 @@ class ShopState extends Equatable {
   @override
   List<Object?> get props => [products, purchasedIds, isBusy, messageFa];
 }
+

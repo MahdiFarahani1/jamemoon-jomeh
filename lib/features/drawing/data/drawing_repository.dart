@@ -31,3 +31,4 @@ class DrawingRepository {
 
   int get totalWords => _allWords.length;
 }
+

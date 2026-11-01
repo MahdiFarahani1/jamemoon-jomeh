@@ -75,3 +75,4 @@ class HotPotatoState extends Equatable {
         isQuickMode,
       ];
 }
+

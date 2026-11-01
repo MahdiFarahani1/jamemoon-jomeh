@@ -133,3 +133,4 @@ class DrawingState extends Equatable {
         isQuickMode,
       ];
 }
+

@@ -22,3 +22,4 @@ class HotPotatoTopic extends Equatable {
   @override
   List<Object?> get props => [id, topic, category];
 }
+

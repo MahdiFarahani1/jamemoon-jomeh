@@ -17,6 +17,8 @@ dependencies:
   equatable: ^2.0.5
   shared_preferences: ^2.2.3
   audioplayers: ^6.0.0
+  shared_preferences_android: 2.3.4
+  path_provider_android: 2.2.15
 
 dev_dependencies:
   flutter_test:

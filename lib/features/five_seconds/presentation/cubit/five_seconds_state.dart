@@ -86,3 +86,4 @@ class FiveSecondsState extends Equatable {
         isQuickMode,
       ];
 }
+

@@ -28,3 +28,4 @@ class SettingsCubit extends Cubit<SettingsState> {
     emit(const SettingsState(soundEnabled: true, vibrationEnabled: true));
   }
 }
+

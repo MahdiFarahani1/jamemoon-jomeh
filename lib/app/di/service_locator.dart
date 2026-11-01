@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../core/services/storage_service.dart';
@@ -13,8 +14,14 @@ import '../../features/drawing/data/drawing_repository.dart';
 final sl = GetIt.instance;
 
 Future<void> initDependencies() async {
-  // SharedPreferences
-  final sharedPreferences = await SharedPreferences.getInstance();
+  // Safe SharedPreferences initialization with fallback
+  SharedPreferences? sharedPreferences;
+  try {
+    sharedPreferences = await SharedPreferences.getInstance();
+  } catch (e) {
+    debugPrint('Could not initialize SharedPreferences: $e');
+  }
+
   sl.registerLazySingleton<StorageService>(() => StorageService(sharedPreferences));
 
   // Audio & Haptics
@@ -31,4 +38,3 @@ Future<void> initDependencies() async {
   sl.registerLazySingleton<FiveSecondsRepository>(() => FiveSecondsRepository());
   sl.registerLazySingleton<DrawingRepository>(() => DrawingRepository());
 }
-

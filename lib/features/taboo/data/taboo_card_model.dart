@@ -28,3 +28,4 @@ class TabooCard extends Equatable {
   @override
   List<Object?> get props => [id, word, forbiddenWords, category, difficulty];
 }
+
