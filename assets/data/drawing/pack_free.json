@@ -1,0 +1,122 @@
+[
+  {
+    "id": "draw_1",
+    "word": "برج میلاد",
+    "category": "مکان و معماری",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_2",
+    "word": "پیتزا پپرونی با قارچ",
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_3",
+    "word": "زرافه عینکی",
+    "category": "حیوانات فانتزی",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_4",
+    "word": "پنکه سقفی روشن",
+    "category": "لوازم خانه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_5",
+    "word": "سماور مادربزرگ و قوری",
+    "category": "نوستالژی",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_6",
+    "word": "فضاپیما و سیاره زحل",
+    "category": "فضا و علم",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_7",
+    "word": "پیکان گوجه‌ای",
+    "category": "خودرو نوستالژیک",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_8",
+    "word": "آدم‌برفی با شال‌گردن قرمز",
+    "category": "زمستان",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_9",
+    "word": "ساندویچ فلافل با ترشی",
+    "category": "خوراکی",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_10",
+    "word": "گیتار برقی",
+    "category": "موسیقی",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_11",
+    "word": "چتر پاره زیر باران",
+    "category": "موقعیت طنز",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_12",
+    "word": "اختاپوس در حال آشپزی",
+    "category": "طنز و فانتزی",
+    "difficulty": 3
+  },
+  {
+    "id": "draw_13",
+    "word": "کفش اسکیت و کلاه ایمنی",
+    "category": "ورزش",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_14",
+    "word": "ساعت شنی",
+    "category": "اشیا",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_15",
+    "word": "دیگ نذری و شعله گاز",
+    "category": "فرهنگ ایرانی",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_16",
+    "word": "بادکنک در حال ترکیدن با سوزن",
+    "category": "اکشن",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_17",
+    "word": "کاکتوس خندان داخل گلدان",
+    "category": "گیاهان",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_18",
+    "word": "تلسکوپ روی تپه",
+    "category": "علمی",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_19",
+    "word": "شیر بیشه با یال‌های بلند",
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_20",
+    "word": "تاج پادشاهی با جواهرات",
+    "category": "تاریخی و فانتزی",
+    "difficulty": 1
+  }
+]

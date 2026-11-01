@@ -1,0 +1,142 @@
+[
+  {
+    "id": "taboo_1",
+    "word": "کله پاچه",
+    "forbiddenWords": ["صبحانه", "طباخی", "زبان", "بناگوش", "پاچه"],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_2",
+    "word": "قورمه سبزی",
+    "forbiddenWords": ["خورشت", "لوبیا", "لیمو عمانی", "سبزی", "گوشت"],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_3",
+    "word": "ترافیک",
+    "forbiddenWords": ["ماشین", "تهران", "شلوغ", "بوق", "خیابان"],
+    "category": "روزمره",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_4",
+    "word": "دماوند",
+    "forbiddenWords": ["کوه", "قله", "برف", "ایران", "البرز"],
+    "category": "جغرافیا",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_5",
+    "word": "خواستگاری",
+    "forbiddenWords": ["گل", "شیرینی", "چای", "عروس", "داماد"],
+    "category": "فرهنگ و رسوم",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_6",
+    "word": "پاوربانک",
+    "forbiddenWords": ["شارژر", "موبایل", "باتری", "سیم", "برق"],
+    "category": "فناوری",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_7",
+    "word": "هندوانه",
+    "forbiddenWords": ["قرمز", "شب یلدا", "تابستان", "تخمه", "قاچ"],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_8",
+    "word": "سلفی",
+    "forbiddenWords": ["عکس", "دوربین", "موبایل", "پایه", "ژست"],
+    "category": "فناوری",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_9",
+    "word": "ته‌دیگ",
+    "forbiddenWords": ["برنج", "سیب‌زمینی", "نان", "طلایی", "ترد"],
+    "category": "خوراکی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_10",
+    "word": "عید نوروز",
+    "forbiddenWords": ["بهار", "هفت‌سین", "عیدی", "سیزده‌بدر", "اسفند"],
+    "category": "فرهنگ و رسوم",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_11",
+    "word": "وای‌فای",
+    "forbiddenWords": ["اینترنت", "مودم", "رمز", "اتصال", "آنتن"],
+    "category": "فناوری",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_12",
+    "word": "کارتخوان",
+    "forbiddenWords": ["بانک", "رمز", "خرید", "فروشگاه", "رسید"],
+    "category": "روزمره",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_13",
+    "word": "تخت جمشید",
+    "forbiddenWords": ["شیراز", "کوروش", "داریوش", "ستون", "تاریخی"],
+    "category": "تاریخ و مکان",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_14",
+    "word": "چای دبش",
+    "forbiddenWords": ["قند", "استکان", "دم‌کردن", "نوشیدنی", "هل"],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_15",
+    "word": "مترو",
+    "forbiddenWords": ["قطار", "زیرزمین", "ایستگاه", "شلوغ", "بلیط"],
+    "category": "حمل و نقل",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_16",
+    "word": "تولد",
+    "forbiddenWords": ["کیک", "شمع", "کادو", "جشن", "فوت"],
+    "category": "مناسبت",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_17",
+    "word": "آجیل",
+    "forbiddenWords": ["پسته", "بادام", "شب‌نشینی", "تخمه", "کاسه"],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_18",
+    "word": "کنکور",
+    "forbiddenWords": ["دانشگاه", "تست", "استرس", "درس", "سازمان سنجش"],
+    "category": "روزمره",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_19",
+    "word": "آسانسور",
+    "forbiddenWords": ["طبقه", "دکمه", "بالا", "پایین", "کابین"],
+    "category": "روزمره",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_20",
+    "word": "فالوده",
+    "forbiddenWords": ["شیراز", "آبلیمو", "نشاسته", "یخ", "شیرین"],
+    "category": "خوراکی",
+    "difficulty": 2
+  }
+]
