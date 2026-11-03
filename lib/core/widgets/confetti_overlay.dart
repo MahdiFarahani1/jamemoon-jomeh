@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 // High performance Confetti Celebration Effect (Zero setState)
@@ -14,7 +15,7 @@ class ConfettiOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (!showConfetti) return child;
+    if (!showConfetti || MediaQuery.disableAnimationsOf(context)) return child;
 
     return Stack(
       children: [
@@ -25,9 +26,7 @@ class ConfettiOverlay extends StatelessWidget {
               tween: Tween(begin: 0.0, end: 1.0),
               duration: const Duration(seconds: 3),
               builder: (context, value, _) {
-                return CustomPaint(
-                  painter: _ConfettiPainter(progress: value),
-                );
+                return CustomPaint(painter: _ConfettiPainter(progress: value));
               },
             ),
           ),
@@ -43,14 +42,15 @@ class _ConfettiPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
+    if (progress >= 1) return;
     final random = Random(42);
     final colors = [
-      const Color(0xFFFF5252),
-      const Color(0xFFFFD740),
-      const Color(0xFF69F0AE),
-      const Color(0xFF40C4FF),
-      const Color(0xFFE040FB),
-      const Color(0xFFFF6E40),
+      const Color(0xFFFFA18E),
+      const Color(0xFFFFD778),
+      const Color(0xFF83DEC2),
+      const Color(0xFF98D7FF),
+      const Color(0xFFC9B3FF),
+      const Color(0xFFB8C3FF),
     ];
 
     for (int i = 0; i < 70; i++) {
@@ -63,7 +63,9 @@ class _ConfettiPainter extends CustomPainter {
       final rotation = progress * pi * 4 * (i % 2 == 0 ? 1 : -1);
 
       final paint = Paint()
-        ..color = colors[i % colors.length].withOpacity((1.0 - progress * 0.4).clamp(0.0, 1.0))
+        ..color = colors[i % colors.length].withValues(
+          alpha: ((1.0 - progress) / .25).clamp(0.0, 1.0),
+        )
         ..style = PaintingStyle.fill;
 
       canvas.save();
@@ -83,4 +85,3 @@ class _ConfettiPainter extends CustomPainter {
   bool shouldRepaint(covariant _ConfettiPainter oldDelegate) =>
       oldDelegate.progress != progress;
 }
-

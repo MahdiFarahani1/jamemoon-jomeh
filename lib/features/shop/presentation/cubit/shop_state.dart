@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+
 import '../../../../core/services/purchase_service.dart';
 
 class ShopState extends Equatable {
@@ -31,4 +32,3 @@ class ShopState extends Equatable {
   @override
   List<Object?> get props => [products, purchasedIds, isBusy, messageFa];
 }
-

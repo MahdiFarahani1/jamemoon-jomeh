@@ -1,331 +1,281 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
 import '../../../../core/models/team_model.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
-import '../../../../core/widgets/party_card.dart';
 import '../../../../core/widgets/party_dialog.dart';
+import '../../../../core/widgets/team_identity.dart';
 import '../cubit/teams_cubit.dart';
 import '../cubit/teams_state.dart';
 
-// Team and Player Setup Page (Zero setState)
 class TeamsSetupPage extends StatelessWidget {
   const TeamsSetupPage({super.key});
 
-  void _showAddTeamDialog(BuildContext context) {
-    final nameController = TextEditingController();
-    final selectedColorValue = ValueNotifier<int>(AppColors.teamPalette.first.toARGB32());
+  Future<void> _editTeam(BuildContext context, Team team) async {
+    final cubit = context.read<TeamsCubit>();
+    final appearance = await TeamAppearanceSheet.show(context, team);
+    if (!context.mounted || appearance == null) return;
+    cubit.updateTeamAppearance(
+      team.id,
+      colorValue: appearance.$1,
+      iconKey: appearance.$2,
+    );
+  }
 
-    showDialog(
-      context: context,
-      builder: (ctx) => Dialog(
-        backgroundColor: Colors.transparent,
-        child: Container(
-          decoration: BoxDecoration(
-            color: AppColors.surface,
-            borderRadius: BorderRadius.circular(24),
-            border: Border.all(color: AppColors.surfaceBorder, width: 2),
-          ),
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+  void _open(
+    BuildContext context, {
+    required bool team,
+    required List<Team> teams,
+  }) => showDialog<void>(
+    context: context,
+    builder: (_) => _EntryDialog(
+      cubit: context.read<TeamsCubit>(),
+      team: team,
+      teams: teams,
+    ),
+  );
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(
+      title: const Text('تیم‌ها و بازیکنان'),
+      actions: [
+        IconButton(
+          tooltip: 'صفر کردن امتیازها',
+          icon: const Icon(Icons.restart_alt_rounded),
+          onPressed: () async {
+            if (await PartyDialog.show(
+                      context,
+                      title: 'صفر کردن امتیازها',
+                      message: 'امتیاز همه تیم‌ها صفر شود؟',
+                      confirmLabel: 'صفر کن',
+                    ) ==
+                    true &&
+                context.mounted) {
+              context.read<TeamsCubit>().resetAllScores();
+            }
+          },
+        ),
+      ],
+    ),
+    body: AnimatedPartyBackground(
+      child: SafeArea(
+        top: false,
+        child: BlocBuilder<TeamsCubit, TeamsState>(
+          builder: (context, state) => ListView(
+            padding: const EdgeInsets.all(22),
             children: [
-              const Text('افزودن تیم جدید', style: AppTypography.headlineLarge, textAlign: TextAlign.center),
-              const SizedBox(height: 18),
-              TextField(
-                controller: nameController,
-                style: AppTypography.bodyLarge.copyWith(color: Colors.white),
-                decoration: InputDecoration(
-                  hintText: 'نام تیم (مثلاً: ببرهای تیزپا)',
-                  hintStyle: AppTypography.bodyMedium,
-                  filled: true,
-                  fillColor: AppColors.surfaceLight,
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
+              const Text(
+                'جمع‌تون رو بچینید',
+                style: AppTypography.displayMedium,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                '${state.teams.length} تیم • ${state.players.length} بازیکن',
+                style: AppTypography.bodyLarge.copyWith(
+                  color: AppColors.accent,
                 ),
               ),
-              const SizedBox(height: 18),
-              const Text('انتخاب رنگ تیم:', style: AppTypography.bodySmall),
-              const SizedBox(height: 10),
-              ValueListenableBuilder<int>(
-                valueListenable: selectedColorValue,
-                builder: (context, currentColor, _) {
-                  return Wrap(
-                    spacing: 10,
-                    runSpacing: 10,
-                    children: AppColors.teamPalette.map((c) {
-                      final isSelected = c.toARGB32() == currentColor;
-                      return GestureDetector(
-                        onTap: () => selectedColorValue.value = c.toARGB32(),
-                        child: Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: c,
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: isSelected ? Colors.white : Colors.transparent,
-                              width: 3,
+              const SizedBox(height: 22),
+              Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: [
+                  ActionChip(
+                    avatar: const Icon(Icons.group_add_outlined),
+                    label: const Text('تیم جدید'),
+                    onPressed: () =>
+                        _open(context, team: true, teams: state.teams),
+                  ),
+                  ActionChip(
+                    avatar: const Icon(Icons.person_add_alt_1_rounded),
+                    label: const Text('بازیکن جدید'),
+                    onPressed: () =>
+                        _open(context, team: false, teams: state.teams),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+              for (final team in state.teams)
+                Container(
+                  margin: const EdgeInsets.only(bottom: 14),
+                  padding: const EdgeInsets.all(18),
+                  decoration: BoxDecoration(
+                    color: AppColors.surface,
+                    borderRadius: BorderRadius.circular(24),
+                    border: Border.all(
+                      color: Color(team.colorValue).withValues(alpha: .65),
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          TeamAvatar(team: team),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              team.name,
+                              style: AppTypography.headlineMedium,
                             ),
                           ),
-                        ),
-                      );
-                    }).toList(),
-                  );
-                },
-              ),
-              const SizedBox(height: 24),
-              PartyButton(
-                label: 'ایجاد تیم',
-                color: AppColors.success,
-                onPressed: () {
-                  final name = nameController.text.trim();
-                  context.read<TeamsCubit>().addTeam(
-                        name: name,
-                        colorValue: selectedColorValue.value,
-                      );
-                  Navigator.of(ctx).pop();
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  void _showAddPlayerDialog(BuildContext context, List<Team> teams) {
-    final nameController = TextEditingController();
-    final selectedTeamId = ValueNotifier<String?>(teams.isNotEmpty ? teams.first.id : null);
-
-    showDialog(
-      context: context,
-      builder: (ctx) => Dialog(
-        backgroundColor: Colors.transparent,
-        child: Container(
-          decoration: BoxDecoration(
-            color: AppColors.surface,
-            borderRadius: BorderRadius.circular(24),
-            border: Border.all(color: AppColors.surfaceBorder, width: 2),
-          ),
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Text('افزودن بازیکن', style: AppTypography.headlineLarge, textAlign: TextAlign.center),
-              const SizedBox(height: 18),
-              TextField(
-                controller: nameController,
-                style: AppTypography.bodyLarge.copyWith(color: Colors.white),
-                decoration: InputDecoration(
-                  hintText: 'نام بازیکن (مثلاً: سارا، علی...)',
-                  hintStyle: AppTypography.bodyMedium,
-                  filled: true,
-                  fillColor: AppColors.surfaceLight,
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
-                ),
-              ),
-              const SizedBox(height: 18),
-              const Text('عضویت در تیم:', style: AppTypography.bodySmall),
-              const SizedBox(height: 8),
-              ValueListenableBuilder<String?>(
-                valueListenable: selectedTeamId,
-                builder: (context, teamId, _) {
-                  return DropdownButtonFormField<String>(
-                    initialValue: teamId,
-                    dropdownColor: AppColors.surface,
-                    style: AppTypography.bodyLarge.copyWith(color: Colors.white),
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: AppColors.surfaceLight,
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
-                    ),
-                    items: teams
-                        .map((t) => DropdownMenuItem(value: t.id, child: Text(t.name)))
-                        .toList(),
-                    onChanged: (val) => selectedTeamId.value = val,
-                  );
-                },
-              ),
-              const SizedBox(height: 24),
-              PartyButton(
-                label: 'ثبت بازیکن',
-                color: AppColors.primary,
-                onPressed: () {
-                  final name = nameController.text.trim();
-                  if (name.isNotEmpty) {
-                    context.read<TeamsCubit>().addPlayer(
-                          name: name,
-                          teamId: selectedTeamId.value,
-                        );
-                  }
-                  Navigator.of(ctx).pop();
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('مدیریت تیم‌ها و بازیکنان'),
-        actions: [
-          IconButton(
-            tooltip: 'صفر کردن امتیازها',
-            icon: const Icon(Icons.refresh_rounded, color: AppColors.accent),
-            onPressed: () async {
-              final confirmed = await PartyDialog.show(
-                context,
-                title: 'صفر کردن امتیازها',
-                message: 'آیا می‌خواهید امتیاز تمام تیم‌ها برای شروع بازی جدید صفر شود؟',
-                confirmLabel: 'بله، صفر کن',
-              );
-              if (confirmed == true && context.mounted) {
-                context.read<TeamsCubit>().resetAllScores();
-              }
-            },
-          ),
-        ],
-      ),
-      body: AnimatedPartyBackground(
-        child: BlocBuilder<TeamsCubit, TeamsState>(
-          builder: (context, state) {
-            return ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              children: [
-                // Header card
-                PartyCard(
-                  gradient: AppColors.purpleGradient,
-                  child: Row(
-                    children: [
-                      const Icon(Icons.groups_rounded, size: 48, color: Colors.white),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text('تیم‌های مسابقه', style: AppTypography.headlineLarge),
-                            const SizedBox(height: 4),
-                            Text(
-                              '${state.teams.length} تیم و ${state.players.length} بازیکن ثبت شده',
-                              style: AppTypography.bodyMedium.copyWith(color: Colors.white70),
+                          IconButton(
+                            tooltip: 'رنگ و نشان تیم',
+                            icon: const Icon(Icons.palette_outlined),
+                            onPressed: () => _editTeam(context, team),
+                          ),
+                          if (state.teams.length > 2)
+                            IconButton(
+                              tooltip: 'حذف تیم',
+                              onPressed: () => context
+                                  .read<TeamsCubit>()
+                                  .removeTeam(team.id),
+                              icon: const Icon(Icons.delete_outline_rounded),
                             ),
-                          ],
+                        ],
+                      ),
+                      Text(
+                        '${team.score} امتیاز',
+                        style: AppTypography.bodyMedium.copyWith(
+                          color: AppColors.accent,
                         ),
+                      ),
+                      const SizedBox(height: 10),
+                      Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: [
+                          for (final player in state.players.where(
+                            (p) => p.teamId == team.id,
+                          ))
+                            Chip(
+                              label: Text(player.name),
+                              onDeleted: () => context
+                                  .read<TeamsCubit>()
+                                  .removePlayer(player.id),
+                            ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 20),
-
-                // Teams Section
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text('لیست تیم‌ها', style: AppTypography.headlineMedium),
-                    IconButton(
-                      tooltip: 'افزودن تیم',
-                      icon: const Icon(Icons.add_circle, color: AppColors.primary, size: 30),
-                      onPressed: () => _showAddTeamDialog(context),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 10),
-
-                ...state.teams.map((team) {
-                  final teamPlayers = state.players.where((p) => p.teamId == team.id).toList();
-                  return Container(
-                    margin: const EdgeInsets.only(bottom: 12),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: Color(team.colorValue), width: 2),
-                    ),
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              width: 20,
-                              height: 20,
-                              decoration: BoxDecoration(
-                                color: Color(team.colorValue),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Text(
-                                team.name,
-                                style: AppTypography.headlineMedium,
-                              ),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: AppColors.surfaceLight,
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: Text(
-                                'امتیاز: ${team.score}',
-                                style: AppTypography.titleLarge.copyWith(color: AppColors.accent),
-                              ),
-                            ),
-                            if (state.teams.length > 2) ...[
-                              const SizedBox(width: 8),
-                              IconButton(
-                                icon: const Icon(Icons.delete_outline, color: AppColors.error),
-                                onPressed: () => context.read<TeamsCubit>().removeTeam(team.id),
-                              ),
-                            ],
-                          ],
-                        ),
-                        if (teamPlayers.isNotEmpty) ...[
-                          const SizedBox(height: 12),
-                          Wrap(
-                            spacing: 8,
-                            runSpacing: 6,
-                            children: teamPlayers.map((player) {
-                              return Chip(
-                                backgroundColor: AppColors.surfaceLight,
-                                label: Text(player.name, style: AppTypography.bodySmall),
-                                deleteIcon: const Icon(Icons.close, size: 16),
-                                onDeleted: () => context.read<TeamsCubit>().removePlayer(player.id),
-                              );
-                            }).toList(),
-                          ),
-                        ],
-                      ],
-                    ),
-                  );
-                }),
-                const SizedBox(height: 16),
-
-                // Add player button
-                PartyButton(
-                  label: 'افزودن بازیکن جدید',
-                  icon: Icons.person_add_rounded,
-                  color: AppColors.surfaceLight,
-                  textColor: AppColors.textHeadline,
-                  shadowColor: AppColors.surfaceBorder,
-                  onPressed: () => _showAddPlayerDialog(context, state.teams),
-                ),
-                const SizedBox(height: 24),
-              ],
-            );
-          },
+              const SizedBox(height: 8),
+              PartyButton(
+                label: 'افزودن بازیکن',
+                icon: Icons.person_add_alt_1_rounded,
+                onPressed: () =>
+                    _open(context, team: false, teams: state.teams),
+              ),
+            ],
+          ),
         ),
       ),
+    ),
+  );
+}
+
+class _EntryDialog extends StatefulWidget {
+  const _EntryDialog({
+    required this.cubit,
+    required this.team,
+    required this.teams,
+  });
+  final TeamsCubit cubit;
+  final bool team;
+  final List<Team> teams;
+  @override
+  State<_EntryDialog> createState() => _EntryDialogState();
+}
+
+class _EntryDialogState extends State<_EntryDialog> {
+  final name = TextEditingController();
+  final color = ValueNotifier<int>(AppColors.teamPalette.first.toARGB32());
+  final icon = ValueNotifier<String>('star');
+  late final ValueNotifier<String?> selectedTeam;
+  @override
+  void initState() {
+    super.initState();
+    selectedTeam = ValueNotifier(
+      widget.teams.isEmpty ? null : widget.teams.first.id,
     );
   }
+
+  @override
+  void dispose() {
+    name.dispose();
+    color.dispose();
+    icon.dispose();
+    selectedTeam.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => Dialog(
+    child: SingleChildScrollView(
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            widget.team ? 'تیم جدید' : 'بازیکن جدید',
+            style: AppTypography.headlineLarge,
+          ),
+          const SizedBox(height: 16),
+          TextField(
+            controller: name,
+            decoration: InputDecoration(
+              labelText: widget.team ? 'نام تیم' : 'نام بازیکن',
+            ),
+          ),
+          const SizedBox(height: 18),
+          if (widget.team)
+            AnimatedBuilder(
+              animation: Listenable.merge([color, icon]),
+              builder: (context, _) => TeamAppearancePicker(
+                colorValue: color.value,
+                iconKey: icon.value,
+                onColorChanged: (value) => color.value = value,
+                onIconChanged: (value) => icon.value = value,
+              ),
+            )
+          else
+            ValueListenableBuilder<String?>(
+              valueListenable: selectedTeam,
+              builder: (context, selected, _) =>
+                  DropdownButtonFormField<String>(
+                    initialValue: selected,
+                    decoration: const InputDecoration(labelText: 'تیم'),
+                    items: [
+                      for (final t in widget.teams)
+                        DropdownMenuItem(value: t.id, child: Text(t.name)),
+                    ],
+                    onChanged: (value) => selectedTeam.value = value,
+                  ),
+            ),
+          const SizedBox(height: 22),
+          PartyButton(
+            label: 'ثبت',
+            onPressed: () {
+              final text = name.text.trim();
+              if (text.isEmpty) return;
+              if (widget.team) {
+                widget.cubit.addTeam(
+                  name: text,
+                  colorValue: color.value,
+                  iconKey: icon.value,
+                );
+              } else {
+                widget.cubit.addPlayer(name: text, teamId: selectedTeam.value);
+              }
+              Navigator.pop(context);
+            },
+          ),
+        ],
+      ),
+    ),
+  );
 }

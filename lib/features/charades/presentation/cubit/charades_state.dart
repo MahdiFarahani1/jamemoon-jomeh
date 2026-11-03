@@ -1,7 +1,9 @@
 import 'package:equatable/equatable.dart';
+
 import '../../data/charades_word_model.dart';
 
 class CharadesState extends Equatable {
+  final bool isGameOver;
   final CharadesWord? currentWord;
   final int remainingSeconds;
   final int totalSeconds;
@@ -19,6 +21,7 @@ class CharadesState extends Equatable {
   final bool isQuickMode;
 
   const CharadesState({
+    this.isGameOver = false,
     this.currentWord,
     this.remainingSeconds = 60,
     this.totalSeconds = 60,
@@ -37,6 +40,7 @@ class CharadesState extends Equatable {
   });
 
   CharadesState copyWith({
+    bool? isGameOver,
     CharadesWord? currentWord,
     int? remainingSeconds,
     int? totalSeconds,
@@ -54,6 +58,7 @@ class CharadesState extends Equatable {
     bool? isQuickMode,
   }) {
     return CharadesState(
+      isGameOver: isGameOver ?? this.isGameOver,
       currentWord: currentWord ?? this.currentWord,
       remainingSeconds: remainingSeconds ?? this.remainingSeconds,
       totalSeconds: totalSeconds ?? this.totalSeconds,
@@ -74,21 +79,21 @@ class CharadesState extends Equatable {
 
   @override
   List<Object?> get props => [
-        currentWord,
-        remainingSeconds,
-        totalSeconds,
-        isTimerRunning,
-        isPassPhonePhase,
-        isSecretRevealed,
-        isRoundOver,
-        roundScore,
-        correctCount,
-        skipCount,
-        activeTeamName,
-        activeTeamIndex,
-        currentRound,
-        totalRounds,
-        isQuickMode,
-      ];
+    isGameOver,
+    currentWord,
+    remainingSeconds,
+    totalSeconds,
+    isTimerRunning,
+    isPassPhonePhase,
+    isSecretRevealed,
+    isRoundOver,
+    roundScore,
+    correctCount,
+    skipCount,
+    activeTeamName,
+    activeTeamIndex,
+    currentRound,
+    totalRounds,
+    isQuickMode,
+  ];
 }
-

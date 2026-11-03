@@ -1,157 +1,309 @@
 import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_application_1/app/di/service_locator.dart';
-import 'package:flutter_application_1/core/models/turn_manager.dart';
-import 'package:flutter_application_1/core/services/audio_service.dart';
-import 'package:flutter_application_1/core/services/haptics_service.dart';
-import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
-import 'package:flutter_application_1/features/taboo/data/taboo_repository.dart';
+
+import '../../../../app/di/service_locator.dart';
+import '../../../../core/models/turn_manager.dart';
+import '../../../../core/models/game_result.dart';
+import '../../../../core/models/game_setup_config.dart';
+import '../../../../core/services/audio_service.dart';
+import '../../../../core/services/haptics_service.dart';
+import '../../../../core/services/round_clock.dart';
+import '../../../teams/presentation/cubit/teams_cubit.dart';
+import '../../data/taboo_card_model.dart';
+import '../../data/taboo_repository.dart';
 import 'taboo_state.dart';
 
 class TabooCubit extends Cubit<TabooState> {
+  GameResult? get result =>
+      GameResult.fromManager(_turnManager, baseline: _startingScores);
+  Map<String, int> _startingScores = {};
+  final GameSessionStore _session = GameSessionStore('taboo');
+  bool _sessionReady = false;
+  bool hasRestoredSession = false;
   final TabooRepository _repository;
   final AudioService _audio = sl<AudioService>();
   final HapticsService _haptics = sl<HapticsService>();
-  Timer? _timer;
+  late final RoundClock _clock = RoundClock(
+    onChanged: _onClockChanged,
+    onFinished: _onTimeFinished,
+  );
   TurnManager? _turnManager;
+  final TeamsCubit? _teamsCubit;
+  final GameSetupConfig? _setup;
+  bool _finished = false;
 
   TabooCubit({
     required TabooRepository repository,
+    GameSetupConfig? setup,
     bool isQuickMode = false,
+    bool resumeSaved = false,
     TeamsCubit? teamsCubit,
-  })  : _repository = repository,
-        super(TabooState(isQuickMode: isQuickMode)) {
+  }) : _repository = repository,
+       _teamsCubit = teamsCubit,
+       _setup = setup,
+       super(
+         TabooState(
+           isQuickMode: isQuickMode,
+           totalSeconds: setup?.roundSeconds ?? 60,
+         ),
+       ) {
     if (!isQuickMode && teamsCubit != null) {
+      _startingScores = {
+        for (final team in teamsCubit.state.teams) team.id: team.score,
+      };
       _turnManager = TurnManager(
         teams: teamsCubit.state.teams,
-        totalRounds: 3,
+        totalRounds: setup?.totalRounds ?? 3,
       );
-      emit(state.copyWith(
-        activeTeamName: _turnManager!.currentTeam.name,
-        activeTeamIndex: _turnManager!.currentTeamIndex,
-        currentRound: _turnManager!.currentRound,
-        totalRounds: _turnManager!.totalRounds,
-      ));
+      emit(
+        state.copyWith(
+          activeTeamName: _turnManager!.currentTeam.name,
+          activeTeamIndex: _turnManager!.currentTeamIndex,
+          currentRound: _turnManager!.currentRound,
+          totalRounds: _turnManager!.totalRounds,
+        ),
+      );
     } else {
-      emit(state.copyWith(
-        activeTeamName: 'حالت آزاد',
-        isPassPhonePhase: false,
-      ));
-      startRound();
+      emit(state.copyWith(activeTeamName: 'تیم اول', isPassPhonePhase: true));
     }
+    _initializeSession(resumeSaved);
   }
+
+  void _initializeSession(bool resumeSaved) {
+    final data = resumeSaved ? _session.read() : null;
+    if (data != null) {
+      try {
+        if (data['version'] != 1 || data['isQuickMode'] != state.isQuickMode) {
+          throw const FormatException();
+        }
+        final manager = _session.decodeManager(
+          data['manager'],
+          _teamsCubit?.state.teams,
+        );
+        if (!state.isQuickMode && manager == null) {
+          throw const FormatException();
+        }
+        final rawItem = data['item'];
+        final item = rawItem == null
+            ? null
+            : TabooCard.fromJson(Map<String, dynamic>.from(rawItem as Map));
+        final remainingMs = data['remainingMs'] as int;
+        if (remainingMs < 0 || remainingMs > state.totalSeconds * 1000) {
+          throw const FormatException();
+        }
+        _startingScores =
+            (data['startingScores'] as Map?)?.map(
+              (key, value) => MapEntry(key.toString(), value as int),
+            ) ??
+            _startingScores;
+        _turnManager = manager;
+        _session.sessionId = data['sessionId'] as String;
+        _finished = data['isGameOver'] as bool;
+        _clock.restore(Duration(milliseconds: remainingMs));
+        super.emit(
+          state.copyWith(
+            currentCard: item,
+            remainingSeconds: (remainingMs / 1000).ceil(),
+            isTimerRunning: false,
+            isRoundOver: data['isRoundOver'] as bool,
+            isPassPhonePhase: data['isPassPhonePhase'] == true || item == null,
+            roundScore: data['roundScore'] as int,
+            correctCount: data['correctCount'] as int,
+            foulCount: data['foulCount'] as int,
+            skipCount: data['skipCount'] as int,
+            isGameOver: _finished,
+            activeTeamName: manager?.currentTeam.name,
+            activeTeamIndex: manager?.currentTeamIndex,
+            currentRound: manager?.currentRound,
+            totalRounds: manager?.totalRounds,
+          ),
+        );
+        hasRestoredSession = true;
+      } catch (_) {
+        _turnManager = state.isQuickMode || _teamsCubit == null
+            ? null
+            : TurnManager(
+                teams: _teamsCubit.state.teams,
+                totalRounds: _setup?.totalRounds ?? 3,
+              );
+      }
+    }
+    _sessionReady = true;
+    if (!hasRestoredSession) _persist();
+  }
+
+  void _persist() {
+    if (!_sessionReady) return;
+    _session.save({
+      'startingScores': _startingScores,
+      'roundSeconds': state.totalSeconds,
+      'isQuickMode': state.isQuickMode,
+      'manager': _session.encodeManager(_turnManager),
+      'item': state.currentCard?.toJson(),
+      'remainingMs': _clock.remaining.inMilliseconds,
+      'isRoundOver': state.isRoundOver,
+      'isPassPhonePhase': state.isPassPhonePhase,
+      'roundScore': state.roundScore,
+      'correctCount': state.correctCount,
+      'foulCount': state.foulCount,
+      'skipCount': state.skipCount,
+      'isGameOver': _finished,
+    });
+  }
+
+  @override
+  void emit(TabooState state) {
+    super.emit(state);
+    _persist();
+  }
+
+  void finishAndClear() => _session.clear();
 
   void startRound() {
+    if (state.isTimerRunning || _finished) return;
     final nextCard = _repository.getNextCard();
-    emit(state.copyWith(
-      currentCard: nextCard,
-      remainingSeconds: state.totalSeconds,
-      isTimerRunning: true,
-      isRoundOver: false,
-      isPassPhonePhase: false,
-      correctCount: 0,
-      foulCount: 0,
-      skipCount: 0,
-      roundScore: 0,
-    ));
-    _startTimer();
+    emit(
+      state.copyWith(
+        currentCard: nextCard,
+        remainingSeconds: state.totalSeconds,
+        isTimerRunning: true,
+        isRoundOver: false,
+        isPassPhonePhase: false,
+        correctCount: 0,
+        foulCount: 0,
+        skipCount: 0,
+        roundScore: 0,
+      ),
+    );
+    _clock.start(Duration(seconds: state.totalSeconds));
   }
 
-  void _startTimer() {
-    _timer?.cancel();
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (state.remainingSeconds > 1) {
-        emit(state.copyWith(remainingSeconds: state.remainingSeconds - 1));
-        if (state.remainingSeconds <= 5) {
-          _audio.playTick();
-          _haptics.lightClick();
-        }
-      } else {
-        _timer?.cancel();
-        _onTimeFinished();
+  void _onClockChanged(Duration remaining) {
+    final secs = (remaining.inMilliseconds / 1000).ceil();
+    if (secs != state.remainingSeconds) {
+      emit(state.copyWith(remainingSeconds: secs));
+      if (secs <= 5 && secs > 0) {
+        _audio.playTick();
+        _haptics.lightClick();
       }
-    });
+    }
   }
 
   void _onTimeFinished() {
     _audio.playBuzzer();
     _haptics.buzzerFail();
-
-    if (!state.isQuickMode && _turnManager != null) {
-      final activeTeam = _turnManager!.currentTeam;
-      sl<TeamsCubit>().updateTeamScore(activeTeam.id, state.roundScore);
-      _turnManager = _turnManager!.updateTeamScore(activeTeam.id, state.roundScore);
-    }
-
-    emit(state.copyWith(
-      remainingSeconds: 0,
-      isTimerRunning: false,
-      isRoundOver: true,
-    ));
+    emit(state.copyWith(isTimerRunning: false, isRoundOver: true));
   }
 
   void onCorrect() {
-    if (!state.isTimerRunning) return;
+    if (!state.isTimerRunning || state.isRoundOver || _finished) return;
     _audio.playCorrect();
     _haptics.lightClick();
+
+    if (!state.isQuickMode && _turnManager != null) {
+      final activeTeam = _turnManager!.currentTeam;
+      _teamsCubit?.updateTeamScore(activeTeam.id, 1);
+      _turnManager = _turnManager!.updateTeamScore(activeTeam.id, 1);
+    }
+
     final nextCard = _repository.getNextCard();
-    emit(state.copyWith(
-      correctCount: state.correctCount + 1,
-      roundScore: state.roundScore + 1,
-      currentCard: nextCard,
-    ));
+    emit(
+      state.copyWith(
+        currentCard: nextCard,
+        correctCount: state.correctCount + 1,
+        roundScore: state.roundScore + 1,
+      ),
+    );
   }
 
   void onFoul() {
-    if (!state.isTimerRunning) return;
+    if (!state.isTimerRunning || state.isRoundOver || _finished) return;
     _audio.playBuzzer();
     _haptics.buzzerFail();
+
+    if (!state.isQuickMode && _turnManager != null) {
+      final activeTeam = _turnManager!.currentTeam;
+      _teamsCubit?.updateTeamScore(activeTeam.id, -1);
+      _turnManager = _turnManager!.updateTeamScore(activeTeam.id, -1);
+    }
+
     final nextCard = _repository.getNextCard();
-    emit(state.copyWith(
-      foulCount: state.foulCount + 1,
-      roundScore: state.roundScore - 1,
-      currentCard: nextCard,
-    ));
+    emit(
+      state.copyWith(
+        currentCard: nextCard,
+        foulCount: state.foulCount + 1,
+        roundScore: state.roundScore - 1,
+      ),
+    );
   }
 
   void onSkip() {
-    if (!state.isTimerRunning) return;
+    if (!state.isTimerRunning || state.isRoundOver || _finished) return;
+    _audio.playSkip();
     _haptics.lightClick();
     final nextCard = _repository.getNextCard();
-    emit(state.copyWith(
-      skipCount: state.skipCount + 1,
-      currentCard: nextCard,
-    ));
+    emit(state.copyWith(currentCard: nextCard, skipCount: state.skipCount + 1));
   }
 
-  void togglePause() {
-    if (state.isTimerRunning) {
-      _timer?.cancel();
-      emit(state.copyWith(isTimerRunning: false));
-    } else if (!state.isRoundOver && !state.isPassPhonePhase) {
-      _startTimer();
-      emit(state.copyWith(isTimerRunning: true));
+  void pause() {
+    if (!state.isTimerRunning || _finished) return;
+    _clock.pause();
+    emit(state.copyWith(isTimerRunning: false));
+  }
+
+  void resume() {
+    if (state.isTimerRunning ||
+        state.isRoundOver ||
+        state.isPassPhonePhase ||
+        _finished) {
+      return;
     }
+    emit(state.copyWith(isTimerRunning: true));
+    _clock.resume();
   }
 
   void nextTurn() {
+    if (!state.isRoundOver || _finished) return;
     if (_turnManager != null) {
       _turnManager = _turnManager!.nextTurn();
-      emit(state.copyWith(
-        activeTeamName: _turnManager!.currentTeam.name,
-        activeTeamIndex: _turnManager!.currentTeamIndex,
-        currentRound: _turnManager!.currentRound,
-        isRoundOver: false,
-        isPassPhonePhase: true,
-      ));
+      if (_turnManager!.isGameOver) {
+        _finished = true;
+        _session.complete(_turnManager, baseline: _startingScores);
+        emit(state.copyWith(isGameOver: true));
+        return;
+      }
+      emit(
+        state.copyWith(
+          isPassPhonePhase: true,
+          isRoundOver: false,
+          activeTeamName: _turnManager!.currentTeam.name,
+          activeTeamIndex: _turnManager!.currentTeamIndex,
+          currentRound: _turnManager!.currentRound,
+          totalRounds: _turnManager!.totalRounds,
+          roundScore: 0,
+          correctCount: 0,
+          foulCount: 0,
+          skipCount: 0,
+        ),
+      );
     } else {
-      startRound();
+      emit(
+        state.copyWith(
+          isPassPhonePhase: true,
+          isRoundOver: false,
+          roundScore: 0,
+          correctCount: 0,
+          foulCount: 0,
+          skipCount: 0,
+        ),
+      );
     }
   }
 
   @override
   Future<void> close() {
-    _timer?.cancel();
+    _clock.dispose();
     return super.close();
   }
 }

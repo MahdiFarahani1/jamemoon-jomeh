@@ -9,10 +9,7 @@ class SettingsState extends Equatable {
     required this.vibrationEnabled,
   });
 
-  SettingsState copyWith({
-    bool? soundEnabled,
-    bool? vibrationEnabled,
-  }) {
+  SettingsState copyWith({bool? soundEnabled, bool? vibrationEnabled}) {
     return SettingsState(
       soundEnabled: soundEnabled ?? this.soundEnabled,
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
@@ -22,4 +19,3 @@ class SettingsState extends Equatable {
   @override
   List<Object?> get props => [soundEnabled, vibrationEnabled];
 }
-

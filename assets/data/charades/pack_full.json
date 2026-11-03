@@ -1,0 +1,142 @@
+[
+  {
+    "id": "charades_full_1",
+    "word": "ماهیگیری در قایق سوراخ",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_2",
+    "word": "رانندگی با سرعت زیاد",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_3",
+    "word": "خواب‌آلودگی سر کلاس",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_4",
+    "word": "آشپزی با نمک فراوان",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_5",
+    "word": "تماشای مسابقه فوتبال",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_6",
+    "word": "تعمیر شیر آب خراب",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_7",
+    "word": "عکاسی از پروانه زیبا",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_8",
+    "word": "مذاکره برای تخفیف خرید",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_9",
+    "word": "پیدا کردن کلید گم‌شده",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_10",
+    "word": "تولد غافلگیرانه دوستان",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_11",
+    "word": "رقص محلی در جشن",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_12",
+    "word": "افتادن موبایل در جوب",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_13",
+    "word": "تیراندازی با کمان چوبی",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_14",
+    "word": "بادبادک‌بازی در ساحل",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_15",
+    "word": "لیز خوردن روی برف",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_16",
+    "word": "سوار شدن به قطار سریع",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_17",
+    "word": "رنگ‌آمیزی دیوار خانه",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_full_18",
+    "word": "ورزش کششی صبحگاهی",
+    "category": "پانتومیم",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_full_19",
+    "word": "دویدن دنبال اتوبوس شرکت",
+    "category": "پانتومیم",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_full_20",
+    "word": "امتحان دادن با خودکار خراب",
+    "category": "پانتومیم",
+    "points": 2,
+    "difficulty": 2
+  }
+]

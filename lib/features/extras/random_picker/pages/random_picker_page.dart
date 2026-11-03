@@ -1,114 +1,90 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
-import '../../../../app/di/service_locator.dart';
-import '../../../../core/services/audio_service.dart';
-import '../../../../core/services/haptics_service.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
-import '../../../../core/widgets/party_card.dart';
 import '../../../teams/presentation/cubit/teams_cubit.dart';
 import '../../../teams/presentation/cubit/teams_state.dart';
+import '../../cubit/extras_cubit.dart';
 
-// Random Player Lottery Picker (Zero setState)
 class RandomPickerPage extends StatelessWidget {
   const RandomPickerPage({super.key});
-
   @override
-  Widget build(BuildContext context) {
-    final chosenPlayerNotifier = ValueNotifier<String?>(null);
-    final isShufflingNotifier = ValueNotifier<bool>(false);
-    final random = Random();
-
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('قرعه‌کشی و انتخاب تصادفی'),
-      ),
+  Widget build(BuildContext context) => BlocProvider(
+    create: (_) => PickerCubit(),
+    child: Scaffold(
+      appBar: AppBar(title: const Text('قرعه‌کشی')),
       body: AnimatedPartyBackground(
-        child: BlocBuilder<TeamsCubit, TeamsState>(
-          builder: (context, state) {
-            final playersList = state.players.isNotEmpty
-                ? state.players.map((p) => p.name).toList()
-                : ['سارا', 'امیرعلی', 'نیلوفر', 'مهدی', 'ریحانه', 'محمدرضا'];
-
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-              child: Column(
+        child: SafeArea(
+          top: false,
+          child: BlocBuilder<TeamsCubit, TeamsState>(
+            builder: (context, teams) {
+              final players = teams.players.map((p) => p.name).toList();
+              return ListView(
+                padding: const EdgeInsets.all(24),
                 children: [
+                  const Text('نوبت کیه؟', style: AppTypography.displayMedium),
+                  const SizedBox(height: 8),
                   const Text(
-                    'نمی‌دونید نوبت کیه یا کی باید اول بازی کنه؟ قرعه‌کشی کنید!',
-                    style: AppTypography.bodyMedium,
-                    textAlign: TextAlign.center,
+                    'از بین بازیکن‌های جمع، یک نفر انتخاب می‌شود.',
+                    style: AppTypography.bodyLarge,
                   ),
-                  const Spacer(),
-
-                  // Selected Player Display
-                  ValueListenableBuilder<String?>(
-                    valueListenable: chosenPlayerNotifier,
-                    builder: (context, chosen, _) {
-                      return PartyCard(
-                        gradient: AppColors.purpleGradient,
-                        padding: const EdgeInsets.all(32),
-                        child: Column(
-                          children: [
-                            const Icon(Icons.person_pin_circle_rounded, color: Colors.white, size: 68),
-                            const SizedBox(height: 14),
-                            Text(
-                              chosen ?? 'آماده قرعه‌کشی...',
-                              style: const TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.white,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                  const SizedBox(height: 36),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 48,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface,
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(color: AppColors.surfaceBorder),
+                    ),
+                    child: Column(
+                      children: [
+                        const Icon(
+                          Icons.auto_awesome_rounded,
+                          color: AppColors.accent,
+                          size: 64,
                         ),
-                      );
-                    },
+                        const SizedBox(height: 18),
+                        BlocBuilder<PickerCubit, PickerState>(
+                          builder: (context, state) => Text(
+                            players.isEmpty
+                                ? 'هنوز بازیکنی ندارید'
+                                : state.name ?? 'آماده‌ای؟',
+                            textAlign: TextAlign.center,
+                            style: AppTypography.displayMedium,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Spacer(),
-
-                  // Draw button
-                  ValueListenableBuilder<bool>(
-                    valueListenable: isShufflingNotifier,
-                    builder: (context, isShuffling, _) {
-                      return PartyButton(
-                        label: isShuffling ? 'در حال انتخاب...' : 'قرعه بنداز!',
+                  const SizedBox(height: 24),
+                  if (players.isEmpty)
+                    PartyButton(
+                      label: 'افزودن بازیکن',
+                      icon: Icons.person_add_alt_1_rounded,
+                      onPressed: () => Navigator.pushNamed(context, '/teams'),
+                    )
+                  else
+                    BlocBuilder<PickerCubit, PickerState>(
+                      builder: (context, state) => PartyButton(
+                        label: state.busy ? 'در حال انتخاب...' : 'قرعه بنداز!',
                         icon: Icons.shuffle_rounded,
-                        color: AppColors.primary,
-                        onPressed: isShuffling
+                        onPressed: state.busy
                             ? null
-                            : () async {
-                                isShufflingNotifier.value = true;
-                                sl<AudioService>().playTick();
-                                sl<HapticsService>().mediumBump();
-
-                                // Quick cycling visual effect
-                                for (int i = 0; i < 10; i++) {
-                                  chosenPlayerNotifier.value = playersList[random.nextInt(playersList.length)];
-                                  await Future.delayed(const Duration(milliseconds: 100));
-                                }
-
-                                final finalPick = playersList[random.nextInt(playersList.length)];
-                                chosenPlayerNotifier.value = finalPick;
-                                sl<AudioService>().playVictory();
-                                sl<HapticsService>().lightClick();
-                                isShufflingNotifier.value = false;
-                              },
-                      );
-                    },
-                  ),
-                  const SizedBox(height: 16),
+                            : () => context.read<PickerCubit>().pick(players),
+                      ),
+                    ),
                 ],
-              ),
-            );
-          },
+              );
+            },
+          ),
         ),
       ),
-    );
-  }
+    ),
+  );
 }
-

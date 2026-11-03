@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../app/theme/app_colors.dart';
 
 // Styled Card Container for Party Game Elements
@@ -20,7 +21,7 @@ class PartyCard extends StatelessWidget {
     this.backgroundColor,
     this.gradient,
     this.borderColor,
-    this.borderRadius = 22,
+    this.borderRadius = 28,
     this.onTap,
   });
 
@@ -28,7 +29,7 @@ class PartyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final border = Border.all(
       color: borderColor ?? AppColors.surfaceBorder,
-      width: 1.5,
+      width: 1,
     );
 
     final boxDecoration = BoxDecoration(
@@ -38,9 +39,9 @@ class PartyCard extends StatelessWidget {
       border: border,
       boxShadow: [
         BoxShadow(
-          color: Colors.black.withOpacity(0.3),
-          blurRadius: 14,
-          offset: const Offset(0, 6),
+          color: Colors.black.withValues(alpha: 0.12),
+          blurRadius: 24,
+          offset: const Offset(0, 8),
         ),
       ],
     );
@@ -55,10 +56,7 @@ class PartyCard extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(borderRadius),
             onTap: onTap,
-            child: Padding(
-              padding: padding,
-              child: child,
-            ),
+            child: Padding(padding: padding, child: child),
           ),
         ),
       );
@@ -72,4 +70,3 @@ class PartyCard extends StatelessWidget {
     );
   }
 }
-

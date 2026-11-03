@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/models/game_setup_config.dart';
+import 'package:flutter_application_1/core/widgets/game_scene.dart';
+import 'package:flutter_application_1/core/widgets/game_lifecycle_guard.dart';
+import 'package:flutter_application_1/core/widgets/game_emblem.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_application_1/app/theme/app_colors.dart';
 import 'package:flutter_application_1/app/theme/app_typography.dart';
@@ -11,6 +15,7 @@ import 'package:flutter_application_1/core/widgets/party_card.dart';
 import 'package:flutter_application_1/core/widgets/party_dialog.dart';
 import 'package:flutter_application_1/core/widgets/pass_phone_overlay.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
+
 import '../cubit/drawing_cubit.dart';
 import '../cubit/drawing_state.dart';
 import '../../data/drawing_repository.dart';
@@ -19,19 +24,40 @@ import '../widgets/palette_toolbar.dart';
 
 // Drawing Game Page (Zero setState)
 class DrawingGamePage extends StatelessWidget {
+  final GameSetupConfig? setup;
   final bool isQuickMode;
+  final bool resumeSaved;
+  final String? tournamentId;
 
-  const DrawingGamePage({super.key, this.isQuickMode = false});
+  const DrawingGamePage({
+    super.key,
+    this.setup,
+    this.isQuickMode = false,
+    this.resumeSaved = false,
+    this.tournamentId,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => DrawingCubit(
-        repository: sl<DrawingRepository>(),
-        isQuickMode: isQuickMode,
-        teamsCubit: isQuickMode ? null : context.read<TeamsCubit>(),
+    return GameContentGate(
+      load: () => sl<DrawingRepository>().loadWords(),
+      child: BlocProvider(
+        create: (context) => DrawingCubit(
+          setup: setup,
+          repository: sl<DrawingRepository>(),
+          isQuickMode: isQuickMode,
+          resumeSaved: resumeSaved,
+          teamsCubit: isQuickMode ? null : context.read<TeamsCubit>(),
+        ),
+        child: Builder(
+          builder: (context) => GameLifecycleGuard(
+            initiallyCovered: context.read<DrawingCubit>().hasRestoredSession,
+            onPause: () => context.read<DrawingCubit>().pause(),
+            onResume: () => context.read<DrawingCubit>().resume(),
+            child: const _DrawingGameView(),
+          ),
+        ),
       ),
-      child: const _DrawingGameView(),
     );
   }
 }
@@ -43,6 +69,13 @@ class _DrawingGameView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<DrawingCubit, DrawingState>(
       builder: (context, state) {
+        if (state.isGameOver) {
+          return GameCompletionView(
+            gameKey: 'drawing',
+            result: context.read<DrawingCubit>().result,
+            onComplete: () => context.read<DrawingCubit>().finishAndClear(),
+          );
+        }
         if (state.isPassPhonePhase) {
           return Scaffold(
             body: PassPhoneOverlay(
@@ -57,22 +90,36 @@ class _DrawingGameView extends StatelessWidget {
         if (state.isWordRevealed) {
           return Scaffold(
             body: AnimatedPartyBackground(
+              gameKey: 'drawing',
               child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 20,
+                  ),
                   child: PartyCard(
                     borderColor: AppColors.drawPrimary,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        const Icon(Icons.brush_rounded, color: AppColors.drawPrimary, size: 54),
+                        const Icon(
+                          Icons.brush_rounded,
+                          color: AppColors.drawPrimary,
+                          size: 54,
+                        ),
                         const SizedBox(height: 12),
-                        const Text('کلمه اختصاصی نقاش', style: AppTypography.headlineLarge, textAlign: TextAlign.center),
+                        const Text(
+                          'کلمه اختصاصی نقاش',
+                          style: AppTypography.headlineLarge,
+                          textAlign: TextAlign.center,
+                        ),
                         const SizedBox(height: 6),
                         Text(
                           'بقیه بازیکن‌ها این صفحه رو نبینن!',
-                          style: AppTypography.bodySmall.copyWith(color: AppColors.accent),
+                          style: AppTypography.bodySmall.copyWith(
+                            color: AppColors.accent,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: 20),
@@ -81,11 +128,15 @@ class _DrawingGameView extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: AppColors.surfaceLight,
                             borderRadius: BorderRadius.circular(18),
-                            border: Border.all(color: AppColors.drawPrimary.withOpacity(0.4)),
+                            border: Border.all(
+                              color: AppColors.drawPrimary.withOpacity(0.4),
+                            ),
                           ),
                           child: Text(
                             state.currentWord?.word ?? 'در حال آماده‌سازی...',
-                            style: AppTypography.displayMedium.copyWith(color: AppColors.drawPrimary),
+                            style: AppTypography.displayMedium.copyWith(
+                              color: AppColors.drawPrimary,
+                            ),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -94,7 +145,9 @@ class _DrawingGameView extends StatelessWidget {
                           label: 'آماده‌ام، بریم روی بوم!',
                           icon: Icons.palette_rounded,
                           color: AppColors.drawPrimary,
-                          onPressed: () => context.read<DrawingCubit>().startDrawingOnCanvas(),
+                          onPressed: () => context
+                              .read<DrawingCubit>()
+                              .startDrawingOnCanvas(),
                         ),
                       ],
                     ),
@@ -111,10 +164,12 @@ class _DrawingGameView extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
+            bottom: const GameSceneRibbon(gameKey: 'drawing'),
             title: Text(state.activeTeamName),
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_rounded),
               onPressed: () async {
+                GameLifecycleGuard.of(context).cover();
                 final confirm = await PartyDialog.show(
                   context,
                   title: 'خروج از نقاشی',
@@ -127,17 +182,25 @@ class _DrawingGameView extends StatelessWidget {
               },
             ),
             actions: [
+              const GameEmblem(gameKey: 'drawing', size: 36),
               IconButton(
                 tooltip: 'راهنمای بازی',
                 icon: const Icon(Icons.help_outline_rounded),
-                onPressed: () => HowToPlaySheet.show(context, 'drawing'),
+                onPressed: () {
+                  GameLifecycleGuard.of(context).cover();
+                  HowToPlaySheet.show(context, 'drawing');
+                },
               ),
             ],
           ),
           body: AnimatedPartyBackground(
+            gameKey: 'drawing',
             child: SafeArea(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
                 child: Column(
                   children: [
                     // Header Bar with Timer and Correct Guess Button
@@ -156,7 +219,8 @@ class _DrawingGameView extends StatelessWidget {
                             icon: Icons.check_circle_rounded,
                             color: AppColors.success,
                             height: 48,
-                            onPressed: () => context.read<DrawingCubit>().onCorrectGuess(),
+                            onPressed: () =>
+                                context.read<DrawingCubit>().onCorrectGuess(),
                           ),
                         ),
                       ],
@@ -182,9 +246,12 @@ class _DrawingGameView extends StatelessWidget {
                       activeColor: state.activeColor,
                       strokeWidth: state.strokeWidth,
                       isEraser: state.isEraser,
-                      onColorChanged: (c) => context.read<DrawingCubit>().setColor(c),
-                      onStrokeWidthChanged: (w) => context.read<DrawingCubit>().setStrokeWidth(w),
-                      onToggleEraser: () => context.read<DrawingCubit>().toggleEraser(),
+                      onColorChanged: (c) =>
+                          context.read<DrawingCubit>().setColor(c),
+                      onStrokeWidthChanged: (w) =>
+                          context.read<DrawingCubit>().setStrokeWidth(w),
+                      onToggleEraser: () =>
+                          context.read<DrawingCubit>().toggleEraser(),
                       onUndo: () => context.read<DrawingCubit>().undo(),
                       onClear: () => context.read<DrawingCubit>().clearCanvas(),
                     ),
@@ -204,9 +271,10 @@ class _DrawingGameView extends StatelessWidget {
 
     return Scaffold(
       body: AnimatedPartyBackground(
+        gameKey: 'drawing',
         child: Center(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
             child: PartyCard(
               borderColor: AppColors.drawPrimary,
               child: Column(
@@ -233,18 +301,34 @@ class _DrawingGameView extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        const Text('کلمه مخفی این دور:', style: AppTypography.bodySmall),
+                        const Text(
+                          'کلمه مخفی این دور:',
+                          style: AppTypography.bodySmall,
+                        ),
                         const SizedBox(height: 4),
-                        Text(word, style: AppTypography.headlineLarge.copyWith(color: AppColors.accent)),
-                        const Divider(color: AppColors.surfaceBorder, height: 20),
+                        Text(
+                          word,
+                          style: AppTypography.headlineLarge.copyWith(
+                            color: AppColors.accent,
+                          ),
+                        ),
+                        const Divider(
+                          color: AppColors.surfaceBorder,
+                          height: 20,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text('امتیاز کسب شده:', style: AppTypography.bodyLarge),
+                            const Text(
+                              'امتیاز کسب شده:',
+                              style: AppTypography.bodyLarge,
+                            ),
                             Text(
                               '+${state.roundScore}',
                               style: AppTypography.headlineLarge.copyWith(
-                                color: won ? AppColors.success : AppColors.textMuted,
+                                color: won
+                                    ? AppColors.success
+                                    : AppColors.textMuted,
                               ),
                             ),
                           ],

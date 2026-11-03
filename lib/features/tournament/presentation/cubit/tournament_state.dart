@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+
 import '../../../../core/models/team_model.dart';
 import '../../../../core/models/game_mode.dart';
 
@@ -24,10 +25,11 @@ class TournamentState extends Equatable {
     this.teams = const [],
     this.currentStageIndex = 0,
     this.isFinished = false,
-    this.stages = GameInfo.allGames,
+    this.stages = GameInfo.tournamentGames,
   });
 
-  GameInfo get currentGame => stages[currentStageIndex.clamp(0, stages.length - 1)];
+  GameInfo get currentGame =>
+      stages[currentStageIndex.clamp(0, stages.length - 1)];
 
   List<Team> get rankedTeams {
     final list = List<Team>.from(teams);
@@ -52,4 +54,3 @@ class TournamentState extends Equatable {
   @override
   List<Object?> get props => [teams, currentStageIndex, isFinished, stages];
 }
-

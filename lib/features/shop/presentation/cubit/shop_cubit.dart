@@ -1,9 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/services/purchase_service.dart';
 import 'shop_state.dart';
 
 class ShopCubit extends Cubit<ShopState> {
   final PurchaseService _purchaseService;
+  bool get purchasesAvailable => _purchaseService.purchasesAvailable;
 
   ShopCubit(this._purchaseService) : super(const ShopState()) {
     loadProducts();
@@ -31,24 +33,30 @@ class ShopCubit extends Cubit<ShopState> {
             updated.add(p.id);
           }
         }
-        emit(state.copyWith(
-          isBusy: false,
-          purchasedIds: updated,
-          messageFa: 'خرید شما با موفقیت فعال شد!',
-        ));
+        emit(
+          state.copyWith(
+            isBusy: false,
+            purchasedIds: updated,
+            messageFa: 'خرید شما با موفقیت فعال شد!',
+          ),
+        );
         return true;
       } else {
-        emit(state.copyWith(
-          isBusy: false,
-          messageFa: 'خرید انجام نشد یا لغو گردید.',
-        ));
+        emit(
+          state.copyWith(
+            isBusy: false,
+            messageFa: 'خرید انجام نشد یا لغو گردید.',
+          ),
+        );
         return false;
       }
     } catch (e) {
-      emit(state.copyWith(
-        isBusy: false,
-        messageFa: 'خطا در ارتباط با سرور پرداخت بازار.',
-      ));
+      emit(
+        state.copyWith(
+          isBusy: false,
+          messageFa: 'خطا در ارتباط با سرور پرداخت بازار.',
+        ),
+      );
       return false;
     }
   }
@@ -58,10 +66,11 @@ class ShopCubit extends Cubit<ShopState> {
     try {
       await _purchaseService.restorePurchases();
       loadProducts();
-      emit(state.copyWith(isBusy: false, messageFa: 'خریدهای قبلی بازیابی شدند.'));
+      emit(
+        state.copyWith(isBusy: false, messageFa: 'خریدهای قبلی بازیابی شدند.'),
+      );
     } catch (e) {
       emit(state.copyWith(isBusy: false, messageFa: 'خطا در بازیابی خریدها.'));
     }
   }
 }
-

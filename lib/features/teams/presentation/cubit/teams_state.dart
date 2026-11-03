@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+
 import '../../../../core/models/team_model.dart';
 import '../../../../core/models/player_model.dart';
 
@@ -28,4 +29,3 @@ class TeamsState extends Equatable {
   @override
   List<Object?> get props => [teams, players, isLoading];
 }
-

@@ -1,179 +1,157 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
-import '../../../../app/di/service_locator.dart';
-import '../../../../core/services/audio_service.dart';
-import '../../../../core/services/haptics_service.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
-import '../../../../core/widgets/party_card.dart';
 import '../../../../core/widgets/party_dialog.dart';
+import '../../../../core/widgets/party_switch.dart';
+import '../../../../core/widgets/brand_mark.dart';
+import '../../../teams/presentation/cubit/teams_cubit.dart';
+import '../../../tournament/presentation/cubit/tournament_cubit.dart';
+import '../../../shop/presentation/cubit/shop_cubit.dart';
 import '../cubit/settings_cubit.dart';
 import '../cubit/settings_state.dart';
 
-// Settings & Preferences Page (Zero setState)
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
-
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('تنظیمات بازی'),
-      ),
-      body: AnimatedPartyBackground(
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(title: const Text('تنظیمات')),
+    body: AnimatedPartyBackground(
+      child: SafeArea(
+        top: false,
         child: BlocBuilder<SettingsCubit, SettingsState>(
-          builder: (context, state) {
-            return ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              children: [
-                // Sound & Audio settings card
-                PartyCard(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: AppColors.primary.withOpacity(0.2),
-                              borderRadius: BorderRadius.circular(14),
-                            ),
-                            child: const Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 26),
-                          ),
-                          const SizedBox(width: 14),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text('افکت‌های صوتی', style: AppTypography.headlineMedium),
-                                Text(
-                                  'تیک‌تاک تایمر، صدای انفجار بمب و جشن پیروزی',
-                                  style: AppTypography.bodySmall,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Switch(
-                            value: state.soundEnabled,
-                            activeThumbColor: AppColors.primary,
-                            onChanged: (_) {
-                              context.read<SettingsCubit>().toggleSound();
-                              if (!state.soundEnabled) {
-                                sl<AudioService>().playTick();
-                              }
-                            },
-                          ),
-                        ],
+          builder: (context, state) => ListView(
+            padding: const EdgeInsets.all(22),
+            children: [
+              const Text(
+                'دورهمی به سلیقه شما',
+                style: AppTypography.displayMedium,
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'صدا و بازخورد بازی را همین‌جا تنظیم کنید.',
+                style: AppTypography.bodyLarge,
+              ),
+              const SizedBox(height: 24),
+              _SettingRow(
+                icon: Icons.volume_up_rounded,
+                title: 'صداهای بازی',
+                description: 'صداهای تایمر و جشن',
+                value: state.soundEnabled,
+                onChanged: (_) => context.read<SettingsCubit>().toggleSound(),
+              ),
+              const SizedBox(height: 10),
+              _SettingRow(
+                icon: Icons.vibration_rounded,
+                title: 'بازخورد لمسی',
+                description: 'لرزش هنگام بازی و لمس دکمه‌ها',
+                value: state.vibrationEnabled,
+                onChanged: (_) =>
+                    context.read<SettingsCubit>().toggleVibration(),
+              ),
+              const SizedBox(height: 32),
+              const Text('داده‌های بازی', style: AppTypography.headlineLarge),
+              const SizedBox(height: 8),
+              const Text(
+                'بازنشانی، تیم‌ها، کارت‌ها و تاریخچه را پاک می‌کند. دسترسی‌های خریداری‌شده حفظ می‌شوند.',
+                style: AppTypography.bodyMedium,
+              ),
+              const SizedBox(height: 16),
+              PartyButton(
+                label: 'بازنشانی اطلاعات بازی',
+                icon: Icons.restart_alt_rounded,
+                color: AppColors.surfaceLight,
+                textColor: AppColors.textHeadline,
+                onPressed: () async {
+                  final confirmed = await PartyDialog.show(
+                    context,
+                    title: 'بازنشانی بازی',
+                    message: 'تیم‌ها، بازیکن‌ها، کارت‌ها و تاریخچه پاک می‌شوند. ادامه می‌دهید؟',
+                    confirmLabel: 'بازنشانی',
+                  );
+                  if (confirmed != true || !context.mounted) return;
+                  final settings = context.read<SettingsCubit>();
+                  final teams = context.read<TeamsCubit>();
+                  final tournament = context.read<TournamentCubit>();
+                  final shop = context.read<ShopCubit>();
+                  await settings.resetAll();
+                  teams.loadSavedTeams();
+                  tournament.reloadFromStorage();
+                  shop.loadProducts();
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('اطلاعات بازی بازنشانی شد.'),
                       ),
-                      const Divider(color: AppColors.surfaceBorder, height: 28),
-                      Row(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: AppColors.secondary.withOpacity(0.2),
-                              borderRadius: BorderRadius.circular(14),
-                            ),
-                            child: const Icon(Icons.vibration_rounded, color: AppColors.secondary, size: 26),
-                          ),
-                          const SizedBox(width: 14),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text('لرزش و شوک لمسی', style: AppTypography.headlineMedium),
-                                Text(
-                                  'لرزش هنگام انفجار بمب، لمس دکمه‌ها و پایان زمان',
-                                  style: AppTypography.bodySmall,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Switch(
-                            value: state.vibrationEnabled,
-                            activeThumbColor: AppColors.secondary,
-                            onChanged: (_) {
-                              context.read<SettingsCubit>().toggleVibration();
-                              if (!state.vibrationEnabled) {
-                                sl<HapticsService>().mediumBump();
-                              }
-                            },
-                          ),
-                        ],
+                    );
+                  }
+                },
+              ),
+              const SizedBox(height: 36),
+              Center(
+                child: Column(
+                  children: [
+                    const BrandMark(size: 54),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'جمعمون جمعه!',
+                      style: AppTypography.headlineMedium,
+                    ),
+                    Text(
+                      'برای خنده‌های کنار هم',
+                      style: AppTypography.bodyMedium.copyWith(
+                        color: AppColors.accent,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 20),
-
-                // Reset Game History
-                PartyCard(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text('پاک‌سازی و راه‌اندازی مجدد', style: AppTypography.headlineMedium),
-                      const SizedBox(height: 6),
-                      Text(
-                        'صفر کردن تمام امتیازها، تیم‌های ذخیره شده و سوابق مسابقات',
-                        style: AppTypography.bodySmall,
-                      ),
-                      const SizedBox(height: 16),
-                      PartyButton(
-                        label: 'ریست کردن کل داده‌های محلی',
-                        icon: Icons.delete_forever_rounded,
-                        color: AppColors.surfaceLight,
-                        textColor: AppColors.error,
-                        shadowColor: AppColors.surfaceBorder,
-                        onPressed: () async {
-                          final confirmed = await PartyDialog.show(
-                            context,
-                            title: 'حذف و بازنشانی کامل',
-                            message: 'آیا اطمینان دارید؟ تمام تیم‌ها، بازیکنان و سوابق شما پاک خواهند شد.',
-                            confirmLabel: 'بله، حذف کن',
-                          );
-                          if (confirmed == true && context.mounted) {
-                            await context.read<SettingsCubit>().resetAll();
-                            if (context.mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(content: Text('داده‌های بازی با موفقیت بازنشانی شدند.')),
-                              );
-                            }
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20),
-
-                // About section
-                PartyCard(
-                  child: Column(
-                    children: [
-                      const Icon(Icons.info_outline_rounded, color: AppColors.accent, size: 36),
-                      const SizedBox(height: 12),
-                      const Text('جمعمون جمعه!', style: AppTypography.headlineLarge),
-                      const SizedBox(height: 4),
-                      Text(
-                        'نسخه ۱.۰.۰ مخصوص کافه‌بازار',
-                        style: AppTypography.bodySmall.copyWith(color: AppColors.accent),
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        'طراحی شده با عشق برای گرم‌تر شدن دورهمی‌های ایرانی، خنده‌های از ته دل و رقابت‌های نفس‌گیر دوستانه و خانوادگی.',
-                        style: AppTypography.bodyMedium,
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            );
-          },
+              ),
+            ],
+          ),
         ),
       ),
-    );
-  }
+    ),
+  );
+}
+
+class _SettingRow extends StatelessWidget {
+  const _SettingRow({
+    required this.icon,
+    required this.title,
+    required this.description,
+    required this.value,
+    required this.onChanged,
+  });
+  final IconData icon;
+  final String title, description;
+  final bool value;
+  final ValueChanged<bool> onChanged;
+  @override
+  Widget build(BuildContext context) => Container(
+    padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 8, 12),
+    decoration: BoxDecoration(
+      color: AppColors.surface,
+      borderRadius: BorderRadius.circular(22),
+      border: Border.all(color: AppColors.surfaceBorder),
+    ),
+    child: Row(
+      children: [
+        Icon(icon, color: AppColors.accent, size: 30),
+        const SizedBox(width: 14),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(title, style: AppTypography.headlineMedium),
+              Text(description, style: AppTypography.bodyMedium),
+            ],
+          ),
+        ),
+        PartySwitch(value: value, onChanged: onChanged),
+      ],
+    ),
+  );
 }

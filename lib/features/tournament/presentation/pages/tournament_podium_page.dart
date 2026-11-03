@@ -1,165 +1,147 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_application_1/app/theme/app_colors.dart';
-import 'package:flutter_application_1/app/theme/app_typography.dart';
-import 'package:flutter_application_1/app/di/service_locator.dart';
-import 'package:flutter_application_1/core/services/audio_service.dart';
-import 'package:flutter_application_1/core/widgets/animated_party_background.dart';
-import 'package:flutter_application_1/core/widgets/confetti_overlay.dart';
-import 'package:flutter_application_1/core/widgets/party_button.dart';
-import 'package:flutter_application_1/core/widgets/party_card.dart';
-import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
-import 'package:flutter_application_1/features/teams/presentation/cubit/teams_state.dart';
-import '../cubit/tournament_cubit.dart';
 
-// Championship Celebration & Podium (Zero setState)
-class TournamentPodiumPage extends StatelessWidget {
+import '../../../../app/di/service_locator.dart';
+import '../../../../app/theme/app_colors.dart';
+import '../../../../app/theme/app_typography.dart';
+import '../../../../core/models/game_result.dart';
+import '../../../../core/services/audio_service.dart';
+import '../../../../core/widgets/animated_party_background.dart';
+import '../../../../core/widgets/confetti_overlay.dart';
+import '../../../../core/widgets/brand_mark.dart';
+import '../../../../core/widgets/party_button.dart';
+import '../cubit/tournament_cubit.dart';
+import '../cubit/tournament_state.dart';
+
+class TournamentPodiumPage extends StatefulWidget {
   const TournamentPodiumPage({super.key});
+  @override
+  State<TournamentPodiumPage> createState() => _TournamentPodiumPageState();
+}
+
+class _TournamentPodiumPageState extends State<TournamentPodiumPage> {
+  @override
+  void initState() {
+    super.initState();
+    if (sl.isRegistered<AudioService>()) sl<AudioService>().playVictory();
+  }
 
   @override
-  Widget build(BuildContext context) {
-    // Play fanfare once
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      sl<AudioService>().playVictory();
-    });
-
-    return Scaffold(
-      body: ConfettiOverlay(
-        showConfetti: true,
-        child: AnimatedPartyBackground(
-          child: SafeArea(
-            child: BlocBuilder<TeamsCubit, TeamsState>(
-              builder: (context, state) {
-                final sortedTeams = List.from(state.teams)
-                  ..sort((a, b) => b.score.compareTo(a.score));
-
-                final winner = sortedTeams.isNotEmpty ? sortedTeams.first : null;
-                final runnerUp = sortedTeams.length > 1 ? sortedTeams[1] : null;
-
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                  child: Column(
+  Widget build(BuildContext context) => Scaffold(
+    body: ConfettiOverlay(
+      showConfetti: !MediaQuery.disableAnimationsOf(context),
+      child: AnimatedPartyBackground(
+        child: SafeArea(
+          child: BlocBuilder<TournamentCubit, TournamentState>(
+            builder: (context, state) {
+              final teams = state.rankedTeams;
+              final result = GameResult.fromTeams(teams);
+              final tied = result?.isTie ?? false;
+              return Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 600),
+                  child: ListView(
+                    padding: const EdgeInsets.all(24),
                     children: [
-                      const Spacer(),
-
-                      // Trophy Icon with Glow
-                      Container(
-                        width: 110,
-                        height: 110,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          gradient: AppColors.goldGradient,
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.accent.withValues(alpha: 0.55),
-                              blurRadius: 36,
-                              spreadRadius: 4,
-                            ),
-                          ],
-                        ),
-                        child: const Center(
-                          child: Icon(Icons.emoji_events_rounded, size: 64, color: Colors.white),
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-
-                      const Text('قهرمان مسابقه پنجگانه!', style: AppTypography.displayLarge, textAlign: TextAlign.center),
-                      const SizedBox(height: 8),
+                      const Center(child: TrophyArt(size: 200)),
+                      const SizedBox(height: 10),
                       Text(
-                        'تبریک به تیم برنده جام طلایی جمعمون جمعه',
-                        style: AppTypography.bodyLarge.copyWith(color: AppColors.accent),
+                        teams.isEmpty
+                            ? 'پایان مسابقه'
+                            : tied
+                            ? 'مسابقه مساوی شد!'
+                            : 'قهرمان دورهمی: ${result?.winnerName}',
+                        style: AppTypography.displayMedium,
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 8),
+                      const Text(
+                        'جام پنجگانه به پایان رسید',
+                        style: AppTypography.bodyLarge,
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 28),
-
-                      // Winner Card
-                      if (winner != null)
-                        PartyCard(
-                          borderColor: AppColors.accent,
-                          gradient: AppColors.goldGradient,
-                          child: Column(
-                            children: [
-                              Text(
-                                '🥇 رتبه اول و قهرمان کل',
-                                style: TextStyle(
-                                  color: Colors.black87.withValues(alpha: 0.8),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14,
-                                ),
-                              ),
-                              const SizedBox(height: 6),
-                              Text(
-                                winner.name,
-                                style: const TextStyle(
-                                  fontSize: 32,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.black87,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                'مجموع امتیاز: ${winner.score}',
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w800,
-                                  color: Colors.black87,
-                                ),
-                              ),
-                            ],
+                      for (var i = 0; i < teams.length; i++)
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.all(18),
+                          decoration: BoxDecoration(
+                            color:
+                                result?.winners.any(
+                                      (winner) => winner.id == teams[i].id,
+                                    ) ==
+                                    true
+                                ? const Color(0xFF58402E)
+                                : AppColors.surface,
+                            borderRadius: BorderRadius.circular(22),
+                            border: Border.all(
+                              color:
+                                  result?.winners.any(
+                                        (winner) => winner.id == teams[i].id,
+                                      ) ==
+                                      true
+                                  ? AppColors.accent
+                                  : AppColors.surfaceBorder,
+                            ),
                           ),
-                        ),
-                      const SizedBox(height: 12),
-
-                      // Runner-Up Card
-                      if (runnerUp != null)
-                        PartyCard(
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text('🥈 رتبه دوم:', style: AppTypography.bodySmall),
-                                  Text(runnerUp.name, style: AppTypography.headlineMedium),
-                                ],
+                              CircleAvatar(
+                                backgroundColor: Color(teams[i].colorValue),
+                                child: Text(
+                                  '${i + 1}',
+                                  style: const TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: 14),
+                              Expanded(
+                                child: Text(
+                                  teams[i].name,
+                                  style: AppTypography.headlineMedium,
+                                ),
                               ),
                               Text(
-                                '${runnerUp.score} امتیاز',
-                                style: AppTypography.headlineMedium.copyWith(color: AppColors.textParagraph),
+                                '${teams[i].score} امتیاز',
+                                style: AppTypography.titleLarge.copyWith(
+                                  color: AppColors.accent,
+                                ),
                               ),
                             ],
                           ),
                         ),
-
-                      const Spacer(),
-
-                      // Action Buttons
+                      const SizedBox(height: 24),
                       PartyButton(
                         label: 'شروع یک جام دیگر',
                         icon: Icons.refresh_rounded,
-                        color: AppColors.primary,
                         onPressed: () {
                           context.read<TournamentCubit>().resetTournament();
-                          Navigator.of(context).pushReplacementNamed('/tournament');
+                          Navigator.pushReplacementNamed(
+                            context,
+                            '/tournament',
+                          );
                         },
                       ),
-                      const SizedBox(height: 10),
-                      PartyButton(
-                        label: 'بازگشت به صفحه اصلی',
-                        color: AppColors.surfaceLight,
-                        textColor: AppColors.textHeadline,
-                        shadowColor: AppColors.surfaceBorder,
-                        onPressed: () => Navigator.of(context).pushNamedAndRemoveUntil('/home', (route) => false),
-                      ),
                       const SizedBox(height: 12),
+                      PartyButton(
+                        label: 'بازگشت به خانه',
+                        color: AppColors.surfaceLight,
+                        onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                          context,
+                          '/home',
+                          (_) => false,
+                        ),
+                      ),
                     ],
                   ),
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
 }

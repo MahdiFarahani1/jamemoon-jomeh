@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'app/app.dart';
 import 'app/di/service_locator.dart';
 
@@ -17,7 +18,7 @@ void main() async {
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: Color(0xFF0F0E17),
+      systemNavigationBarColor: Color(0xFF111522),
       systemNavigationBarIconBrightness: Brightness.light,
     ),
   );

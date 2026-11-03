@@ -19,7 +19,12 @@ class FiveSecondsQuestion extends Equatable {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'question': question,
+    'category': category,
+  };
+
   @override
   List<Object?> get props => [id, question, category];
 }
-

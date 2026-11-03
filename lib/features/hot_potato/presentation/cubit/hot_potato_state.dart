@@ -1,7 +1,10 @@
 import 'package:equatable/equatable.dart';
+
 import '../../data/hot_potato_topic_model.dart';
 
 class HotPotatoState extends Equatable {
+  final bool isGameOver;
+  final bool isReadyPhase;
   final HotPotatoTopic? currentTopic;
   final int elapsedSeconds;
   final int hiddenBombDuration;
@@ -15,6 +18,8 @@ class HotPotatoState extends Equatable {
   final bool isQuickMode;
 
   const HotPotatoState({
+    this.isGameOver = false,
+    this.isReadyPhase = true,
     this.currentTopic,
     this.elapsedSeconds = 0,
     this.hiddenBombDuration = 30,
@@ -29,6 +34,9 @@ class HotPotatoState extends Equatable {
   });
 
   HotPotatoState copyWith({
+    bool? isGameOver,
+    bool? isReadyPhase,
+    bool clearLoser = false,
     HotPotatoTopic? currentTopic,
     int? elapsedSeconds,
     int? hiddenBombDuration,
@@ -42,6 +50,8 @@ class HotPotatoState extends Equatable {
     bool? isQuickMode,
   }) {
     return HotPotatoState(
+      isGameOver: isGameOver ?? this.isGameOver,
+      isReadyPhase: isReadyPhase ?? this.isReadyPhase,
       currentTopic: currentTopic ?? this.currentTopic,
       elapsedSeconds: elapsedSeconds ?? this.elapsedSeconds,
       hiddenBombDuration: hiddenBombDuration ?? this.hiddenBombDuration,
@@ -49,7 +59,7 @@ class HotPotatoState extends Equatable {
       isTicking: isTicking ?? this.isTicking,
       turnPassCount: turnPassCount ?? this.turnPassCount,
       holdingTeamOrPlayer: holdingTeamOrPlayer ?? this.holdingTeamOrPlayer,
-      loserName: loserName ?? this.loserName,
+      loserName: clearLoser ? null : (loserName ?? this.loserName),
       currentRound: currentRound ?? this.currentRound,
       totalRounds: totalRounds ?? this.totalRounds,
       isQuickMode: isQuickMode ?? this.isQuickMode,
@@ -62,17 +72,18 @@ class HotPotatoState extends Equatable {
 
   @override
   List<Object?> get props => [
-        currentTopic,
-        elapsedSeconds,
-        hiddenBombDuration,
-        isExploded,
-        isTicking,
-        turnPassCount,
-        holdingTeamOrPlayer,
-        loserName,
-        currentRound,
-        totalRounds,
-        isQuickMode,
-      ];
+    isGameOver,
+    isReadyPhase,
+    currentTopic,
+    elapsedSeconds,
+    hiddenBombDuration,
+    isExploded,
+    isTicking,
+    turnPassCount,
+    holdingTeamOrPlayer,
+    loserName,
+    currentRound,
+    totalRounds,
+    isQuickMode,
+  ];
 }
-

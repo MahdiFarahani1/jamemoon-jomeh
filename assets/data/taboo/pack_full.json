@@ -1,0 +1,262 @@
+[
+  {
+    "id": "taboo_full_1",
+    "word": "هواپیما",
+    "forbiddenWords": [
+      "پرواز",
+      "آسمان",
+      "فرودگاه",
+      "خلبان",
+      "بال"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_2",
+    "word": "یخچال",
+    "forbiddenWords": [
+      "سرد",
+      "آشپزخانه",
+      "فریزر",
+      "برفک",
+      "غذا"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_3",
+    "word": "دانشگاه",
+    "forbiddenWords": [
+      "دانشجو",
+      "استاد",
+      "درس",
+      "مدرک",
+      "کنکور"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_4",
+    "word": "فوتبال",
+    "forbiddenWords": [
+      "توپ",
+      "گل",
+      "داور",
+      "زمین",
+      "ورزش"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_5",
+    "word": "سینما",
+    "forbiddenWords": [
+      "فیلم",
+      "بلیط",
+      "پرده",
+      "بازیگر",
+      "تماشا"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_6",
+    "word": "رایانه",
+    "forbiddenWords": [
+      "کیبورد",
+      "ماوس",
+      "مانیتور",
+      "اینترنت",
+      "ویندوز"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_7",
+    "word": "خودکار",
+    "forbiddenWords": [
+      "نوشتن",
+      "جوهر",
+      "کاغذ",
+      "قلم",
+      "دفتر"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_8",
+    "word": "بیمارستان",
+    "forbiddenWords": [
+      "دکتر",
+      "پرستار",
+      "مریض",
+      "دارو",
+      "تخت"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_9",
+    "word": "کتابخانه",
+    "forbiddenWords": [
+      "کتاب",
+      "مطالعه",
+      "سکوت",
+      "قفسه",
+      "امانت"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_10",
+    "word": "رستوران",
+    "forbiddenWords": [
+      "غذا",
+      "منو",
+      "گارسون",
+      "میز",
+      "سفارش"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_11",
+    "word": "عینک",
+    "forbiddenWords": [
+      "چشم",
+      "دیدن",
+      "شیشه",
+      "فریم",
+      "نمره"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_12",
+    "word": "ساعت",
+    "forbiddenWords": [
+      "زمان",
+      "دقیقه",
+      "عقربه",
+      "ثانیه",
+      "مچ"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_13",
+    "word": "بادکنک",
+    "forbiddenWords": [
+      "تولد",
+      "هوا",
+      "ترکیدن",
+      "رنگی",
+      "جشن"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_14",
+    "word": "چتر",
+    "forbiddenWords": [
+      "باران",
+      "خیس",
+      "آفتاب",
+      "باز",
+      "دسته"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_15",
+    "word": "مسواک",
+    "forbiddenWords": [
+      "دندان",
+      "خمیر",
+      "شستن",
+      "صبح",
+      "بهداشت"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_16",
+    "word": "تلویزیون",
+    "forbiddenWords": [
+      "کنترل",
+      "شبکه",
+      "صفحه",
+      "تماشا",
+      "برنامه"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_17",
+    "word": "کوهنوردی",
+    "forbiddenWords": [
+      "قله",
+      "ارتفاع",
+      "صخره",
+      "کوله",
+      "طبیعت"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_full_18",
+    "word": "دوربین",
+    "forbiddenWords": [
+      "عکس",
+      "فیلم",
+      "لنز",
+      "فلاش",
+      "عکاس"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_full_19",
+    "word": "اتوبوس",
+    "forbiddenWords": [
+      "ایستگاه",
+      "مسافر",
+      "بلیت",
+      "راننده",
+      "بزرگ"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_full_20",
+    "word": "استخر",
+    "forbiddenWords": [
+      "شنا",
+      "آب",
+      "مایو",
+      "شیرجه",
+      "ورزش"
+    ],
+    "category": "پیشرفته",
+    "difficulty": 2
+  }
+]

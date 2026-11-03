@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+
 import '../../data/drawing_word_model.dart';
 
 class DrawnStroke extends Equatable {
@@ -34,6 +35,7 @@ class DrawnStroke extends Equatable {
 }
 
 class DrawingState extends Equatable {
+  final bool isGameOver;
   final DrawingWord? currentWord;
   final List<DrawnStroke> strokes;
   final Color activeColor;
@@ -53,6 +55,7 @@ class DrawingState extends Equatable {
   final bool isQuickMode;
 
   const DrawingState({
+    this.isGameOver = false,
     this.currentWord,
     this.strokes = const [],
     this.activeColor = Colors.white,
@@ -73,6 +76,7 @@ class DrawingState extends Equatable {
   });
 
   DrawingState copyWith({
+    bool? isGameOver,
     DrawingWord? currentWord,
     List<DrawnStroke>? strokes,
     Color? activeColor,
@@ -92,6 +96,7 @@ class DrawingState extends Equatable {
     bool? isQuickMode,
   }) {
     return DrawingState(
+      isGameOver: isGameOver ?? this.isGameOver,
       currentWord: currentWord ?? this.currentWord,
       strokes: strokes ?? this.strokes,
       activeColor: activeColor ?? this.activeColor,
@@ -114,23 +119,23 @@ class DrawingState extends Equatable {
 
   @override
   List<Object?> get props => [
-        currentWord,
-        strokes,
-        activeColor,
-        strokeWidth,
-        isEraser,
-        remainingSeconds,
-        totalSeconds,
-        isTimerRunning,
-        isPassPhonePhase,
-        isWordRevealed,
-        isRoundOver,
-        activeTeamName,
-        activeTeamIndex,
-        currentRound,
-        totalRounds,
-        roundScore,
-        isQuickMode,
-      ];
+    isGameOver,
+    currentWord,
+    strokes,
+    activeColor,
+    strokeWidth,
+    isEraser,
+    remainingSeconds,
+    totalSeconds,
+    isTimerRunning,
+    isPassPhonePhase,
+    isWordRevealed,
+    isRoundOver,
+    activeTeamName,
+    activeTeamIndex,
+    currentRound,
+    totalRounds,
+    roundScore,
+    isQuickMode,
+  ];
 }
-

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'app_colors.dart';
 
 // Typography rules for Persian RTL party game UI
 class AppTypography {
-  static const String? fontFamily = null; // System font with Persian fallback (Vazir/IranSans/Roboto)
+  static const String fontFamily = 'Vazirmatn';
 
   static const TextStyle displayLarge = TextStyle(
     fontFamily: fontFamily,
@@ -94,4 +95,3 @@ class AppTypography {
     height: 1.1,
   );
 }
-

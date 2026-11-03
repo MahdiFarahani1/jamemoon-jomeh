@@ -19,13 +19,22 @@ class TabooCard extends Equatable {
     return TabooCard(
       id: json['id'] as String,
       word: json['word'] as String,
-      forbiddenWords: (json['forbiddenWords'] as List).map((e) => e.toString()).toList(),
+      forbiddenWords: (json['forbiddenWords'] as List)
+          .map((e) => e.toString())
+          .toList(),
       category: json['category'] as String,
       difficulty: (json['difficulty'] as int?) ?? 1,
     );
   }
 
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'word': word,
+    'forbiddenWords': forbiddenWords,
+    'category': category,
+    'difficulty': difficulty,
+  };
+
   @override
   List<Object?> get props => [id, word, forbiddenWords, category, difficulty];
 }
-

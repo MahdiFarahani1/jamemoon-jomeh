@@ -19,7 +19,12 @@ class HotPotatoTopic extends Equatable {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'topic': topic,
+    'category': category,
+  };
+
   @override
   List<Object?> get props => [id, topic, category];
 }
-

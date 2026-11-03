@@ -1,7 +1,9 @@
 import 'package:equatable/equatable.dart';
+
 import '../../data/taboo_card_model.dart';
 
 class TabooState extends Equatable {
+  final bool isGameOver;
   final TabooCard? currentCard;
   final int remainingSeconds;
   final int totalSeconds;
@@ -19,6 +21,7 @@ class TabooState extends Equatable {
   final bool isQuickMode;
 
   const TabooState({
+    this.isGameOver = false,
     this.currentCard,
     this.remainingSeconds = 60,
     this.totalSeconds = 60,
@@ -37,6 +40,7 @@ class TabooState extends Equatable {
   });
 
   TabooState copyWith({
+    bool? isGameOver,
     TabooCard? currentCard,
     int? remainingSeconds,
     int? totalSeconds,
@@ -54,6 +58,7 @@ class TabooState extends Equatable {
     bool? isQuickMode,
   }) {
     return TabooState(
+      isGameOver: isGameOver ?? this.isGameOver,
       currentCard: currentCard ?? this.currentCard,
       remainingSeconds: remainingSeconds ?? this.remainingSeconds,
       totalSeconds: totalSeconds ?? this.totalSeconds,
@@ -74,21 +79,21 @@ class TabooState extends Equatable {
 
   @override
   List<Object?> get props => [
-        currentCard,
-        remainingSeconds,
-        totalSeconds,
-        correctCount,
-        foulCount,
-        skipCount,
-        roundScore,
-        isTimerRunning,
-        isRoundOver,
-        isPassPhonePhase,
-        activeTeamName,
-        activeTeamIndex,
-        currentRound,
-        totalRounds,
-        isQuickMode,
-      ];
+    isGameOver,
+    currentCard,
+    remainingSeconds,
+    totalSeconds,
+    correctCount,
+    foulCount,
+    skipCount,
+    roundScore,
+    isTimerRunning,
+    isRoundOver,
+    isPassPhonePhase,
+    activeTeamName,
+    activeTeamIndex,
+    currentRound,
+    totalRounds,
+    isQuickMode,
+  ];
 }
-

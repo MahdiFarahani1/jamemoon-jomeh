@@ -1,9 +1,3 @@
-enum GamePlayMode {
-  quick,      // Quick entry, instant play
-  team,       // Full team competition with rounds & scoreboard
-  tournament, // 5-game championship with all 5 games
-}
-
 class GameInfo {
   final String key;
   final String titleFa;
@@ -19,7 +13,7 @@ class GameInfo {
     required this.defaultRoundSeconds,
   });
 
-  static const List<GameInfo> allGames = [
+  static const List<GameInfo> tournamentGames = [
     GameInfo(
       key: 'taboo',
       titleFa: 'حرف نزن، بفهمون!',
@@ -56,5 +50,13 @@ class GameInfo {
       defaultRoundSeconds: 60,
     ),
   ];
-}
 
+  static const decoder = GameInfo(
+    key: 'decoder',
+    titleFa: 'رمزگشا',
+    subtitleFa: 'یک سرنخ، چند کشف؛ رقابت دو تیم',
+    iconName: 'key',
+    defaultRoundSeconds: 0,
+  );
+  static const List<GameInfo> allGames = [...tournamentGames, decoder];
+}

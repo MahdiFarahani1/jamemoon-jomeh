@@ -1,223 +1,172 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
-import '../../../../app/di/service_locator.dart';
-import '../../../../core/services/audio_service.dart';
-import '../../../../core/services/haptics_service.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
+import '../../cubit/extras_cubit.dart';
 
-// Lucky Wheel with Special Modifiers (Zero setState)
 class LuckyWheelPage extends StatelessWidget {
   const LuckyWheelPage({super.key});
-
-  static const List<String> segments = [
-    'امتیاز ۲ برابر! ⭐',
-    'زمان نصف شد! ⏱️',
-    'تعویض اجراکننده 🔄',
-    'سکوت کامل جمع 🤫',
-    'چالش با دست چپ ✋',
-    'شادی و هورا! 🥳',
-    'کسر ۱ امتیاز! 💥',
-    'شانس مجدد 🎲',
+  static const segments = [
+    'امتیاز دو برابر',
+    'زمان نصف شد',
+    'تعویض اجراکننده',
+    'سکوت کامل جمع',
+    'چالش با دست چپ',
+    'شادی و هورا',
+    'کسر یک امتیاز',
+    'شانس مجدد',
   ];
-
+  static const colors = [
+    Color(0xFFFF786B),
+    Color(0xFFEAAF62),
+    Color(0xFFD6C277),
+    Color(0xFF79C7A3),
+    Color(0xFF68BDCC),
+    Color(0xFF818FDC),
+    Color(0xFFB18ED7),
+    Color(0xFFE293AF),
+  ];
   @override
-  Widget build(BuildContext context) {
-    final rotationNotifier = ValueNotifier<double>(0.0);
-    final selectedResultNotifier = ValueNotifier<String?>(null);
-    final isSpinningNotifier = ValueNotifier<bool>(false);
-    final random = Random();
-
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('گردونه شانس و چالش‌ها'),
-      ),
+  Widget build(BuildContext context) => BlocProvider(
+    create: (_) => WheelCubit(),
+    child: Scaffold(
+      appBar: AppBar(title: const Text('گردونه شانس')),
       body: AnimatedPartyBackground(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          child: Column(
-            children: [
-              const Text('گردونه رو بچرخون تا قانون ویژه این دور مشخص بشه!', style: AppTypography.bodyMedium, textAlign: TextAlign.center),
-              const SizedBox(height: 24),
-
-              // Result Display
-              ValueListenableBuilder<String?>(
-                valueListenable: selectedResultNotifier,
-                builder: (context, result, _) {
-                  if (result == null) {
-                    return Container(
-                      height: 64,
-                      alignment: Alignment.center,
-                      child: Text('دکمه چرخاندن را بزنید!', style: AppTypography.titleLarge.copyWith(color: AppColors.accent)),
-                    );
-                  }
-                  return Container(
-                    height: 64,
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      borderRadius: BorderRadius.circular(18),
-                      border: Border.all(color: AppColors.accent, width: 2),
+        child: SafeArea(
+          top: false,
+          child: BlocBuilder<WheelCubit, WheelState>(
+            builder: (context, state) => LayoutBuilder(
+              builder: (context, constraints) {
+                final size = (constraints.maxWidth - 80).clamp(160.0, 320.0);
+                final reducedMotion = MediaQuery.disableAnimationsOf(context);
+                return ListView(
+                  padding: const EdgeInsets.all(24),
+                  children: [
+                    const Text(
+                      'یه چالش تازه!',
+                      style: AppTypography.displayMedium,
                     ),
-                    child: Center(
+                    const SizedBox(height: 6),
+                    const Text(
+                      'گردونه رو بچرخون و قانون این دور رو ببین.',
+                      style: AppTypography.bodyLarge,
+                    ),
+                    const SizedBox(height: 22),
+                    Center(
                       child: Text(
-                        result,
-                        style: AppTypography.headlineLarge.copyWith(color: AppColors.accent),
+                        state.selected == null
+                            ? 'آماده چرخوندنی؟'
+                            : segments[state.selected!],
+                        style: AppTypography.headlineLarge.copyWith(
+                          color: AppColors.accent,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
                     ),
-                  );
-                },
-              ),
-              const SizedBox(height: 20),
-
-              // Rotating Wheel
-              Expanded(
-                child: Center(
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      // Animated Rotating Wheel
-                      ValueListenableBuilder<double>(
-                        valueListenable: rotationNotifier,
-                        builder: (context, angle, _) {
-                          return TweenAnimationBuilder<double>(
-                            tween: Tween(begin: 0.0, end: angle),
-                            duration: const Duration(seconds: 3),
-                            curve: Curves.easeOutCubic,
-                            builder: (context, currentAngle, child) {
-                              return Transform.rotate(
-                                angle: currentAngle,
-                                child: Container(
-                                  width: 280,
-                                  height: 280,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    border: Border.all(color: AppColors.surfaceBorder, width: 6),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: AppColors.primary.withOpacity(0.35),
-                                        blurRadius: 28,
-                                      ),
-                                    ],
-                                  ),
-                                  child: CustomPaint(
-                                    painter: _WheelPainter(segments: segments),
-                                  ),
-                                ),
-                              );
-                            },
-                          );
-                        },
-                      ),
-                      // Center Pin
-                      Container(
-                        width: 46,
-                        height: 46,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: AppColors.surface,
-                          border: Border.all(color: AppColors.accent, width: 3),
+                    const SizedBox(height: 18),
+                    Center(
+                      child: SizedBox.square(
+                        dimension: size + 12,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            TweenAnimationBuilder<double>(
+                              tween: Tween(end: state.rotation),
+                              duration: reducedMotion
+                                  ? Duration.zero
+                                  : const Duration(seconds: 3),
+                              curve: Curves.easeOutCubic,
+                              builder: (_, angle, child) =>
+                                  Transform.rotate(angle: angle, child: child),
+                              child: CustomPaint(
+                                size: Size.square(size),
+                                painter: _WheelPainter(),
+                              ),
+                            ),
+                            const CircleAvatar(
+                              backgroundColor: AppColors.surface,
+                              radius: 23,
+                              child: Icon(
+                                Icons.star_rounded,
+                                color: AppColors.accent,
+                              ),
+                            ),
+                            const Positioned(
+                              top: 0,
+                              child: Icon(
+                                Icons.arrow_drop_down_rounded,
+                                size: 46,
+                                color: AppColors.textHeadline,
+                              ),
+                            ),
+                          ],
                         ),
-                        child: const Icon(Icons.star_rounded, color: AppColors.accent, size: 24),
                       ),
-                      // Top Indicator Arrow
-                      Positioned(
-                        top: 2,
-                        child: Container(
-                          width: 24,
-                          height: 28,
-                          decoration: const BoxDecoration(
-                            color: AppColors.error,
-                            shape: BoxShape.circle,
+                    ),
+                    const SizedBox(height: 24),
+                    PartyButton(
+                      label: state.busy ? 'در حال چرخش...' : 'بچرخون!',
+                      icon: Icons.refresh_rounded,
+                      onPressed: state.busy
+                          ? null
+                          : () => context.read<WheelCubit>().spin(
+                              segments.length,
+                              reducedMotion: reducedMotion,
+                            ),
+                    ),
+                    const SizedBox(height: 24),
+                    Wrap(
+                      spacing: 10,
+                      runSpacing: 8,
+                      children: [
+                        for (var i = 0; i < segments.length; i++)
+                          Chip(
+                            avatar: CircleAvatar(
+                              backgroundColor: colors[i],
+                              radius: 7,
+                            ),
+                            label: Text(segments[i]),
                           ),
-                          child: const Icon(Icons.arrow_drop_down, color: Colors.white, size: 24),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-
-              // Spin Button
-              ValueListenableBuilder<bool>(
-                valueListenable: isSpinningNotifier,
-                builder: (context, isSpinning, _) {
-                  return PartyButton(
-                    label: isSpinning ? 'در حال چرخش...' : 'بچرخون!',
-                    icon: Icons.refresh_rounded,
-                    color: AppColors.primary,
-                    onPressed: isSpinning
-                        ? null
-                        : () async {
-                            isSpinningNotifier.value = true;
-                            sl<HapticsService>().mediumBump();
-                            sl<AudioService>().playTick();
-
-                            // Pick random segment
-                            final selectedIndex = random.nextInt(segments.length);
-                            final spins = 5 + random.nextInt(4);
-                            final segmentAngle = (2 * pi) / segments.length;
-                            final targetAngle = rotationNotifier.value + (spins * 2 * pi) + (selectedIndex * segmentAngle);
-
-                            rotationNotifier.value = targetAngle;
-
-                            // Wait for wheel animation
-                            await Future.delayed(const Duration(seconds: 3));
-                            selectedResultNotifier.value = segments[selectedIndex];
-                            sl<AudioService>().playVictory();
-                            sl<HapticsService>().lightClick();
-                            isSpinningNotifier.value = false;
-                          },
-                  );
-                },
-              ),
-              const SizedBox(height: 12),
-            ],
+                      ],
+                    ),
+                  ],
+                );
+              },
+            ),
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
 }
 
 class _WheelPainter extends CustomPainter {
-  final List<String> segments;
-  _WheelPainter({required this.segments});
-
-  static const List<Color> colors = [
-    Color(0xFFFF5252),
-    Color(0xFFFF9800),
-    Color(0xFFFFEB3B),
-    Color(0xFF4CAF50),
-    Color(0xFF00BCD4),
-    Color(0xFF2196F3),
-    Color(0xFF9C27B0),
-    Color(0xFFE91E63),
-  ];
-
   @override
   void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final radius = size.width / 2;
-    final sweepAngle = (2 * pi) / segments.length;
-
-    for (int i = 0; i < segments.length; i++) {
-      final paint = Paint()
-        ..color = colors[i % colors.length]
-        ..style = PaintingStyle.fill;
-
-      final startAngle = i * sweepAngle;
+    final rect = Offset.zero & size;
+    final sweep = 2 * pi / LuckyWheelPage.segments.length;
+    for (var i = 0; i < LuckyWheelPage.segments.length; i++) {
       canvas.drawArc(
-        Rect.fromCircle(center: center, radius: radius),
-        startAngle,
-        sweepAngle,
+        rect,
+        -pi / 2 + i * sweep,
+        sweep,
         true,
-        paint,
+        Paint()..color = LuckyWheelPage.colors[i],
       );
     }
+    canvas.drawCircle(
+      size.center(Offset.zero),
+      size.width / 2,
+      Paint()
+        ..color = AppColors.surfaceBorder
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 5,
+    );
   }
 
   @override

@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 // Party Game Player Model
 class Player extends Equatable {
+  static const _unchanged = Object();
   final String id;
   final String name;
   final String? teamId;
@@ -17,14 +18,16 @@ class Player extends Equatable {
   Player copyWith({
     String? id,
     String? name,
-    String? teamId,
-    String? awardedTitle,
+    Object? teamId = _unchanged,
+    Object? awardedTitle = _unchanged,
   }) {
     return Player(
       id: id ?? this.id,
       name: name ?? this.name,
-      teamId: teamId ?? this.teamId,
-      awardedTitle: awardedTitle ?? this.awardedTitle,
+      teamId: identical(teamId, _unchanged) ? this.teamId : teamId as String?,
+      awardedTitle: identical(awardedTitle, _unchanged)
+          ? this.awardedTitle
+          : awardedTitle as String?,
     );
   }
 
@@ -49,4 +52,3 @@ class Player extends Equatable {
   @override
   List<Object?> get props => [id, name, teamId, awardedTitle];
 }
-

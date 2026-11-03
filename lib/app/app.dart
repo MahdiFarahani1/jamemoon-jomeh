@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'di/service_locator.dart';
 import 'router.dart';
 import 'theme/app_theme.dart';
@@ -22,7 +23,9 @@ class JamemoonJomehApp extends StatelessWidget {
         BlocProvider<TeamsCubit>(
           create: (_) {
             if (!sl.isRegistered<TeamsCubit>()) {
-              sl.registerLazySingleton<TeamsCubit>(() => TeamsCubit(sl<StorageService>()));
+              sl.registerLazySingleton<TeamsCubit>(
+                () => TeamsCubit(sl<StorageService>()),
+              );
             }
             return sl<TeamsCubit>();
           },
@@ -45,10 +48,7 @@ class JamemoonJomehApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
         locale: const Locale('fa', 'IR'),
-        supportedLocales: const [
-          Locale('fa', 'IR'),
-          Locale('en', 'US'),
-        ],
+        supportedLocales: const [Locale('fa', 'IR'), Locale('en', 'US')],
         localizationsDelegates: const [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
@@ -60,4 +60,3 @@ class JamemoonJomehApp extends StatelessWidget {
     );
   }
 }
-

@@ -28,9 +28,16 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/art/
     - assets/data/taboo/
     - assets/data/hot_potato/
     - assets/data/charades/
     - assets/data/five_seconds/
     - assets/data/drawing/
+    - assets/data/decoder/
     - assets/sounds/
+    - assets/fonts/OFL.txt
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn.ttf

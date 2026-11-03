@@ -14,7 +14,9 @@ class TurnManager {
     this.totalRounds = 3,
   });
 
-  Team get currentTeam => teams.isNotEmpty ? teams[currentTeamIndex] : const Team(id: 'default', name: 'تیم ۱', colorValue: 0xFFFF5252);
+  Team get currentTeam => teams.isNotEmpty
+      ? teams[currentTeamIndex]
+      : const Team(id: 'default', name: 'تیم ۱', colorValue: 0xFFFF5252);
 
   bool get isGameOver => currentRound > totalRounds;
 
@@ -30,10 +32,23 @@ class TurnManager {
     );
   }
 
+  /// Rotate the holder without consuming a round. Used by the bomb game.
+  TurnManager nextTeam() {
+    if (teams.isEmpty) return this;
+    return TurnManager(
+      teams: teams,
+      currentTeamIndex: (currentTeamIndex + 1) % teams.length,
+      currentRound: currentRound,
+      totalRounds: totalRounds,
+    );
+  }
+
   TurnManager updateTeamScore(String teamId, int deltaScore) {
     final updatedList = teams.map((team) {
       if (team.id == teamId) {
-        return team.copyWith(score: (team.score + deltaScore).clamp(0, 9999));
+        return team.copyWith(
+          score: (team.score + deltaScore).clamp(-9999, 9999),
+        );
       }
       return team;
     }).toList();
@@ -52,4 +67,3 @@ class TurnManager {
     return list;
   }
 }
-

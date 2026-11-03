@@ -1,7 +1,9 @@
 import 'package:equatable/equatable.dart';
+
 import '../../data/five_seconds_model.dart';
 
 class FiveSecondsState extends Equatable {
+  final bool isGameOver;
   final FiveSecondsQuestion? currentQuestion;
   final int remainingSeconds;
   final int totalSeconds;
@@ -18,6 +20,7 @@ class FiveSecondsState extends Equatable {
   final bool isQuickMode;
 
   const FiveSecondsState({
+    this.isGameOver = false,
     this.currentQuestion,
     this.remainingSeconds = 5,
     this.totalSeconds = 5,
@@ -35,6 +38,7 @@ class FiveSecondsState extends Equatable {
   });
 
   FiveSecondsState copyWith({
+    bool? isGameOver,
     FiveSecondsQuestion? currentQuestion,
     int? remainingSeconds,
     int? totalSeconds,
@@ -51,6 +55,7 @@ class FiveSecondsState extends Equatable {
     bool? isQuickMode,
   }) {
     return FiveSecondsState(
+      isGameOver: isGameOver ?? this.isGameOver,
       currentQuestion: currentQuestion ?? this.currentQuestion,
       remainingSeconds: remainingSeconds ?? this.remainingSeconds,
       totalSeconds: totalSeconds ?? this.totalSeconds,
@@ -70,20 +75,20 @@ class FiveSecondsState extends Equatable {
 
   @override
   List<Object?> get props => [
-        currentQuestion,
-        remainingSeconds,
-        totalSeconds,
-        isTimerRunning,
-        isCountdownFinished,
-        isPassPhonePhase,
-        roundScore,
-        successCount,
-        failCount,
-        activeTeamName,
-        activeTeamIndex,
-        currentRound,
-        totalRounds,
-        isQuickMode,
-      ];
+    isGameOver,
+    currentQuestion,
+    remainingSeconds,
+    totalSeconds,
+    isTimerRunning,
+    isCountdownFinished,
+    isPassPhonePhase,
+    roundScore,
+    successCount,
+    failCount,
+    activeTeamName,
+    activeTeamIndex,
+    currentRound,
+    totalRounds,
+    isQuickMode,
+  ];
 }
-

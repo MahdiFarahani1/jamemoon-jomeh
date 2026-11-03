@@ -1,200 +1,172 @@
 import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-// Local storage management via SharedPreferences with memory fallback
+/// Memory is authoritative during this process; ordered writes prevent an
+/// older snapshot from overwriting a newer one. Existing storage keys survive.
 class StorageService {
   final SharedPreferences? _prefs;
-  final Map<String, dynamic> _memoryCache = {};
-
+  final Map<String, Object?> _cache = {};
+  Future<void> _writes = Future.value();
+  bool _writeFailed = false;
   StorageService([this._prefs]);
 
-  static const String _keySoundEnabled = 'sound_enabled';
-  static const String _keyVibrationEnabled = 'vibration_enabled';
-  static const String _keyPurchasedPacks = 'purchased_packs';
-  static const String _keySavedTeams = 'saved_teams';
-  static const String _keySavedPlayers = 'saved_players';
-  static const String _keyActiveTournament = 'active_tournament';
-  static const String _keyFirstLaunch = 'first_launch';
-  static const String _keyCustomCards = 'custom_cards';
+  bool get isPersistent => _prefs != null && !_writeFailed;
+  static const seasonOnePackIds = {
+    'pack_taboo_full',
+    'pack_bomb_full',
+    'pack_charades_full',
+    'pack_five_full',
+    'pack_drawing_full',
+  };
 
-  // Sound settings
-  bool get isSoundEnabled {
+  Object? _read(String key) {
+    if (_cache.containsKey(key)) return _cache[key];
     try {
-      return _prefs?.getBool(_keySoundEnabled) ?? (_memoryCache[_keySoundEnabled] as bool? ?? true);
+      return _cache[key] = _prefs?.get(key);
     } catch (_) {
-      return _memoryCache[_keySoundEnabled] as bool? ?? true;
+      _writeFailed = true;
+      return null;
     }
   }
 
-  Future<void> setSoundEnabled(bool value) async {
-    _memoryCache[_keySoundEnabled] = value;
-    try {
-      await _prefs?.setBool(_keySoundEnabled, value);
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
+  Future<void> _write(String key, Object? value) {
+    _cache[key] = value;
+    _writes = _writes.then((_) async {
+      if (_prefs == null) return;
+      try {
+        final bool saved;
+        if (value == null) {
+          saved = await _prefs.remove(key);
+        } else if (value is bool) {
+          saved = await _prefs.setBool(key, value);
+        } else if (value is List<String>) {
+          saved = await _prefs.setStringList(key, value);
+        } else {
+          saved = await _prefs.setString(key, value as String);
+        }
+        if (!saved) _writeFailed = true;
+      } catch (error) {
+        _writeFailed = true;
+        debugPrint('Local storage unavailable: $error');
+      }
+    });
+    return _writes;
   }
 
-  // Vibration settings
-  bool get isVibrationEnabled {
-    try {
-      return _prefs?.getBool(_keyVibrationEnabled) ?? (_memoryCache[_keyVibrationEnabled] as bool? ?? true);
-    } catch (_) {
-      return _memoryCache[_keyVibrationEnabled] as bool? ?? true;
-    }
-  }
+  bool get isSoundEnabled =>
+      _read('sound_enabled') is bool ? _read('sound_enabled') as bool : true;
+  bool get isVibrationEnabled => _read('vibration_enabled') is bool
+      ? _read('vibration_enabled') as bool
+      : true;
+  Future<void> setSoundEnabled(bool value) => _write('sound_enabled', value);
+  Future<void> setVibrationEnabled(bool value) =>
+      _write('vibration_enabled', value);
 
-  Future<void> setVibrationEnabled(bool value) async {
-    _memoryCache[_keyVibrationEnabled] = value;
-    try {
-      await _prefs?.setBool(_keyVibrationEnabled, value);
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
-  }
-
-  // Purchased packs (IDs of purchased items)
   List<String> get purchasedPacks {
-    try {
-      return _prefs?.getStringList(_keyPurchasedPacks) ??
-          List<String>.from(_memoryCache[_keyPurchasedPacks] ?? []);
-    } catch (_) {
-      return List<String>.from(_memoryCache[_keyPurchasedPacks] ?? []);
-    }
+    final value = _read('purchased_packs');
+    return value is List
+        ? List<String>.unmodifiable(value.whereType<String>())
+        : const [];
   }
 
-  Future<void> addPurchasedPack(String packId) async {
-    final list = purchasedPacks.toSet();
-    list.add(packId);
-    _memoryCache[_keyPurchasedPacks] = list.toList();
-    try {
-      await _prefs?.setStringList(_keyPurchasedPacks, list.toList());
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
-  }
+  Future<void> addPurchasedPack(String id) =>
+      _write('purchased_packs', {...purchasedPacks, id}.toList());
+  bool isPackPurchased(String id) =>
+      purchasedPacks.contains(id) ||
+      (seasonOnePackIds.contains(id) &&
+          purchasedPacks.contains('season_1_bundle'));
 
-  bool isPackPurchased(String packId) {
-    if (purchasedPacks.contains('season_1_bundle')) return true;
-    return purchasedPacks.contains(packId);
-  }
-
-  // Saved teams
-  List<Map<String, dynamic>> getSavedTeams() {
+  List<Map<String, dynamic>> _readList(String key) {
     try {
-      final raw = _prefs?.getString(_keySavedTeams) ?? _memoryCache[_keySavedTeams];
-      if (raw == null || raw.toString().isEmpty) return [];
-      final decoded = jsonDecode(raw.toString()) as List;
-      return decoded.map((e) => Map<String, dynamic>.from(e)).toList();
+      final raw = _read(key);
+      if (raw is! String) return [];
+      final data = jsonDecode(raw);
+      if (data is! List) return [];
+      return data
+          .whereType<Map>()
+          .map((e) => Map<String, dynamic>.from(e))
+          .toList();
     } catch (_) {
       return [];
     }
   }
 
-  Future<void> saveTeams(List<Map<String, dynamic>> teams) async {
-    final encoded = jsonEncode(teams);
-    _memoryCache[_keySavedTeams] = encoded;
+  Map<String, dynamic>? _readMap(String key) {
     try {
-      await _prefs?.setString(_keySavedTeams, encoded);
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
-  }
-
-  // Saved players
-  List<Map<String, dynamic>> getSavedPlayers() {
-    try {
-      final raw = _prefs?.getString(_keySavedPlayers) ?? _memoryCache[_keySavedPlayers];
-      if (raw == null || raw.toString().isEmpty) return [];
-      final decoded = jsonDecode(raw.toString()) as List;
-      return decoded.map((e) => Map<String, dynamic>.from(e)).toList();
-    } catch (_) {
-      return [];
-    }
-  }
-
-  Future<void> savePlayers(List<Map<String, dynamic>> players) async {
-    final encoded = jsonEncode(players);
-    _memoryCache[_keySavedPlayers] = encoded;
-    try {
-      await _prefs?.setString(_keySavedPlayers, encoded);
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
-  }
-
-  // Active tournament state
-  Map<String, dynamic>? getActiveTournament() {
-    try {
-      final raw = _prefs?.getString(_keyActiveTournament) ?? _memoryCache[_keyActiveTournament];
-      if (raw == null || raw.toString().isEmpty) return null;
-      return Map<String, dynamic>.from(jsonDecode(raw.toString()));
+      final raw = _read(key);
+      if (raw is! String) return null;
+      final data = jsonDecode(raw);
+      return data is Map ? Map<String, dynamic>.from(data) : null;
     } catch (_) {
       return null;
     }
   }
 
-  Future<void> saveActiveTournament(Map<String, dynamic>? data) async {
-    if (data == null) {
-      _memoryCache.remove(_keyActiveTournament);
-      try {
-        await _prefs?.remove(_keyActiveTournament);
-      } catch (_) {}
-    } else {
-      final encoded = jsonEncode(data);
-      _memoryCache[_keyActiveTournament] = encoded;
-      try {
-        await _prefs?.setString(_keyActiveTournament, encoded);
-      } catch (e) {
-        debugPrint('StorageService write error: $e');
-      }
+  Future<void> _writeJson(String key, Object? data) =>
+      _write(key, data == null ? null : jsonEncode(data));
+
+  List<Map<String, dynamic>> getSavedTeams() => _readList('saved_teams');
+  List<Map<String, dynamic>> getSavedPlayers() => _readList('saved_players');
+  Future<void> saveTeams(List<Map<String, dynamic>> teams) =>
+      _writeJson('saved_teams', teams);
+  Future<void> savePlayers(List<Map<String, dynamic>> players) =>
+      _writeJson('saved_players', players);
+  Map<String, dynamic>? getActiveTournament() => _readMap('active_tournament');
+  Future<void> saveActiveTournament(Map<String, dynamic>? data) =>
+      _writeJson('active_tournament', data);
+  bool get isFirstLaunch => _read('first_launch') != false;
+  Future<void> setFirstLaunchCompleted() => _write('first_launch', false);
+  List<Map<String, dynamic>> getCustomCards() => _readList('custom_cards');
+  Future<void> saveCustomCards(List<Map<String, dynamic>> cards) =>
+      _writeJson('custom_cards', cards);
+
+  Map<String, dynamic>? getGameSession(String key) =>
+      _readMap('game_session_$key');
+  Future<void> saveGameSession(String key, Map<String, dynamic>? data) =>
+      _writeJson('game_session_$key', data);
+  Map<String, dynamic>? getActiveDecoder() => getGameSession('decoder');
+  Future<void> saveActiveDecoder(Map<String, dynamic>? data) =>
+      saveGameSession('decoder', data);
+
+  List<Map<String, dynamic>> getGameHistory() => _readList('game_history');
+  Future<void> recordGameResult({
+    required String sessionId,
+    required String gameKey,
+    required Map<String, int> scores,
+    String? winnerName,
+  }) {
+    final history = getGameHistory();
+    if (history.any((entry) => entry['sessionId'] == sessionId)) {
+      return Future.value();
     }
+    history.insert(0, {
+      'sessionId': sessionId,
+      'gameKey': gameKey,
+      'finishedAt': DateTime.now().toUtc().toIso8601String(),
+      'scores': scores,
+      'winnerName': winnerName,
+    });
+    return _writeJson('game_history', history.take(200).toList());
   }
 
-  // First launch check
-  bool get isFirstLaunch {
-    try {
-      return _prefs?.getBool(_keyFirstLaunch) ?? (_memoryCache[_keyFirstLaunch] as bool? ?? true);
-    } catch (_) {
-      return _memoryCache[_keyFirstLaunch] as bool? ?? true;
-    }
-  }
-
-  Future<void> setFirstLaunchCompleted() async {
-    _memoryCache[_keyFirstLaunch] = false;
-    try {
-      await _prefs?.setBool(_keyFirstLaunch, false);
-    } catch (_) {}
-  }
-
-  // Custom user cards
-  List<Map<String, dynamic>> getCustomCards() {
-    try {
-      final raw = _prefs?.getString(_keyCustomCards) ?? _memoryCache[_keyCustomCards];
-      if (raw == null || raw.toString().isEmpty) return [];
-      final decoded = jsonDecode(raw.toString()) as List;
-      return decoded.map((e) => Map<String, dynamic>.from(e)).toList();
-    } catch (_) {
-      return [];
-    }
-  }
-
-  Future<void> saveCustomCards(List<Map<String, dynamic>> cards) async {
-    final encoded = jsonEncode(cards);
-    _memoryCache[_keyCustomCards] = encoded;
-    try {
-      await _prefs?.setString(_keyCustomCards, encoded);
-    } catch (e) {
-      debugPrint('StorageService write error: $e');
-    }
-  }
-
-  // Reset all data
+  /// Reset game data, never lifetime purchase entitlements or unrelated keys.
   Future<void> clearAll() async {
-    _memoryCache.clear();
-    try {
-      await _prefs?.clear();
-    } catch (_) {}
+    final keys = <String>{
+      'sound_enabled',
+      'vibration_enabled',
+      'saved_teams',
+      'saved_players',
+      'active_tournament',
+      'first_launch',
+      'custom_cards',
+      'game_history',
+      ..._cache.keys.where((key) => key.startsWith('game_session_')),
+      ...?_prefs?.getKeys().where((key) => key.startsWith('game_session_')),
+    };
+    for (final key in keys) {
+      await _write(key, null);
+    }
   }
 }

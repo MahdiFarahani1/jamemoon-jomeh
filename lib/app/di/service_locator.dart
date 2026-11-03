@@ -1,6 +1,10 @@
+import '../../core/services/content_service.dart';
+import '../../features/decoder/data/decoder_repository.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import '../../core/services/storage_service.dart';
 import '../../core/services/audio_service.dart';
 import '../../core/services/haptics_service.dart';
@@ -22,19 +26,40 @@ Future<void> initDependencies() async {
     debugPrint('Could not initialize SharedPreferences: $e');
   }
 
-  sl.registerLazySingleton<StorageService>(() => StorageService(sharedPreferences));
+  sl.registerLazySingleton<StorageService>(
+    () => StorageService(sharedPreferences),
+  );
 
   // Audio & Haptics
-  sl.registerLazySingleton<AudioService>(() => AudioService(sl<StorageService>()));
-  sl.registerLazySingleton<HapticsService>(() => HapticsService(sl<StorageService>()));
+  sl.registerLazySingleton<AudioService>(
+    () => AudioService(sl<StorageService>()),
+  );
+  sl.registerLazySingleton<HapticsService>(
+    () => HapticsService(sl<StorageService>()),
+  );
 
-  // In-App Purchase Service
-  sl.registerLazySingleton<PurchaseService>(() => MockPurchaseService(sl<StorageService>()));
+  // Keep the default app registration production-safe until a real Cafe Bazaar
+  // billing adapter is configured. This exposes saved entitlements and the
+  // catalog, but can never fabricate a successful checkout.
+  sl.registerLazySingleton<PurchaseService>(
+    () => LocalPurchaseService(sl<StorageService>()),
+  );
 
   // Repositories for 5 Games
   sl.registerLazySingleton<TabooRepository>(() => TabooRepository());
   sl.registerLazySingleton<HotPotatoRepository>(() => HotPotatoRepository());
   sl.registerLazySingleton<CharadesRepository>(() => CharadesRepository());
-  sl.registerLazySingleton<FiveSecondsRepository>(() => FiveSecondsRepository());
+  sl.registerLazySingleton<FiveSecondsRepository>(
+    () => FiveSecondsRepository(),
+  );
+
+  // Content & Decoder
+  sl.registerLazySingleton<ContentService>(
+    () => ContentService(sl<StorageService>()),
+  );
+  sl.registerLazySingleton<DecoderRepository>(
+    () => DecoderRepository(storageService: sl<StorageService>()),
+  );
+
   sl.registerLazySingleton<DrawingRepository>(() => DrawingRepository());
 }

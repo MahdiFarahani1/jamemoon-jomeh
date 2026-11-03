@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/models/team_model.dart';
 import '../../../../core/models/player_model.dart';
 import '../../../../core/services/storage_service.dart';
@@ -7,6 +8,10 @@ import 'teams_state.dart';
 // Cubit for managing party game teams and players (No setState)
 class TeamsCubit extends Cubit<TeamsState> {
   final StorageService _storageService;
+  int _idSequence = 0;
+
+  String _newId(String prefix) =>
+      '${prefix}_${DateTime.now().microsecondsSinceEpoch}_${_idSequence++}';
 
   TeamsCubit(this._storageService) : super(const TeamsState()) {
     loadSavedTeams();
@@ -19,8 +24,18 @@ class TeamsCubit extends Cubit<TeamsState> {
     if (savedTeamsData.isEmpty) {
       // Default initial 2 teams for instant fun
       final defaultTeams = [
-        const Team(id: 'team_1', name: 'تیم پلنگ‌ها', colorValue: 0xFFFF5252, iconKey: 'flash'),
-        const Team(id: 'team_2', name: 'تیم عقاب‌ها', colorValue: 0xFF448AFF, iconKey: 'star'),
+        const Team(
+          id: 'team_1',
+          name: 'تیم پلنگ‌ها',
+          colorValue: 0xFFFF5252,
+          iconKey: 'flash',
+        ),
+        const Team(
+          id: 'team_2',
+          name: 'تیم عقاب‌ها',
+          colorValue: 0xFF448AFF,
+          iconKey: 'star',
+        ),
       ];
       emit(state.copyWith(teams: defaultTeams, players: const []));
       _persistTeams(defaultTeams);
@@ -31,13 +46,34 @@ class TeamsCubit extends Cubit<TeamsState> {
     }
   }
 
-  void addTeam({required String name, required int colorValue}) {
+  void addTeam({
+    required String name,
+    required int colorValue,
+    String iconKey = 'star',
+  }) {
     final newTeam = Team(
-      id: 'team_${DateTime.now().millisecondsSinceEpoch}',
+      id: _newId('team'),
       name: name.trim().isEmpty ? 'تیم ${state.teams.length + 1}' : name.trim(),
       colorValue: colorValue,
+      iconKey: iconKey,
     );
     final updatedTeams = List<Team>.from(state.teams)..add(newTeam);
+    emit(state.copyWith(teams: updatedTeams));
+    _persistTeams(updatedTeams);
+  }
+
+  void updateTeamAppearance(
+    String teamId, {
+    required int colorValue,
+    required String iconKey,
+  }) {
+    if (!state.teams.any((team) => team.id == teamId)) return;
+    final updatedTeams = [
+      for (final team in state.teams)
+        team.id == teamId
+            ? team.copyWith(colorValue: colorValue, iconKey: iconKey)
+            : team,
+    ];
     emit(state.copyWith(teams: updatedTeams));
     _persistTeams(updatedTeams);
   }
@@ -58,7 +94,7 @@ class TeamsCubit extends Cubit<TeamsState> {
   void addPlayer({required String name, String? teamId}) {
     if (name.trim().isEmpty) return;
     final newPlayer = Player(
-      id: 'player_${DateTime.now().millisecondsSinceEpoch}',
+      id: _newId('player'),
       name: name.trim(),
       teamId: teamId,
     );
@@ -68,7 +104,9 @@ class TeamsCubit extends Cubit<TeamsState> {
   }
 
   void removePlayer(String playerId) {
-    final updatedPlayers = state.players.where((p) => p.id != playerId).toList();
+    final updatedPlayers = state.players
+        .where((p) => p.id != playerId)
+        .toList();
     emit(state.copyWith(players: updatedPlayers));
     _persistPlayers(updatedPlayers);
   }
@@ -82,7 +120,7 @@ class TeamsCubit extends Cubit<TeamsState> {
   void updateTeamScore(String teamId, int deltaScore) {
     final updatedTeams = state.teams.map((t) {
       if (t.id == teamId) {
-        return t.copyWith(score: (t.score + deltaScore).clamp(0, 9999));
+        return t.copyWith(score: (t.score + deltaScore).clamp(-9999, 9999));
       }
       return t;
     }).toList();
@@ -98,4 +136,3 @@ class TeamsCubit extends Cubit<TeamsState> {
     _storageService.savePlayers(players.map((p) => p.toJson()).toList());
   }
 }
-

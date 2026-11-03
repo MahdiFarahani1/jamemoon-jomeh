@@ -1,5 +1,9 @@
 import 'dart:convert';
+
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/app/di/service_locator.dart';
+import 'package:flutter_application_1/core/services/content_service.dart';
+
 import 'hot_potato_topic_model.dart';
 
 class HotPotatoRepository {
@@ -9,10 +13,22 @@ class HotPotatoRepository {
   bool get isLoaded => _allTopics.isNotEmpty;
 
   Future<void> loadTopics() async {
-    if (_allTopics.isNotEmpty) return;
-    final jsonString = await rootBundle.loadString('assets/data/hot_potato/pack_free.json');
-    final List decoded = jsonDecode(jsonString);
-    _allTopics = decoded.map((e) => HotPotatoTopic.fromJson(e)).toList();
+    final List decoded;
+    if (sl.isRegistered<ContentService>()) {
+      decoded = await sl<ContentService>().load('hot_potato');
+    } else {
+      final jsonString = await rootBundle.loadString(
+        'assets/data/hot_potato/pack_free.json',
+      );
+      decoded = jsonDecode(jsonString) as List;
+    }
+    if (decoded.isEmpty) throw const FormatException('بسته بازی خالی است.');
+    final loaded = decoded
+        .map(
+          (e) => HotPotatoTopic.fromJson(Map<String, dynamic>.from(e as Map)),
+        )
+        .toList();
+    _allTopics = loaded;
     _resetDeck();
   }
 
@@ -26,9 +42,9 @@ class HotPotatoRepository {
     if (_deck.isEmpty) {
       _resetDeck();
     }
+    if (_deck.isEmpty) throw StateError('بسته بازی آماده نیست.');
     return _deck.removeLast();
   }
 
   int get totalTopics => _allTopics.length;
 }
-

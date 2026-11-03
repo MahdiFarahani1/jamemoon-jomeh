@@ -1,4 +1,12 @@
+import '../features/decoder/presentation/pages/decoder_game_page.dart';
+import '../features/extras/party_challenges/party_challenges_page.dart';
+import '../features/teams/presentation/pages/game_preparation_page.dart';
+import '../core/models/game_setup_config.dart';
+
 import 'package:flutter/material.dart';
+
+import 'di/service_locator.dart';
+import '../core/services/storage_service.dart';
 import '../features/splash/presentation/splash_page.dart';
 import '../features/home/presentation/home_page.dart';
 import '../features/teams/presentation/pages/teams_setup_page.dart';
@@ -20,6 +28,18 @@ class AppRouter {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     final uri = Uri.parse(settings.name ?? '/');
     final args = (settings.arguments as Map<String, dynamic>?) ?? {};
+    final resume = args['resume'] == true || args['resumeSaved'] == true;
+    final savedSession = resume && uri.path.startsWith('/game/')
+        ? sl<StorageService>().getGameSession(uri.path.split('/').last)
+        : null;
+    final gameKey = uri.path.split('/').last;
+    final setup = GameSetupConfig.fromArguments(gameKey, {
+      ...args,
+      if (savedSession?['roundSeconds'] != null)
+        'roundSeconds': savedSession!['roundSeconds'],
+      if (savedSession?['totalRounds'] != null)
+        'totalRounds': savedSession!['totalRounds'],
+    });
 
     Widget page;
 
@@ -45,23 +65,52 @@ class AppRouter {
       case '/tournament/podium':
         page = const TournamentPodiumPage();
         break;
+      case '/game/decoder':
+        page = const DecoderGamePage();
+        break;
+      case '/prepare/taboo':
+      case '/prepare/hot_potato':
+      case '/prepare/charades':
+      case '/prepare/five_seconds':
+      case '/prepare/drawing':
+      case '/prepare/decoder':
+        page = GamePreparationPage(gameKey: gameKey);
+        break;
       case '/game/taboo':
-        page = TabooGamePage(isQuickMode: args['isQuickMode'] ?? false);
+        page = TabooGamePage(
+          setup: setup,
+          resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
+        );
         break;
       case '/game/hot_potato':
-        page = HotPotatoGamePage(isQuickMode: args['isQuickMode'] ?? false);
+        page = HotPotatoGamePage(
+          setup: setup,
+          resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
+        );
         break;
       case '/game/charades':
-        page = CharadesGamePage(isQuickMode: args['isQuickMode'] ?? false);
+        page = CharadesGamePage(
+          setup: setup,
+          resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
+        );
         break;
       case '/game/five_seconds':
-        page = FiveSecondsGamePage(isQuickMode: args['isQuickMode'] ?? false);
+        page = FiveSecondsGamePage(
+          setup: setup,
+          resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
+        );
         break;
       case '/game/drawing':
-        page = DrawingGamePage(isQuickMode: args['isQuickMode'] ?? false);
+        page = DrawingGamePage(
+          setup: setup,
+          resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
+        );
         break;
       case '/extras/wheel':
         page = const LuckyWheelPage();
+        break;
+      case '/extras/challenges':
+        page = const PartyChallengesPage();
         break;
       case '/extras/picker':
         page = const RandomPickerPage();
@@ -74,10 +123,6 @@ class AppRouter {
         break;
     }
 
-    return MaterialPageRoute(
-      settings: settings,
-      builder: (_) => page,
-    );
+    return MaterialPageRoute(settings: settings, builder: (_) => page);
   }
 }
-

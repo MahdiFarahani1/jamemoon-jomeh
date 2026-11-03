@@ -22,7 +22,13 @@ class CharadesWord extends Equatable {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'word': word,
+    'category': category,
+    'points': points,
+  };
+
   @override
   List<Object?> get props => [id, word, category, points];
 }
-

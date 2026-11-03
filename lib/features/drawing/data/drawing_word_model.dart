@@ -22,7 +22,13 @@ class DrawingWord extends Equatable {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'word': word,
+    'category': category,
+    'difficulty': difficulty,
+  };
+
   @override
   List<Object?> get props => [id, word, category, difficulty];
 }
-

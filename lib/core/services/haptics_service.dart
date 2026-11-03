@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+
 import 'storage_service.dart';
 
 // Haptic feedback controller for suspense and action moments
@@ -31,4 +32,3 @@ class HapticsService {
     await HapticFeedback.vibrate();
   }
 }
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'app_colors.dart';
 
 // Common visual decorations, shadows, and borders
@@ -7,9 +8,15 @@ class AppDecorations {
   static const double radiusMedium = 20.0;
   static const double radiusLarge = 28.0;
 
-  static final BorderRadius borderRadiusSmall = BorderRadius.circular(radiusSmall);
-  static final BorderRadius borderRadiusMedium = BorderRadius.circular(radiusMedium);
-  static final BorderRadius borderRadiusLarge = BorderRadius.circular(radiusLarge);
+  static final BorderRadius borderRadiusSmall = BorderRadius.circular(
+    radiusSmall,
+  );
+  static final BorderRadius borderRadiusMedium = BorderRadius.circular(
+    radiusMedium,
+  );
+  static final BorderRadius borderRadiusLarge = BorderRadius.circular(
+    radiusLarge,
+  );
 
   static final BoxDecoration cardBox = BoxDecoration(
     color: AppColors.surface,
@@ -38,20 +45,13 @@ class AppDecorations {
     );
   }
 
-  static BoxDecoration button3D({
-    required Color color,
-    Color? shadowColor,
-  }) {
+  static BoxDecoration button3D({required Color color, Color? shadowColor}) {
     final baseShadow = shadowColor ?? Color.lerp(color, Colors.black, 0.45)!;
     return BoxDecoration(
       color: color,
       borderRadius: borderRadiusMedium,
       boxShadow: [
-        BoxShadow(
-          color: baseShadow,
-          offset: const Offset(0, 5),
-          blurRadius: 0,
-        ),
+        BoxShadow(color: baseShadow, offset: const Offset(0, 5), blurRadius: 0),
       ],
     );
   }

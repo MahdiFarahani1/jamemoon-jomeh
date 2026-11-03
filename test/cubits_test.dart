@@ -37,6 +37,30 @@ void main() {
       expect(cubit.state.teams.length, equals(2));
     });
 
+    test('rapidly added players retain distinct identities', () {
+      final cubit = TeamsCubit(storage);
+      final teamId = cubit.state.teams.first.id;
+      for (var i = 0; i < 20; i++) {
+        cubit.addPlayer(name: 'بازیکن $i', teamId: teamId);
+      }
+      expect(cubit.state.players.map((player) => player.id).toSet().length, 20);
+    });
+
+    test('team color and icon remain saved', () {
+      final cubit = TeamsCubit(storage);
+      final teamId = cubit.state.teams.first.id;
+      cubit.updateTeamAppearance(
+        teamId,
+        colorValue: 0xFF26C6DA,
+        iconKey: 'rocket',
+      );
+      expect(cubit.state.teams.first.colorValue, 0xFF26C6DA);
+      expect(cubit.state.teams.first.iconKey, 'rocket');
+      final restored = TeamsCubit(storage);
+      expect(restored.state.teams.first.colorValue, 0xFF26C6DA);
+      expect(restored.state.teams.first.iconKey, 'rocket');
+    });
+
     test('Adds a player and updates scores', () {
       final cubit = TeamsCubit(storage);
       cubit.addPlayer(name: 'سهراب', teamId: cubit.state.teams.first.id);
@@ -109,4 +133,3 @@ void main() {
     });
   });
 }
-

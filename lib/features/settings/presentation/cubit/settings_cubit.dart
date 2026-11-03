@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/services/storage_service.dart';
 import 'settings_state.dart';
 
@@ -6,10 +7,12 @@ class SettingsCubit extends Cubit<SettingsState> {
   final StorageService _storageService;
 
   SettingsCubit(this._storageService)
-      : super(SettingsState(
+    : super(
+        SettingsState(
           soundEnabled: _storageService.isSoundEnabled,
           vibrationEnabled: _storageService.isVibrationEnabled,
-        ));
+        ),
+      );
 
   Future<void> toggleSound() async {
     final newValue = !state.soundEnabled;
@@ -28,4 +31,3 @@ class SettingsCubit extends Cubit<SettingsState> {
     emit(const SettingsState(soundEnabled: true, vibrationEnabled: true));
   }
 }
-

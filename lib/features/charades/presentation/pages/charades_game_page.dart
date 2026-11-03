@@ -1,35 +1,62 @@
+import 'package:flutter_application_1/core/widgets/game_prompt_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/models/game_setup_config.dart';
+import 'package:flutter_application_1/core/widgets/game_scene.dart';
+import 'package:flutter_application_1/core/widgets/game_lifecycle_guard.dart';
+import 'package:flutter_application_1/core/widgets/game_emblem.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_application_1/app/theme/app_colors.dart';
 import 'package:flutter_application_1/app/theme/app_typography.dart';
 import 'package:flutter_application_1/app/di/service_locator.dart';
 import 'package:flutter_application_1/core/widgets/animated_party_background.dart';
-import 'package:flutter_application_1/core/widgets/custom_timer_widget.dart';
+import 'package:flutter_application_1/core/widgets/round_status.dart';
 import 'package:flutter_application_1/core/widgets/how_to_play_sheet.dart';
 import 'package:flutter_application_1/core/widgets/party_button.dart';
 import 'package:flutter_application_1/core/widgets/party_card.dart';
 import 'package:flutter_application_1/core/widgets/party_dialog.dart';
 import 'package:flutter_application_1/core/widgets/pass_phone_overlay.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
+
 import '../cubit/charades_cubit.dart';
 import '../cubit/charades_state.dart';
 import '../../data/charades_repository.dart';
 
 // Charades Game Page (Zero setState)
 class CharadesGamePage extends StatelessWidget {
+  final GameSetupConfig? setup;
   final bool isQuickMode;
+  final bool resumeSaved;
+  final String? tournamentId;
 
-  const CharadesGamePage({super.key, this.isQuickMode = false});
+  const CharadesGamePage({
+    super.key,
+    this.setup,
+    this.isQuickMode = false,
+    this.resumeSaved = false,
+    this.tournamentId,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => CharadesCubit(
-        repository: sl<CharadesRepository>(),
-        isQuickMode: isQuickMode,
-        teamsCubit: isQuickMode ? null : context.read<TeamsCubit>(),
+    return GameContentGate(
+      load: () => sl<CharadesRepository>().loadWords(),
+      child: BlocProvider(
+        create: (context) => CharadesCubit(
+          setup: setup,
+          repository: sl<CharadesRepository>(),
+          isQuickMode: isQuickMode,
+          resumeSaved: resumeSaved,
+          teamsCubit: isQuickMode ? null : context.read<TeamsCubit>(),
+        ),
+        child: Builder(
+          builder: (context) => GameLifecycleGuard(
+            initiallyCovered: context.read<CharadesCubit>().hasRestoredSession,
+            onPause: () => context.read<CharadesCubit>().pause(),
+            onResume: () => context.read<CharadesCubit>().resume(),
+            child: const _CharadesGameView(),
+          ),
+        ),
       ),
-      child: const _CharadesGameView(),
     );
   }
 }
@@ -41,6 +68,13 @@ class _CharadesGameView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<CharadesCubit, CharadesState>(
       builder: (context, state) {
+        if (state.isGameOver) {
+          return GameCompletionView(
+            gameKey: 'charades',
+            result: context.read<CharadesCubit>().result,
+            onComplete: () => context.read<CharadesCubit>().finishAndClear(),
+          );
+        }
         if (state.isPassPhonePhase) {
           return Scaffold(
             body: PassPhoneOverlay(
@@ -60,10 +94,12 @@ class _CharadesGameView extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
+            bottom: const GameSceneRibbon(gameKey: 'charades'),
             title: Text(state.activeTeamName),
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_rounded),
               onPressed: () async {
+                GameLifecycleGuard.of(context).cover();
                 final confirm = await PartyDialog.show(
                   context,
                   title: 'خروج از پانتومیم',
@@ -76,146 +112,58 @@ class _CharadesGameView extends StatelessWidget {
               },
             ),
             actions: [
+              const GameEmblem(gameKey: 'charades', size: 36),
               IconButton(
                 tooltip: state.isTimerRunning ? 'توقف' : 'ادامه',
                 icon: Icon(
-                  state.isTimerRunning ? Icons.pause_circle_rounded : Icons.play_circle_rounded,
+                  state.isTimerRunning
+                      ? Icons.pause_circle_rounded
+                      : Icons.play_circle_rounded,
                   color: AppColors.accent,
                 ),
-                onPressed: () => context.read<CharadesCubit>().togglePause(),
+                onPressed: () => GameLifecycleGuard.of(context).cover(),
               ),
               IconButton(
                 tooltip: 'راهنما و قوانین',
                 icon: const Icon(Icons.help_outline_rounded),
-                onPressed: () => HowToPlaySheet.show(context, 'charades'),
+                onPressed: () {
+                  GameLifecycleGuard.of(context).cover();
+                  HowToPlaySheet.show(context, 'charades');
+                },
               ),
             ],
           ),
           body: AnimatedPartyBackground(
+            gameKey: 'charades',
+            score: state.roundScore,
+            roundKey: 'charades_${state.activeTeamIndex}_${state.currentRound}',
             child: SafeArea(
               child: Column(
                 children: [
                   const SizedBox(height: 8),
 
-                  // Header with Timer and Score
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: AppColors.surface,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: AppColors.surfaceBorder),
-                        ),
-                        child: Text(
-                          'امتیاز این دور: ${state.roundScore}',
-                          style: AppTypography.titleLarge.copyWith(color: AppColors.accent),
-                        ),
-                      ),
-                      CustomTimerWidget(
-                        remainingSeconds: state.remainingSeconds,
-                        totalSeconds: state.totalSeconds,
-                        size: 76,
-                        activeColor: AppColors.charadesSecondary,
-                      ),
-                      if (!state.isQuickMode)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          decoration: BoxDecoration(
-                            color: AppColors.surface,
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: AppColors.surfaceBorder),
-                          ),
-                          child: Text(
-                            'دور ${state.currentRound} از ${state.totalRounds}',
-                            style: AppTypography.bodySmall,
-                          ),
-                        ),
-                    ],
+                  RoundStatus(
+                    score: state.roundScore,
+                    remaining: state.remainingSeconds,
+                    totalSeconds: state.totalSeconds,
+                    round: state.currentRound,
+                    totalRounds: state.totalRounds,
+                    color: AppColors.charadesPrimary,
+                    quick: state.isQuickMode,
                   ),
                   const SizedBox(height: 20),
 
-                  // Secret Word Card for the actor
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Center(
-                        child: Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            gradient: AppColors.charadesGradient,
-                            borderRadius: BorderRadius.circular(28),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.charadesPrimary.withOpacity(0.4),
-                                blurRadius: 26,
-                                offset: const Offset(0, 10),
-                              ),
-                            ],
-                          ),
-                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              // Category and points row
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(0.2),
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Text(
-                                      currentWord?.category ?? 'عمومی',
-                                      style: AppTypography.bodySmall.copyWith(color: Colors.white),
-                                    ),
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: AppColors.accent,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Text(
-                                      '$points امتیاز',
-                                      style: const TextStyle(
-                                        color: Colors.black87,
-                                        fontWeight: FontWeight.w900,
-                                        fontSize: 13,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 28),
-
-                              // Word
-                              Text(
-                                currentWord?.word ?? 'در حال بارگذاری...',
-                                style: const TextStyle(
-                                  fontSize: 32,
-                                  fontWeight: FontWeight.w900,
-                                  color: Colors.white,
-                                  height: 1.35,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              const SizedBox(height: 24),
-
-                              Text(
-                                'فقط با ایما و اشاره بازی کنید! حرف زدن ممنوعه.',
-                                style: TextStyle(
-                                  color: Colors.white.withOpacity(0.85),
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
-                          ),
+                        child: GamePromptCard(
+                          gameKey: 'charades',
+                          category: currentWord?.category ?? 'عمومی',
+                          prompt: currentWord?.word ?? 'در حال بارگذاری...',
+                          points: points,
+                          hint:
+                              'فقط با ایما و اشاره بازی کنید! حرف زدن ممنوعه.',
                         ),
                       ),
                     ),
@@ -223,7 +171,10 @@ class _CharadesGameView extends StatelessWidget {
 
                   // Bottom Action Buttons
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 16,
+                    ),
                     child: Row(
                       children: [
                         Expanded(
@@ -233,16 +184,18 @@ class _CharadesGameView extends StatelessWidget {
                             color: AppColors.surfaceLight,
                             textColor: AppColors.textParagraph,
                             shadowColor: AppColors.surfaceBorder,
-                            onPressed: () => context.read<CharadesCubit>().onSkip(),
+                            onPressed: () =>
+                                context.read<CharadesCubit>().onSkip(),
                           ),
                         ),
                         const SizedBox(width: 14),
                         Expanded(
                           child: PartyButton(
-                            label: 'حدس درست (+ $points)',
+                            label: 'حدس درست!',
                             icon: Icons.check_circle_rounded,
                             color: AppColors.success,
-                            onPressed: () => context.read<CharadesCubit>().onCorrect(),
+                            onPressed: () =>
+                                context.read<CharadesCubit>().onCorrect(),
                           ),
                         ),
                       ],
@@ -260,17 +213,28 @@ class _CharadesGameView extends StatelessWidget {
   Widget _buildRoundSummary(BuildContext context, CharadesState state) {
     return Scaffold(
       body: AnimatedPartyBackground(
+        gameKey: 'charades',
+        score: state.roundScore,
+        roundKey: 'charades_${state.activeTeamIndex}_${state.currentRound}',
         child: Center(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
             child: PartyCard(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const Icon(Icons.theater_comedy_rounded, color: AppColors.charadesSecondary, size: 54),
+                  const Icon(
+                    Icons.theater_comedy_rounded,
+                    color: AppColors.charadesSecondary,
+                    size: 54,
+                  ),
                   const SizedBox(height: 12),
-                  const Text('زمان پانتومیم تمام شد!', style: AppTypography.displayMedium, textAlign: TextAlign.center),
+                  const Text(
+                    'زمان پانتومیم تمام شد!',
+                    style: AppTypography.displayMedium,
+                    textAlign: TextAlign.center,
+                  ),
                   const SizedBox(height: 18),
                   Container(
                     padding: const EdgeInsets.all(16),
@@ -280,11 +244,27 @@ class _CharadesGameView extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        _buildStatRow('کلمات حدس‌زده شده:', '${state.correctCount}', AppColors.success),
+                        _buildStatRow(
+                          'کلمات حدس‌زده شده:',
+                          '${state.correctCount}',
+                          AppColors.success,
+                        ),
                         const SizedBox(height: 8),
-                        _buildStatRow('کلمات رد شده:', '${state.skipCount}', AppColors.textParagraph),
-                        const Divider(color: AppColors.surfaceBorder, height: 20),
-                        _buildStatRow('مجموع امتیاز این نوبت:', '${state.roundScore}', AppColors.accent, isBig: true),
+                        _buildStatRow(
+                          'کلمات رد شده:',
+                          '${state.skipCount}',
+                          AppColors.textParagraph,
+                        ),
+                        const Divider(
+                          color: AppColors.surfaceBorder,
+                          height: 20,
+                        ),
+                        _buildStatRow(
+                          'مجموع امتیاز این نوبت:',
+                          '${state.roundScore}',
+                          AppColors.accent,
+                          isBig: true,
+                        ),
                       ],
                     ),
                   ),
@@ -312,14 +292,24 @@ class _CharadesGameView extends StatelessWidget {
     );
   }
 
-  Widget _buildStatRow(String label, String value, Color color, {bool isBig = false}) {
+  Widget _buildStatRow(
+    String label,
+    String value,
+    Color color, {
+    bool isBig = false,
+  }) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(label, style: isBig ? AppTypography.headlineMedium : AppTypography.bodyLarge),
+        Text(
+          label,
+          style: isBig ? AppTypography.headlineMedium : AppTypography.bodyLarge,
+        ),
         Text(
           value,
-          style: (isBig ? AppTypography.headlineLarge : AppTypography.titleLarge).copyWith(color: color),
+          style:
+              (isBig ? AppTypography.headlineLarge : AppTypography.titleLarge)
+                  .copyWith(color: color),
         ),
       ],
     );

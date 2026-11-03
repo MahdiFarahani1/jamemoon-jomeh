@@ -1,110 +1,109 @@
 import 'package:flutter/material.dart';
+
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_typography.dart';
 import '../../../app/di/service_locator.dart';
 import '../../../core/widgets/animated_party_background.dart';
+import '../../../core/widgets/brand_mark.dart';
+import '../../../core/widgets/party_button.dart';
 import '../../taboo/data/taboo_repository.dart';
 import '../../hot_potato/data/hot_potato_repository.dart';
 import '../../charades/data/charades_repository.dart';
 import '../../five_seconds/data/five_seconds_repository.dart';
 import '../../drawing/data/drawing_repository.dart';
 
-// Splash Screen with bouncy party logo & async assets loading (Zero setState)
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
 
-  Future<void> _loadAssetsAndNavigate(BuildContext context) async {
-    // Load all JSON decks in parallel
-    await Future.wait([
-      sl<TabooRepository>().loadCards(),
-      sl<HotPotatoRepository>().loadTopics(),
-      sl<CharadesRepository>().loadWords(),
-      sl<FiveSecondsRepository>().loadQuestions(),
-      sl<DrawingRepository>().loadWords(),
-      Future.delayed(const Duration(milliseconds: 1200)), // Smooth branded delay
-    ]);
+class _SplashPageState extends State<SplashPage> {
+  final ValueNotifier<bool> _failed = ValueNotifier(false);
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
 
-    if (context.mounted) {
-      Navigator.of(context).pushReplacementNamed('/home');
+  Future<void> _load() async {
+    _failed.value = false;
+    try {
+      await Future.wait([
+        sl<TabooRepository>().loadCards(),
+        sl<HotPotatoRepository>().loadTopics(),
+        sl<CharadesRepository>().loadWords(),
+        sl<FiveSecondsRepository>().loadQuestions(),
+        sl<DrawingRepository>().loadWords(),
+      ]);
+      if (mounted) Navigator.of(context).pushReplacementNamed('/home');
+    } catch (_) {
+      if (mounted) _failed.value = true;
     }
   }
 
   @override
-  Widget build(BuildContext context) {
-    // Trigger load on render
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _loadAssetsAndNavigate(context);
-    });
+  void dispose() {
+    _failed.dispose();
+    super.dispose();
+  }
 
-    return Scaffold(
-      body: AnimatedPartyBackground(
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    body: AnimatedPartyBackground(
+      child: SafeArea(
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Logo badge with glow
-              TweenAnimationBuilder<double>(
-                tween: Tween(begin: 0.6, end: 1.0),
-                duration: const Duration(milliseconds: 900),
-                curve: Curves.elasticOut,
-                builder: (context, scale, child) {
-                  return Transform.scale(
-                    scale: scale,
-                    child: Container(
-                      width: 140,
-                      height: 140,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        gradient: AppColors.purpleGradient,
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.primary.withOpacity(0.5),
-                            blurRadius: 35,
-                            spreadRadius: 4,
-                          ),
-                        ],
-                      ),
-                      child: const Center(
-                        child: Icon(
-                          Icons.celebration_rounded,
-                          size: 72,
-                          color: AppColors.accent,
-                        ),
-                      ),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(28),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 420),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const BrandMark(size: 132),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'جمعمون جمعه!',
+                    style: AppTypography.displayLarge,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'بازی و خنده، کنار هم',
+                    style: AppTypography.bodyLarge.copyWith(
+                      color: AppColors.accent,
                     ),
-                  );
-                },
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 36),
+                  ValueListenableBuilder<bool>(
+                    valueListenable: _failed,
+                    builder: (context, failed, _) => failed
+                        ? Column(
+                            children: [
+                              const Text(
+                                'بارگذاری بازی‌ها انجام نشد. دوباره تلاش کنید.',
+                                textAlign: TextAlign.center,
+                                style: AppTypography.bodyLarge,
+                              ),
+                              const SizedBox(height: 16),
+                              PartyButton(
+                                label: 'تلاش دوباره',
+                                icon: Icons.refresh_rounded,
+                                onPressed: _load,
+                              ),
+                            ],
+                          )
+                        : const CircularProgressIndicator(
+                            color: AppColors.primary,
+                          ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 32),
-
-              // Title
-              const Text(
-                'جمعمون جمعه!',
-                style: AppTypography.displayLarge,
-              ),
-              const SizedBox(height: 10),
-
-              // Subtitle
-              Text(
-                'بازی دورهمی پرانرژی و خنده‌دار ایرانی',
-                style: AppTypography.bodyLarge.copyWith(color: AppColors.accent),
-              ),
-              const SizedBox(height: 48),
-
-              // Loading indicator
-              const SizedBox(
-                width: 32,
-                height: 32,
-                child: CircularProgressIndicator(
-                  strokeWidth: 3.5,
-                  color: AppColors.primary,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
 }
-
