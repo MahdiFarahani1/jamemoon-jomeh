@@ -96,6 +96,22 @@ class AppColors {
     Color(0xFFFFAB40), // Orange
     Color(0xFF26C6DA), // Cyan
     Color(0xFFB388FF), // Violet
+    Color(0xFF00E676), // Emerald Green
+    Color(0xFF7C4DFF), // Deep Purple
+    Color(0xFFFF4081), // Hot Pink
+    Color(0xFF1DE9B6), // Teal
+    Color(0xFFFF6E40), // Coral
+    Color(0xFF40C4FF), // Sky Blue
+    Color(0xFFAEEA00), // Lime
+    Color(0xFFFF1744), // Crimson
+    Color(0xFF536DFE), // Indigo
+    Color(0xFFFFC400), // Amber
+    Color(0xFFFF80AB), // Pastel Rose
+    Color(0xFF00B0FF), // Vivid Azure
+    Color(0xFF00BFA5), // Dark Mint
+    Color(0xFFFF9100), // Tangerine
+    Color(0xFFD500F9), // Neon Violet
+    Color(0xFF76FF03), // Chartreuse
   ];
   static Color gameAccent(String key) => switch (key) {
     'taboo' => tabooPrimary,
@@ -103,6 +119,7 @@ class AppColors {
     'charades' => charadesPrimary,
     'five_seconds' => fiveSecPrimary,
     'drawing' => drawPrimary,
+    'heist' => const Color(0xFFE6B85C),
     _ => accent,
   };
 }

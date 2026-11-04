@@ -59,6 +59,7 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
       widget.gameKey,
       state.teams,
       state.players,
+      participationMode: _config.participationMode,
     );
     if (error != null) {
       setState(() => _error = error);
@@ -121,6 +122,10 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
                       style: AppTypography.bodyLarge,
                     ),
                     const SizedBox(height: 20),
+                    if (GameSetupConfig.supportsPlayerMode(widget.gameKey)) ...[
+                      _participationCard(),
+                      const SizedBox(height: 12),
+                    ],
                     if (GameSetupConfig.hasRoundDuration(widget.gameKey)) ...[
                       _choiceCard(
                         title: 'زمان هر نوبت',
@@ -152,61 +157,92 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            minimum > 0
+                            _config.participationMode ==
+                                    GameParticipationMode.players
+                                ? 'بازیکن‌های این بازی *'
+                                : minimum > 0
                                 ? 'تیم‌ها و بازیکنان *'
                                 : 'تیم‌های بازی *',
                             style: AppTypography.headlineMedium,
                           ),
                           const SizedBox(height: 6),
-                          if (minimum > 0)
+                          if (_config.participationMode ==
+                              GameParticipationMode.players)
                             Text(
-                              'هر تیم دست‌کم $minimum عضو لازم دارد.',
+                              'نوبت بین اسم بازیکن‌ها می‌چرخد؛ تیم‌بندی لازم نیست.',
+                              style: AppTypography.bodyMedium,
+                            )
+                          else if (minimum > 0)
+                            Text(
+                              'هر تیم دست‌کم $minimum عضو لازم دارد؛ در هر دور همهٔ اعضا یک نوبت اجرا می‌کنند.',
                               style: AppTypography.bodyMedium,
                             ),
                           const SizedBox(height: 12),
-                          for (final team in state.teams) ...[
-                            const Divider(),
-                            Row(
+                          if (_config.participationMode ==
+                              GameParticipationMode.players) ...[
+                            Wrap(
+                              spacing: 8,
+                              runSpacing: 8,
                               children: [
-                                TeamAvatar(team: team, size: 40),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Text(
-                                    team.name,
-                                    style: AppTypography.titleLarge,
-                                  ),
-                                ),
-                                IconButton(
-                                  tooltip: 'رنگ و نشان تیم',
-                                  onPressed: () => _editTeam(team),
-                                  icon: const Icon(Icons.palette_outlined),
-                                ),
-                                if (minimum > 0)
-                                  TextButton.icon(
-                                    onPressed: () => _addMember(team.id),
-                                    icon: const Icon(
-                                      Icons.person_add_alt_1_rounded,
+                                for (final player in state.players)
+                                  Chip(
+                                    avatar: const Icon(
+                                      Icons.person_outline_rounded,
+                                      size: 18,
                                     ),
-                                    label: const Text('عضو'),
+                                    label: Text(player.name),
                                   ),
                               ],
                             ),
-                            if (minimum > 0)
-                              Wrap(
-                                spacing: 6,
+                            if (state.players.isEmpty)
+                              const Text(
+                                'هنوز بازیکنی ثبت نشده است.',
+                                style: AppTypography.bodyMedium,
+                              ),
+                          ] else
+                            for (final team in state.teams) ...[
+                              const Divider(),
+                              Row(
                                 children: [
-                                  for (final player in state.players.where(
-                                    (p) => p.teamId == team.id,
-                                  ))
-                                    InputChip(
-                                      label: Text(player.name),
-                                      onDeleted: () => context
-                                          .read<TeamsCubit>()
-                                          .removePlayer(player.id),
+                                  TeamAvatar(team: team, size: 40),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      team.name,
+                                      style: AppTypography.titleLarge,
+                                    ),
+                                  ),
+                                  IconButton(
+                                    tooltip: 'رنگ و نشان تیم',
+                                    onPressed: () => _editTeam(team),
+                                    icon: const Icon(Icons.palette_outlined),
+                                  ),
+                                  if (minimum > 0)
+                                    TextButton.icon(
+                                      onPressed: () => _addMember(team.id),
+                                      icon: const Icon(
+                                        Icons.person_add_alt_1_rounded,
+                                      ),
+                                      label: const Text('عضو'),
                                     ),
                                 ],
                               ),
-                          ],
+                              if (minimum > 0)
+                                Wrap(
+                                  spacing: 6,
+                                  children: [
+                                    for (final player in state.players.where(
+                                      (p) => p.teamId == team.id,
+                                    ))
+                                      InputChip(
+                                        label: Text(player.name),
+                                        onDeleted: () => context
+                                            .read<TeamsCubit>()
+                                            .removePlayer(player.id),
+                                      ),
+                                  ],
+                                ),
+                            ],
                           const SizedBox(height: 10),
                           OutlinedButton.icon(
                             onPressed: () =>
@@ -265,34 +301,82 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
           runSpacing: 8,
           children: [
             for (final value in values)
-              ChoiceChip(
-                label: Text('$value $suffix'),
+              _selectionChip(
+                label: '$value $suffix',
                 selected: selected == value,
-                selectedColor: AppColors.accent,
-                backgroundColor: AppColors.surfaceLight,
-                checkmarkColor: AppColors.background,
-                labelStyle: AppTypography.bodyMedium.copyWith(
-                  color: selected == value
-                      ? AppColors.background
-                      : AppColors.textHeadline,
-                  fontWeight: FontWeight.w700,
-                ),
-                side: BorderSide(
-                  color: selected == value
-                      ? AppColors.accent
-                      : AppColors.surfaceBorder,
-                  width: selected == value ? 2 : 1,
-                ),
-                onSelected: (_) {
-                  if (sl.isRegistered<AudioService>()) {
-                    sl<AudioService>().play(GameSound.select);
-                  }
-                  onSelected(value);
-                },
+                onSelected: () => onSelected(value),
               ),
           ],
         ),
       ],
     ),
+  );
+
+  Widget _participationCard() => PartyCard(
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Row(
+          children: [
+            Icon(Icons.groups_2_outlined, color: AppColors.accent),
+            SizedBox(width: 8),
+            Text('مدل بازی', style: AppTypography.headlineMedium),
+          ],
+        ),
+        const SizedBox(height: 12),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            _selectionChip(
+              label: 'تیمی',
+              selected:
+                  _config.participationMode == GameParticipationMode.teams,
+              onSelected: () => setState(
+                () => _config = _config.copyWith(
+                  participationMode: GameParticipationMode.teams,
+                ),
+              ),
+            ),
+            _selectionChip(
+              label: 'با اسم بازیکن‌ها',
+              selected:
+                  _config.participationMode == GameParticipationMode.players,
+              onSelected: () => setState(
+                () => _config = _config.copyWith(
+                  participationMode: GameParticipationMode.players,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+    ),
+  );
+
+  Widget _selectionChip({
+    required String label,
+    required bool selected,
+    required VoidCallback onSelected,
+  }) => ChoiceChip(
+    label: Text(label),
+    selected: selected,
+    selectedColor: AppColors.accent,
+    backgroundColor: AppColors.surfaceLight,
+    checkmarkColor: AppColors.background,
+    labelStyle: AppTypography.bodyMedium.copyWith(
+      color: selected ? AppColors.background : AppColors.textHeadline,
+      fontWeight: FontWeight.w700,
+    ),
+    side: BorderSide(
+      color: selected ? AppColors.accent : AppColors.surfaceBorder,
+      width: selected ? 2 : 1,
+    ),
+    onSelected: (_) {
+      if (sl.isRegistered<AudioService>()) {
+        sl<AudioService>().play(GameSound.select);
+      }
+      onSelected();
+    },
   );
 }

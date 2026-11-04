@@ -7,6 +7,8 @@ import '../../../../app/di/service_locator.dart';
 import '../../../../core/models/turn_manager.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/models/game_setup_config.dart';
+import '../../../../core/models/game_stats.dart';
+import '../../../../core/models/participant_roster.dart';
 import '../../../../core/services/audio_service.dart';
 import '../../../../core/services/haptics_service.dart';
 import '../../../../core/services/round_clock.dart';
@@ -16,8 +18,25 @@ import '../../data/drawing_word_model.dart';
 import 'drawing_state.dart';
 
 class DrawingCubit extends Cubit<DrawingState> {
-  GameResult? get result =>
-      GameResult.fromManager(_turnManager, baseline: _startingScores);
+  int get playerOrderSeed => _session.sessionId.hashCode;
+  bool get isFinalTurn =>
+      !state.isQuickMode && _turnManager?.isFinalTurn == true;
+  PlayerTurnAssignment? get currentAssignment =>
+      _turnManager == null || _teamsCubit == null
+      ? null
+      : PlayerTurnAssignment.forTeam(
+          teams: _teamsCubit.state.teams,
+          players: _teamsCubit.state.players,
+          teamName: _turnManager!.currentTeam.name,
+          round: _turnManager!.currentTeamTurnNumber,
+          seed: playerOrderSeed,
+        );
+  GameResult? get result => GameResult.fromManager(
+    _turnManager,
+    baseline: _startingScores,
+    highlights: _stats.highlights(),
+  );
+  final GameStatsTracker _stats = GameStatsTracker();
   Map<String, int> _startingScores = {};
   final GameSessionStore _session = GameSessionStore('drawing');
   bool _sessionReady = false;
@@ -33,6 +52,12 @@ class DrawingCubit extends Cubit<DrawingState> {
   final TeamsCubit? _teamsCubit;
   final GameSetupConfig? _setup;
   bool _finished = false;
+  String get _actorName {
+    if (_turnManager == null || _teamsCubit == null) {
+      return state.activeTeamName;
+    }
+    return currentAssignment?.performer ?? _turnManager!.currentTeam.name;
+  }
 
   DrawingCubit({
     required DrawingRepository repository,
@@ -54,9 +79,13 @@ class DrawingCubit extends Cubit<DrawingState> {
       _startingScores = {
         for (final team in teamsCubit.state.teams) team.id: team.score,
       };
-      _turnManager = TurnManager(
+      _turnManager = TurnManager.randomStart(
         teams: teamsCubit.state.teams,
         totalRounds: setup?.totalRounds ?? 3,
+        turnsByTeamId: teamTurnCounts(
+          teamsCubit.state.teams,
+          teamsCubit.state.players,
+        ),
       );
       emit(
         state.copyWith(
@@ -101,6 +130,7 @@ class DrawingCubit extends Cubit<DrawingState> {
             _startingScores;
         _turnManager = manager;
         _session.sessionId = data['sessionId'] as String;
+        _stats.restore(data['stats']);
         _finished = data['isGameOver'] as bool;
         _clock.restore(Duration(milliseconds: remainingMs));
         super.emit(
@@ -123,9 +153,13 @@ class DrawingCubit extends Cubit<DrawingState> {
       } catch (_) {
         _turnManager = state.isQuickMode || _teamsCubit == null
             ? null
-            : TurnManager(
+            : TurnManager.randomStart(
                 teams: _teamsCubit.state.teams,
                 totalRounds: _setup?.totalRounds ?? 3,
+                turnsByTeamId: teamTurnCounts(
+                  _teamsCubit.state.teams,
+                  _teamsCubit.state.players,
+                ),
               );
       }
     }
@@ -139,6 +173,7 @@ class DrawingCubit extends Cubit<DrawingState> {
       'startingScores': _startingScores,
       'roundSeconds': state.totalSeconds,
       'isQuickMode': state.isQuickMode,
+      'stats': _stats.toJson(),
       'manager': _session.encodeManager(_turnManager),
       'item': state.currentWord?.toJson(),
       'remainingMs': _clock.remaining.inMilliseconds,
@@ -236,6 +271,7 @@ class DrawingCubit extends Cubit<DrawingState> {
   void onCorrectGuess() {
     if (!state.isTimerRunning || state.isRoundOver || _finished) return;
     _clock.pause();
+    _stats.add(_actorName, GameStatMetric.correct);
     _audio.playCorrect();
     _haptics.lightClick();
 
@@ -280,6 +316,7 @@ class DrawingCubit extends Cubit<DrawingState> {
         emit(state.copyWith(isGameOver: true));
         return;
       }
+      _audio.playTurn();
       emit(
         state.copyWith(
           activeTeamName: _turnManager!.currentTeam.name,

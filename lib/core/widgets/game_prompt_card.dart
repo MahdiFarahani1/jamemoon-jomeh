@@ -9,12 +9,11 @@ class GamePromptCard extends StatelessWidget {
   const GamePromptCard({
     super.key,
     required this.gameKey,
-    required this.category,
     required this.prompt,
     this.points,
     this.hint,
   });
-  final String gameKey, category, prompt;
+  final String gameKey, prompt;
   final int? points;
   final String? hint;
   @override
@@ -41,20 +40,13 @@ class GamePromptCard extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              alignment: WrapAlignment.center,
-              children: [
-                _Badge(label: category, color: isStage ? ink : accent),
-                if (points != null)
-                  _Badge(
-                    label: '$points امتیاز',
-                    color: isStage ? const Color(0xFF75501F) : AppColors.accent,
-                  ),
-              ],
-            ),
-            const SizedBox(height: 12),
+            if (points != null) ...[
+              _Badge(
+                label: '$points امتیاز',
+                color: isStage ? const Color(0xFF75501F) : AppColors.accent,
+              ),
+              const SizedBox(height: 12),
+            ],
             GameEmblem(gameKey: gameKey, size: 72),
             const SizedBox(height: 16),
             Text(

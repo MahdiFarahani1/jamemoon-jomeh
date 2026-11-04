@@ -10,6 +10,7 @@ class HotPotatoState extends Equatable {
   final int hiddenBombDuration;
   final bool isExploded;
   final bool isTicking;
+  final bool isFuseExpired;
   final int turnPassCount;
   final String holdingTeamOrPlayer;
   final String? loserName;
@@ -25,6 +26,7 @@ class HotPotatoState extends Equatable {
     this.hiddenBombDuration = 30,
     this.isExploded = false,
     this.isTicking = false,
+    this.isFuseExpired = false,
     this.turnPassCount = 0,
     this.holdingTeamOrPlayer = 'تیم ۱',
     this.loserName,
@@ -42,6 +44,7 @@ class HotPotatoState extends Equatable {
     int? hiddenBombDuration,
     bool? isExploded,
     bool? isTicking,
+    bool? isFuseExpired,
     int? turnPassCount,
     String? holdingTeamOrPlayer,
     String? loserName,
@@ -57,6 +60,7 @@ class HotPotatoState extends Equatable {
       hiddenBombDuration: hiddenBombDuration ?? this.hiddenBombDuration,
       isExploded: isExploded ?? this.isExploded,
       isTicking: isTicking ?? this.isTicking,
+      isFuseExpired: isFuseExpired ?? this.isFuseExpired,
       turnPassCount: turnPassCount ?? this.turnPassCount,
       holdingTeamOrPlayer: holdingTeamOrPlayer ?? this.holdingTeamOrPlayer,
       loserName: clearLoser ? null : (loserName ?? this.loserName),
@@ -79,6 +83,7 @@ class HotPotatoState extends Equatable {
     hiddenBombDuration,
     isExploded,
     isTicking,
+    isFuseExpired,
     turnPassCount,
     holdingTeamOrPlayer,
     loserName,

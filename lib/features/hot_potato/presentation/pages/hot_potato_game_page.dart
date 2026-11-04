@@ -132,24 +132,6 @@ class _HotPotatoGameView extends StatelessWidget {
                       borderColor: AppColors.bombPrimary,
                       child: Column(
                         children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: AppColors.bombPrimary.withOpacity(0.2),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Text(
-                              state.currentTopic?.category ?? 'موضوع',
-                              style: AppTypography.bodySmall.copyWith(
-                                color: AppColors.bombPrimary,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 10),
                           Text(
                             state.currentTopic?.topic ?? 'در حال بارگذاری...',
                             style: AppTypography.displayMedium,
@@ -291,9 +273,11 @@ class _HotPotatoGameView extends StatelessWidget {
                   const SizedBox(height: 24),
                   PartyButton(
                     label: state.isGameOver
-                        ? 'پایان مسابقه'
+                        ? 'نمایش نتیجه'
                         : 'دور جدید با موضوع تازه',
-                    icon: Icons.refresh_rounded,
+                    icon: state.isGameOver
+                        ? Icons.emoji_events_rounded
+                        : Icons.refresh_rounded,
                     color: AppColors.primary,
                     onPressed: () {
                       if (state.isGameOver) {

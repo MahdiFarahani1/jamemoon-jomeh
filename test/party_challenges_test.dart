@@ -8,6 +8,7 @@ import 'package:flutter_application_1/app/di/service_locator.dart';
 import 'package:flutter_application_1/app/theme/app_theme.dart';
 import 'package:flutter_application_1/core/widgets/game_scene.dart';
 import 'package:flutter_application_1/core/widgets/party_button.dart';
+import 'package:flutter_application_1/features/taboo/data/taboo_repository.dart';
 import 'package:flutter_application_1/features/taboo/presentation/pages/taboo_game_page.dart';
 import 'package:flutter_application_1/features/taboo/presentation/widgets/taboo_card_view.dart';
 import 'package:flutter_application_1/features/extras/party_challenges/challenge_deck.dart';
@@ -214,18 +215,22 @@ void main() {
       tester.view.resetDevicePixelRatio();
     });
 
+    await tester.runAsync(() async {
+      await sl<TabooRepository>().loadCards();
+    });
     await tester.pumpWidget(app(const TabooGamePage(isQuickMode: true)));
     for (var i = 0; i < 10; i++) {
       await tester.pump(const Duration(milliseconds: 100));
     }
-    expect(find.byIcon(Icons.play_arrow_rounded), findsOneWidget);
+    expect(find.byIcon(Icons.shuffle_rounded), findsOneWidget);
     expect(find.byType(TabooCardView), findsNothing);
-    await tester.tap(find.byIcon(Icons.play_arrow_rounded));
-    await tester.pump();
+    await tester.tap(find.text('قرعه شروع'));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.tap(find.text('گوشی دستمه، شروع شمارش'));
     await tester.pump(const Duration(seconds: 3));
     await tester.pump(const Duration(milliseconds: 100));
     expect(find.byType(TabooCardView), findsOneWidget);
-    expect(find.byIcon(Icons.play_arrow_rounded), findsNothing);
+    expect(find.text('قرعه شروع'), findsNothing);
     expect(tester.takeException(), isNull);
     await tester.pumpWidget(const SizedBox.shrink());
   });

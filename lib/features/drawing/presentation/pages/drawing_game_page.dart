@@ -77,9 +77,14 @@ class _DrawingGameView extends StatelessWidget {
           );
         }
         if (state.isPassPhonePhase) {
+          final assignment = state.isQuickMode
+              ? null
+              : context.read<DrawingCubit>().currentAssignment;
           return Scaffold(
             body: PassPhoneOverlay(
               teamName: state.activeTeamName,
+              playerName: assignment?.performer,
+              partnerName: assignment?.guesser,
               gameTitle: 'نقاشی افتضاح!',
               onReady: () => context.read<DrawingCubit>().prepareWord(),
             ),
@@ -338,8 +343,12 @@ class _DrawingGameView extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   PartyButton(
-                    label: 'نوبت تیم بعدی',
-                    icon: Icons.arrow_forward_rounded,
+                    label: context.read<DrawingCubit>().isFinalTurn
+                        ? 'نمایش نتیجه'
+                        : 'نوبت تیم بعدی',
+                    icon: context.read<DrawingCubit>().isFinalTurn
+                        ? Icons.emoji_events_rounded
+                        : Icons.arrow_forward_rounded,
                     color: AppColors.drawPrimary,
                     onPressed: () => context.read<DrawingCubit>().nextTurn(),
                   ),

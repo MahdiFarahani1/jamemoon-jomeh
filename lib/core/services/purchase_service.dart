@@ -36,46 +36,11 @@ class MockPurchaseService implements PurchaseService {
 
   static const List<GameProduct> products = [
     GameProduct(
-      id: 'pack_taboo_full',
-      titleFa: 'بسته طلایی «حرف نزن، بفهمون!»',
-      descriptionFa: '۲۰ کارت افزوده با پنج کلمه ممنوع؛ قابل استفاده آفلاین برای دارندگان بسته',
-      priceToman: 29000,
-      iconKey: 'taboo',
-    ),
-    GameProduct(
-      id: 'pack_bomb_full',
-      titleFa: 'بسته طلایی «بمب دست کیه؟»',
-      descriptionFa:
-          '۲۰ موضوع افزوده برای پاس‌دادن بمب در دورهمی؛ ویژه دارندگان بسته',
-      priceToman: 29000,
-      iconKey: 'bomb',
-    ),
-    GameProduct(
-      id: 'pack_charades_full',
-      titleFa: 'بسته طلایی «پانتومیم انفجاری»',
-      descriptionFa: '۲۰ سوژه افزوده با امتیازهای متنوع برای اجرای پانتومیم',
-      priceToman: 29000,
-      iconKey: 'charades',
-    ),
-    GameProduct(
-      id: 'pack_five_full',
-      titleFa: 'بسته طلایی «سه‌تا بگو!»',
-      descriptionFa: '۲۰ پرسش افزوده برای حضور ذهن و پاسخ‌های سه‌تایی',
-      priceToman: 29000,
-      iconKey: 'five',
-    ),
-    GameProduct(
-      id: 'pack_drawing_full',
-      titleFa: 'بسته طلایی «نقاشی افتضاح!»',
-      descriptionFa: '۲۰ سوژه تصویری افزوده برای کشیدن و حدس‌زدن',
-      priceToman: 29000,
-      iconKey: 'drawing',
-    ),
-    GameProduct(
       id: 'season_1_bundle',
-      titleFa: 'بسته جامع فصل اول (همه بازی‌ها)',
-      descriptionFa: 'دسترسی دائمی به پنج بسته افزوده فصل اول؛ رمزگشا به‌صورت رایگان ارائه می‌شود',
-      priceToman: 69000,
+      titleFa: 'اشتراک طلایی جمعمون جمعه',
+      descriptionFa:
+          'دسترسی کامل و نامحدود به بازی جذاب «سرقت بزرگ» و بیش از ۲٬۰۰۰ کارت و کلمه جدید در تمام بازی‌ها (پانتومیم، حرف نزن بفهمون، بمب ساعتی، سه‌تا در ۵ ثانیه و نقاشی)',
+      priceToman: 99000,
       iconKey: 'bundle',
     ),
   ];

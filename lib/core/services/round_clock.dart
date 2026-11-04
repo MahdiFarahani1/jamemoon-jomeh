@@ -114,6 +114,8 @@ class GameSessionStore {
           'index': manager.currentTeamIndex,
           'round': manager.currentRound,
           'totalRounds': manager.totalRounds,
+          'turnOrder': manager.turnOrder,
+          'turnIndex': manager.currentTurnIndex,
         };
 
   TurnManager? decodeManager(Object? value, List<Team>? currentTeams) {
@@ -125,18 +127,30 @@ class GameSessionStore {
     final index = map['index'] as int;
     final round = map['round'] as int;
     final total = map['totalRounds'] as int;
+    final turnOrder =
+        (map['turnOrder'] as List?)?.map((value) => value as int).toList() ??
+        const <int>[];
+    final turnIndex = (map['turnIndex'] as int?) ?? 0;
     if (teams.isEmpty ||
         index < 0 ||
         index >= teams.length ||
         round < 1 ||
         total < 1 ||
         round > total + 1 ||
+        (turnOrder.isNotEmpty &&
+            (turnIndex < 0 ||
+                turnIndex >= turnOrder.length ||
+                turnOrder.any(
+                  (value) => value < 0 || value >= teams.length,
+                ))) ||
         currentTeams == null ||
         teams.length != currentTeams.length ||
-        !List.generate(
-          teams.length,
-          (i) => teams[i].id == currentTeams[i].id,
-        ).every((x) => x)) {
+        teams.map((team) => team.id).toSet().length != teams.length ||
+        teams
+            .map((team) => team.id)
+            .toSet()
+            .difference(currentTeams.map((team) => team.id).toSet())
+            .isNotEmpty) {
       throw const FormatException('Invalid saved team session');
     }
     return TurnManager(
@@ -144,6 +158,8 @@ class GameSessionStore {
       currentTeamIndex: index,
       currentRound: round,
       totalRounds: total,
+      turnOrder: turnOrder,
+      currentTurnIndex: turnIndex,
     );
   }
 }

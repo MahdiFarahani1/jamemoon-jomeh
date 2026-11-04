@@ -41,7 +41,8 @@ class PartySwitch extends StatelessWidget {
       value: value,
       onChanged: onChanged == null ? null : _handleChanged,
       activeColor: activeColor ?? AppColors.accent,
-      activeTrackColor: activeTrackColor ?? AppColors.accent.withValues(alpha: 0.35),
+      activeTrackColor:
+          activeTrackColor ?? AppColors.accent.withValues(alpha: 0.35),
       inactiveThumbColor: inactiveThumbColor ?? AppColors.textMuted,
       inactiveTrackColor: inactiveTrackColor ?? AppColors.surfaceLight,
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,

@@ -68,6 +68,9 @@ class _TabooGameView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<TabooCubit, TabooState>(
       builder: (context, state) {
+        final assignment = state.isQuickMode
+            ? null
+            : context.read<TabooCubit>().currentAssignment;
         if (state.isGameOver) {
           return GameCompletionView(
             gameKey: 'taboo',
@@ -79,6 +82,8 @@ class _TabooGameView extends StatelessWidget {
           return Scaffold(
             body: PassPhoneOverlay(
               teamName: state.activeTeamName,
+              playerName: assignment?.performer,
+              partnerName: assignment?.guesser,
               gameTitle: 'حرف نزن، بفهمون! (تابو)',
               onReady: () => context.read<TabooCubit>().startRound(),
             ),
@@ -148,6 +153,17 @@ class _TabooGameView extends StatelessWidget {
                     color: AppColors.tabooPrimary,
                     quick: state.isQuickMode,
                   ),
+                  if (assignment != null) ...[
+                    const SizedBox(height: 8),
+                    Text(
+                      '${assignment.performer} توضیح می‌دهد • ${assignment.guesser} حدس می‌زند',
+                      style: AppTypography.bodyMedium.copyWith(
+                        color: AppColors.tabooPrimary,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                   const SizedBox(height: 14),
 
                   // Card Content
@@ -282,8 +298,12 @@ class _TabooGameView extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   PartyButton(
-                    label: 'نوبت بعدی',
-                    icon: Icons.arrow_forward_rounded,
+                    label: context.read<TabooCubit>().isFinalTurn
+                        ? 'نمایش نتیجه'
+                        : 'نوبت بعدی',
+                    icon: context.read<TabooCubit>().isFinalTurn
+                        ? Icons.emoji_events_rounded
+                        : Icons.arrow_forward_rounded,
                     color: AppColors.primary,
                     onPressed: () => context.read<TabooCubit>().nextTurn(),
                   ),

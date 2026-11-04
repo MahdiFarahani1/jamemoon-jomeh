@@ -52,6 +52,14 @@ class SettingsPage extends StatelessWidget {
                 onChanged: (_) =>
                     context.read<SettingsCubit>().toggleVibration(),
               ),
+              const SizedBox(height: 10),
+              _SettingRow(
+                icon: Icons.music_note_rounded,
+                title: 'موسیقی بازی',
+                description: 'موسیقی زمینه برنامه‌ریزی و عملیات',
+                value: state.musicEnabled,
+                onChanged: (_) => context.read<SettingsCubit>().toggleMusic(),
+              ),
               const SizedBox(height: 32),
               const Text('داده‌های بازی', style: AppTypography.headlineLarge),
               const SizedBox(height: 8),

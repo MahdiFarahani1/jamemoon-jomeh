@@ -135,6 +135,20 @@ void main() {
     expect(GameSetupConfig.hasRounds('taboo'), isTrue);
   });
 
+  test('one round and named-player mode are supported', () {
+    expect(GameSetupConfig.allowedRounds, contains(1));
+    final config = GameSetupConfig.fromArguments('hot_potato', {
+      'totalRounds': 1,
+      'participationMode': 'players',
+    });
+    expect(config.totalRounds, 1);
+    expect(config.participationMode, GameParticipationMode.players);
+    expect(config.toArguments(), {
+      'totalRounds': 1,
+      'participationMode': 'players',
+    });
+  });
+
   test('required team members are validated before start', () {
     expect(
       GameSetupRequirements.validate('taboo', [first, second], members),
@@ -178,27 +192,28 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('final screen shows decisive single winner with congratulations', (
-    tester,
-  ) async {
-    final result = GameResult.fromTeams([
-      first.copyWith(score: 5),
-      second.copyWith(score: 2),
-    ])!;
-    await tester.pumpWidget(
-      MaterialApp(
-        home: GameCompletionView(gameKey: 'charades', result: result),
-      ),
-    );
-    await tester.pump();
-    expect(find.text('قهرمان: اول'), findsOneWidget);
-    expect(find.text('تبریک به اول برای کسب پیروزی درخشان!'), findsOneWidget);
-    expect(find.textContaining('5 امتیاز'), findsOneWidget);
-    expect(find.textContaining('2 امتیاز'), findsOneWidget);
-    expect(find.text('تیم پیروز'), findsOneWidget);
-    expect(find.text('ادامه'), findsOneWidget);
-    expect(tester.takeException(), isNull);
-  });
+  testWidgets(
+    'final screen shows decisive single winner with congratulations',
+    (tester) async {
+      final result = GameResult.fromTeams([
+        first.copyWith(score: 5),
+        second.copyWith(score: 2),
+      ])!;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: GameCompletionView(gameKey: 'charades', result: result),
+        ),
+      );
+      await tester.pump();
+      expect(find.text('قهرمان: اول'), findsOneWidget);
+      expect(find.text('تبریک به اول برای کسب پیروزی درخشان!'), findsOneWidget);
+      expect(find.textContaining('5 امتیاز'), findsOneWidget);
+      expect(find.textContaining('2 امتیاز'), findsOneWidget);
+      expect(find.text('تیم پیروز'), findsOneWidget);
+      expect(find.text('ادامه'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
 
   test('Charades onCorrect awards the actual word difficulty points', () async {
     SharedPreferences.setMockInitialValues({});

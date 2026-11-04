@@ -32,25 +32,6 @@ class TabooCardView extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    card.category,
-                    style: AppTypography.bodySmall.copyWith(
-                      color: _muted,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-                const Icon(
-                  Icons.chat_bubble_outline_rounded,
-                  color: _muted,
-                  size: 21,
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
             Text(
               card.word,
               style: AppTypography.gameCardTitle.copyWith(

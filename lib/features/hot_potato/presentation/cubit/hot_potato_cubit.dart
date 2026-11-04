@@ -7,6 +7,8 @@ import '../../../../app/di/service_locator.dart';
 import '../../../../core/models/turn_manager.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/models/game_setup_config.dart';
+import '../../../../core/models/game_stats.dart';
+import '../../../../core/models/participant_roster.dart';
 import '../../../../core/services/audio_service.dart';
 import '../../../../core/services/haptics_service.dart';
 import '../../../../core/services/round_clock.dart';
@@ -16,8 +18,12 @@ import '../../data/hot_potato_topic_model.dart';
 import 'hot_potato_state.dart';
 
 class HotPotatoCubit extends Cubit<HotPotatoState> {
-  GameResult? get result =>
-      GameResult.fromManager(_turnManager, baseline: _startingScores);
+  GameResult? get result => GameResult.fromManager(
+    _turnManager,
+    baseline: _startingScores,
+    highlights: _stats.highlights(),
+  );
+  final GameStatsTracker _stats = GameStatsTracker();
   Map<String, int> _startingScores = {};
   final GameSessionStore _session = GameSessionStore('hot_potato');
   bool _sessionReady = false;
@@ -28,12 +34,15 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
   final Random _random = Random();
   late final RoundClock _clock = RoundClock(
     onChanged: _onClockChanged,
-    onFinished: _explodeBomb,
+    onFinished: _onFuseFinished,
   );
   TurnManager? _turnManager;
   final TeamsCubit? _teamsCubit;
   final GameSetupConfig? _setup;
+  final bool _usesPlayers;
   int _completedRounds = 0;
+  int _lastPulseBucket = -1;
+  int get _participantCount => _turnManager?.teams.length ?? 4;
 
   HotPotatoCubit({
     required HotPotatoRepository repository,
@@ -44,13 +53,15 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
   }) : _repository = repository,
        _teamsCubit = teamsCubit,
        _setup = setup,
+       _usesPlayers = setup?.participationMode == GameParticipationMode.players,
        super(HotPotatoState(isQuickMode: isQuickMode)) {
     if (!isQuickMode && teamsCubit != null) {
-      _startingScores = {
-        for (final team in teamsCubit.state.teams) team.id: team.score,
-      };
-      _turnManager = TurnManager(
-        teams: teamsCubit.state.teams,
+      final participants = _usesPlayers
+          ? playerTeams(teamsCubit.state.players)
+          : teamsCubit.state.teams;
+      _startingScores = {for (final team in participants) team.id: team.score};
+      _turnManager = TurnManager.randomStart(
+        teams: participants,
         totalRounds: setup?.totalRounds ?? 3,
       );
       emit(
@@ -73,7 +84,11 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
         }
         final manager = _session.decodeManager(
           data['manager'],
-          _teamsCubit?.state.teams,
+          _teamsCubit == null
+              ? null
+              : _usesPlayers
+              ? playerTeams(_teamsCubit.state.players)
+              : _teamsCubit.state.teams,
         );
         if (!state.isQuickMode && manager == null) {
           throw const FormatException();
@@ -95,6 +110,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
             _startingScores;
         _turnManager = manager;
         _session.sessionId = data['sessionId'] as String;
+        _stats.restore(data['stats']);
         _completedRounds = (data['completedRounds'] as int?) ?? 0;
         final isExploded = data['isExploded'] as bool;
         _clock.restore(Duration(milliseconds: remainingMs));
@@ -105,6 +121,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
             hiddenBombDuration: data['hiddenBombDuration'] as int,
             isExploded: isExploded,
             isTicking: false,
+            isFuseExpired: data['isFuseExpired'] == true,
             isReadyPhase: data['isReadyPhase'] as bool,
             turnPassCount: data['turnPassCount'] as int,
             holdingTeamOrPlayer: data['holdingTeamOrPlayer'] as String,
@@ -118,8 +135,10 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
       } catch (_) {
         _turnManager = state.isQuickMode || _teamsCubit == null
             ? null
-            : TurnManager(
-                teams: _teamsCubit.state.teams,
+            : TurnManager.randomStart(
+                teams: _usesPlayers
+                    ? playerTeams(_teamsCubit.state.players)
+                    : _teamsCubit.state.teams,
                 totalRounds: _setup?.totalRounds ?? 3,
               );
       }
@@ -133,12 +152,17 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
     _session.save({
       'startingScores': _startingScores,
       'isQuickMode': state.isQuickMode,
+      'participationMode': _usesPlayers
+          ? GameParticipationMode.players.name
+          : GameParticipationMode.teams.name,
+      'stats': _stats.toJson(),
       'manager': _session.encodeManager(_turnManager),
       'item': state.currentTopic?.toJson(),
       'remainingMs': _clock.remaining.inMilliseconds,
       'elapsedSeconds': state.elapsedSeconds,
       'hiddenBombDuration': state.hiddenBombDuration,
       'isExploded': state.isExploded,
+      'isFuseExpired': state.isFuseExpired,
       'isReadyPhase': state.isReadyPhase,
       'turnPassCount': state.turnPassCount,
       'holdingTeamOrPlayer': state.holdingTeamOrPlayer,
@@ -161,6 +185,15 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
   void startNewRound() {
     final topic = _repository.getNextTopic();
     final randomSeconds = 18 + _random.nextInt(21);
+    if (_turnManager != null &&
+        _turnManager!.teams.length > 1 &&
+        _completedRounds > 0) {
+      final offset = 1 + _random.nextInt(_turnManager!.teams.length - 1);
+      final nextIndex =
+          (_turnManager!.currentTeamIndex + offset) %
+          _turnManager!.teams.length;
+      _turnManager = _turnManager!.withCurrentTeamIndex(nextIndex);
+    }
 
     emit(
       state.copyWith(
@@ -169,24 +202,38 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
         hiddenBombDuration: randomSeconds,
         isExploded: false,
         isTicking: true,
+        isFuseExpired: false,
         isReadyPhase: false,
         turnPassCount: 0,
+        holdingTeamOrPlayer:
+            _turnManager?.currentTeam.name ?? state.holdingTeamOrPlayer,
         clearLoser: true,
       ),
     );
+    _lastPulseBucket = -1;
 
     _clock.start(Duration(seconds: randomSeconds));
   }
 
   void _onClockChanged(Duration remaining) {
-    final elapsed =
-        state.hiddenBombDuration - (remaining.inMilliseconds / 1000).ceil();
+    final elapsedMs =
+        state.hiddenBombDuration * 1000 - remaining.inMilliseconds;
+    final elapsed = (elapsedMs / 1000).floor();
+    final tension = (elapsedMs / (state.hiddenBombDuration * 1000)).clamp(
+      0.0,
+      1.0,
+    );
+    // The fuse begins restrained and becomes sharply more urgent near the end.
+    final urgency = tension * tension;
+    final pulseInterval = (800 - urgency * 650).round().clamp(150, 800);
+    final pulseBucket = elapsedMs ~/ pulseInterval;
+    if (pulseBucket != _lastPulseBucket) {
+      _lastPulseBucket = pulseBucket;
+      _audio.playBombTick(tension);
+      if (tension > .82) _haptics.mediumBump();
+    }
     if (elapsed != state.elapsedSeconds) {
       emit(state.copyWith(elapsedSeconds: elapsed));
-      _audio.playTick();
-      if (elapsed > state.hiddenBombDuration * 0.7) {
-        _haptics.mediumBump();
-      }
     }
   }
 
@@ -195,10 +242,13 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
     _haptics.heavyBoom();
 
     final loser = state.holdingTeamOrPlayer;
+    _stats.add(loser, GameStatMetric.explosion);
 
     if (!state.isQuickMode && _turnManager != null) {
       final losingTeam = _turnManager!.currentTeam;
-      _teamsCubit?.updateTeamScore(losingTeam.id, -2);
+      if (!_usesPlayers) {
+        _teamsCubit?.updateTeamScore(losingTeam.id, -2);
+      }
       _turnManager = _turnManager!.updateTeamScore(losingTeam.id, -2);
     }
 
@@ -210,6 +260,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
       state.copyWith(
         isExploded: true,
         isTicking: false,
+        isFuseExpired: false,
         loserName: loser,
         isGameOver: !state.isQuickMode && _completedRounds >= state.totalRounds,
         currentRound: _completedRounds.clamp(1, state.totalRounds),
@@ -217,10 +268,21 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
     );
   }
 
+  void _onFuseFinished() {
+    if (state.turnPassCount >= _participantCount) {
+      _explodeBomb();
+      return;
+    }
+    // The hidden fuse has ended, but nobody is excluded from this round.
+    // Explosion occurs immediately after every participant has held the bomb.
+    emit(state.copyWith(isFuseExpired: true));
+  }
+
   void passToNext() {
     if (state.isExploded || !state.isTicking) return;
 
     _haptics.lightClick();
+    _audio.playTurn();
     String nextName;
 
     if (!state.isQuickMode && _turnManager != null) {
@@ -230,12 +292,16 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
       nextName = 'بازیکن ${(state.turnPassCount % 4) + 2}';
     }
 
+    final nextPassCount = state.turnPassCount + 1;
     emit(
       state.copyWith(
-        turnPassCount: state.turnPassCount + 1,
+        turnPassCount: nextPassCount,
         holdingTeamOrPlayer: nextName,
       ),
     );
+    if (state.isFuseExpired && nextPassCount >= _participantCount) {
+      _explodeBomb();
+    }
   }
 
   void showMatchResult() {
@@ -262,7 +328,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
       return;
     }
     emit(state.copyWith(isTicking: true));
-    _clock.resume();
+    if (!state.isFuseExpired) _clock.resume();
   }
 
   @override

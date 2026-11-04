@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../app/theme/app_colors.dart';
@@ -291,16 +293,9 @@ class _GameArtPainter extends CustomPainter {
           ..lineTo(48, 54)
           ..close();
         _object(c, shackle, const Color(0xFFD3DCE8));
-        _object(
-          c,
-          _round(const Rect.fromLTWH(26, 46, 68, 53), 16),
-          color,
-        );
+        _object(c, _round(const Rect.fromLTWH(26, 46, 68, 53), 16), color);
         final innerPlate = _round(const Rect.fromLTWH(34, 54, 52, 37), 10);
-        c.drawPath(
-          innerPlate,
-          Paint()..color = ink.withValues(alpha: .22),
-        );
+        c.drawPath(innerPlate, Paint()..color = ink.withValues(alpha: .22));
         c.drawPath(
           innerPlate,
           Paint()
@@ -324,10 +319,55 @@ class _GameArtPainter extends CustomPainter {
           3,
         );
         for (final x in [42.0, 78.0]) {
-          c.drawCircle(Offset(x, 72), 2.5, Paint()..color = ink.withValues(alpha: .45));
-          c.drawCircle(Offset(x, 71.5), 1, Paint()..color = Colors.white.withValues(alpha: .5));
+          c.drawCircle(
+            Offset(x, 72),
+            2.5,
+            Paint()..color = ink.withValues(alpha: .45),
+          );
+          c.drawCircle(
+            Offset(x, 71.5),
+            1,
+            Paint()..color = Colors.white.withValues(alpha: .5),
+          );
         }
         c.restore();
+      case 'heist':
+        _object(c, _round(const Rect.fromLTWH(22, 24, 76, 76), 15), color);
+        c.drawCircle(
+          const Offset(60, 62),
+          27,
+          Paint()
+            ..color = const Color(0xFF17191F)
+            ..style = PaintingStyle.fill,
+        );
+        c.drawCircle(
+          const Offset(60, 62),
+          22,
+          Paint()
+            ..color = const Color(0xFFD6A84B)
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 4,
+        );
+        for (var i = 0; i < 8; i++) {
+          final angle = i * 3.14159 / 4;
+          final start = Offset(
+            60 + 13 * math.cos(angle),
+            62 + 13 * math.sin(angle),
+          );
+          final end = Offset(
+            60 + 20 * math.cos(angle),
+            62 + 20 * math.sin(angle),
+          );
+          _line(c, [start, end], const Color(0xFFD6A84B), 2.5);
+        }
+        c.drawCircle(const Offset(60, 62), 7, Paint()..color = color);
+        _line(
+          c,
+          [const Offset(60, 62), const Offset(70, 52)],
+          const Color(0xFFF6E3B1),
+          3,
+        );
+        _object(c, _round(const Rect.fromLTWH(88, 52, 8, 22), 3), color);
       default:
         _object(
           c,

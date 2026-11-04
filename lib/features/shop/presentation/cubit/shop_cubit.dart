@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/services/purchase_service.dart';
+import '../../../../core/services/storage_service.dart';
 import 'shop_state.dart';
 
 class ShopCubit extends Cubit<ShopState> {
@@ -32,6 +33,8 @@ class ShopCubit extends Cubit<ShopState> {
           for (final p in state.products) {
             updated.add(p.id);
           }
+          updated.add('heist');
+          updated.addAll(StorageService.seasonOnePackIds);
         }
         emit(
           state.copyWith(

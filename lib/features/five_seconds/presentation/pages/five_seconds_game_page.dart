@@ -77,9 +77,13 @@ class _FiveSecondsGameView extends StatelessWidget {
           );
         }
         if (state.isPassPhonePhase) {
+          final assignment = state.isQuickMode
+              ? null
+              : context.read<FiveSecondsCubit>().currentAssignment;
           return Scaffold(
             body: PassPhoneOverlay(
               teamName: state.activeTeamName,
+              playerName: assignment?.performer,
               gameTitle: 'سه‌تا بگو! (قانون ۵ ثانیه)',
               onReady: () => context.read<FiveSecondsCubit>().startQuestion(),
             ),
@@ -164,7 +168,6 @@ class _FiveSecondsGameView extends StatelessWidget {
                       child: Center(
                         child: GamePromptCard(
                           gameKey: 'five_seconds',
-                          category: currentQ?.category ?? 'چالش سرعتی',
                           prompt: currentQ?.question ?? 'در حال آماده‌سازی...',
                           hint: 'سریع فکر کن و بلند جواب بده!',
                         ),

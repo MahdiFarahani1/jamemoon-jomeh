@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -42,22 +43,44 @@ void main() {
   });
 
   group('Bundled content regression checks', () {
-    const games = ['taboo', 'hot_potato', 'charades', 'five_seconds', 'drawing'];
+    const games = [
+      'taboo',
+      'hot_potato',
+      'charades',
+      'five_seconds',
+      'drawing',
+    ];
 
-    test('each supported game contains 20 free and 20 full unique cards', () {
+    test('each supported game contains 800 unique cards', () {
       for (final game in games) {
         final free = _readPack('assets/data/$game/pack_free.json');
         final full = _readPack('assets/data/$game/pack_full.json');
-        expect(free, hasLength(20), reason: '$game free pack');
-        expect(full, hasLength(20), reason: '$game full pack');
+        expect(free, hasLength(400), reason: '$game free pack');
+        expect(full, hasLength(400), reason: '$game full pack');
         _validatePack(game, free);
         _validatePack(game, full);
         final primary = _primaryField(game);
-        final normalizedFree = free.map((row) => ContentService.normalize(row[primary] as String)).toSet();
-        final normalizedFull = full.map((row) => ContentService.normalize(row[primary] as String)).toSet();
-        expect(normalizedFree, hasLength(free.length), reason: '$game free normalized duplicates');
-        expect(normalizedFull, hasLength(full.length), reason: '$game full normalized duplicates');
-        expect(normalizedFree.intersection(normalizedFull), isEmpty, reason: '$game overlaps free/full');
+        final normalizedFree = free
+            .map((row) => ContentService.normalize(row[primary] as String))
+            .toSet();
+        final normalizedFull = full
+            .map((row) => ContentService.normalize(row[primary] as String))
+            .toSet();
+        expect(
+          normalizedFree,
+          hasLength(free.length),
+          reason: '$game free normalized duplicates',
+        );
+        expect(
+          normalizedFull,
+          hasLength(full.length),
+          reason: '$game full normalized duplicates',
+        );
+        expect(
+          normalizedFree.intersection(normalizedFull),
+          isEmpty,
+          reason: '$game overlaps free/full',
+        );
       }
       expect(ContentService.productIds.keys, unorderedEquals(games));
       expect(ContentService.productIds, isNot(contains('decoder')));
@@ -67,10 +90,18 @@ void main() {
   group('ContentService composition and validation', () {
     test('loads free content and unlocks only an owned pack plus compatible custom cards', () async {
       final bundle = _FixtureBundle({
-        'assets/data/charades/pack_free.json': jsonEncode([_word('free', 'کتاب')]),
-        'assets/data/charades/pack_full.json': jsonEncode([_word('full', 'باران')]),
-        'assets/data/drawing/pack_free.json': jsonEncode([_word('drawing-free', 'ابر')]),
-        'assets/data/drawing/pack_full.json': jsonEncode([_word('drawing-full', 'خورشید')]),
+        'assets/data/charades/pack_free.json': jsonEncode([
+          _word('free', 'کتاب'),
+        ]),
+        'assets/data/charades/pack_full.json': jsonEncode([
+          _word('full', 'باران'),
+        ]),
+        'assets/data/drawing/pack_free.json': jsonEncode([
+          _word('drawing-free', 'ابر'),
+        ]),
+        'assets/data/drawing/pack_full.json': jsonEncode([
+          _word('drawing-full', 'خورشید'),
+        ]),
       });
       await storage.saveCustomCards([
         {'id': 'custom-both', 'word': 'درخت', 'gameKey': 'both'},
@@ -85,17 +116,33 @@ void main() {
       final service = ContentService(storage, bundle: bundle);
 
       final charades = await service.load('charades');
-      expect(charades.map((row) => row['id']), containsAll([
-        'free', 'full', 'custom-both', 'custom-charades', 'old-compatible',
-      ]));
-      expect(charades.map((row) => row['id']), isNot(contains('custom-drawing')));
+      expect(
+        charades.map((row) => row['id']),
+        containsAll([
+          'free',
+          'full',
+          'custom-both',
+          'custom-charades',
+          'old-compatible',
+        ]),
+      );
+      expect(
+        charades.map((row) => row['id']),
+        isNot(contains('custom-drawing')),
+      );
       expect(charades.map((row) => row['id']), isNot(contains('wrong-game')));
       expect(charades.map((row) => row['id']), isNot(contains('blank')));
 
       final drawing = await service.load('drawing');
-      expect(drawing.map((row) => row['id']), containsAll([
-        'drawing-free', 'custom-both', 'custom-drawing', 'old-compatible',
-      ]));
+      expect(
+        drawing.map((row) => row['id']),
+        containsAll([
+          'drawing-free',
+          'custom-both',
+          'custom-drawing',
+          'old-compatible',
+        ]),
+      );
       expect(drawing.map((row) => row['id']), isNot(contains('drawing-full')));
     });
 
@@ -108,7 +155,11 @@ void main() {
         ]),
         'assets/data/drawing/pack_free.json': '[]',
         'assets/data/taboo/pack_free.json': jsonEncode([
-          {'id': 'bad-taboo', 'word': 'مداد', 'forbiddenWords': ['یک']},
+          {
+            'id': 'bad-taboo',
+            'word': 'مداد',
+            'forbiddenWords': ['یک'],
+          },
         ]),
       });
       final service = ContentService(storage, bundle: bundle);
@@ -139,14 +190,29 @@ void _validatePack(String game, List<Map<String, dynamic>> pack) {
   for (final card in pack) {
     expect(card['id'], isA<String>());
     expect((card['id'] as String).trim(), isNotEmpty);
-    expect(ids.add(card['id'] as String), isTrue, reason: '$game duplicate ID ${card['id']}');
+    expect(
+      ids.add(card['id'] as String),
+      isTrue,
+      reason: '$game duplicate ID ${card['id']}',
+    );
     expect(card[field], isA<String>());
-    expect((card[field] as String).trim(), isNotEmpty, reason: '${card['id']} empty $field');
+    expect(
+      (card[field] as String).trim(),
+      isNotEmpty,
+      reason: '${card['id']} empty $field',
+    );
     if (game == 'taboo') {
       final forbidden = card['forbiddenWords'];
       expect(forbidden, isA<List>());
-      expect(forbidden, hasLength(5), reason: '${card['id']} forbidden-word count');
-      expect((forbidden as List).every((w) => w is String && w.trim().isNotEmpty), isTrue);
+      expect(
+        forbidden,
+        hasLength(5),
+        reason: '${card['id']} forbidden-word count',
+      );
+      expect(
+        (forbidden as List).every((w) => w is String && w.trim().isNotEmpty),
+        isTrue,
+      );
     }
   }
 }

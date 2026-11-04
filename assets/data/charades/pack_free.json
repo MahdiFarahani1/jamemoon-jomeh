@@ -1,123 +1,2802 @@
 [
   {
     "id": "charades_1",
-    "word": "موز پوست کندن و لیز خوردن",
-    "category": "موقعیت طنز",
-    "points": 2
+    "word": "خوابیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_2",
-    "word": "دندان‌پزشک و بیمار ترسو",
-    "category": "شغل و موقعیت",
-    "points": 3
+    "word": "مسواک زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_3",
-    "word": "پنچرگیری در باران شدید",
-    "category": "موقعیت روزمره",
-    "points": 3
+    "word": "غذا خوردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_4",
-    "word": "گربه‌ای که از آب می‌ترسد",
-    "category": "حیوانات",
-    "points": 1
+    "word": "آب خوردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_5",
-    "word": "عطسه کردن جلوی باد پنکه",
-    "category": "حرکات طنز",
-    "points": 2
+    "word": "دویدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_6",
-    "word": "نانوایی شلوغ و داغی نان سنگک",
-    "category": "فرهنگ روزمره",
-    "points": 2
+    "word": "راه رفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_7",
-    "word": "والیبال ساحلی",
-    "category": "ورزش",
-    "points": 1
+    "word": "شنا کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_8",
-    "word": "عکاسی از نوزاد بی‌قرار",
-    "category": "موقعیت",
-    "points": 3
+    "word": "کتاب خواندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_9",
-    "word": "پیتزای داغ با پنیر کش‌دار",
-    "category": "خوراکی",
-    "points": 1
+    "word": "تلفن حرف زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_10",
-    "word": "بندبازی روی طناب در ارتفاع",
-    "category": "حرکت نمایشی",
-    "points": 2
+    "word": "عکس گرفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_11",
-    "word": "رانندگی با ماشین دنده اتومات برای اولین بار",
-    "category": "موقعیت طنز",
-    "points": 3
+    "word": "گریه کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_12",
-    "word": "شیرجه زدن در استخر یخ‌زده",
-    "category": "ورزش و چالش",
-    "points": 2
+    "word": "خندیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_13",
-    "word": "دیدن روح در تاریکی نیمه‌شب",
-    "category": "هیجانی",
-    "points": 2
+    "word": "عطسه کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_14",
-    "word": "تعمیرکار کولر روی پشت‌بام داغ",
-    "category": "روزمره ایرانی",
-    "points": 2
+    "word": "سرفه کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_15",
-    "word": "داور فوتبال هنگام نشان دادن کارت قرمز",
-    "category": "ورزش",
-    "points": 1
+    "word": "دست زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_16",
-    "word": "خرید لباس و چانه زدن برای تخفیف",
-    "category": "اجتماعی",
-    "points": 2
+    "word": "رقصیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_17",
-    "word": "فضانورد در شرایط بی‌وزنی",
-    "category": "علمی و تخیلی",
-    "points": 3
+    "word": "آواز خواندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_18",
-    "word": "تشنج از خوردن ترشی لیته یا لواشک خیلی ترش",
-    "category": "طنز",
-    "points": 1
+    "word": "رانندگی کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_19",
-    "word": "گرفتن سوسک با دمپایی",
-    "category": "اکشن خانگی",
-    "points": 2
+    "word": "دوچرخه سواری",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
   },
   {
     "id": "charades_20",
-    "word": "مسافر خواب‌آلود در اتوبوس شلوغ",
-    "category": "روزمره",
-    "points": 2
+    "word": "فوتبال بازی کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_21",
+    "word": "بسکتبال بازی کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_22",
+    "word": "طناب زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_23",
+    "word": "مو شانه کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_24",
+    "word": "کفش پوشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_25",
+    "word": "لباس پوشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_26",
+    "word": "ظرف شستن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_27",
+    "word": "جارو کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_28",
+    "word": "آشپزی کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_29",
+    "word": "چای ریختن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_30",
+    "word": "در زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_31",
+    "word": "پنجره باز کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_32",
+    "word": "تلویزیون دیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_33",
+    "word": "هدیه باز کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_34",
+    "word": "نامه نوشتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_35",
+    "word": "نقاشی کشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_36",
+    "word": "ساعت دیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_37",
+    "word": "گل چیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_38",
+    "word": "درخت کاشتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_39",
+    "word": "ماهی گرفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_40",
+    "word": "پرواز کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_41",
+    "word": "اسب سواری",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_42",
+    "word": "بالا رفتن از پله",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_43",
+    "word": "زمین خوردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_44",
+    "word": "بیدار شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_45",
+    "word": "خمیازه کشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_46",
+    "word": "فکر کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_47",
+    "word": "ترسیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_48",
+    "word": "عصبانی شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_49",
+    "word": "تعجب کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_50",
+    "word": "خجالت کشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_51",
+    "word": "خرید کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_52",
+    "word": "پول شمردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_53",
+    "word": "بستنی خوردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_54",
+    "word": "کیک پختن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_55",
+    "word": "بادکنک باد کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_56",
+    "word": "شمع فوت کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_57",
+    "word": "پیانو زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_58",
+    "word": "گیتار زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_59",
+    "word": "سوت زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_60",
+    "word": "دست تکان دادن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_61",
+    "word": "سلام نظامی",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_62",
+    "word": "بغل کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_63",
+    "word": "گل بو کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_64",
+    "word": "آفتاب گرفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_65",
+    "word": "برف بازی",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_66",
+    "word": "آدم برفی ساختن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_67",
+    "word": "چتر باز کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_68",
+    "word": "بادبادک بازی",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_69",
+    "word": "توپ پرتاب کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_70",
+    "word": "وزنه زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_71",
+    "word": "یوگا کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_72",
+    "word": "قایق راندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_73",
+    "word": "کمربند بستن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_74",
+    "word": "عطر زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_75",
+    "word": "کلید چرخاندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_76",
+    "word": "تخم مرغ شکستن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_77",
+    "word": "نمک پاشیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_78",
+    "word": "میوه پوست کندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_79",
+    "word": "ساندویچ درست کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_80",
+    "word": "بستنی آب شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_81",
+    "word": "گم شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_82",
+    "word": "آدرس پرسیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_83",
+    "word": "منتظر ماندن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_84",
+    "word": "صف ایستادن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_85",
+    "word": "اتوبوس سوار شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_86",
+    "word": "تاکسی گرفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_87",
+    "word": "چمدان بستن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_88",
+    "word": "سفر رفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_89",
+    "word": "کوه رفتن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_90",
+    "word": "کمپ زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_91",
+    "word": "عینک زدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_92",
+    "word": "خواب دیدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_93",
+    "word": "دندان درد",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_94",
+    "word": "سر درد",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_95",
+    "word": "مچ انداختن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_96",
+    "word": "مو کوتاه کردن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_97",
+    "word": "اصلاح کردن صورت",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_98",
+    "word": "چراغ روشن کردن با کلید کهنه",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_99",
+    "word": "یخچال باز کردن و خیره شدن",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_100",
+    "word": "میز چیدن برای مهمانی",
+    "category": "کارهای روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_101",
+    "word": "تنیس بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_102",
+    "word": "والیبال بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_103",
+    "word": "بدمینتون بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_104",
+    "word": "پینگ پنگ بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_105",
+    "word": "تیراندازی با کمان",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_106",
+    "word": "شمشیربازی مسابقه‌ای",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_107",
+    "word": "بکسل کردن ماشین",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_108",
+    "word": "بولینگ بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_109",
+    "word": "گلف بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_110",
+    "word": "موج‌سواری روی آب",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_111",
+    "word": "اسکی روی برف",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_112",
+    "word": "اسکیت روی یخ",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_113",
+    "word": "حرکات موزون ژیمناستیک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_114",
+    "word": "دارت انداختن به هدف",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_115",
+    "word": "بیلیارد بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_116",
+    "word": "شطرنج بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_117",
+    "word": "وزنه‌برداری یک‌ضرب",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_118",
+    "word": "شنای قورباغه",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_119",
+    "word": "شیرجه از دایو بلند",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_120",
+    "word": "کشتی گرفتن در تشک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_121",
+    "word": "تکواندو مبارزه کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_122",
+    "word": "کوهنوردی با کلنگ یخی",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_123",
+    "word": "صخره‌نوردی با طناب",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_124",
+    "word": "پرش با نیزه",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_125",
+    "word": "دو سرعت ۱۰۰ متر",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_126",
+    "word": "پرتاب وزنه سنگین",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_127",
+    "word": "پرتاب دیسک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_128",
+    "word": "پرش طول",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_129",
+    "word": "سوارکاری و پرش از مانع",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_130",
+    "word": "قایقرانی کانو",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_131",
+    "word": "قایقرانی کایاک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_132",
+    "word": "موتورسواری پرشی",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_133",
+    "word": "رانندگی کارتینگ",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_134",
+    "word": "پرواز با پاراگلایدر",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_135",
+    "word": "چتربازی از هلیکوپتر",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_136",
+    "word": "اسکیت‌برد در پارک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_137",
+    "word": "بدنسازی جلوی آینه",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_138",
+    "word": "دوچرخه‌سواری کوهستان",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_139",
+    "word": "پاتیلاژ دونفره",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_140",
+    "word": "شکار با تفنگ بادی",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_141",
+    "word": "ماهیگیری با چوب کاسی",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_142",
+    "word": "غواصی زیر آب با کپسول",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_143",
+    "word": "واترپلو بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_144",
+    "word": "بیسبال بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_145",
+    "word": "کریکت بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_146",
+    "word": "راگبی بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_147",
+    "word": "هاکی روی یخ",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_148",
+    "word": "هندبال بازی کردن",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_149",
+    "word": "ژیمناستیک روی خرک",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_150",
+    "word": "طناب‌کشی گروهی",
+    "category": "ورزش و بازی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_151",
+    "word": "نجات غریق در ساحل",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_152",
+    "word": "بندبازی در سیرک",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_153",
+    "word": "آشپز دستپاچه در رستوران",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_154",
+    "word": "معلم عصبانی پای تخته",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_155",
+    "word": "شستن گربه ناراضی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_156",
+    "word": "خیاط در حال پرو لباس",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_157",
+    "word": "عکاس حیات وحش در کمین",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_158",
+    "word": "شعبده‌باز ناشی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_159",
+    "word": "پیاز خرد کردن با اشک",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_160",
+    "word": "دزد در حال باز کردن گاوصندوق",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_161",
+    "word": "خواب ماندن برای مصاحبه کاری",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_162",
+    "word": "گیر کردن در آسانسور",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_163",
+    "word": "تست رانندگی شهری با افسر",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_164",
+    "word": "راه رفتن روی شیشه خرده",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_165",
+    "word": "بستن بند کفش با دستکش ضخیم",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_166",
+    "word": "عوض کردن پوشک بچه",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_167",
+    "word": "جاروبرقی کشیدن زیر تخت",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_168",
+    "word": "تعمیر کولر در هوای گرم تابستان",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_169",
+    "word": "پرتاب دارت به خال سیاه",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_170",
+    "word": "آرایش کردن جلوی آینه ماشین",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_171",
+    "word": "شستن ماشین با شلنگ و اسفنج",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_172",
+    "word": "عکس سلفی دسته‌جمعی پرجمعیت",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_173",
+    "word": "سر خوردن روی سنگفرش خیس",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_174",
+    "word": "بریدن کیک تولد با رقص چاقو",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_175",
+    "word": "پانتومیم بازی کردن در جمع",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_176",
+    "word": "سخنرانی رسمی جلوی جمعیت زیاد",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_177",
+    "word": "تلاش برای کشتن مگس سمج",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_178",
+    "word": "انداختن نخ باریک در سوزن",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_179",
+    "word": "تمیز کردن لکه چای از روی فرش",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_180",
+    "word": "تخمه شکستن پای بازی فوتبال",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_181",
+    "word": "چیدن هفت‌سین نوروز",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_182",
+    "word": "آتش روشن کردن با چوب خیس",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_183",
+    "word": "باد زدن کباب روی منقل ذغالی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_184",
+    "word": "فشار دادن تیوب خمیردندان خالی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_185",
+    "word": "کشیدن دندان لق شیری با نخ",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_186",
+    "word": "فوت کردن سوپ خیلی داغ",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_187",
+    "word": "گرفتن تاکسی زیر باران سیل‌آسا",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_188",
+    "word": "ملاقات با دندانپزشک ترسو",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_189",
+    "word": "تعویض لامپ لوستر روی نردبان",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_190",
+    "word": "وزن کردن خود روی ترازو با استرس",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_191",
+    "word": "خرید هندوانه به شرط چاقو",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_192",
+    "word": "حمل بارهای سنگین خرید تا طبقه چهارم",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_193",
+    "word": "امضا کردن قولنامه مهم",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_194",
+    "word": "چک کردن باد لاستیک با لگد",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_195",
+    "word": "ناز کشیدن از بچه قهرکرده",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_196",
+    "word": "پوشیدن پالتوی پشمی در گرمای تابستان",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_197",
+    "word": "رنگ کردن سقف با غلطک",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_198",
+    "word": "پاک کردن بخار شیشه اتوبوس",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_199",
+    "word": "باز کردن قوطی کنسرو بدون دربازکن",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_200",
+    "word": "دویدن دنبال اتوبوس در حال حرکت",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_201",
+    "word": "پاک کردن فلس ماهی تازه",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_202",
+    "word": "اتو کشیدن کت و شلوار چروک",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_203",
+    "word": "مکانیک در حال تعویض روغن موتور",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_204",
+    "word": "جراح در حال عمل قلب باز",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_205",
+    "word": "آتش‌نشان در حال مهار آتش سوزی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_206",
+    "word": "خلبان در کابین هواپیما",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_207",
+    "word": "ناخدا در طوفان دریایی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_208",
+    "word": "پلیس راهنمایی در چهارراه شلوغ",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_209",
+    "word": "کارآگاه در جستجوی سرنخ",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_210",
+    "word": "نگهبان خواب‌آلود شب‌کار",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_211",
+    "word": "نانوای سنگک پای پارو",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_212",
+    "word": "قناد در حال تزیین کیک عروسی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_213",
+    "word": "باغبان در حال هرس گل رز",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_214",
+    "word": "مجسمه‌ساز با چکش و قلم",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_215",
+    "word": "نجار در حال رندیدن چوب",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_216",
+    "word": "جوشکار با ماسک و جرقه",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_217",
+    "word": "تعمیرکار ساعت مچی با ذره‌بین",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_218",
+    "word": "خطاط با قلم نی و مرکب",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_219",
+    "word": "بازیگر روی صحنه تئاتر",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_220",
+    "word": "گزارشگر فوتبال با هیجان زیاد",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_221",
+    "word": "خبرنگار زیر باران تند",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_222",
+    "word": "دلقک سیرک در حال بادکنک‌آرایی",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_223",
+    "word": "شیشه‌پاک‌کن برج‌های بلند",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_224",
+    "word": "رفتگر شهرداری در پاییز",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_225",
+    "word": "پستچی با بسته سنگین",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_226",
+    "word": "خلبان بالگرد نجات",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_227",
+    "word": "راننده تراکتور در زمین گندم",
+    "category": "مشاغل و فعالیت‌ها",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_228",
+    "word": "تلاش برای باز کردن کیسه نایلون میوه",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_229",
+    "word": "سوختن زبان با چای داغ نبات",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_230",
+    "word": "گاز زدن لیموترش با چشم بسته",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_231",
+    "word": "دیدن سوسک بالدار در دستشویی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_232",
+    "word": "ریختن قهوه روی لباس سفید مهمانی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_233",
+    "word": "سوتی دادن در جمع رسمی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_234",
+    "word": "کادو گرفتن جوراب در روز تولد",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_235",
+    "word": "گیر کردن آدامس لای مو",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_236",
+    "word": "سکسکه ممتد وسط امتحان کتبی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_237",
+    "word": "گرفتگی گوش در پرواز هواپیما",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_238",
+    "word": "فرو رفتن سوزن در انگشت دست",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_239",
+    "word": "پیاده شدن اشتباهی از مترو",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_240",
+    "word": "جا ماندن کارت بانکی در خودپرداز",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_241",
+    "word": "خاموش شدن گوشی با شارژ یک درصد",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_242",
+    "word": "آهنگ خواندن زیر دوش با صدای بلند",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_243",
+    "word": "رقصیدن تنهایی جلوی آینه اتاق",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_244",
+    "word": "پنهان کردن کارنامه تجدیدی از پدر",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_245",
+    "word": "دیدن قیمت‌های منوی رستوران لاکچری",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_246",
+    "word": "خوردن فلفل تند هندی اشتباهی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_247",
+    "word": "خارش پشت پا با دست پر از خرید",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_248",
+    "word": "سوراخ بودن جوراب در خانه میزبان",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_249",
+    "word": "تظاهر به شنیدن حرف در جای شلوغ",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_250",
+    "word": "پیدا نکردن لنگه جوراب در عجله",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_251",
+    "word": "خالی شدن ناگهانی باتری کنترل تلویزیون",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_252",
+    "word": "تلاش برای بستن زیپ چمدان پر",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_253",
+    "word": "ریختن سس کچاپ روی پیراهن نو",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_254",
+    "word": "چسبیدن بستنی قیفی به نوک بینی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_255",
+    "word": "ترکیدن بادکنک درست جلوی گوش",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_256",
+    "word": "سر خوردن کفش پاشنه‌بلند در مهمانی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_257",
+    "word": "خواب رفتن پا و سوزن‌سوزن شدن",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_258",
+    "word": "برق‌گرفتگی ضعیف با دستگیره در",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_259",
+    "word": "سوختن سیب‌زمینی سرخ‌کرده",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_260",
+    "word": "شکستن بشقاب جلوی چشم مادر",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_261",
+    "word": "گم کردن عینک در حالی که روی سر است",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_262",
+    "word": "عوضی سوار شدن ماشین در ترافیک",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_263",
+    "word": "فرار از آمپول زدن در درمانگاه",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_264",
+    "word": "تلاش برای خفه کردن صدای سرفه در سکوت",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_265",
+    "word": "پریدن لقمه بزرگ در گلو",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_266",
+    "word": "ریختن بستنی روی شلوار هنگام رانندگی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_267",
+    "word": "خوردن دوغ ترش و خواب‌آلودگی شدید",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_268",
+    "word": "چرت زدن سر کلاس درس ریاضی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_269",
+    "word": "تعارف تیکه‌پاره کردن دم در ورودی",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_270",
+    "word": "چانه زدن با راننده تاکسی بر سر کرایه",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_271",
+    "word": "عکس گرفتن با ژست و خراب شدن نور",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_272",
+    "word": "تلاش برای قورت دادن قرص بزرگ",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_273",
+    "word": "ریختن آب یخ پشت گردن دوست",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_274",
+    "word": "دیدن پلیس وقتی کمربند نبسته‌ای",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_275",
+    "word": "بستن دکمه‌های پیراهن به شکل جابجا",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_276",
+    "word": "پاره شدن بند کفش در مسابقه دو",
+    "category": "موقعیت‌های خنده‌دار",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_277",
+    "word": "اسب تروا",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_278",
+    "word": "کشف جاذبه زیر درخت سیب نیوتن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_279",
+    "word": "سوراخ شدن قایق بادی در اقیانوس",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_280",
+    "word": "عذاب وجدان بعد از تقلب لو رفته",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_281",
+    "word": "پشیمانی شدید بعد از خرید اینترنتی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_282",
+    "word": "شاهنامه آخرش خوشه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_283",
+    "word": "فوت کوزه‌گری در آخرین لحظه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_284",
+    "word": "آب پاکی روی دست کسی ریختن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_285",
+    "word": "فیل در تاریکی و حدس اشتباه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_286",
+    "word": "زنگ تفریح و ناظم عصبانی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_287",
+    "word": "آدم فضایی در مهمانی زمینی‌ها",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_288",
+    "word": "قطع شدن اینترنت وسط فینال آنلاین",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_289",
+    "word": "گرگم به هوا در مه غلیظ جنگلی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_290",
+    "word": "پرواز ناموفق با جاروی جادویی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_291",
+    "word": "داور فوتبال بعد از پنالتی مشکوک",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_292",
+    "word": "مسافر جامانده از آخرین پرواز سال",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_293",
+    "word": "کارآگاه شرلوک هلمز با ذره‌بین در مه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_294",
+    "word": "زلزله هفت ریشتری و پناه گرفتن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_295",
+    "word": "سفر در زمان با ماشین زمان خراب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_296",
+    "word": "جنگجوی نینجا روی سقف لغزنده",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_297",
+    "word": "جوجه‌تیغی مهربان در آغوش کشیدن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_298",
+    "word": "سراب دیدن در کویر لوت بی‌آب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_299",
+    "word": "مجسمه ابوالهول با چشمان متحرک",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_300",
+    "word": "دزد دریایی با پای چوبی و نقشه خیس",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_301",
+    "word": "ربات انسان‌نما با باتری یک درصد",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_302",
+    "word": "مومیایی زنده در موزه در نیمه‌شب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_303",
+    "word": "شعبده‌بازی که کبوترش کلاه را برد",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_304",
+    "word": "غارنشین اولیه در حال کشف شعله آتش",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_305",
+    "word": "سرگردان شدن در مثلث برمودا",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_306",
+    "word": "دوئل وسترن در خیابان خاک‌آلود خلوت",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_307",
+    "word": "دندان عقل کشیدن بدون داروی بی‌حسی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_308",
+    "word": "شکستن رکورد جهانی طناب‌زنی سرعتی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_309",
+    "word": "دگردیسی کرم ابریشم به پروانه زیبا",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_310",
+    "word": "جراحی پیوند قلب در آمبولانس در حال حرکت",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_311",
+    "word": "فرار شتاب‌زده از دست دایناسور گرسنه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_312",
+    "word": "آشپز نابینای مسابقه بین‌المللی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_313",
+    "word": "راننده فرمول یک در پیست بارانی موناکو",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_314",
+    "word": "کوهنورد یخ‌زده در دو قدمی قله اورست",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_315",
+    "word": "فضانورد معلق که بند سفینه‌اش پاره شده",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_316",
+    "word": "ترکیدن لوله اصلی آب آپارتمان در نصفه‌شب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_317",
+    "word": "رقص تانگوی هماهنگ با چشمان بسته",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_318",
+    "word": "دیدن روح در خانه قدیمی متروکه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_319",
+    "word": "تلاش مرگبار برای نخندیدن در جلسه رسمی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_320",
+    "word": "سقوط آزاد و باز نشدن چتر نجات اصلی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_321",
+    "word": "خفاش کم‌بینا در غار پر از قندیل",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_322",
+    "word": "پشمک حاج عبدالله در باد شدید",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_323",
+    "word": "دست روی دست گذاشتن در روز امتحان",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_324",
+    "word": "کلاغ چهل‌کلاغ کردن شایعه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_325",
+    "word": "شتر دیدی ندیدی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_326",
+    "word": "ماهی را هر وقت از آب بگیری تازه است",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_327",
+    "word": "آب در هاون کوبیدن بی‌حاصل",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_328",
+    "word": "جوجه را آخر پاییز شمردن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_329",
+    "word": "سنگ بزرگ علامت نزدن است",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_330",
+    "word": "پای لنگ و سنگلاخ تند",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_331",
+    "word": "آش نخورده و دهان سوخته",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_332",
+    "word": "دم به تله دادن موش",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_333",
+    "word": "گرگ باران‌دیده در بیشه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_334",
+    "word": "خروس بی‌محل در نصفه‌شب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_335",
+    "word": "کاسه داغ‌تر از آش شدن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_336",
+    "word": "کفگیر به ته دیگ خوردن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_337",
+    "word": "دیوار موش دارد موش گوش دارد",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_338",
+    "word": "مارگزیده از ریسمان سیاه و سفید می‌ترسد",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_339",
+    "word": "دست از پا درازتر برگشتن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_340",
+    "word": "کلاه خود را قاضی کردن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_341",
+    "word": "آب در کوزه و ما تشنه‌لبان می‌گردیم",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_342",
+    "word": "از دماوند تا خلیج فارس پیاده رفتن",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_343",
+    "word": "تیراندازی آرش کمانگیر به مرز توران",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_344",
+    "word": "نبرد رستم با دیو سپید در مازندران",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_345",
+    "word": "کاوه آهنگر و پرچم چرمی قیام",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_346",
+    "word": "تولد دوباره سیمرغ در دل آتش",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_347",
+    "word": "عبور کاروان شتر از کویر لوت در شب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_348",
+    "word": "غرق شدن کشتی تایتانیک در تاریکی شب",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_349",
+    "word": "فرود آپولو ۱۱ بر سطح کره ماه",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_350",
+    "word": "کشف مقبره توت‌عنخ‌آمون با مشعل",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_351",
+    "word": "نقاشی کشیدن پیکاسو با دست چپ",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_352",
+    "word": "رهبری ارکستر سمفونی بتهوون ناشنوا",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_353",
+    "word": "شعر سرودن حافظ در باغ گل شیراز",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_354",
+    "word": "رقص سماع مولانا با دف و نی",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_355",
+    "word": "جنگجوی گلادیاتور در کولوسئوم رم",
+    "category": "مفاهیم و اصطلاحات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_356",
+    "word": "پدربزرگ در حال چیدن میوه از درخت بلند",
+    "category": "باغداری",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_357",
+    "word": "پدربزرگ در حال دویدن در ساحل ماسه‌ای",
+    "category": "تفریح و ورزش",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_358",
+    "word": "پدربزرگ در حال تعقیب دزد در بازارچه",
+    "category": "پلیسی و اکشن",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_359",
+    "word": "پدربزرگ در حال خوردن بستنی قیفی در هوای داغ",
+    "category": "طنز روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_360",
+    "word": "پدربزرگ در حال تمیز کردن پنجره‌های باران‌خورده",
+    "category": "کارهای خانه",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_361",
+    "word": "پدربزرگ در حال پاک کردن پیاز با عینک غواصی",
+    "category": "طنز آشپزخانه",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_362",
+    "word": "پدربزرگ در حال باز کردن هندوانه شب یلدا",
+    "category": "آیین‌های سنتی",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_363",
+    "word": "پدربزرگ در حال فرار از دست گله زنبورها",
+    "category": "ماجراجویی در طبیعت",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_364",
+    "word": "پدربزرگ در حال پیدا کردن کنترل زیر مبل",
+    "category": "زندگی روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_365",
+    "word": "پدربزرگ در حال حل جدول کلمات متقاطع",
+    "category": "سرگرمی فکری",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_366",
+    "word": "پدربزرگ در حال تماشای مسابقه فوتبال در تلویزیون",
+    "category": "هیجان و تماشا",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_367",
+    "word": "پدربزرگ در حال تعمیر دوچرخه پنچر شده",
+    "category": "تعمیرات دستی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_368",
+    "word": "پدربزرگ در حال پختن شله‌زرد نذری در دیگ بزرگ",
+    "category": "فرهنگ سنتی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_369",
+    "word": "پدربزرگ در حال شستن فرش با شلنگ و فرچه",
+    "category": "خانه‌تکانی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_370",
+    "word": "پدربزرگ در حال عکس سلفی گرفتن روی صخره",
+    "category": "هیجان و خطر",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_371",
+    "word": "پدربزرگ در حال بیدار کردن همسایه خواب‌آلود",
+    "category": "شوخی دوستانه",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_372",
+    "word": "پدربزرگ در حال چیدن سفره عقد با آینه و شمعدان",
+    "category": "جشن و مراسم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_373",
+    "word": "پدربزرگ در حال کوک کردن سنتور سنتی",
+    "category": "هنر و موسیقی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_374",
+    "word": "پدربزرگ در حال رانندگی با ماشین اسباب‌بازی",
+    "category": "بازی‌های شاد",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_375",
+    "word": "پدربزرگ در حال باد کردن قایق بادی در ساحل",
+    "category": "سفر و دریا",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_376",
+    "word": "مادربزرگ در حال چیدن میوه از درخت بلند",
+    "category": "باغداری",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_377",
+    "word": "مادربزرگ در حال دویدن در ساحل ماسه‌ای",
+    "category": "تفریح و ورزش",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_378",
+    "word": "مادربزرگ در حال تعقیب دزد در بازارچه",
+    "category": "پلیسی و اکشن",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_379",
+    "word": "مادربزرگ در حال خوردن بستنی قیفی در هوای داغ",
+    "category": "طنز روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_380",
+    "word": "مادربزرگ در حال تمیز کردن پنجره‌های باران‌خورده",
+    "category": "کارهای خانه",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_381",
+    "word": "مادربزرگ در حال پاک کردن پیاز با عینک غواصی",
+    "category": "طنز آشپزخانه",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_382",
+    "word": "مادربزرگ در حال باز کردن هندوانه شب یلدا",
+    "category": "آیین‌های سنتی",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_383",
+    "word": "مادربزرگ در حال فرار از دست گله زنبورها",
+    "category": "ماجراجویی در طبیعت",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_384",
+    "word": "مادربزرگ در حال پیدا کردن کنترل زیر مبل",
+    "category": "زندگی روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_385",
+    "word": "مادربزرگ در حال حل جدول کلمات متقاطع",
+    "category": "سرگرمی فکری",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_386",
+    "word": "مادربزرگ در حال تماشای مسابقه فوتبال در تلویزیون",
+    "category": "هیجان و تماشا",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_387",
+    "word": "مادربزرگ در حال تعمیر دوچرخه پنچر شده",
+    "category": "تعمیرات دستی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_388",
+    "word": "مادربزرگ در حال پختن شله‌زرد نذری در دیگ بزرگ",
+    "category": "فرهنگ سنتی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_389",
+    "word": "مادربزرگ در حال شستن فرش با شلنگ و فرچه",
+    "category": "خانه‌تکانی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_390",
+    "word": "مادربزرگ در حال عکس سلفی گرفتن روی صخره",
+    "category": "هیجان و خطر",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_391",
+    "word": "مادربزرگ در حال بیدار کردن همسایه خواب‌آلود",
+    "category": "شوخی دوستانه",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_392",
+    "word": "مادربزرگ در حال چیدن سفره عقد با آینه و شمعدان",
+    "category": "جشن و مراسم",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_393",
+    "word": "مادربزرگ در حال کوک کردن سنتور سنتی",
+    "category": "هنر و موسیقی",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_394",
+    "word": "مادربزرگ در حال رانندگی با ماشین اسباب‌بازی",
+    "category": "بازی‌های شاد",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_395",
+    "word": "مادربزرگ در حال باد کردن قایق بادی در ساحل",
+    "category": "سفر و دریا",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_396",
+    "word": "کودک بازیگوش در حال چیدن میوه از درخت بلند",
+    "category": "باغداری",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_397",
+    "word": "کودک بازیگوش در حال دویدن در ساحل ماسه‌ای",
+    "category": "تفریح و ورزش",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_398",
+    "word": "کودک بازیگوش در حال تعقیب دزد در بازارچه",
+    "category": "پلیسی و اکشن",
+    "points": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "charades_399",
+    "word": "کودک بازیگوش در حال خوردن بستنی قیفی در هوای داغ",
+    "category": "طنز روزمره",
+    "points": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "charades_400",
+    "word": "کودک بازیگوش در حال تمیز کردن پنجره‌های باران‌خورده",
+    "category": "کارهای خانه",
+    "points": 1,
+    "difficulty": 1
   }
 ]
-

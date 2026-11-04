@@ -1,123 +1,2402 @@
 [
   {
     "id": "draw_1",
-    "word": "برج میلاد",
-    "category": "مکان و معماری",
+    "word": "خورشید",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_2",
-    "word": "پیتزا پپرونی با قارچ",
-    "category": "خوراکی",
+    "word": "ماه",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_3",
-    "word": "زرافه عینکی",
-    "category": "حیوانات فانتزی",
-    "difficulty": 2
+    "word": "ستاره",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_4",
-    "word": "پنکه سقفی روشن",
-    "category": "لوازم خانه",
+    "word": "ابر",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_5",
-    "word": "سماور مادربزرگ و قوری",
-    "category": "نوستالژی",
-    "difficulty": 2
+    "word": "باران",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_6",
-    "word": "فضاپیما و سیاره زحل",
-    "category": "فضا و علم",
-    "difficulty": 2
+    "word": "برف",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_7",
-    "word": "پیکان گوجه‌ای",
-    "category": "خودرو نوستالژیک",
-    "difficulty": 2
+    "word": "رنگین کمان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_8",
-    "word": "آدم‌برفی با شال‌گردن قرمز",
-    "category": "زمستان",
+    "word": "درخت",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_9",
-    "word": "ساندویچ فلافل با ترشی",
-    "category": "خوراکی",
-    "difficulty": 2
+    "word": "گل",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_10",
-    "word": "گیتار برقی",
-    "category": "موسیقی",
+    "word": "کوه",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_11",
-    "word": "چتر پاره زیر باران",
-    "category": "موقعیت طنز",
-    "difficulty": 2
+    "word": "دریا",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_12",
-    "word": "اختاپوس در حال آشپزی",
-    "category": "طنز و فانتزی",
-    "difficulty": 3
+    "word": "رودخانه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_13",
-    "word": "کفش اسکیت و کلاه ایمنی",
-    "category": "ورزش",
+    "word": "خانه",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_14",
-    "word": "ساعت شنی",
-    "category": "اشیا",
+    "word": "در",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_15",
-    "word": "دیگ نذری و شعله گاز",
-    "category": "فرهنگ ایرانی",
-    "difficulty": 2
+    "word": "پنجره",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_16",
-    "word": "بادکنک در حال ترکیدن با سوزن",
-    "category": "اکشن",
-    "difficulty": 2
+    "word": "میز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_17",
-    "word": "کاکتوس خندان داخل گلدان",
-    "category": "گیاهان",
+    "word": "صندلی",
+    "category": "اشیاء و مفاهیم پایه",
     "difficulty": 1
   },
   {
     "id": "draw_18",
-    "word": "تلسکوپ روی تپه",
-    "category": "علمی",
-    "difficulty": 2
+    "word": "تخت",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_19",
-    "word": "شیر بیشه با یال‌های بلند",
-    "category": "حیوانات",
-    "difficulty": 2
+    "word": "چراغ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
   },
   {
     "id": "draw_20",
+    "word": "ساعت",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_21",
+    "word": "کتاب",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_22",
+    "word": "مداد",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_23",
+    "word": "پاک کن",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_24",
+    "word": "قیچی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_25",
+    "word": "کیف",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_26",
+    "word": "کفش",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_27",
+    "word": "کلاه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_28",
+    "word": "عینک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_29",
+    "word": "چتر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_30",
+    "word": "کلید",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_31",
+    "word": "تلفن",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_32",
+    "word": "تلویزیون",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_33",
+    "word": "یخچال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_34",
+    "word": "قاشق",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_35",
+    "word": "چنگال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_36",
+    "word": "بشقاب",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_37",
+    "word": "لیوان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_38",
+    "word": "کتری",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_39",
+    "word": "سیب",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_40",
+    "word": "موز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_41",
+    "word": "پرتقال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_42",
+    "word": "هندوانه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_43",
+    "word": "توت فرنگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_44",
+    "word": "هویج",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_45",
+    "word": "کیک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_46",
+    "word": "بستنی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_47",
+    "word": "پیتزا",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_48",
+    "word": "ساندویچ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_49",
+    "word": "گربه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_50",
+    "word": "سگ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_51",
+    "word": "ماهی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_52",
+    "word": "پرنده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_53",
+    "word": "اسب",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_54",
+    "word": "گاو",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_55",
+    "word": "گوسفند",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_56",
+    "word": "فیل",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_57",
+    "word": "زرافه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_58",
+    "word": "شیر جنگل",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_59",
+    "word": "خرگوش",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_60",
+    "word": "لاک پشت",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_61",
+    "word": "پروانه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_62",
+    "word": "زنبور",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_63",
+    "word": "مورچه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_64",
+    "word": "ماشین",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_65",
+    "word": "اتوبوس",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_66",
+    "word": "قطار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_67",
+    "word": "هواپیما",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_68",
+    "word": "کشتی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_69",
+    "word": "دوچرخه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_70",
+    "word": "موتور",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_71",
+    "word": "توپ فوتبال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_72",
+    "word": "بادکنک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_73",
+    "word": "بادبادک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_74",
+    "word": "عروسک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_75",
+    "word": "شمع روشن",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_76",
+    "word": "چرخ و فلک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_77",
+    "word": "قلعه قدیمی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_78",
+    "word": "پل عابر پیاده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_79",
+    "word": "مسجد تاریخی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_80",
+    "word": "مدرسه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_81",
+    "word": "پارک جنگلی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_82",
+    "word": "فانوس قدیمی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_83",
+    "word": "نردبان دوطرفه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_84",
+    "word": "چمدان مسافرتی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_85",
+    "word": "دوربین عکاسی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_86",
+    "word": "گیتار کلاسیک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_87",
+    "word": "پیانو دیواری",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_88",
+    "word": "طبل و سنج",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_89",
+    "word": "راکت تنیس",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_90",
+    "word": "فضانورد در ماه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_91",
+    "word": "موشک فضایی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_92",
+    "word": "بشقاب پرنده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_93",
+    "word": "دایناسور گردن‌دراز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_94",
+    "word": "اژدهای بالدار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_95",
+    "word": "تلسکوپ رصدخانه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_96",
+    "word": "میکروسکوپ آزمایشگاه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_97",
+    "word": "جاروبرقی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_98",
+    "word": "چرخ خیاطی قدیمی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_99",
+    "word": "هلی کوپتر امداد",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_100",
+    "word": "زیردریایی جنگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_101",
+    "word": "شترمرغ دونده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_102",
+    "word": "کانگورو با بچه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_103",
+    "word": "طاووس رنگارنگ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_104",
+    "word": "عقاب سرسفید",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_105",
+    "word": "خفاش آویزان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_106",
+    "word": "آتشفشان فعال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_107",
+    "word": "فانوس دریایی ساحلی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_108",
+    "word": "برج میلاد",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_109",
+    "word": "برج ایفل",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_110",
+    "word": "اهرام مصر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_111",
+    "word": "چراغ راهنمایی رانندگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_112",
+    "word": "صندوق پست زرد",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_113",
+    "word": "آسیاب بادی هلندی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_114",
+    "word": "ساعت شنی شیشه‌ای",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_115",
+    "word": "نقشه گنج دزدان دریایی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_116",
+    "word": "قطب نما برای جهت‌یابی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_117",
+    "word": "دوربین شکاری دوچشمی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_118",
+    "word": "ترازوی دوکفه‌ای عدالت",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_119",
+    "word": "شمشیر سامورایی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_120",
+    "word": "سپر فولادی جنگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_121",
+    "word": "اره برقی نجاری",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_122",
+    "word": "تراکتور کشاورزی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_123",
+    "word": "آمبولانس اورژانس",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_124",
+    "word": "ماشین آتش نشانی نردبان‌دار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_125",
+    "word": "سماور ذغالی مادربزرگ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_126",
+    "word": "تنور نانوایی سنگک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_127",
+    "word": "شومینه هیزمی گرم",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_128",
+    "word": "تابلو نقاشی مونالیزا",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_129",
+    "word": "کلاه بوقی تولد",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_130",
+    "word": "چتر نجات باز شده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_131",
+    "word": "بادبان برافراشته کشتی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_132",
+    "word": "دزد دریایی با طوطی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_133",
+    "word": "پرگار مهندسی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_134",
+    "word": "آکواریوم ماهی‌های استوایی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_135",
+    "word": "قفس خالی پرنده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_136",
+    "word": "قفل و زنجیر محکم",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_137",
+    "word": "شاخه زیتون صلح",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_138",
+    "word": "کاکتوس تیغ‌دار بیابانی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_139",
+    "word": "کوزه سفالی دست‌ساز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_140",
+    "word": "پنگوئن روی تکه یخ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_141",
+    "word": "هشت پای غول‌پیکر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_142",
+    "word": "دلفین بازیگوش در حال پرش",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_143",
+    "word": "تمساح دهان‌باز در برکه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_144",
+    "word": "خرچنگ با چنگال‌های تیز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_145",
+    "word": "چکش نجاری فولادی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_146",
+    "word": "سطل زباله مکانیزه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_147",
+    "word": "قایق بادبانی دو نفره",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_148",
+    "word": "هندوانه قاچ شده خنک",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_149",
+    "word": "قوطی نوشابه با نی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_150",
+    "word": "لیوان دمنوش شیشه‌ای",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_151",
+    "word": "عصای جادویی پری",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_152",
     "word": "تاج پادشاهی با جواهرات",
-    "category": "تاریخی و فانتزی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_153",
+    "word": "کفش اسکیت چهارچرخ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_154",
+    "word": "لباس فضانوردی سفید",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_155",
+    "word": "ربات هوشمند خانگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_156",
+    "word": "مثلث برمودا و ناپدید شدن",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_157",
+    "word": "گرمایش زمین و آب شدن یخ‌ها",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_158",
+    "word": "سیاهچاله فضایی بلعنده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_159",
+    "word": "بی خوابی و شمارش گوسفندان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_160",
+    "word": "سرگیجه و چرخیدن اتاق",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_161",
+    "word": "طوفان شن در دل کویر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_162",
+    "word": "سونامی عظیم در اقیانوس",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_163",
+    "word": "فسیل دایناسور در سنگ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_164",
+    "word": "انسان نخستین و نقاشی غار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_165",
+    "word": "هوش مصنوعی و مغز دیجیتال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_166",
+    "word": "شهاب سنگ آتشین در حال سقوط",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_167",
+    "word": "سایه ترسناک پشت پرده",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_168",
+    "word": "سقوط آزاد پرهیجان با وینگ‌سوت",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_169",
+    "word": "آلیس در سرزمین عجایب و خرگوش",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_170",
+    "word": "کوه یخ تایتانیک در تاریکی شب",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_171",
+    "word": "قطب شمال و شفق قطبی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_172",
+    "word": "ترافیک سنگین غروب اتوبان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_173",
+    "word": "منظومه شمسی و چرخش سیارات",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_174",
+    "word": "سفر در زمان با تونل نوری",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_175",
+    "word": "خانه ارواح با پنجره‌های شکسته",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_176",
+    "word": "هزارتوی پیچیده با دیوارهای سبز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_177",
+    "word": "مترسک تنها در مزرعه آفتابگردان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_178",
+    "word": "مومیایی فرعون در مقبره سنگی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_179",
+    "word": "قصر روی ابرها در آسمان طلایی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_180",
+    "word": "اسب تک شاخ افسانه‌ای سفید",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_181",
+    "word": "پری دریایی روی صخره‌های مرجانی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_182",
+    "word": "اژدهای آتشین در دهانه غار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_183",
+    "word": "درخت سخنگو با چشمان بیدار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_184",
+    "word": "پل معلق چوبی روی دره مه گرفته",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_185",
+    "word": "کسوف کامل خورشید و حلقه آتش",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_186",
+    "word": "بازتاب تصویر در آب زلال چشمه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_187",
+    "word": "گردباد ویرانگر در دشت باز",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_188",
+    "word": "خواب شیرین پرواز بر فراز شهر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_189",
+    "word": "سکوت صحرا زیر آسمان پرستاره",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_190",
+    "word": "جاذبه زمین و سقوط سیب سرخ",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_191",
+    "word": "خط پایان مسابقه ماراتن نفس‌گیر",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_192",
+    "word": "صندوقچه اسرار قفل شده با طلسم",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_193",
+    "word": "اقیانوس طوفانی و کشتی سرگردان",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_194",
+    "word": "ایستگاه فضایی بین‌المللی در مدار",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_195",
+    "word": "تولد دوباره پروانه از پیله",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_196",
+    "word": "انرژی پاک خورشیدی و پنل‌ها",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_197",
+    "word": "ویروس میکروسکوپی زیر لنز قوی",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_198",
+    "word": "جنگل مه آلود با درختان کهنسال",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_199",
+    "word": "مجسمه متفکر رودن در تفکر عمیق",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_200",
+    "word": "تخت جمشید و ستون‌های باشکوه",
+    "category": "اشیاء و مفاهیم پایه",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_201",
+    "word": "آلبالو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_202",
+    "word": "انار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_203",
+    "word": "انگور",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_204",
+    "word": "انجیر",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_205",
+    "word": "کیوی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_206",
+    "word": "نارگیل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_207",
+    "word": "آناناس",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_208",
+    "word": "گیلاس",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_209",
+    "word": "زردآلو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_210",
+    "word": "هلو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_211",
+    "word": "گوجه سبز",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_212",
+    "word": "تمشک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_213",
+    "word": "طالبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_214",
+    "word": "خربزه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_215",
+    "word": "خیار چنبر",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_216",
+    "word": "کلم بروکلی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_217",
+    "word": "بادمجان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_218",
+    "word": "کدو حلوایی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_219",
+    "word": "فلفل دلمه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_220",
+    "word": "قارچ چتری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_221",
+    "word": "بلال کبابی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_222",
+    "word": "سیب زمینی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_223",
+    "word": "پیاز سرخ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_224",
+    "word": "سیر حبه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_225",
+    "word": "تربچه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_226",
+    "word": "نان بربری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_227",
+    "word": "نان سنگک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_228",
+    "word": "نان لواش",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_229",
+    "word": "همبرگر دوبل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_230",
+    "word": "سوسیس کبابی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_231",
+    "word": "سیب زمینی سرخ‌کرده",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_232",
+    "word": "فلافل با ترشی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_233",
+    "word": "مرغ بریان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_234",
+    "word": "ماهی سوخاری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_235",
+    "word": "کله پاچه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_236",
+    "word": "قورمه سبزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_237",
+    "word": "قیمه بادمجان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_238",
+    "word": "آش رشته",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_239",
+    "word": "کوفته تبریزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_240",
+    "word": "شله زرد",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_241",
+    "word": "حلوا با خلال پسته",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_242",
+    "word": "فالوده شیرازی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_243",
+    "word": "آبمیوه هویج بستنی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_244",
+    "word": "دوغ نعنایی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_245",
+    "word": "قهوه ترک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_246",
+    "word": "شیرکاکائو داغ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_247",
+    "word": "چای لاهیجان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_248",
+    "word": "شیرینی دانمارکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_249",
+    "word": "شیرینی ناپلئونی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_250",
+    "word": "باقلوا یزدی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_251",
+    "word": "گز اصفهان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_252",
+    "word": "سوهان قم",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_253",
+    "word": "شکلات تخته‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_254",
+    "word": "آدامس بادکنکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_255",
+    "word": "لواشک ترش",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_256",
+    "word": "قوری شاه‌عباسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_257",
+    "word": "سماور مسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_258",
+    "word": "هاون برنجی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_259",
+    "word": "دیزی سنگی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_260",
+    "word": "دیگ مسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_261",
+    "word": "کفگیر استیل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_262",
+    "word": "ملاقه چوبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_263",
+    "word": "رنده آشپزخانه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_264",
+    "word": "الک آرد",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_265",
+    "word": "تخته گوشت چوبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_266",
+    "word": "آبکش استیل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_267",
+    "word": "سینی قلم‌زنی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_268",
+    "word": "استکان کمرباریک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_269",
+    "word": "نعلبکی گل‌سرخی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_270",
+    "word": "قندان نقره",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_271",
+    "word": "نمکدان سرامیکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_272",
+    "word": "فلفل‌دان شیشه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_273",
+    "word": "جا ادویه‌ای چرخان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_274",
+    "word": "مخلوط‌کن شیشه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_275",
+    "word": "آسیاب برقی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_276",
+    "word": "همزن دستی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_277",
+    "word": "تستر نان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_278",
+    "word": "مایکروفر دیجیتال",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_279",
+    "word": "اجاق گاز فردار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_280",
+    "word": "هود آشپزخانه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_281",
+    "word": "ماشین ظرفشویی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_282",
+    "word": "ماشین لباسشویی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_283",
+    "word": "اتو بخار ایستاده",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_284",
+    "word": "میز اتو تاشو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_285",
+    "word": "جالباسی چوبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_286",
+    "word": "جاکفشی آینه‌دار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_287",
+    "word": "کمد دیواری ریلی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_288",
+    "word": "میز آرایش با چراغ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_289",
+    "word": "آینه قدی بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_290",
+    "word": "پرده توری گلدار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_291",
+    "word": "فرش دستباف کاشان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_292",
+    "word": "گلیم سنتی ترکمن",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_293",
+    "word": "پشتی دست‌دوز",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_294",
+    "word": "متکا و لحاف مخمل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_295",
+    "word": "بالش پر نرم",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_296",
+    "word": "تشک فنری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_297",
+    "word": "تخت خواب دوطبقه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_298",
+    "word": "گهواره چوبی نوزاد",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_299",
+    "word": "کالسکه بچه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_300",
+    "word": "روروک کودک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_301",
+    "word": "تاب دونفره حیاط",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_302",
+    "word": "سرسره مارپیچ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_303",
+    "word": "الاکلنگ فلزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_304",
+    "word": "استخر توپ بادی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_305",
+    "word": "تفنگ آب‌پاش",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_306",
+    "word": "تفنگ ساچمه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_307",
+    "word": "شمشیر چوبی بازی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_308",
+    "word": "تیر و کمان اسباب‌بازی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_309",
+    "word": "فرفره رنگی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_310",
+    "word": "یویو چرخان",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_311",
+    "word": "روبیک سه در سه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_312",
+    "word": "دومینو چیده شده",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_313",
+    "word": "لگوهای رنگارنگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_314",
+    "word": "پازل هزار تکه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_315",
+    "word": "عروسک خرسی بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_316",
+    "word": "عروسک ماتروشکا روسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_317",
+    "word": "ماسک کارناوال ونیزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_318",
+    "word": "ماسک زورو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_319",
+    "word": "کلاه شعبده‌بازی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_320",
+    "word": "شنل مخملی قرمز",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_321",
+    "word": "کفش سیندرلا شیشه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_322",
+    "word": "چکمه بارانی زرد",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_323",
+    "word": "چکمه اسب‌سواری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_324",
+    "word": "صندل لاانگشتی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_325",
+    "word": "گیوه دستباف ملایری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_326",
+    "word": "پاپوش بافتنی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_327",
+    "word": "جوراب ساق‌بلند راه‌راه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_328",
+    "word": "دستکش بوکس چرمی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_329",
+    "word": "دستکش بافتنی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_330",
+    "word": "شال گردن پشمی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_331",
+    "word": "کت و شلوار مجلسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_332",
+    "word": "کراوات ساتن",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_333",
+    "word": "پاپیون مشکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_334",
+    "word": "دکمه‌سردست طلا",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_335",
+    "word": "سنجاق قفلی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_336",
+    "word": "سوزن خیاطی با نخ قرمز",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_337",
+    "word": "انگشتانه خیاطی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_338",
+    "word": "متر پارچه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_339",
+    "word": "ماسوره چرخ خیاطی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_340",
+    "word": "قیچی باغبانی تیز",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_341",
+    "word": "بیلچه باغبانی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_342",
+    "word": "آب‌پاش دستی گل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_343",
+    "word": "شن‌کش خاک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_344",
+    "word": "فرغون بنایی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_345",
+    "word": "کمچه سیمان‌کاری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_346",
+    "word": "تراز بنایی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_347",
+    "word": "شاقول فلزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_348",
+    "word": "سندان آهنگری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_349",
+    "word": "پتک سنگین",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_350",
+    "word": "آچار فرانسه بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_351",
+    "word": "آچار شلاقی لوله‌کشی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_352",
+    "word": "انبردست دسته عایق",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_353",
+    "word": "دم‌باریک ظریف",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_354",
+    "word": "سیم‌چین الکتریکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_355",
+    "word": "فازمتر چراغ‌دار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_356",
+    "word": "پیچ‌گوشتی چهارسو",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_357",
+    "word": "چکش لاستیکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_358",
+    "word": "سنباده دستی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_359",
+    "word": "اره کمانه‌ای",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_360",
+    "word": "دریل چکشی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_361",
+    "word": "سنگ فرز آهنگری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_362",
+    "word": "اره مویی منبت‌کاری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_363",
+    "word": "مغار چوب‌تراشی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_364",
+    "word": "قلم‌مو نقاشی روغن",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_365",
+    "word": "پالت رنگ چوبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_366",
+    "word": "سه‌پایه نقاشی چوبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_367",
+    "word": "دفتر طراحی بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_368",
+    "word": "روان‌نویس طلایی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_369",
+    "word": "خودنویس جوهری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_370",
+    "word": "مرکب‌دان سنگی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_371",
+    "word": "قلم نی دزفولی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_372",
+    "word": "کاغذ ابر و باد",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_373",
+    "word": "زونکن اداری",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_374",
+    "word": "پوشه دکمه‌دار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_375",
+    "word": "منگنه بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_376",
+    "word": "گیره کاغذ فلزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_377",
+    "word": "پونز نقشه",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_378",
+    "word": "ماژیک هایلایت",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_379",
+    "word": "تخته وایت‌برد با ماژیک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_380",
+    "word": "تخته سیاه گچی با تخته‌پاک‌کن",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_381",
+    "word": "خط‌کش تی مهندسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_382",
+    "word": "گونیا شفاف",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_383",
+    "word": "نقاله زاویه‌سنج",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_384",
+    "word": "ذره‌بین کارآگاهی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_385",
+    "word": "ماشین حساب مهندسی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_386",
+    "word": "لپ‌تاپ گیمینگ با نور بنفش",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_387",
+    "word": "ماوس ارگونومیک",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_388",
+    "word": "کیبورد مکانیکی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_389",
+    "word": "اسپیکر بلوتوثی قابل حمل",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_390",
+    "word": "هدفون روی گوش بزرگ",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_391",
+    "word": "هندزفری سیم‌دار",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_392",
+    "word": "پاوربانک مکعبی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_393",
+    "word": "فلش مموری فلزی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_394",
+    "word": "هارد اکسترنال",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_395",
+    "word": "دسته بازی کنسول",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_396",
+    "word": "عینک واقعیت مجازی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_397",
+    "word": "ساعت هوشمند اسپرت",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_398",
+    "word": "دستبند سلامتی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_399",
+    "word": "وب‌کم پایه پیچی",
+    "category": "اشیاء و ابزارها",
+    "difficulty": 1
+  },
+  {
+    "id": "draw_400",
+    "word": "میکروفون پادکست",
+    "category": "اشیاء و ابزارها",
     "difficulty": 1
   }
 ]
-

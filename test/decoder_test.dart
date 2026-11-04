@@ -75,33 +75,30 @@ void main() {
     );
   });
 
-  test(
-    'deals 25 unique words with the correct team and neutral counts',
-    () async {
-      final game = await repository.newGame(first, second);
-      expect(game.cards, hasLength(25));
-      expect(
-        game.cards.map((card) => normalizeDecoderWord(card.word)).toSet(),
-        hasLength(25),
-      );
-      expect(
-        game.cards.where((card) => card.role == DecoderRole.team0),
-        hasLength(game.startingTeam == 0 ? 9 : 8),
-      );
-      expect(
-        game.cards.where((card) => card.role == DecoderRole.team1),
-        hasLength(game.startingTeam == 1 ? 9 : 8),
-      );
-      expect(
-        game.cards.where((card) => card.role == DecoderRole.neutral),
-        hasLength(7),
-      );
-      expect(
-        game.cards.where((card) => card.role == DecoderRole.hazard),
-        hasLength(1),
-      );
-    },
-  );
+  test('deals 25 unique words with equal team counts', () async {
+    final game = await repository.newGame(first, second);
+    expect(game.cards, hasLength(25));
+    expect(
+      game.cards.map((card) => normalizeDecoderWord(card.word)).toSet(),
+      hasLength(25),
+    );
+    expect(
+      game.cards.where((card) => card.role == DecoderRole.team0),
+      hasLength(DecoderRepository.teamWordCount),
+    );
+    expect(
+      game.cards.where((card) => card.role == DecoderRole.team1),
+      hasLength(DecoderRepository.teamWordCount),
+    );
+    expect(
+      game.cards.where((card) => card.role == DecoderRole.neutral),
+      hasLength(DecoderRepository.neutralWordCount),
+    );
+    expect(
+      game.cards.where((card) => card.role == DecoderRole.hazard),
+      hasLength(1),
+    );
+  });
 
   test(
     'normalizes Persian and Arabic letter variants and accepts positive clues',
@@ -296,6 +293,20 @@ void main() {
     expect(resumed.state.phase, DecoderPhase.guide);
     await resumed.close();
   });
+
+  test(
+    'setup validation errors are owned and cleared by DecoderCubit',
+    () async {
+      final cubit = DecoderCubit(repository: repository);
+      cubit.showRosterError('هر تیم دو عضو لازم دارد.');
+      expect(cubit.state.rosterError, isNotNull);
+
+      cubit.selectTeam(0, first.id);
+      expect(cubit.state.rosterError, isNull);
+      expect(cubit.state.selectedFirst, first.id);
+      await cubit.close();
+    },
+  );
 }
 
 DecoderState _snapshot(

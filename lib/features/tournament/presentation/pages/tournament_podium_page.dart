@@ -6,6 +6,7 @@ import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/services/audio_service.dart';
+import '../../../../core/utils/ranking.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/confetti_overlay.dart';
 import '../../../../core/widgets/brand_mark.dart';
@@ -36,6 +37,7 @@ class _TournamentPodiumPageState extends State<TournamentPodiumPage> {
             builder: (context, state) {
               final teams = state.rankedTeams;
               final result = GameResult.fromTeams(teams);
+              final ranks = denseRanks(teams.map((team) => team.score));
               final tied = result?.isTie ?? false;
               return Center(
                 child: ConstrainedBox(
@@ -89,7 +91,7 @@ class _TournamentPodiumPageState extends State<TournamentPodiumPage> {
                               CircleAvatar(
                                 backgroundColor: Color(teams[i].colorValue),
                                 child: Text(
-                                  '${i + 1}',
+                                  '${ranks[i]}',
                                   style: const TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,

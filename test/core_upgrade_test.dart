@@ -4,6 +4,7 @@ import 'package:flutter_application_1/core/models/game_mode.dart';
 import 'package:flutter_application_1/core/models/player_model.dart';
 import 'package:flutter_application_1/core/services/purchase_service.dart';
 import 'package:flutter_application_1/core/services/storage_service.dart';
+import 'package:flutter_application_1/core/utils/ranking.dart';
 import 'package:flutter_application_1/app/di/service_locator.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
 import 'package:flutter_application_1/features/tournament/presentation/cubit/tournament_cubit.dart';
@@ -94,12 +95,13 @@ void main() {
     );
 
     test(
-      'only the five season-one product IDs are unlocked by the bundle',
+      'season-one product IDs and heist are unlocked by the bundle',
       () async {
         await storage.addPurchasedPack('season_1_bundle');
         for (final id in StorageService.seasonOnePackIds) {
           expect(storage.isPackPurchased(id), isTrue, reason: id);
         }
+        expect(storage.isPackPurchased('heist'), isTrue);
         expect(storage.isPackPurchased('pack_future_game_full'), isFalse);
         expect(storage.isPackPurchased('season_2_bundle'), isFalse);
       },
@@ -139,6 +141,10 @@ void main() {
     );
   });
 
+  test('dense ranking gives the next distinct score rank two after ties', () {
+    expect(denseRanks([100, 100, 100, 100, 70, 70, 10]), [1, 1, 1, 1, 2, 2, 3]);
+  });
+
   group('Shared model and catalog contracts', () {
     test('Player.copyWith can explicitly clear a nullable team assignment', () {
       const player = Player(id: 'p1', name: 'Player', teamId: 'team-a');
@@ -147,10 +153,10 @@ void main() {
     });
 
     test(
-      'catalog has six games while tournament has its five ordered stages',
+      'catalog has seven games while tournament has its five ordered stages',
       () {
-        expect(GameInfo.allGames, hasLength(6));
-        expect(GameInfo.allGames.last.key, 'decoder');
+        expect(GameInfo.allGames, hasLength(7));
+        expect(GameInfo.allGames.last.key, 'heist');
         expect(GameInfo.tournamentGames, hasLength(5));
         expect(GameInfo.tournamentGames.map((game) => game.key), [
           'taboo',

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/app/di/service_locator.dart';
 import 'package:flutter_application_1/core/services/content_service.dart';
+import 'package:flutter_application_1/core/services/content_history_service.dart';
 
 import 'hot_potato_topic_model.dart';
 
@@ -34,17 +35,38 @@ class HotPotatoRepository {
 
   void _resetDeck() {
     _deck.clear();
-    _deck.addAll(_allTopics);
-    _deck.shuffle();
+    _deck.addAll(
+      ContentHistoryService.freshDeck(
+        'hot_potato',
+        _allTopics,
+        (topic) => topic.id,
+      ),
+    );
   }
 
-  HotPotatoTopic getNextTopic() {
+  HotPotatoTopic getNextTopic({int? difficulty}) {
     if (_deck.isEmpty) {
       _resetDeck();
     }
     if (_deck.isEmpty) throw StateError('بسته بازی آماده نیست.');
-    return _deck.removeLast();
+    var index = difficulty == null
+        ? _deck.length - 1
+        : _deck.lastIndexWhere((topic) => _bucket(topic.id) == difficulty);
+    if (index < 0 && difficulty != null) {
+      ContentHistoryService.reset('hot_potato');
+      _deck
+        ..clear()
+        ..addAll(_allTopics.where((topic) => _bucket(topic.id) == difficulty))
+        ..shuffle();
+      index = _deck.length - 1;
+    }
+    final topic = _deck.removeAt(index);
+    ContentHistoryService.markSeen('hot_potato', topic.id);
+    return topic;
   }
+
+  int _bucket(String id) =>
+      id.codeUnits.fold<int>(0, (sum, value) => sum + value) % 3 + 1;
 
   int get totalTopics => _allTopics.length;
 }

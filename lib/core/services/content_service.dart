@@ -51,7 +51,8 @@ class ContentService {
     ];
     if (gameKey == 'charades' || gameKey == 'drawing') {
       for (final card in storage.getCustomCards()) {
-        if (card['word'] is! String || (card['word'] as String).trim().isEmpty) {
+        if (card['word'] is! String ||
+            (card['word'] as String).trim().isEmpty) {
           continue;
         }
         if (card['gameKey'] != null &&

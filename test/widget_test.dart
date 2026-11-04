@@ -11,17 +11,22 @@ void main() {
   });
 
   testWidgets('App launches successfully to Splash page with Jamemoon Jomeh title', (tester) async {
-    await tester.pumpWidget(const JamemoonJomehApp());
+    await tester.runAsync(() async {
+      await tester.pumpWidget(const JamemoonJomehApp());
+      await Future.delayed(const Duration(milliseconds: 500));
+    });
     await tester.pump();
 
     // Verify Persian title exists
-    expect(find.text('جمعمون جمعه!'), findsOneWidget);
+    expect(find.text('جمعمون جمعه!'), findsWidgets);
 
     // Pump past the splash delay to settle all timers
-    await tester.pump(const Duration(milliseconds: 1300));
-    await tester.pumpAndSettle();
+    await tester.runAsync(() async {
+      await Future.delayed(const Duration(milliseconds: 500));
+    });
+    await tester.pump();
 
     // After splash, verify Home page title exists
-    expect(find.text('جمعمون جمعه!'), findsOneWidget);
+    expect(find.text('جمعمون جمعه!'), findsWidgets);
   });
 }

@@ -30,7 +30,84 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _openGame(GameInfo game) {
+    if (game.key == 'heist' && !sl<StorageService>().isPackPurchased('heist')) {
+      _showHeistLockedDialog();
+      return;
+    }
     _go('/prepare/${game.key}');
+  }
+
+  void _showHeistLockedDialog() {
+    showDialog<void>(
+      context: context,
+      builder: (dialogCtx) => AlertDialog(
+        backgroundColor: AppColors.surface,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+        title: const Row(
+          children: [
+            Icon(Icons.stars_rounded, color: AppColors.accent, size: 28),
+            SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                'بازی «سرقت بزرگ» (ویژه اشتراک)',
+                style: AppTypography.headlineMedium,
+              ),
+            ),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'بازی «سرقت بزرگ» و بیش از ۲٬۰۰۰ کلمه و کارت جدید در اشتراک طلایی جمعمون جمعه قرار دارند.',
+              style: AppTypography.bodyMedium,
+            ),
+            const SizedBox(height: 12),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: AppColors.surfaceLight,
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: AppColors.surfaceBorder),
+              ),
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('⭐ باز شدن کامل بازی استراتژیک سرقت بزرگ', style: AppTypography.bodySmall),
+                  SizedBox(height: 4),
+                  Text('⭐ ۲۰۰۰ کارت و موضوع جدید در تمام بازی‌ها', style: AppTypography.bodySmall),
+                  SizedBox(height: 4),
+                  Text('⭐ دسترسی دائمی بدون محدودیت و کاملاً آفلاین', style: AppTypography.bodySmall),
+                ],
+              ),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'قیمت اشتراک: ۹۹٬۰۰۰ تومان',
+              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.accent),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogCtx),
+            child: const Text('فعلاً نه'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.accent,
+              foregroundColor: AppColors.background,
+            ),
+            onPressed: () {
+              Navigator.pop(dialogCtx);
+              _go('/shop');
+            },
+            child: const Text('مشاهده و خرید اشتراک'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -118,9 +195,9 @@ class _HomePageState extends State<HomePage> {
                                   const SizedBox(width: 10),
                                   Expanded(
                                     child: _Shortcut(
-                                      icon: Icons.auto_awesome_mosaic_outlined,
-                                      label: 'بسته‌های بازی',
-                                      color: AppColors.success,
+                                      icon: Icons.stars_rounded,
+                                      label: 'اشتراک طلایی',
+                                      color: AppColors.accent,
                                       onTap: () => _go('/shop'),
                                     ),
                                   ),
@@ -146,9 +223,7 @@ class _HomePageState extends State<HomePage> {
                                         label: Text('ادامه ${game.titleFa}'),
                                         onPressed: () => _go(
                                           '/game/${game.key}',
-                                          arguments: {
-                                            'resume': true,
-                                          },
+                                          arguments: {'resume': true},
                                         ),
                                       ),
                                   ],
@@ -172,8 +247,8 @@ class _HomePageState extends State<HomePage> {
                                       color: AppColors.surfaceLight,
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: const Text(
-                                      '۶ بازی',
+                                    child: Text(
+                                      '${GameInfo.allGames.length} بازی',
                                       style: AppTypography.bodySmall,
                                     ),
                                   ),
@@ -236,16 +311,8 @@ class _HomePageState extends State<HomePage> {
                             ),
                             const SizedBox(height: 14),
                             _ExtraRow(
-                              label: 'گردونه شانس',
-                              subtitle: 'بچرخون و بسپرش به شانس',
-                              icon: Icons.casino_outlined,
-                              color: AppColors.accent,
-                              onTap: () => _go('/extras/wheel'),
-                            ),
-                            const SizedBox(height: 10),
-                            _ExtraRow(
                               label: 'قرعه‌کشی',
-                              subtitle: 'نوبت کیه؟ همین‌جا معلوم می‌شه',
+                              subtitle: 'نوبت کیه شام رو حساب کنه؟',
                               icon: Icons.shuffle_rounded,
                               color: AppColors.primary,
                               onTap: () => _go('/extras/picker'),
@@ -381,14 +448,18 @@ class _GameTile extends StatelessWidget {
   final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
-    final color = AppColors.gameAccent(game.key);
+    final isLocked = game.key == 'heist' &&
+        !sl<StorageService>().isPackPurchased('heist');
+    final color = isLocked ? AppColors.accent : AppColors.gameAccent(game.key);
     final tag = switch (game.key) {
       'taboo' => 'کلمه‌بازی',
       'hot_potato' => 'پر از هیجان',
       'charades' => 'بی‌کلام',
       'five_seconds' => 'سرعتی',
       'drawing' => 'خلاقانه',
-      _ => 'معمایی',
+      'decoder' => 'معمایی',
+      'heist' => 'استراتژیک و مخفی',
+      _ => 'دورهمی',
     };
     final title = switch (game.key) {
       'taboo' => 'تابو',
@@ -396,7 +467,9 @@ class _GameTile extends StatelessWidget {
       'charades' => 'پانتومیم',
       'five_seconds' => 'سه‌تا بگو!',
       'drawing' => 'نقاشی افتضاح!',
-      _ => 'رمزگشا',
+      'decoder' => 'رمزگشا',
+      'heist' => 'سرقت بزرگ',
+      _ => game.titleFa,
     };
     final subtitle = switch (game.key) {
       'taboo' => 'بگو، ولی نه هر کلمه‌ای!',
@@ -404,7 +477,9 @@ class _GameTile extends StatelessWidget {
       'charades' => 'با حرکتت حرف بزن!',
       'five_seconds' => '۳ جواب، فقط ۵ ثانیه',
       'drawing' => 'بکش، بخند، حدس بزن!',
-      _ => 'سرنخ بده، راز رو کشف کن',
+      'decoder' => 'سرنخ بده، راز رو کشف کن',
+      'heist' => 'نقشه بکش، خیانت کن، غنیمت ببر!',
+      _ => game.subtitleFa,
     };
     return Semantics(
       button: true,
@@ -428,31 +503,52 @@ class _GameTile extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Container(
-                      width: 5,
-                      height: 5,
-                      decoration: BoxDecoration(
-                        color: color,
-                        shape: BoxShape.circle,
+                    if (isLocked) ...[
+                      const Icon(
+                        Icons.lock_rounded,
+                        size: 11,
+                        color: AppColors.accent,
                       ),
-                    ),
-                    const SizedBox(width: 5),
-                    Expanded(
-                      child: Text(
-                        tag,
-                        style: AppTypography.bodySmall.copyWith(
-                          color: color,
-                          fontSize: 10,
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: Text(
+                          'ویژه اشتراک',
+                          style: AppTypography.bodySmall.copyWith(
+                            color: AppColors.accent,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 10,
+                          ),
                         ),
                       ),
-                    ),
+                    ] else ...[
+                      Container(
+                        width: 5,
+                        height: 5,
+                        decoration: BoxDecoration(
+                          color: color,
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                      const SizedBox(width: 5),
+                      Expanded(
+                        child: Text(
+                          tag,
+                          style: AppTypography.bodySmall.copyWith(
+                            color: color,
+                            fontSize: 10,
+                          ),
+                        ),
+                      ),
+                    ],
                   ],
                 ),
                 Expanded(
                   child: LayoutBuilder(
                     builder: (context, constraints) {
-                      final size = constraints.biggest.shortestSide
-                          .clamp(56.0, 104.0);
+                      final size = constraints.biggest.shortestSide.clamp(
+                        56.0,
+                        104.0,
+                      );
                       return Center(
                         child: GameEmblem(gameKey: game.key, size: size),
                       );
@@ -475,14 +571,20 @@ class _GameTile extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Text(
-                        'بازی کنیم',
+                        isLocked ? 'باز کردن با اشتراک' : 'بازی کنیم',
                         style: AppTypography.bodySmall.copyWith(
                           color: color,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
-                    Icon(Icons.arrow_forward_rounded, size: 18, color: color),
+                    Icon(
+                      isLocked
+                          ? Icons.lock_open_rounded
+                          : Icons.arrow_forward_rounded,
+                      size: 18,
+                      color: color,
+                    ),
                   ],
                 ),
               ],

@@ -22,6 +22,10 @@ bool isDecoderWord(String input) =>
     !RegExp(r'\s').hasMatch(input);
 
 class DecoderRepository {
+  static const teamWordCount = 8;
+  static const neutralWordCount = 8;
+  static const boardWordCount = teamWordCount * 2 + neutralWordCount + 1;
+
   final StorageService storageService;
   final Random random;
   final AssetBundle bundle;
@@ -49,7 +53,7 @@ class DecoderRepository {
       final key = normalizeDecoderWord(word);
       if (isDecoderWord(word)) unique.putIfAbsent(key, () => word);
     }
-    if (unique.length < 25) {
+    if (unique.length < boardWordCount) {
       throw const FormatException('Insufficient decoder words');
     }
     return unique.values.toList();
@@ -61,9 +65,9 @@ class DecoderRepository {
     words.shuffle(random);
     final starter = random.nextInt(2);
     final roles = <DecoderRole>[
-      ...List.filled(starter == 0 ? 9 : 8, DecoderRole.team0),
-      ...List.filled(starter == 1 ? 9 : 8, DecoderRole.team1),
-      ...List.filled(7, DecoderRole.neutral),
+      ...List.filled(teamWordCount, DecoderRole.team0),
+      ...List.filled(teamWordCount, DecoderRole.team1),
+      ...List.filled(neutralWordCount, DecoderRole.neutral),
       DecoderRole.hazard,
     ]..shuffle(random);
     final id =
@@ -75,7 +79,10 @@ class DecoderRepository {
       teams: [first, second],
       activeTeam: starter,
       startingTeam: starter,
-      cards: List.generate(25, (i) => DecoderCard(words[i], roles[i])),
+      cards: List.generate(
+        boardWordCount,
+        (i) => DecoderCard(words[i], roles[i]),
+      ),
     );
   }
 
@@ -108,8 +115,8 @@ class DecoderRepository {
           teams.length != 2 ||
           teams[0].id == teams[1].id ||
           teams.any((t) => t.id.isEmpty || t.name.trim().isEmpty) ||
-          cards.length != 25 ||
-          wordKeys.length != 25 ||
+          cards.length != boardWordCount ||
+          wordKeys.length != boardWordCount ||
           wordKeys.contains('') ||
           active < 0 ||
           active > 1 ||
@@ -123,10 +130,11 @@ class DecoderRepository {
           target == DecoderPhase.setup ||
           target == DecoderPhase.shield ||
           cards.where((c) => c.role == DecoderRole.team0).length !=
-              (starter == 0 ? 9 : 8) ||
+              teamWordCount ||
           cards.where((c) => c.role == DecoderRole.team1).length !=
-              (starter == 1 ? 9 : 8) ||
-          cards.where((c) => c.role == DecoderRole.neutral).length != 7 ||
+              teamWordCount ||
+          cards.where((c) => c.role == DecoderRole.neutral).length !=
+              neutralWordCount ||
           cards.where((c) => c.role == DecoderRole.hazard).length != 1) {
         return null;
       }

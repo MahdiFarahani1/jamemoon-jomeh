@@ -58,5 +58,12 @@ class GameInfo {
     iconName: 'key',
     defaultRoundSeconds: 0,
   );
-  static const List<GameInfo> allGames = [...tournamentGames, decoder];
+  static const heist = GameInfo(
+    key: 'heist',
+    titleFa: 'سرقت بزرگ',
+    subtitleFa: 'نقش مخفی، خیانت و تقسیم غنیمت در سه سرقت',
+    iconName: 'vault',
+    defaultRoundSeconds: 0,
+  );
+  static const List<GameInfo> allGames = [...tournamentGames, decoder, heist];
 }

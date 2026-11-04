@@ -6,6 +6,8 @@ import '../../../../app/di/service_locator.dart';
 import '../../../../core/models/turn_manager.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/models/game_setup_config.dart';
+import '../../../../core/models/game_stats.dart';
+import '../../../../core/models/participant_roster.dart';
 import '../../../../core/services/audio_service.dart';
 import '../../../../core/services/haptics_service.dart';
 import '../../../../core/services/round_clock.dart';
@@ -15,8 +17,23 @@ import '../../data/five_seconds_repository.dart';
 import 'five_seconds_state.dart';
 
 class FiveSecondsCubit extends Cubit<FiveSecondsState> {
-  GameResult? get result =>
-      GameResult.fromManager(_turnManager, baseline: _startingScores);
+  int get playerOrderSeed => _session.sessionId.hashCode;
+  GameResult? get result => GameResult.fromManager(
+    _turnManager,
+    baseline: _startingScores,
+    highlights: _stats.highlights(),
+  );
+  PlayerTurnAssignment? get currentAssignment =>
+      _usesPlayers || _turnManager == null || _teamsCubit == null
+      ? null
+      : PlayerTurnAssignment.forTeam(
+          teams: _teamsCubit.state.teams,
+          players: _teamsCubit.state.players,
+          teamName: _turnManager!.currentTeam.name,
+          round: _turnManager!.currentTeamTurnNumber,
+          seed: playerOrderSeed,
+        );
+  final GameStatsTracker _stats = GameStatsTracker();
   Map<String, int> _startingScores = {};
   final GameSessionStore _session = GameSessionStore('five_seconds');
   bool _sessionReady = false;
@@ -31,7 +48,15 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
   TurnManager? _turnManager;
   final TeamsCubit? _teamsCubit;
   final GameSetupConfig? _setup;
+  final bool _usesPlayers;
   bool _finished = false;
+  String get _actorName {
+    if (_turnManager == null) return state.activeTeamName;
+    if (_usesPlayers || _teamsCubit == null) {
+      return _turnManager!.currentTeam.name;
+    }
+    return currentAssignment?.performer ?? _turnManager!.currentTeam.name;
+  }
 
   FiveSecondsCubit({
     required FiveSecondsRepository repository,
@@ -42,14 +67,19 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
   }) : _repository = repository,
        _teamsCubit = teamsCubit,
        _setup = setup,
+       _usesPlayers = setup?.participationMode == GameParticipationMode.players,
        super(FiveSecondsState(isQuickMode: isQuickMode)) {
     if (!isQuickMode && teamsCubit != null) {
-      _startingScores = {
-        for (final team in teamsCubit.state.teams) team.id: team.score,
-      };
-      _turnManager = TurnManager(
-        teams: teamsCubit.state.teams,
+      final participants = _usesPlayers
+          ? playerTeams(teamsCubit.state.players)
+          : teamsCubit.state.teams;
+      _startingScores = {for (final team in participants) team.id: team.score};
+      _turnManager = TurnManager.randomStart(
+        teams: participants,
         totalRounds: setup?.totalRounds ?? 3,
+        turnsByTeamId: _usesPlayers
+            ? const {}
+            : teamTurnCounts(teamsCubit.state.teams, teamsCubit.state.players),
       );
       emit(
         state.copyWith(
@@ -74,7 +104,11 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
         }
         final manager = _session.decodeManager(
           data['manager'],
-          _teamsCubit?.state.teams,
+          _teamsCubit == null
+              ? null
+              : _usesPlayers
+              ? playerTeams(_teamsCubit.state.players)
+              : _teamsCubit.state.teams,
         );
         if (!state.isQuickMode && manager == null) {
           throw const FormatException();
@@ -96,6 +130,7 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
             _startingScores;
         _turnManager = manager;
         _session.sessionId = data['sessionId'] as String;
+        _stats.restore(data['stats']);
         _finished = data['isGameOver'] as bool;
         _clock.restore(Duration(milliseconds: remainingMs));
         super.emit(
@@ -119,9 +154,17 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
       } catch (_) {
         _turnManager = state.isQuickMode || _teamsCubit == null
             ? null
-            : TurnManager(
-                teams: _teamsCubit.state.teams,
+            : TurnManager.randomStart(
+                teams: _usesPlayers
+                    ? playerTeams(_teamsCubit.state.players)
+                    : _teamsCubit.state.teams,
                 totalRounds: _setup?.totalRounds ?? 3,
+                turnsByTeamId: _usesPlayers
+                    ? const {}
+                    : teamTurnCounts(
+                        _teamsCubit.state.teams,
+                        _teamsCubit.state.players,
+                      ),
               );
       }
     }
@@ -134,6 +177,10 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
     _session.save({
       'startingScores': _startingScores,
       'isQuickMode': state.isQuickMode,
+      'participationMode': _usesPlayers
+          ? GameParticipationMode.players.name
+          : GameParticipationMode.teams.name,
+      'stats': _stats.toJson(),
       'manager': _session.encodeManager(_turnManager),
       'item': state.currentQuestion?.toJson(),
       'remainingMs': _clock.remaining.inMilliseconds,
@@ -213,10 +260,13 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
     emit(state.copyWith(isCountdownFinished: false));
     _audio.playCorrect();
     _haptics.lightClick();
+    _stats.add(_actorName, GameStatMetric.correct);
 
     if (!state.isQuickMode && _turnManager != null) {
       final activeTeam = _turnManager!.currentTeam;
-      _teamsCubit?.updateTeamScore(activeTeam.id, 1);
+      if (!_usesPlayers) {
+        _teamsCubit?.updateTeamScore(activeTeam.id, 1);
+      }
       _turnManager = _turnManager!.updateTeamScore(activeTeam.id, 1);
     }
 
@@ -236,6 +286,7 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
     emit(state.copyWith(isCountdownFinished: false));
     _audio.playBuzzer();
     _haptics.buzzerFail();
+    _stats.add(_actorName, GameStatMetric.fail);
 
     emit(state.copyWith(failCount: state.failCount + 1));
     nextTurn();
@@ -250,6 +301,7 @@ class FiveSecondsCubit extends Cubit<FiveSecondsState> {
         emit(state.copyWith(isGameOver: true));
         return;
       }
+      _audio.playTurn();
       emit(
         state.copyWith(
           activeTeamName: _turnManager!.currentTeam.name,

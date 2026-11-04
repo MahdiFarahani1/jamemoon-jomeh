@@ -40,7 +40,9 @@ void main() {
     RouteSettings? launched;
     await tester.pumpWidget(app('taboo', (settings) => launched = settings));
     expect(find.text('زمان هر نوبت'), findsOneWidget);
-    await tester.scrollUntilVisible(find.text('شروع بازی'), 250);
+    await tester.scrollUntilVisible(find.text('شروع بازی'), 350);
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -100));
+    await tester.pump();
     await tester.tap(find.text('شروع بازی'));
     await tester.pump();
     expect(launched, isNull);
@@ -56,7 +58,9 @@ void main() {
     await tester.pump();
     await tester.tap(find.text('7 دور'));
     await tester.pump();
-    await tester.scrollUntilVisible(find.text('شروع بازی'), 250);
+    await tester.scrollUntilVisible(find.text('شروع بازی'), 350);
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -100));
+    await tester.pump();
     await tester.tap(find.text('شروع بازی'));
     await tester.pump();
     expect(launched?.name, '/game/taboo');

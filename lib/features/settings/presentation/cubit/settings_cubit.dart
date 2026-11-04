@@ -11,6 +11,7 @@ class SettingsCubit extends Cubit<SettingsState> {
         SettingsState(
           soundEnabled: _storageService.isSoundEnabled,
           vibrationEnabled: _storageService.isVibrationEnabled,
+          musicEnabled: _storageService.isMusicEnabled,
         ),
       );
 
@@ -24,6 +25,12 @@ class SettingsCubit extends Cubit<SettingsState> {
     final newValue = !state.vibrationEnabled;
     await _storageService.setVibrationEnabled(newValue);
     emit(state.copyWith(vibrationEnabled: newValue));
+  }
+
+  Future<void> toggleMusic() async {
+    final newValue = !state.musicEnabled;
+    await _storageService.setMusicEnabled(newValue);
+    emit(state.copyWith(musicEnabled: newValue));
   }
 
   Future<void> resetAll() async {

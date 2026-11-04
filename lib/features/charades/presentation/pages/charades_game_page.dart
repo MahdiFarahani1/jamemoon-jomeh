@@ -76,9 +76,14 @@ class _CharadesGameView extends StatelessWidget {
           );
         }
         if (state.isPassPhonePhase) {
+          final assignment = state.isQuickMode
+              ? null
+              : context.read<CharadesCubit>().currentAssignment;
           return Scaffold(
             body: PassPhoneOverlay(
               teamName: state.activeTeamName,
+              playerName: assignment?.performer,
+              partnerName: assignment?.guesser,
               gameTitle: 'پانتومیم انفجاری',
               onReady: () => context.read<CharadesCubit>().startRound(),
             ),
@@ -159,7 +164,6 @@ class _CharadesGameView extends StatelessWidget {
                       child: Center(
                         child: GamePromptCard(
                           gameKey: 'charades',
-                          category: currentWord?.category ?? 'عمومی',
                           prompt: currentWord?.word ?? 'در حال بارگذاری...',
                           points: points,
                           hint:
@@ -270,8 +274,12 @@ class _CharadesGameView extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   PartyButton(
-                    label: 'نوبت تیم بعدی',
-                    icon: Icons.arrow_forward_rounded,
+                    label: context.read<CharadesCubit>().isFinalTurn
+                        ? 'نمایش نتیجه'
+                        : 'نوبت تیم بعدی',
+                    icon: context.read<CharadesCubit>().isFinalTurn
+                        ? Icons.emoji_events_rounded
+                        : Icons.arrow_forward_rounded,
                     color: AppColors.charadesPrimary,
                     onPressed: () => context.read<CharadesCubit>().nextTurn(),
                   ),

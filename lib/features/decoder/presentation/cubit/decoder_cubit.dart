@@ -41,6 +41,16 @@ class DecoderCubit extends Cubit<DecoderState> {
           ? state.copyWith(selectedFirst: id, clearError: true)
           : state.copyWith(selectedSecond: id, clearError: true),
     );
+    clearRosterError();
+  }
+
+  void showRosterError(String message) =>
+      emit(state.copyWith(rosterError: message));
+
+  void clearRosterError() {
+    if (state.rosterError != null) {
+      emit(state.copyWith(clearRosterError: true));
+    }
   }
 
   Future<void> startGame(Team first, Team second) async {

@@ -6,6 +6,8 @@ import '../../../../app/di/service_locator.dart';
 import '../../../../core/models/turn_manager.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/models/game_setup_config.dart';
+import '../../../../core/models/game_stats.dart';
+import '../../../../core/models/participant_roster.dart';
 import '../../../../core/services/audio_service.dart';
 import '../../../../core/services/haptics_service.dart';
 import '../../../../core/services/round_clock.dart';
@@ -15,8 +17,25 @@ import '../../data/charades_word_model.dart';
 import 'charades_state.dart';
 
 class CharadesCubit extends Cubit<CharadesState> {
-  GameResult? get result =>
-      GameResult.fromManager(_turnManager, baseline: _startingScores);
+  int get playerOrderSeed => _session.sessionId.hashCode;
+  bool get isFinalTurn =>
+      !state.isQuickMode && _turnManager?.isFinalTurn == true;
+  PlayerTurnAssignment? get currentAssignment =>
+      _turnManager == null || _teamsCubit == null
+      ? null
+      : PlayerTurnAssignment.forTeam(
+          teams: _teamsCubit.state.teams,
+          players: _teamsCubit.state.players,
+          teamName: _turnManager!.currentTeam.name,
+          round: _turnManager!.currentTeamTurnNumber,
+          seed: playerOrderSeed,
+        );
+  GameResult? get result => GameResult.fromManager(
+    _turnManager,
+    baseline: _startingScores,
+    highlights: _stats.highlights(),
+  );
+  final GameStatsTracker _stats = GameStatsTracker();
   Map<String, int> _startingScores = {};
   final GameSessionStore _session = GameSessionStore('charades');
   bool _sessionReady = false;
@@ -32,6 +51,12 @@ class CharadesCubit extends Cubit<CharadesState> {
   final TeamsCubit? _teamsCubit;
   final GameSetupConfig? _setup;
   bool _finished = false;
+  String get _actorName {
+    if (_turnManager == null || _teamsCubit == null) {
+      return state.activeTeamName;
+    }
+    return currentAssignment?.performer ?? _turnManager!.currentTeam.name;
+  }
 
   CharadesCubit({
     required CharadesRepository repository,
@@ -52,9 +77,13 @@ class CharadesCubit extends Cubit<CharadesState> {
       _startingScores = {
         for (final team in teamsCubit.state.teams) team.id: team.score,
       };
-      _turnManager = TurnManager(
+      _turnManager = TurnManager.randomStart(
         teams: teamsCubit.state.teams,
         totalRounds: setup?.totalRounds ?? 3,
+        turnsByTeamId: teamTurnCounts(
+          teamsCubit.state.teams,
+          teamsCubit.state.players,
+        ),
       );
       emit(
         state.copyWith(
@@ -99,6 +128,7 @@ class CharadesCubit extends Cubit<CharadesState> {
             _startingScores;
         _turnManager = manager;
         _session.sessionId = data['sessionId'] as String;
+        _stats.restore(data['stats']);
         _finished = data['isGameOver'] as bool;
         _clock.restore(Duration(milliseconds: remainingMs));
         super.emit(
@@ -123,9 +153,13 @@ class CharadesCubit extends Cubit<CharadesState> {
       } catch (_) {
         _turnManager = state.isQuickMode || _teamsCubit == null
             ? null
-            : TurnManager(
+            : TurnManager.randomStart(
                 teams: _teamsCubit.state.teams,
                 totalRounds: _setup?.totalRounds ?? 3,
+                turnsByTeamId: teamTurnCounts(
+                  _teamsCubit.state.teams,
+                  _teamsCubit.state.players,
+                ),
               );
       }
     }
@@ -139,6 +173,7 @@ class CharadesCubit extends Cubit<CharadesState> {
       'startingScores': _startingScores,
       'roundSeconds': state.totalSeconds,
       'isQuickMode': state.isQuickMode,
+      'stats': _stats.toJson(),
       'manager': _session.encodeManager(_turnManager),
       'item': state.currentWord?.toJson(),
       'remainingMs': _clock.remaining.inMilliseconds,
@@ -200,6 +235,7 @@ class CharadesCubit extends Cubit<CharadesState> {
     if (!state.isTimerRunning || state.isRoundOver || _finished) return;
     _audio.playCorrect();
     _haptics.lightClick();
+    _stats.add(_actorName, GameStatMetric.correct);
 
     final points = state.currentWord?.points ?? 1;
     if (_turnManager != null) {
@@ -222,6 +258,7 @@ class CharadesCubit extends Cubit<CharadesState> {
     if (!state.isTimerRunning || state.isRoundOver || _finished) return;
     _audio.playSkip();
     _haptics.lightClick();
+    _stats.add(_actorName, GameStatMetric.skip);
     final nextWord = _repository.getNextWord();
     emit(state.copyWith(currentWord: nextWord, skipCount: state.skipCount + 1));
   }
@@ -253,6 +290,7 @@ class CharadesCubit extends Cubit<CharadesState> {
         emit(state.copyWith(isGameOver: true));
         return;
       }
+      _audio.playTurn();
       emit(
         state.copyWith(
           isPassPhonePhase: true,

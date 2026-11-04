@@ -19,6 +19,7 @@ class StorageService {
     'pack_charades_full',
     'pack_five_full',
     'pack_drawing_full',
+    'heist',
   };
 
   Object? _read(String key) {
@@ -57,10 +58,13 @@ class StorageService {
 
   bool get isSoundEnabled =>
       _read('sound_enabled') is bool ? _read('sound_enabled') as bool : true;
+  bool get isMusicEnabled =>
+      _read('music_enabled') is bool ? _read('music_enabled') as bool : true;
   bool get isVibrationEnabled => _read('vibration_enabled') is bool
       ? _read('vibration_enabled') as bool
       : true;
   Future<void> setSoundEnabled(bool value) => _write('sound_enabled', value);
+  Future<void> setMusicEnabled(bool value) => _write('music_enabled', value);
   Future<void> setVibrationEnabled(bool value) =>
       _write('vibration_enabled', value);
 
@@ -73,6 +77,9 @@ class StorageService {
 
   Future<void> addPurchasedPack(String id) =>
       _write('purchased_packs', {...purchasedPacks, id}.toList());
+  bool get isSubscribed => isPackPurchased('season_1_bundle');
+  bool get isHeistUnlocked => isPackPurchased('heist');
+
   bool isPackPurchased(String id) =>
       purchasedPacks.contains(id) ||
       (seasonOnePackIds.contains(id) &&
@@ -122,6 +129,19 @@ class StorageService {
   Future<void> saveCustomCards(List<Map<String, dynamic>> cards) =>
       _writeJson('custom_cards', cards);
 
+  List<String> getSeenContentIds(String gameKey) {
+    final value = _read('seen_content_$gameKey');
+    return value is List ? value.whereType<String>().toList() : const [];
+  }
+
+  Future<void> markContentSeen(String gameKey, String id) => _write(
+    'seen_content_$gameKey',
+    {...getSeenContentIds(gameKey), id}.toList(),
+  );
+
+  Future<void> clearSeenContent(String gameKey) =>
+      _write('seen_content_$gameKey', null);
+
   Map<String, dynamic>? getGameSession(String key) =>
       _readMap('game_session_$key');
   Future<void> saveGameSession(String key, Map<String, dynamic>? data) =>
@@ -164,6 +184,8 @@ class StorageService {
       'game_history',
       ..._cache.keys.where((key) => key.startsWith('game_session_')),
       ...?_prefs?.getKeys().where((key) => key.startsWith('game_session_')),
+      ..._cache.keys.where((key) => key.startsWith('seen_content_')),
+      ...?_prefs?.getKeys().where((key) => key.startsWith('seen_content_')),
     };
     for (final key in keys) {
       await _write(key, null);

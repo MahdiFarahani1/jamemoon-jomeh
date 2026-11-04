@@ -10,7 +10,6 @@ import '../../../../app/theme/app_typography.dart';
 import '../../../../core/models/game_result.dart';
 import '../../../../core/models/team_model.dart';
 import '../../../../core/models/game_setup_config.dart';
-import '../../../../core/services/audio_service.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
 import '../../../../core/widgets/party_card.dart';
@@ -48,17 +47,16 @@ class _DecoderViewState extends State<_DecoderView>
   final _number = TextEditingController();
   late DecoderCubit _cubit;
   Animation<double>? _secondaryAnimation;
-  String? _rosterError;
 
   Future<void> _addMember(String teamId) async {
     final name = await MemberNameDialog.show(context);
     if (!mounted || name == null) return;
     if (name.isEmpty) {
-      setState(() => _rosterError = 'نام بازیکن را وارد کنید.');
+      _cubit.showRosterError('نام بازیکن را وارد کنید.');
       return;
     }
     context.read<TeamsCubit>().addPlayer(name: name, teamId: teamId);
-    setState(() => _rosterError = null);
+    _cubit.clearRosterError();
   }
 
   Future<void> _editTeam(Team team) async {
@@ -118,7 +116,6 @@ class _DecoderViewState extends State<_DecoderView>
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state != AppLifecycleState.resumed) {
       _cubit.shield();
-      if (mounted) setState(() {});
     }
   }
 
@@ -133,41 +130,34 @@ class _DecoderViewState extends State<_DecoderView>
   }
 
   @override
-  Widget build(BuildContext context) =>
-      BlocConsumer<DecoderCubit, DecoderState>(
-        listener: (context, state) {
-          if (state.phase == DecoderPhase.result &&
-              sl.isRegistered<AudioService>()) {
-            sl<AudioService>().playVictory();
-          }
-        },
-        builder: (context, state) => Scaffold(
-          appBar: AppBar(
-            title: const Text('رمزگشا'),
-            actions: [
-              IconButton(
-                tooltip: 'آموزش بازی',
-                icon: const Icon(Icons.help_outline_rounded),
-                onPressed: () => HowToPlaySheet.show(context, 'decoder'),
-              ),
-            ],
-            bottom: const GameSceneRibbon(gameKey: 'decoder'),
+  Widget build(BuildContext context) => BlocBuilder<DecoderCubit, DecoderState>(
+    builder: (context, state) => Scaffold(
+      appBar: AppBar(
+        title: const Text('رمزگشا'),
+        actions: [
+          IconButton(
+            tooltip: 'آموزش بازی',
+            icon: const Icon(Icons.help_outline_rounded),
+            onPressed: () => HowToPlaySheet.show(context, 'decoder'),
           ),
-          body: AnimatedPartyBackground(
-            gameKey: 'decoder',
-            child: SafeArea(
-              child: switch (state.phase) {
-                DecoderPhase.setup => _setup(context, state),
-                DecoderPhase.shield => _shield(context, state),
-                DecoderPhase.guide => _guide(context, state),
-                DecoderPhase.guessing => _guessing(context, state),
-                DecoderPhase.reveal => _reveal(context, state),
-                DecoderPhase.result => _result(context, state),
-              },
-            ),
-          ),
+        ],
+        bottom: const GameSceneRibbon(gameKey: 'decoder'),
+      ),
+      body: AnimatedPartyBackground(
+        gameKey: 'decoder',
+        child: SafeArea(
+          child: switch (state.phase) {
+            DecoderPhase.setup => _setup(context, state),
+            DecoderPhase.shield => _shield(context, state),
+            DecoderPhase.guide => _guide(context, state),
+            DecoderPhase.guessing => _guessing(context, state),
+            DecoderPhase.reveal => _reveal(context, state),
+            DecoderPhase.result => _result(context, state),
+          },
         ),
-      );
+      ),
+    ),
+  );
 
   Widget _setup(BuildContext context, DecoderState state) {
     final teams = context.watch<TeamsCubit>().state.teams;
@@ -196,7 +186,7 @@ class _DecoderViewState extends State<_DecoderView>
               .toList(),
           onChanged: (value) {
             if (value != null) {
-              setState(() => _rosterError = null);
+              _cubit.clearRosterError();
               _cubit.selectTeam(slot, value);
             }
           },
@@ -284,11 +274,11 @@ class _DecoderViewState extends State<_DecoderView>
                     style: const TextStyle(color: AppColors.error),
                   ),
                 ),
-              if (_rosterError != null)
+              if (state.rosterError != null)
                 Padding(
                   padding: const EdgeInsets.only(top: 8),
                   child: Text(
-                    _rosterError!,
+                    state.rosterError!,
                     style: const TextStyle(color: AppColors.error),
                   ),
                 ),
@@ -306,10 +296,10 @@ class _DecoderViewState extends State<_DecoderView>
                           context.read<TeamsCubit>().state.players,
                         );
                         if (error != null) {
-                          setState(() => _rosterError = error);
+                          _cubit.showRosterError(error);
                           return;
                         }
-                        setState(() => _rosterError = null);
+                        _cubit.clearRosterError();
                         _cubit.startGame(first, second);
                       }
                     : null,

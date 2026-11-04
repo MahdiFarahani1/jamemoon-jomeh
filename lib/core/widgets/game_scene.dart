@@ -147,22 +147,24 @@ class _ScoreBurstState extends State<ScoreBurst> {
                   final opacity = reduced
                       ? 1.0
                       : value < .15
-                          ? (value / .15).clamp(0.0, 1.0)
-                          : value > .75
-                              ? ((1 - value) / .25).clamp(0.0, 1.0)
-                              : 1.0;
+                      ? (value / .15).clamp(0.0, 1.0)
+                      : value > .75
+                      ? ((1 - value) / .25).clamp(0.0, 1.0)
+                      : 1.0;
                   final slideOffset = reduced
                       ? 0.0
                       : value < .2
-                          ? -16 * (1 - (value / .2))
-                          : -14 * (value - .2);
+                      ? -16 * (1 - (value / .2))
+                      : -14 * (value - .2);
                   final scale = reduced
                       ? 1.0
                       : value < .2
-                          ? .85 + .2 * math.sin((value / .2) * math.pi / 2)
-                          : 1.0;
+                      ? .85 + .2 * math.sin((value / .2) * math.pi / 2)
+                      : 1.0;
                   final isNegative = _delta < 0;
-                  final bgColor = isNegative ? AppColors.error : AppColors.success;
+                  final bgColor = isNegative
+                      ? AppColors.error
+                      : AppColors.success;
                   final gradient = isNegative
                       ? const LinearGradient(
                           colors: [Color(0xFFE53935), Color(0xFFB71C1C)],
@@ -195,10 +197,11 @@ class _ScoreBurstState extends State<ScoreBurst> {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: (isNegative
-                                        ? const Color(0xFFB71C1C)
-                                        : const Color(0xFF1B5E20))
-                                    .withValues(alpha: .45),
+                                color:
+                                    (isNegative
+                                            ? const Color(0xFFB71C1C)
+                                            : const Color(0xFF1B5E20))
+                                        .withValues(alpha: .45),
                                 blurRadius: 18,
                                 spreadRadius: 2,
                                 offset: const Offset(0, 6),

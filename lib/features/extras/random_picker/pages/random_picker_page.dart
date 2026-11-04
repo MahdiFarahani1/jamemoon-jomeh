@@ -25,7 +25,11 @@ class RandomPickerPage extends StatelessWidget {
               return ListView(
                 padding: const EdgeInsets.all(24),
                 children: [
-                  const Text('نوبت کیه؟', style: AppTypography.displayMedium),
+                  const Text(
+                    'نوبت کیه شام رو حساب کنه؟',
+                    style: AppTypography.displayMedium,
+                    textAlign: TextAlign.center,
+                  ),
                   const SizedBox(height: 8),
                   const Text(
                     'از بین بازیکن‌های جمع، یک نفر انتخاب می‌شود.',

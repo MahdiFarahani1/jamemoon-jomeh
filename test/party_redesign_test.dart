@@ -79,11 +79,7 @@ void main() {
           );
           expect(tile, findsOneWidget, reason: 'Missing ${game.key}');
         }
-        for (final icon in [
-          Icons.casino_outlined,
-          Icons.shuffle_rounded,
-          Icons.style_outlined,
-        ]) {
+        for (final icon in [Icons.shuffle_rounded, Icons.style_outlined]) {
           final extra = find.byIcon(icon);
           await tester.scrollUntilVisible(
             extra,
@@ -261,8 +257,6 @@ void main() {
                 height: 240,
                 child: GamePromptCard(
                   gameKey: 'charades',
-                  category:
-                      'Ø¯Ø³ØªÙ‡â€ŒØ¨Ù†Ø¯ÛŒ Ø¨Ø³ÛŒØ§Ø± Ø·ÙˆÙ„Ø§Ù†ÛŒ ÙØ§Ø±Ø³ÛŒ',
                   prompt: prompt,
                   points: 100,
                   hint: 'Ø±Ø§Ù‡Ù†Ù…Ø§ÛŒ Ø·ÙˆÙ„Ø§Ù†ÛŒ ÙØ§Ø±Ø³ÛŒ Ø¨Ø±Ø§ÛŒ Ø¨Ø±Ø±Ø³ÛŒ Ù¾ÛŒÙ…Ø§ÛŒØ´ Ú©Ø§Ø±Øª',
@@ -342,6 +336,8 @@ void main() {
         tester.view.resetDevicePixelRatio();
       });
       await tester.tap(find.byType(PartyButton));
+      await tester.pump(const Duration(milliseconds: 100));
+      await tester.tap(find.byType(PartyButton));
       await tester.pump();
       await tester.tap(find.byType(PartyButton));
       await tester.pump(const Duration(seconds: 2));
@@ -375,6 +371,8 @@ void main() {
       tester.view.resetDevicePixelRatio();
     });
     await tester.tap(find.byType(PartyButton));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.tap(find.byType(PartyButton));
     await tester.pump(const Duration(seconds: 1));
     await tester.tap(find.byType(TextButton));
     await tester.pump();
@@ -405,6 +403,8 @@ void main() {
         tester.view.resetPhysicalSize();
         tester.view.resetDevicePixelRatio();
       });
+      await tester.tap(find.byType(PartyButton));
+      await tester.pump(const Duration(milliseconds: 100));
       await tester.tap(find.byType(PartyButton));
       await tester.pump(const Duration(seconds: 1));
       tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.inactive);

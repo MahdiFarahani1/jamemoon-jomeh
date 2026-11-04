@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../app/theme/app_colors.dart';
 import 'game_scene.dart';
+import 'game_visual_effects.dart';
 
 /// Separate art direction for each arena. Static paint is isolated from clocks.
 class AnimatedPartyBackground extends StatelessWidget {
@@ -34,7 +35,11 @@ class AnimatedPartyBackground extends StatelessWidget {
             ),
           ),
         ),
-        Positioned.fill(child: child),
+        Positioned.fill(
+          child: gameKey == null
+              ? child
+              : GameAtmosphere(gameKey: gameKey!, child: child),
+        ),
       ],
     );
     return score == null

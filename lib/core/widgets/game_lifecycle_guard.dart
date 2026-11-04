@@ -4,6 +4,7 @@ import '../../app/di/service_locator.dart';
 import '../../core/models/game_result.dart';
 import '../../core/services/audio_service.dart';
 import 'game_emblem.dart';
+import 'game_visual_effects.dart';
 import '../../app/theme/app_colors.dart';
 import '../../app/theme/app_typography.dart';
 import 'animated_party_background.dart';
@@ -120,104 +121,157 @@ class _GameCompletionViewState extends State<GameCompletionView> {
   Widget build(BuildContext context) {
     final result = widget.result;
     return Scaffold(
-      body: ConfettiOverlay(
-        showConfetti: !MediaQuery.disableAnimationsOf(context),
-        child: AnimatedPartyBackground(
-          gameKey: widget.gameKey,
-          child: SafeArea(
-            child: Center(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 540),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      TweenAnimationBuilder<double>(
-                        tween: Tween(begin: .8, end: 1),
-                        duration: MediaQuery.disableAnimationsOf(context)
-                            ? Duration.zero
-                            : const Duration(milliseconds: 650),
-                        curve: Curves.elasticOut,
-                        builder: (context, scale, child) =>
-                            Transform.scale(scale: scale, child: child),
-                        child: const TrophyArt(size: 140),
-                      ),
-                      const SizedBox(height: 8),
-                      GameEmblem(gameKey: widget.gameKey, size: 52),
-                      const SizedBox(height: 20),
-                      Text(
-                        result == null
-                            ? 'بازی به پایان رسید!'
-                            : result.isTie
-                            ? 'بازی مساوی شد!'
-                            : 'قهرمان: ${result.winnerName}',
-                        style: AppTypography.displayMedium.copyWith(
-                          fontWeight: FontWeight.w900,
+      body: GameResultCelebration(
+        gameKey: widget.gameKey,
+        child: ConfettiOverlay(
+          showConfetti: !MediaQuery.disableAnimationsOf(context),
+          child: AnimatedPartyBackground(
+            gameKey: widget.gameKey,
+            child: SafeArea(
+              child: Center(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 28,
+                  ),
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 540),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        TweenAnimationBuilder<double>(
+                          tween: Tween(begin: .8, end: 1),
+                          duration: MediaQuery.disableAnimationsOf(context)
+                              ? Duration.zero
+                              : const Duration(milliseconds: 650),
+                          curve: Curves.elasticOut,
+                          builder: (context, scale, child) =>
+                              Transform.scale(scale: scale, child: child),
+                          child: const TrophyArt(size: 140),
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                      if (result != null) ...[
-                        const SizedBox(height: 6),
+                        const SizedBox(height: 8),
+                        GameEmblem(gameKey: widget.gameKey, size: 52),
+                        const SizedBox(height: 20),
                         Text(
-                          result.isTie
-                              ? 'رقابت شانه به شانه بین ${result.tiedWinnerNames}!'
-                              : 'تبریک به ${result.winnerName} برای کسب پیروزی درخشان!',
-                          style: AppTypography.bodyLarge.copyWith(
-                            color: AppColors.accent,
-                            fontWeight: FontWeight.w600,
+                          result == null
+                              ? 'بازی به پایان رسید!'
+                              : result.isTie
+                              ? 'بازی مساوی شد!'
+                              : 'قهرمان: ${result.winnerName}',
+                          style: AppTypography.displayMedium.copyWith(
+                            fontWeight: FontWeight.w900,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                      ],
-                      const SizedBox(height: 24),
-                      if (result != null) ...[
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(
-                              Icons.leaderboard_rounded,
+                        if (result != null) ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            result.isTie
+                                ? 'رقابت شانه به شانه بین ${result.tiedWinnerNames}!'
+                                : 'تبریک به ${result.winnerName} برای کسب پیروزی درخشان!',
+                            style: AppTypography.bodyLarge.copyWith(
                               color: AppColors.accent,
-                              size: 22,
+                              fontWeight: FontWeight.w600,
                             ),
-                            const SizedBox(width: 8),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                        const SizedBox(height: 24),
+                        if (result != null) ...[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.leaderboard_rounded,
+                                color: AppColors.accent,
+                                size: 22,
+                              ),
+                              const SizedBox(width: 8),
+                              const Text(
+                                'نتیجهٔ نهایی',
+                                style: AppTypography.headlineMedium,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 14),
+                          for (var i = 0; i < result.standings.length; i++)
+                            _ResultTeamRow(
+                              rank: result.ranks[i],
+                              name: result.standings[i].name,
+                              score: result.standings[i].score,
+                              color: Color(result.standings[i].colorValue),
+                              isWinner: result.winners.any(
+                                (winner) => winner.id == result.standings[i].id,
+                              ),
+                            ),
+                          if (result.highlights.isNotEmpty) ...[
+                            const SizedBox(height: 18),
                             const Text(
-                              'نتیجهٔ نهایی',
+                              'آمار بامزهٔ بازی',
                               style: AppTypography.headlineMedium,
                             ),
-                          ],
-                        ),
-                        const SizedBox(height: 14),
-                        for (var i = 0; i < result.standings.length; i++)
-                          _ResultTeamRow(
-                            rank: i + 1,
-                            name: result.standings[i].name,
-                            score: result.standings[i].score,
-                            color: Color(result.standings[i].colorValue),
-                            isWinner: result.winners.any(
-                              (winner) => winner.id == result.standings[i].id,
+                            const SizedBox(height: 10),
+                            Wrap(
+                              spacing: 10,
+                              runSpacing: 10,
+                              alignment: WrapAlignment.center,
+                              children: [
+                                for (final highlight in result.highlights)
+                                  Container(
+                                    constraints: const BoxConstraints(
+                                      minWidth: 210,
+                                    ),
+                                    padding: const EdgeInsets.all(14),
+                                    decoration: BoxDecoration(
+                                      color: AppColors.surface,
+                                      borderRadius: BorderRadius.circular(18),
+                                      border: Border.all(
+                                        color: AppColors.surfaceBorder,
+                                      ),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Text(
+                                          '${highlight.emoji} ${highlight.title}',
+                                          style: AppTypography.titleLarge,
+                                        ),
+                                        const SizedBox(height: 4),
+                                        Text(
+                                          highlight.value,
+                                          style: AppTypography.bodyMedium
+                                              .copyWith(
+                                                color: AppColors.accent,
+                                              ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                              ],
                             ),
-                          ),
-                      ],
-                      const SizedBox(height: 28),
-                      PartyButton(
-                        label: 'ادامه',
-                        color: AppColors.accent,
-                        icon: Icons.arrow_forward_rounded,
-                        onPressed: () {
-                          widget.onComplete?.call();
-                          Navigator.of(context).pop(true);
-                        },
-                      ),
-                      if (widget.onPlayAgain != null) ...[
-                        const SizedBox(height: 12),
-                        OutlinedButton.icon(
-                          onPressed: widget.onPlayAgain,
-                          icon: const Icon(Icons.replay_rounded),
-                          label: const Text('شروع دوباره همین بازی'),
+                          ],
+                        ],
+                        const SizedBox(height: 28),
+                        PartyButton(
+                          label: 'ادامه',
+                          color: AppColors.accent,
+                          icon: Icons.arrow_forward_rounded,
+                          onPressed: () {
+                            widget.onComplete?.call();
+                            Navigator.of(context).pop(true);
+                          },
                         ),
+                        if (widget.onPlayAgain != null) ...[
+                          const SizedBox(height: 12),
+                          OutlinedButton.icon(
+                            onPressed: widget.onPlayAgain,
+                            icon: const Icon(Icons.replay_rounded),
+                            label: const Text('شروع دوباره همین بازی'),
+                          ),
+                        ],
                       ],
-                    ],
+                    ),
                   ),
                 ),
               ),
@@ -252,7 +306,7 @@ class _ResultTeamRow extends StatelessWidget {
       3 => '🥉',
       _ => '#$rank',
     };
-    return Container(
+    final row = Container(
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
@@ -295,10 +349,7 @@ class _ResultTeamRow extends StatelessWidget {
           Container(
             width: 10,
             height: 10,
-            decoration: BoxDecoration(
-              color: color,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(color: color, shape: BoxShape.circle),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -341,6 +392,28 @@ class _ResultTeamRow extends StatelessWidget {
           ),
         ],
       ),
+    );
+    final motionDisabled = MediaQuery.disableAnimationsOf(context);
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: 1),
+      duration: motionDisabled
+          ? Duration.zero
+          : Duration(milliseconds: 420 + rank * 110),
+      curve: Curves.easeOutBack,
+      child: row,
+      builder: (context, value, child) {
+        final visibleValue = value.clamp(0.0, 1.0);
+        return Opacity(
+          opacity: visibleValue,
+          child: Transform.translate(
+            offset: Offset(0, 22 * (1 - visibleValue)),
+            child: Transform.scale(
+              scale: .92 + visibleValue * .08,
+              child: child,
+            ),
+          ),
+        );
+      },
     );
   }
 }

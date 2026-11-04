@@ -8,6 +8,7 @@ import 'package:flutter_application_1/core/widgets/party_card.dart';
 import 'package:flutter_application_1/core/widgets/party_dialog.dart';
 import 'package:flutter_application_1/core/widgets/brand_mark.dart';
 import 'package:flutter_application_1/core/widgets/game_emblem.dart';
+import 'package:flutter_application_1/core/utils/ranking.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_state.dart';
 
@@ -130,9 +131,7 @@ class TournamentLobbyPage extends StatelessWidget {
                           textColor: Colors.black87,
                           onPressed: () async {
                             final completed = await Navigator.of(context)
-                                .pushNamed(
-                                  '/game/${currentGame.key}',
-                                );
+                                .pushNamed('/game/${currentGame.key}');
                             if (completed == true && context.mounted) {
                               context
                                   .read<TournamentCubit>()
@@ -172,10 +171,13 @@ class TournamentLobbyPage extends StatelessWidget {
                     builder: (context, teamsState) {
                       final sortedTeams = List.from(teamsState.teams)
                         ..sort((a, b) => b.score.compareTo(a.score));
+                      final ranks = denseRanks(
+                        sortedTeams.map((team) => team.score as int),
+                      );
 
                       return Column(
                         children: sortedTeams.asMap().entries.map((entry) {
-                          final rank = entry.key + 1;
+                          final rank = ranks[entry.key];
                           final team = entry.value;
 
                           return Container(

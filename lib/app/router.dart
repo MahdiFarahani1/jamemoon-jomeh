@@ -1,4 +1,6 @@
 import '../features/decoder/presentation/pages/decoder_game_page.dart';
+import '../features/heist/presentation/pages/heist_game_page.dart';
+import '../features/heist/presentation/pages/heist_locked_page.dart';
 import '../features/extras/party_challenges/party_challenges_page.dart';
 import '../features/teams/presentation/pages/game_preparation_page.dart';
 import '../core/models/game_setup_config.dart';
@@ -19,7 +21,6 @@ import '../features/hot_potato/presentation/pages/hot_potato_game_page.dart';
 import '../features/charades/presentation/pages/charades_game_page.dart';
 import '../features/five_seconds/presentation/pages/five_seconds_game_page.dart';
 import '../features/drawing/presentation/pages/drawing_game_page.dart';
-import '../features/extras/lucky_wheel/pages/lucky_wheel_page.dart';
 import '../features/extras/random_picker/pages/random_picker_page.dart';
 import '../features/extras/custom_cards/pages/custom_cards_page.dart';
 
@@ -39,6 +40,8 @@ class AppRouter {
         'roundSeconds': savedSession!['roundSeconds'],
       if (savedSession?['totalRounds'] != null)
         'totalRounds': savedSession!['totalRounds'],
+      if (savedSession?['participationMode'] != null)
+        'participationMode': savedSession!['participationMode'],
     });
 
     Widget page;
@@ -67,6 +70,16 @@ class AppRouter {
         break;
       case '/game/decoder':
         page = const DecoderGamePage();
+        break;
+      case '/prepare/heist':
+        page = sl<StorageService>().isPackPurchased('heist')
+            ? const HeistGamePage()
+            : const HeistLockedPage();
+        break;
+      case '/game/heist':
+        page = sl<StorageService>().isPackPurchased('heist')
+            ? HeistGamePage(resumeSaved: resume)
+            : const HeistLockedPage();
         break;
       case '/prepare/taboo':
       case '/prepare/hot_potato':
@@ -105,9 +118,6 @@ class AppRouter {
           setup: setup,
           resumeSaved: args['resume'] == true || args['resumeSaved'] == true,
         );
-        break;
-      case '/extras/wheel':
-        page = const LuckyWheelPage();
         break;
       case '/extras/challenges':
         page = const PartyChallengesPage();

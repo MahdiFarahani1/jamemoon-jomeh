@@ -35,6 +35,7 @@ class DecoderState extends Equatable {
   final int? winner;
   final bool mapVisible;
   final String? error;
+  final String? rosterError;
   final String? selectedFirst;
   final String? selectedSecond;
 
@@ -52,6 +53,7 @@ class DecoderState extends Equatable {
     this.winner,
     this.mapVisible = false,
     this.error,
+    this.rosterError,
     this.selectedFirst,
     this.selectedSecond,
   }) : teams = List.unmodifiable(teams),
@@ -73,6 +75,8 @@ class DecoderState extends Equatable {
     bool? mapVisible,
     String? error,
     bool clearError = false,
+    String? rosterError,
+    bool clearRosterError = false,
     String? selectedFirst,
     String? selectedSecond,
   }) => DecoderState(
@@ -89,6 +93,7 @@ class DecoderState extends Equatable {
     winner: clearWinner ? null : winner ?? this.winner,
     mapVisible: mapVisible ?? this.mapVisible,
     error: clearError ? null : error ?? this.error,
+    rosterError: clearRosterError ? null : rosterError ?? this.rosterError,
     selectedFirst: selectedFirst ?? this.selectedFirst,
     selectedSecond: selectedSecond ?? this.selectedSecond,
   );
@@ -123,6 +128,7 @@ class DecoderState extends Equatable {
     winner,
     mapVisible,
     error,
+    rosterError,
     selectedFirst,
     selectedSecond,
   ];

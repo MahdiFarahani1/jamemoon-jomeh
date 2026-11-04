@@ -17,8 +17,8 @@ dependencies:
   equatable: ^2.0.5
   shared_preferences: ^2.2.3
   audioplayers: ^6.0.0
-  shared_preferences_android: 2.3.4
-  path_provider_android: 2.2.15
+  shared_preferences_android: ^2.5.4
+  path_provider_android: ^2.3.1
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +36,7 @@ flutter:
     - assets/data/drawing/
     - assets/data/decoder/
     - assets/sounds/
+    - assets/heist/
     - assets/fonts/OFL.txt
   fonts:
     - family: Vazirmatn
