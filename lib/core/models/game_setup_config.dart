@@ -9,6 +9,7 @@ class GameSetupConfig {
     this.roundSeconds,
     this.totalRounds = 3,
     this.participationMode = GameParticipationMode.teams,
+    this.charadesCategory = 'all',
   });
 
   static const allowedSeconds = [30, 45, 60, 90];
@@ -17,6 +18,7 @@ class GameSetupConfig {
   final int? roundSeconds;
   final int totalRounds;
   final GameParticipationMode participationMode;
+  final String charadesCategory;
 
   static bool hasRoundDuration(String key) =>
       key == 'taboo' || key == 'charades' || key == 'drawing';
@@ -55,6 +57,9 @@ class GameSetupConfig {
       participationMode: supportsPlayerMode(key)
           ? mode
           : GameParticipationMode.teams,
+      charadesCategory: key == 'charades' && args['charadesCategory'] is String
+          ? args['charadesCategory'] as String
+          : 'all',
     );
   }
 
@@ -62,10 +67,12 @@ class GameSetupConfig {
     int? roundSeconds,
     int? totalRounds,
     GameParticipationMode? participationMode,
+    String? charadesCategory,
   }) => GameSetupConfig(
     roundSeconds: roundSeconds ?? this.roundSeconds,
     totalRounds: totalRounds ?? this.totalRounds,
     participationMode: participationMode ?? this.participationMode,
+    charadesCategory: charadesCategory ?? this.charadesCategory,
   );
 
   Map<String, dynamic> toArguments() => {
@@ -73,6 +80,7 @@ class GameSetupConfig {
     'totalRounds': totalRounds,
     if (participationMode == GameParticipationMode.players)
       'participationMode': participationMode.name,
+    if (charadesCategory != 'all') 'charadesCategory': charadesCategory,
   };
 }
 

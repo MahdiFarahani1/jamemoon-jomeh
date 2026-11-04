@@ -1,2002 +1,1002 @@
 [
   {
-    "id": "potato_1",
-    "topic": "میوه‌های تابستانی آبدار",
+    "id": "potato_curated_1_free",
+    "topic": "میوه‌های تابستانی",
     "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_2",
-    "topic": "سبزی‌های تازه خوردن",
+    "id": "potato_curated_2_free",
+    "topic": "غذاهای برنجی",
     "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_3",
-    "topic": "رنگ‌های رنگین‌کمان در آسمان",
-    "category": "عمومی"
+    "id": "potato_curated_3_free",
+    "topic": "انواع نان",
+    "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_4",
-    "topic": "حیوانات اهلی ساکن مزرعه",
+    "id": "potato_curated_4_free",
+    "topic": "نوشیدنی‌های گرم",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_5_free",
+    "topic": "خوراکی‌های ترش",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_6_free",
+    "topic": "غذاهای صبحانه",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_7_free",
+    "topic": "شیرینی‌های عید",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_8_free",
+    "topic": "طعم‌های بستنی",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_9_free",
+    "topic": "غذاهای خیابانی",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_10_free",
+    "topic": "میوه‌های قرمز",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_11_free",
+    "topic": "سبزی‌های خوردن",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_12_free",
+    "topic": "دسرهای ایرانی",
+    "category": "خوراکی‌ها"
+  },
+  {
+    "id": "potato_curated_13_free",
+    "topic": "حیوانات اهلی",
     "category": "طبیعت"
   },
   {
-    "id": "potato_5",
-    "topic": "پرنده‌های خوش‌آواز در باغ",
+    "id": "potato_curated_14_free",
+    "topic": "حیوانات دریایی",
     "category": "طبیعت"
   },
   {
-    "id": "potato_6",
-    "topic": "آبزیان و ماهی‌های خلیج فارس",
+    "id": "potato_curated_15_free",
+    "topic": "پرنده‌ها",
     "category": "طبیعت"
   },
   {
-    "id": "potato_7",
-    "topic": "گل‌های خوش‌بو و زینتی",
+    "id": "potato_curated_16_free",
+    "topic": "گل‌های باغچه",
     "category": "طبیعت"
   },
   {
-    "id": "potato_8",
-    "topic": "درخت‌های میوه‌دار باغبان",
+    "id": "potato_curated_17_free",
+    "topic": "درخت‌های میوه",
     "category": "طبیعت"
   },
   {
-    "id": "potato_9",
-    "topic": "غذاهای سنتی و اصیل ایرانی",
-    "category": "خوراکی‌ها"
+    "id": "potato_curated_18_free",
+    "topic": "چیزهای داخل جنگل",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_10",
-    "topic": "فست‌فودها و پیتزاهای محبوب",
-    "category": "خوراکی‌ها"
+    "id": "potato_curated_19_free",
+    "topic": "چیزهای کنار دریا",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_11",
-    "topic": "نوشیدنی‌های گرم در زمستان",
-    "category": "خوراکی‌ها"
+    "id": "potato_curated_20_free",
+    "topic": "صداهای طبیعت",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_12",
-    "topic": "نوشیدنی‌های خنک در تابستان",
-    "category": "خوراکی‌ها"
+    "id": "potato_curated_21_free",
+    "topic": "حیوانات کوچک",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_13",
-    "topic": "شیرینی‌های مخصوص عید نوروز",
-    "category": "خوراکی‌ها"
+    "id": "potato_curated_22_free",
+    "topic": "چیزهای آسمان",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_14",
-    "topic": "طعم‌های بستنی سنتی و ایتالیایی",
-    "category": "خوراکی‌ها"
-  },
-  {
-    "id": "potato_15",
-    "topic": "وسایل پخت و پز آشپزخانه",
+    "id": "potato_curated_23_free",
+    "topic": "وسایل آشپزخانه",
     "category": "خانه"
   },
   {
-    "id": "potato_16",
-    "topic": "وسایل آرامش‌بخش اتاق خواب",
+    "id": "potato_curated_24_free",
+    "topic": "وسایل حمام",
     "category": "خانه"
   },
   {
-    "id": "potato_17",
-    "topic": "وسایل مدرسه در کیف دانش‌آموز",
-    "category": "آموزش"
-  },
-  {
-    "id": "potato_18",
-    "topic": "لوازم اداری روی میز کارمندان",
-    "category": "شغل"
-  },
-  {
-    "id": "potato_19",
-    "topic": "وسایل نظافت داخل حمام",
+    "id": "potato_curated_25_free",
+    "topic": "وسایل اتاق خواب",
     "category": "خانه"
   },
   {
-    "id": "potato_20",
-    "topic": "وسایل ضروری چمدان مسافرت",
-    "category": "سفر"
+    "id": "potato_curated_26_free",
+    "topic": "چیزهای داخل یخچال",
+    "category": "خانه"
   },
   {
-    "id": "potato_21",
-    "topic": "وسایل پنهان داخل کیف خانم‌ها",
-    "category": "عمومی"
+    "id": "potato_curated_27_free",
+    "topic": "وسایل روی میز",
+    "category": "خانه"
   },
   {
-    "id": "potato_22",
-    "topic": "انواع لباس‌های گرم و کاپشن",
-    "category": "پوشاک"
+    "id": "potato_curated_28_free",
+    "topic": "کارهای خانه",
+    "category": "خانه"
   },
   {
-    "id": "potato_23",
-    "topic": "انواع کفش‌های اسپرت و مجلسی",
-    "category": "پوشاک"
+    "id": "potato_curated_29_free",
+    "topic": "وسایل داخل کیف",
+    "category": "خانه"
   },
   {
-    "id": "potato_24",
-    "topic": "انواع کلاه‌های آفتابی و نقاب‌دار",
-    "category": "پوشاک"
+    "id": "potato_curated_30_free",
+    "topic": "چیزهای داخل کمد",
+    "category": "خانه"
   },
   {
-    "id": "potato_25",
-    "topic": "شغل‌های پرخطر و شبانه‌روزی",
-    "category": "مشاغل"
+    "id": "potato_curated_31_free",
+    "topic": "وسایل برق‌دار",
+    "category": "خانه"
   },
   {
-    "id": "potato_26",
-    "topic": "ورزش‌های مهیج توپی در استادیوم",
+    "id": "potato_curated_32_free",
+    "topic": "چیزهای شکستنی",
+    "category": "خانه"
+  },
+  {
+    "id": "potato_curated_33_free",
+    "topic": "بازی‌های دورهمی",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_34_free",
+    "topic": "بهانه‌های دیر رسیدن",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_35_free",
+    "topic": "چیزهای جشن تولد",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_36_free",
+    "topic": "کارهای روز تعطیل",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_37_free",
+    "topic": "چیزهای سفره هفت‌سین",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_38_free",
+    "topic": "کادوهای تولد",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_39_free",
+    "topic": "بازی‌های کودکی",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_40_free",
+    "topic": "چیزهای شب یلدا",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_41_free",
+    "topic": "کارهای قبل خواب",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_42_free",
+    "topic": "چیزهای داخل چمدان",
+    "category": "دورهمی"
+  },
+  {
+    "id": "potato_curated_43_free",
+    "topic": "ورزش‌های توپی",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_44_free",
+    "topic": "ورزش‌های آبی",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_45_free",
+    "topic": "وسایل سفر",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_46_free",
+    "topic": "شهرهای ایران",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_47_free",
+    "topic": "کشورهای همسایه",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_48_free",
+    "topic": "وسایل نقلیه",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_49_free",
+    "topic": "کارهای کنار ساحل",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_50_free",
+    "topic": "کارهای کوه‌نوردی",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_51_free",
+    "topic": "وسایل باشگاه",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_52_free",
+    "topic": "کارهای داخل قطار",
+    "category": "ورزش و سفر"
+  },
+  {
+    "id": "potato_curated_53_free",
+    "topic": "حیوانات وحشی",
+    "category": "حیوانات"
+  },
+  {
+    "id": "potato_curated_54_free",
+    "topic": "شغل‌های بیمارستان",
+    "category": "شغل‌ها"
+  },
+  {
+    "id": "potato_curated_55_free",
+    "topic": "شهرهای شمال ایران",
+    "category": "جغرافیا"
+  },
+  {
+    "id": "potato_curated_56_free",
+    "topic": "وسایل نقلیه عمومی",
+    "category": "حمل‌ونقل"
+  },
+  {
+    "id": "potato_curated_57_free",
+    "topic": "وسایل ارتباطی",
+    "category": "فناوری"
+  },
+  {
+    "id": "potato_curated_58_free",
+    "topic": "نام‌های دخترانه",
+    "category": "زبان و ویژگی‌ها"
+  },
+  {
+    "id": "potato_curated_59_free",
+    "topic": "پوشیدنی‌های تابستانی",
+    "category": "پوشاک و بدن"
+  },
+  {
+    "id": "potato_curated_60_free",
+    "topic": "جاهای غذاخوری",
+    "category": "سفر و شهر"
+  },
+  {
+    "id": "potato_curated_61_free",
+    "topic": "ورزش‌های انفرادی",
     "category": "ورزش"
   },
   {
-    "id": "potato_27",
-    "topic": "ورزش‌های آبی در استخر و دریا",
+    "id": "potato_curated_62_free",
+    "topic": "سازهای کوبه‌ای",
+    "category": "سرگرمی و هنر"
+  },
+  {
+    "id": "potato_curated_63_free",
+    "topic": "درس‌های مدرسه",
+    "category": "مدرسه و کار"
+  },
+  {
+    "id": "potato_curated_64_free",
+    "topic": "دلایل زنگ‌زدن تلفن",
+    "category": "خلاقیت و موقعیت‌ها"
+  },
+  {
+    "id": "potato_curated_65_free",
+    "topic": "حیوانات بیابانی",
+    "category": "حیوانات"
+  },
+  {
+    "id": "potato_curated_66_free",
+    "topic": "شغل‌های فرودگاه",
+    "category": "شغل‌ها"
+  },
+  {
+    "id": "potato_curated_67_free",
+    "topic": "شهرهای غرب ایران",
+    "category": "جغرافیا"
+  },
+  {
+    "id": "potato_curated_68_free",
+    "topic": "وسایل نقلیه آبی",
+    "category": "حمل‌ونقل"
+  },
+  {
+    "id": "potato_curated_69_free",
+    "topic": "وسایل دارای دوربین",
+    "category": "فناوری"
+  },
+  {
+    "id": "potato_curated_70_free",
+    "topic": "نام‌های خانوادگی رایج",
+    "category": "زبان و ویژگی‌ها"
+  },
+  {
+    "id": "potato_curated_71_free",
+    "topic": "انواع کلاه",
+    "category": "پوشاک و بدن"
+  },
+  {
+    "id": "potato_curated_72_free",
+    "topic": "جاهای ورزش",
+    "category": "سفر و شهر"
+  },
+  {
+    "id": "potato_curated_73_free",
+    "topic": "ورزش‌های رزمی",
     "category": "ورزش"
   },
   {
-    "id": "potato_28",
-    "topic": "بازی‌های ویدیویی خاطره‌انگیز",
-    "category": "سرگرمی"
+    "id": "potato_curated_74_free",
+    "topic": "سبک‌های موسیقی",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_29",
-    "topic": "فیلم‌های کمدی پرفروش سینما",
-    "category": "هنر"
+    "id": "potato_curated_75_free",
+    "topic": "کارهای زنگ تفریح",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_30",
-    "topic": "انیمیشن‌های موزیکال دیزنی",
-    "category": "هنر"
+    "id": "potato_curated_76_free",
+    "topic": "چیزهایی که در یک سفر جاده‌ای می‌بینیم",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_31",
-    "topic": "کتاب‌های رمان مشهور جهان",
-    "category": "ادبیات"
+    "id": "potato_curated_77_free",
+    "topic": "حیوانات باغ‌وحش",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_32",
-    "topic": "شهرهای کویری و دیدنی ایران",
+    "id": "potato_curated_78_free",
+    "topic": "شغل‌های مربوط به غذا",
+    "category": "شغل‌ها"
+  },
+  {
+    "id": "potato_curated_79_free",
+    "topic": "شهرهای ساحلی ایران",
     "category": "جغرافیا"
   },
   {
-    "id": "potato_33",
-    "topic": "کشورهای پهناور قاره آسیا",
+    "id": "potato_curated_80_free",
+    "topic": "چیزهای کنار جاده",
+    "category": "حمل‌ونقل"
+  },
+  {
+    "id": "potato_curated_81_free",
+    "topic": "وسایل دارای دکمه",
+    "category": "فناوری"
+  },
+  {
+    "id": "potato_curated_82_free",
+    "topic": "شکل‌های هندسی",
+    "category": "زبان و ویژگی‌ها"
+  },
+  {
+    "id": "potato_curated_83_free",
+    "topic": "پوشیدنی‌های پا",
+    "category": "پوشاک و بدن"
+  },
+  {
+    "id": "potato_curated_84_free",
+    "topic": "جاهای انتظار",
+    "category": "سفر و شهر"
+  },
+  {
+    "id": "potato_curated_85_free",
+    "topic": "ورزش‌های با تور",
+    "category": "ورزش"
+  },
+  {
+    "id": "potato_curated_86_free",
+    "topic": "شخصیت‌های افسانه‌ای",
+    "category": "سرگرمی و هنر"
+  },
+  {
+    "id": "potato_curated_87_free",
+    "topic": "چیزهای داخل جامدادی",
+    "category": "مدرسه و کار"
+  },
+  {
+    "id": "potato_curated_88_free",
+    "topic": "کارهای هنگام گرما",
+    "category": "خلاقیت و موقعیت‌ها"
+  },
+  {
+    "id": "potato_curated_89_free",
+    "topic": "حیوانات سریع",
+    "category": "حیوانات"
+  },
+  {
+    "id": "potato_curated_90_free",
+    "topic": "شغل‌های مربوط به حیوانات",
+    "category": "شغل‌ها"
+  },
+  {
+    "id": "potato_curated_91_free",
+    "topic": "شهرهای زیارتی ایران",
     "category": "جغرافیا"
   },
   {
-    "id": "potato_34",
-    "topic": "کشورهای دیدنی قاره اروپا",
+    "id": "potato_curated_92_free",
+    "topic": "وسایل نقلیه باربری",
+    "category": "حمل‌ونقل"
+  },
+  {
+    "id": "potato_curated_93_free",
+    "topic": "وسایل دارای سیم",
+    "category": "فناوری"
+  },
+  {
+    "id": "potato_curated_94_free",
+    "topic": "ماه‌های سال",
+    "category": "زبان و ویژگی‌ها"
+  },
+  {
+    "id": "potato_curated_95_free",
+    "topic": "زیورآلات",
+    "category": "پوشاک و بدن"
+  },
+  {
+    "id": "potato_curated_96_free",
+    "topic": "جاهای شنا",
+    "category": "سفر و شهر"
+  },
+  {
+    "id": "potato_curated_97_free",
+    "topic": "ورزش‌های سالنی",
+    "category": "ورزش"
+  },
+  {
+    "id": "potato_curated_98_free",
+    "topic": "فیلم‌های انیمیشن",
+    "category": "سرگرمی و هنر"
+  },
+  {
+    "id": "potato_curated_99_free",
+    "topic": "چیزهای روی تخته",
+    "category": "مدرسه و کار"
+  },
+  {
+    "id": "potato_curated_100_free",
+    "topic": "کارهای هنگام بی‌حوصلگی",
+    "category": "خلاقیت و موقعیت‌ها"
+  },
+  {
+    "id": "potato_curated_101_free",
+    "topic": "جانوران ساکن آب شیرین",
+    "category": "حیوانات"
+  },
+  {
+    "id": "potato_curated_102_free",
+    "topic": "شغل‌هایی با لباس مخصوص",
+    "category": "شغل‌ها"
+  },
+  {
+    "id": "potato_curated_103_free",
+    "topic": "کشورهای آسیایی",
     "category": "جغرافیا"
   },
   {
-    "id": "potato_35",
-    "topic": "اسم‌های دخترانه با حرف ن",
-    "category": "عمومی"
+    "id": "potato_curated_104_free",
+    "topic": "وسایل نقلیه ساختمانی",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_36",
-    "topic": "اسم‌های پسرانه با حرف ر",
-    "category": "عمومی"
+    "id": "potato_curated_105_free",
+    "topic": "اجزای رایانه",
+    "category": "فناوری"
   },
   {
-    "id": "potato_37",
-    "topic": "مدل‌های ماشین آفرود شاسی‌بلند",
-    "category": "وسایل نقلیه"
+    "id": "potato_curated_106_free",
+    "topic": "راه‌های سلام‌کردن",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_38",
-    "topic": "وسایل حمل و نقل قطار شهری",
-    "category": "حمل و نقل"
+    "id": "potato_curated_107_free",
+    "topic": "لباس‌های مهمانی",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_39",
-    "topic": "چیزهای سرخ‌رنگ در طبیعت پاییزی",
-    "category": "عمومی"
+    "id": "potato_curated_108_free",
+    "topic": "چیزهای پارک",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_40",
-    "topic": "چیزهای آبی‌رنگ در اعماق دریا",
-    "category": "عمومی"
+    "id": "potato_curated_109_free",
+    "topic": "ورزش‌های کوهستانی",
+    "category": "ورزش"
   },
   {
-    "id": "potato_41",
-    "topic": "خوراکی‌های بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_110_free",
+    "topic": "ابزار نوشتن",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_42",
-    "topic": "خوراکی‌های بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_111_free",
+    "topic": "لوازم دفتر کار",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_43",
-    "topic": "خوراکی‌های رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_112_free",
+    "topic": "راه‌های سرگرم‌کردن کودک",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_44",
-    "topic": "خوراکی‌های گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_113_free",
+    "topic": "حیوانات گوشت‌خوار",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_45",
-    "topic": "خوراکی‌های نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_114_free",
+    "topic": "چیزهایی که روی قفسه می‌گذاریم",
+    "category": "خانه"
   },
   {
-    "id": "potato_46",
-    "topic": "خوراکی‌های مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_115_free",
+    "topic": "شغل‌های حمل‌ونقل",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_47",
-    "topic": "خوراکی‌های پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_116_free",
+    "topic": "کشورهای آفریقایی",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_48",
-    "topic": "خوراکی‌های آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_117_free",
+    "topic": "وسایل نقلیه موتوردار",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_49",
-    "topic": "خوراکی‌های مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_118_free",
+    "topic": "وسایل جانبی گوشی",
+    "category": "فناوری"
   },
   {
-    "id": "potato_50",
-    "topic": "خوراکی‌های که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_119_free",
+    "topic": "کارهای اداری",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_51",
-    "topic": "خوراکی‌های که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_120_free",
+    "topic": "راه‌های آرام‌شدن",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_52",
-    "topic": "خوراکی‌های که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_121_free",
+    "topic": "چیزهای پیدا‌شدنی در کوه",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_53",
-    "topic": "خوراکی‌های که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_122_free",
+    "topic": "پوشیدنی‌های بچگانه",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_54",
-    "topic": "خوراکی‌های که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_123_free",
+    "topic": "چیزهای فرودگاه",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_55",
-    "topic": "خوراکی‌های که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_124_free",
+    "topic": "تمرین‌های کششی",
+    "category": "ورزش"
   },
   {
-    "id": "potato_56",
-    "topic": "خوراکی‌های که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_125_free",
+    "topic": "وسایل فیلم‌برداری",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_57",
-    "topic": "خوراکی‌های که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_126_free",
+    "topic": "کارهای هنگام تحویل سال",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_58",
-    "topic": "خوراکی‌های که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_127_free",
+    "topic": "واژه‌های توصیف سرعت",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_59",
-    "topic": "خوراکی‌های که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_128_free",
+    "topic": "حیوانات پرنده",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_60",
-    "topic": "خوراکی‌های که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_129_free",
+    "topic": "چیزهای گرد خانه",
+    "category": "خانه"
   },
   {
-    "id": "potato_61",
-    "topic": "خوراکی‌های که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_130_free",
+    "topic": "شغل‌های فروشگاهی",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_62",
-    "topic": "خوراکی‌های که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_131_free",
+    "topic": "کشورهای ساحلی",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_63",
-    "topic": "خوراکی‌های که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_132_free",
+    "topic": "قطعه‌های خودرو",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_64",
-    "topic": "خوراکی‌های که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_133_free",
+    "topic": "روش‌های تماس با دوست",
+    "category": "فناوری"
   },
   {
-    "id": "potato_65",
-    "topic": "خوراکی‌های که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_134_free",
+    "topic": "کارهای آماده‌شدن برای امتحان",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_66",
-    "topic": "خوراکی‌های که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_135_free",
+    "topic": "راه‌های ابراز تعجب",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_67",
-    "topic": "خوراکی‌های که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_136_free",
+    "topic": "غذاهای با مرغ",
+    "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_68",
-    "topic": "خوراکی‌های که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_137_free",
+    "topic": "چیزهای طبیعی سبزرنگ",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_69",
-    "topic": "خوراکی‌های که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_138_free",
+    "topic": "جنس‌های پارچه",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_70",
-    "topic": "خوراکی‌های که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_139_free",
+    "topic": "چیزهای پیاده‌رو",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_71",
-    "topic": "خوراکی‌های که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_140_free",
+    "topic": "تمرین‌های تقویت پا",
+    "category": "ورزش"
   },
   {
-    "id": "potato_72",
-    "topic": "خوراکی‌های که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_141_free",
+    "topic": "چیزهای صحنه تئاتر",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_73",
-    "topic": "خوراکی‌های که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_142_free",
+    "topic": "راه‌های آشتی‌کردن",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_74",
-    "topic": "خوراکی‌های که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_143_free",
+    "topic": "واژه‌های توصیف اندازه",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_75",
-    "topic": "خوراکی‌های که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_144_free",
+    "topic": "حیواناتی که از درخت بالا می‌روند",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_76",
-    "topic": "خوراکی‌های که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_145_free",
+    "topic": "وسایل سرمایش خانه",
+    "category": "خانه"
   },
   {
-    "id": "potato_77",
-    "topic": "خوراکی‌های که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_146_free",
+    "topic": "شغل‌های مرتبط با موسیقی",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_78",
-    "topic": "خوراکی‌های که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_147_free",
+    "topic": "نام دریاها",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_79",
-    "topic": "خوراکی‌های که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_148_free",
+    "topic": "قطعه‌های قطار",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_80",
-    "topic": "خوراکی‌های که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_149_free",
+    "topic": "کارهای با رایانه",
+    "category": "فناوری"
   },
   {
-    "id": "potato_81",
-    "topic": "نوشیدنی‌های بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_150_free",
+    "topic": "کارهای گروهی در کلاس",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_82",
-    "topic": "نوشیدنی‌های بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_151_free",
+    "topic": "چیزهای پیدا‌شدنی زیر مبل",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_83",
-    "topic": "نوشیدنی‌های رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_152_free",
+    "topic": "غذاهای با حبوبات",
+    "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_84",
-    "topic": "نوشیدنی‌های گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_153_free",
+    "topic": "چیزهایی که در باد حرکت می‌کنند",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_85",
-    "topic": "نوشیدنی‌های نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_154_free",
+    "topic": "چیزهای دکمه‌دار",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_86",
-    "topic": "نوشیدنی‌های مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_155_free",
+    "topic": "چیزهای پمپ بنزین",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_87",
-    "topic": "نوشیدنی‌های پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_156_free",
+    "topic": "راه‌های گرم‌کردن بدن",
+    "category": "ورزش"
   },
   {
-    "id": "potato_88",
-    "topic": "نوشیدنی‌های آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_157_free",
+    "topic": "چیزهایی که با کاغذ می‌سازیم",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_89",
-    "topic": "نوشیدنی‌های مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_158_free",
+    "topic": "کارهای مهمانی غافلگیرکننده",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_90",
-    "topic": "نوشیدنی‌های که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_159_free",
+    "topic": "چیزهای مستطیلی",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_91",
-    "topic": "نوشیدنی‌های که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_160_free",
+    "topic": "حیوانات با دم بلند",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_92",
-    "topic": "نوشیدنی‌های که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_161_free",
+    "topic": "وسایل نگهداری مواد غذایی",
+    "category": "خانه"
   },
   {
-    "id": "potato_93",
-    "topic": "نوشیدنی‌های که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_162_free",
+    "topic": "وسایل خیاط",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_94",
-    "topic": "نوشیدنی‌های که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_163_free",
+    "topic": "نام کوه‌ها",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_95",
-    "topic": "نوشیدنی‌های که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_164_free",
+    "topic": "چیزهای داخل اتوبوس",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_96",
-    "topic": "نوشیدنی‌های که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_165_free",
+    "topic": "چیزهای قابل چاپ",
+    "category": "فناوری"
   },
   {
-    "id": "potato_97",
-    "topic": "نوشیدنی‌های که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_166_free",
+    "topic": "چیزهای قابل نوشتن در دفتر",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_98",
-    "topic": "نوشیدنی‌های که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_167_free",
+    "topic": "چیزهایی که می‌توان روی دیوار نصب کرد",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_99",
-    "topic": "نوشیدنی‌های که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_168_free",
+    "topic": "انواع آش",
+    "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_100",
-    "topic": "نوشیدنی‌های که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_169_free",
+    "topic": "چیزهایی که در آب فرو می‌روند",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_101",
-    "topic": "نوشیدنی‌های که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_170_free",
+    "topic": "لوازم بهداشت شخصی",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_102",
-    "topic": "نوشیدنی‌های که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_171_free",
+    "topic": "چیزهای کتابخانه",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_103",
-    "topic": "نوشیدنی‌های که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_172_free",
+    "topic": "وسایل دوچرخه‌سواری",
+    "category": "ورزش"
   },
   {
-    "id": "potato_104",
-    "topic": "نوشیدنی‌های که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_173_free",
+    "topic": "چیزهایی که می‌شود جمع‌آوری کرد",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_105",
-    "topic": "نوشیدنی‌های که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_174_free",
+    "topic": "بهانه‌های تماس با دوست",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_106",
-    "topic": "نوشیدنی‌های که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_175_free",
+    "topic": "چیزهای استوانه‌ای",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_107",
-    "topic": "نوشیدنی‌های که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_176_free",
+    "topic": "حیواناتی که گروهی زندگی می‌کنند",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_108",
-    "topic": "نوشیدنی‌های که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_177_free",
+    "topic": "وسایل شستن ظرف",
+    "category": "خانه"
   },
   {
-    "id": "potato_109",
-    "topic": "نوشیدنی‌های که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_178_free",
+    "topic": "وسایل باغبان",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_110",
-    "topic": "نوشیدنی‌های که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_179_free",
+    "topic": "نام استان‌های ایران",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_111",
-    "topic": "نوشیدنی‌های که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_180_free",
+    "topic": "چیزهای داخل هواپیما",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_112",
-    "topic": "نوشیدنی‌های که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_181_free",
+    "topic": "بازی‌های رومیزی",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_113",
-    "topic": "نوشیدنی‌های که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_182_free",
+    "topic": "چیزهای قابل دانلود",
+    "category": "فناوری"
   },
   {
-    "id": "potato_114",
-    "topic": "نوشیدنی‌های که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_183_free",
+    "topic": "راه‌های تشکر از دیگران",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_115",
-    "topic": "نوشیدنی‌های که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_184_free",
+    "topic": "چیزهایی که در کوله مدرسه می‌گذاریم",
+    "category": "مدرسه و کار"
   },
   {
-    "id": "potato_116",
-    "topic": "نوشیدنی‌های که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_185_free",
+    "topic": "چیزهای نوک‌تیز",
+    "category": "زبان و ویژگی‌ها"
   },
   {
-    "id": "potato_117",
-    "topic": "نوشیدنی‌های که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_186_free",
+    "topic": "چیزهایی که با خود بیرون می‌بریم",
+    "category": "خلاقیت و موقعیت‌ها"
   },
   {
-    "id": "potato_118",
-    "topic": "نوشیدنی‌های که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_187_free",
+    "topic": "انواع ساندویچ",
+    "category": "خوراکی‌ها"
   },
   {
-    "id": "potato_119",
-    "topic": "نوشیدنی‌های که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_188_free",
+    "topic": "حیوانات مناطق گرمسیر",
+    "category": "حیوانات"
   },
   {
-    "id": "potato_120",
-    "topic": "نوشیدنی‌های که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_189_free",
+    "topic": "راه‌های صرفه‌جویی در آب",
+    "category": "طبیعت"
   },
   {
-    "id": "potato_121",
-    "topic": "وسایل بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_190_free",
+    "topic": "وسایل دوخت‌ودوز",
+    "category": "خانه"
   },
   {
-    "id": "potato_122",
-    "topic": "وسایل بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_191_free",
+    "topic": "کارهای مراقبت از سلامت بدن",
+    "category": "پوشاک و بدن"
   },
   {
-    "id": "potato_123",
-    "topic": "وسایل رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_192_free",
+    "topic": "وسایل مکانیک",
+    "category": "شغل‌ها"
   },
   {
-    "id": "potato_124",
-    "topic": "وسایل گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_193_free",
+    "topic": "چیزهای استخر",
+    "category": "سفر و شهر"
   },
   {
-    "id": "potato_125",
-    "topic": "وسایل نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_194_free",
+    "topic": "جاهای دیدنی ایران",
+    "category": "جغرافیا"
   },
   {
-    "id": "potato_126",
-    "topic": "وسایل مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_195_free",
+    "topic": "وسایل اسکی",
+    "category": "ورزش"
   },
   {
-    "id": "potato_127",
-    "topic": "وسایل پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_196_free",
+    "topic": "چیزهای داخل کشتی",
+    "category": "حمل‌ونقل"
   },
   {
-    "id": "potato_128",
-    "topic": "وسایل آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_197_free",
+    "topic": "بازی‌های با ورق",
+    "category": "سرگرمی و هنر"
   },
   {
-    "id": "potato_129",
-    "topic": "وسایل مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_198_free",
+    "topic": "چیزهای دارای رمز عبور",
+    "category": "فناوری"
   },
   {
-    "id": "potato_130",
-    "topic": "وسایل که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
+    "id": "potato_curated_199_free",
+    "topic": "کارهای گروهی",
+    "category": "دورهمی"
   },
   {
-    "id": "potato_131",
-    "topic": "وسایل که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_132",
-    "topic": "وسایل که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_133",
-    "topic": "وسایل که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_134",
-    "topic": "وسایل که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_135",
-    "topic": "وسایل که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_136",
-    "topic": "وسایل که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_137",
-    "topic": "وسایل که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_138",
-    "topic": "وسایل که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_139",
-    "topic": "وسایل که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_140",
-    "topic": "وسایل که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_141",
-    "topic": "وسایل که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_142",
-    "topic": "وسایل که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_143",
-    "topic": "وسایل که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_144",
-    "topic": "وسایل که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_145",
-    "topic": "وسایل که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_146",
-    "topic": "وسایل که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_147",
-    "topic": "وسایل که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_148",
-    "topic": "وسایل که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_149",
-    "topic": "وسایل که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_150",
-    "topic": "وسایل که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_151",
-    "topic": "وسایل که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_152",
-    "topic": "وسایل که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_153",
-    "topic": "وسایل که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_154",
-    "topic": "وسایل که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_155",
-    "topic": "وسایل که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_156",
-    "topic": "وسایل که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_157",
-    "topic": "وسایل که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_158",
-    "topic": "وسایل که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_159",
-    "topic": "وسایل که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_160",
-    "topic": "وسایل که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_161",
-    "topic": "حیوانات بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_162",
-    "topic": "حیوانات بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_163",
-    "topic": "حیوانات رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_164",
-    "topic": "حیوانات گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_165",
-    "topic": "حیوانات نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_166",
-    "topic": "حیوانات مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_167",
-    "topic": "حیوانات پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_168",
-    "topic": "حیوانات آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_169",
-    "topic": "حیوانات مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_170",
-    "topic": "حیوانات که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_171",
-    "topic": "حیوانات که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_172",
-    "topic": "حیوانات که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_173",
-    "topic": "حیوانات که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_174",
-    "topic": "حیوانات که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_175",
-    "topic": "حیوانات که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_176",
-    "topic": "حیوانات که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_177",
-    "topic": "حیوانات که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_178",
-    "topic": "حیوانات که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_179",
-    "topic": "حیوانات که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_180",
-    "topic": "حیوانات که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_181",
-    "topic": "حیوانات که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_182",
-    "topic": "حیوانات که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_183",
-    "topic": "حیوانات که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_184",
-    "topic": "حیوانات که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_185",
-    "topic": "حیوانات که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_186",
-    "topic": "حیوانات که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_187",
-    "topic": "حیوانات که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_188",
-    "topic": "حیوانات که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_189",
-    "topic": "حیوانات که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_190",
-    "topic": "حیوانات که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_191",
-    "topic": "حیوانات که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_192",
-    "topic": "حیوانات که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_193",
-    "topic": "حیوانات که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_194",
-    "topic": "حیوانات که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_195",
-    "topic": "حیوانات که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_196",
-    "topic": "حیوانات که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_197",
-    "topic": "حیوانات که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_198",
-    "topic": "حیوانات که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_199",
-    "topic": "حیوانات که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_200",
-    "topic": "حیوانات که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_201",
-    "topic": "شغل‌های بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_202",
-    "topic": "شغل‌های بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_203",
-    "topic": "شغل‌های رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_204",
-    "topic": "شغل‌های گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_205",
-    "topic": "شغل‌های نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_206",
-    "topic": "شغل‌های مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_207",
-    "topic": "شغل‌های پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_208",
-    "topic": "شغل‌های آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_209",
-    "topic": "شغل‌های مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_210",
-    "topic": "شغل‌های که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_211",
-    "topic": "شغل‌های که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_212",
-    "topic": "شغل‌های که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_213",
-    "topic": "شغل‌های که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_214",
-    "topic": "شغل‌های که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_215",
-    "topic": "شغل‌های که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_216",
-    "topic": "شغل‌های که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_217",
-    "topic": "شغل‌های که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_218",
-    "topic": "شغل‌های که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_219",
-    "topic": "شغل‌های که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_220",
-    "topic": "شغل‌های که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_221",
-    "topic": "شغل‌های که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_222",
-    "topic": "شغل‌های که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_223",
-    "topic": "شغل‌های که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_224",
-    "topic": "شغل‌های که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_225",
-    "topic": "شغل‌های که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_226",
-    "topic": "شغل‌های که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_227",
-    "topic": "شغل‌های که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_228",
-    "topic": "شغل‌های که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_229",
-    "topic": "شغل‌های که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_230",
-    "topic": "شغل‌های که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_231",
-    "topic": "شغل‌های که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_232",
-    "topic": "شغل‌های که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_233",
-    "topic": "شغل‌های که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_234",
-    "topic": "شغل‌های که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_235",
-    "topic": "شغل‌های که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_236",
-    "topic": "شغل‌های که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_237",
-    "topic": "شغل‌های که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_238",
-    "topic": "شغل‌های که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_239",
-    "topic": "شغل‌های که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_240",
-    "topic": "شغل‌های که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_241",
-    "topic": "شهرهای بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_242",
-    "topic": "شهرهای بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_243",
-    "topic": "شهرهای رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_244",
-    "topic": "شهرهای گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_245",
-    "topic": "شهرهای نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_246",
-    "topic": "شهرهای مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_247",
-    "topic": "شهرهای پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_248",
-    "topic": "شهرهای آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_249",
-    "topic": "شهرهای مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_250",
-    "topic": "شهرهای که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_251",
-    "topic": "شهرهای که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_252",
-    "topic": "شهرهای که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_253",
-    "topic": "شهرهای که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_254",
-    "topic": "شهرهای که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_255",
-    "topic": "شهرهای که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_256",
-    "topic": "شهرهای که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_257",
-    "topic": "شهرهای که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_258",
-    "topic": "شهرهای که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_259",
-    "topic": "شهرهای که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_260",
-    "topic": "شهرهای که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_261",
-    "topic": "شهرهای که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_262",
-    "topic": "شهرهای که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_263",
-    "topic": "شهرهای که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_264",
-    "topic": "شهرهای که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_265",
-    "topic": "شهرهای که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_266",
-    "topic": "شهرهای که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_267",
-    "topic": "شهرهای که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_268",
-    "topic": "شهرهای که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_269",
-    "topic": "شهرهای که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_270",
-    "topic": "شهرهای که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_271",
-    "topic": "شهرهای که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_272",
-    "topic": "شهرهای که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_273",
-    "topic": "شهرهای که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_274",
-    "topic": "شهرهای که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_275",
-    "topic": "شهرهای که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_276",
-    "topic": "شهرهای که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_277",
-    "topic": "شهرهای که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_278",
-    "topic": "شهرهای که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_279",
-    "topic": "شهرهای که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_280",
-    "topic": "شهرهای که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_281",
-    "topic": "چیزهای بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_282",
-    "topic": "چیزهای بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_283",
-    "topic": "چیزهای رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_284",
-    "topic": "چیزهای گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_285",
-    "topic": "چیزهای نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_286",
-    "topic": "چیزهای مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_287",
-    "topic": "چیزهای پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_288",
-    "topic": "چیزهای آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_289",
-    "topic": "چیزهای مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_290",
-    "topic": "چیزهای که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_291",
-    "topic": "چیزهای که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_292",
-    "topic": "چیزهای که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_293",
-    "topic": "چیزهای که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_294",
-    "topic": "چیزهای که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_295",
-    "topic": "چیزهای که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_296",
-    "topic": "چیزهای که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_297",
-    "topic": "چیزهای که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_298",
-    "topic": "چیزهای که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_299",
-    "topic": "چیزهای که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_300",
-    "topic": "چیزهای که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_301",
-    "topic": "چیزهای که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_302",
-    "topic": "چیزهای که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_303",
-    "topic": "چیزهای که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_304",
-    "topic": "چیزهای که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_305",
-    "topic": "چیزهای که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_306",
-    "topic": "چیزهای که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_307",
-    "topic": "چیزهای که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_308",
-    "topic": "چیزهای که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_309",
-    "topic": "چیزهای که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_310",
-    "topic": "چیزهای که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_311",
-    "topic": "چیزهای که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_312",
-    "topic": "چیزهای که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_313",
-    "topic": "چیزهای که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_314",
-    "topic": "چیزهای که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_315",
-    "topic": "چیزهای که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_316",
-    "topic": "چیزهای که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_317",
-    "topic": "چیزهای که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_318",
-    "topic": "چیزهای که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_319",
-    "topic": "چیزهای که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_320",
-    "topic": "چیزهای که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_321",
-    "topic": "کارهای بسیار خوش‌عطر",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_322",
-    "topic": "کارهای بسیار تند و تیز",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_323",
-    "topic": "کارهای رنگارنگ و شاد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_324",
-    "topic": "کارهای گران‌قیمت و لوکس",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_325",
-    "topic": "کارهای نوستالژیک دوران کودکی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_326",
-    "topic": "کارهای مخصوص مهمانی‌های رسمی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_327",
-    "topic": "کارهای پر سر و صدا در خانه",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_328",
-    "topic": "کارهای آرامش‌بخش بعد از یک روز خسته‌کننده",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_329",
-    "topic": "کارهای مخصوص سفر و طبیعت‌گردی",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_330",
-    "topic": "کارهای که فقط در فصل بهار پیدا می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_331",
-    "topic": "کارهای که در زمستان به کار می‌آیند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_332",
-    "topic": "کارهای که بدون برق هیچ فایده‌ای ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_333",
-    "topic": "کارهای که روی آب دریا شناور می‌مانند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_334",
-    "topic": "کارهای که در کیف یک دانشجو پیدا می‌شود",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_335",
-    "topic": "کارهای که بچه‌ها عاشق آن هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_336",
-    "topic": "کارهای که پدر و مادرها همیشه سفارش می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_337",
-    "topic": "کارهای که هنگام رانندگی ممنوع است",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_338",
-    "topic": "کارهای که زیر مبل یا تخت قایم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_339",
-    "topic": "کارهای که ارزش خرید مجدد ندارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_340",
-    "topic": "کارهای که دکمه خاموش و روشن دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_341",
-    "topic": "کارهای که با باتری قلمی کار می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_342",
-    "topic": "کارهای که صدای خش‌خش تولید می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_343",
-    "topic": "کارهای که با فلز آهن ساخته شده‌اند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_344",
-    "topic": "کارهای که با چوب گردو ساخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_345",
-    "topic": "کارهای که در عروسی‌های ایرانی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_346",
-    "topic": "کارهای که در سفره عید هفت‌سین چیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_347",
-    "topic": "کارهای که بوی تند و ماندگار دارند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_348",
-    "topic": "کارهای که هرگز نباید شسته شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_349",
-    "topic": "کارهای که بعد از خرید خیلی زود خراب می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_350",
-    "topic": "کارهای که در زمان امتحان فراموش می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_351",
-    "topic": "کارهای که برای ورزش و تناسب اندام عالی هستند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_352",
-    "topic": "کارهای که در مطب دندانپزشکی دیده می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_353",
-    "topic": "کارهای که در فرودگاه‌ها ضبط می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_354",
-    "topic": "کارهای که در ساحل شنی گم می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_355",
-    "topic": "کارهای که در شب‌نشینی‌های خانوادگی می‌چسبند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_356",
-    "topic": "کارهای که از راه دور کنترل می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_357",
-    "topic": "کارهای که در قابلمه تفلون پخته می‌شوند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_358",
-    "topic": "کارهای که برای سلامتی معجزه می‌کنند",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_359",
-    "topic": "کارهای که در جعبه ابزار مکانیک هست",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_360",
-    "topic": "کارهای که در اتاق فرماندهی پلیس وجود دارد",
-    "category": "چالش‌های دورهمی"
-  },
-  {
-    "id": "potato_361",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 1",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_362",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 2",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_363",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 3",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_364",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 4",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_365",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 5",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_366",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 6",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_367",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 7",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_368",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 8",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_369",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 9",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_370",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 10",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_371",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 11",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_372",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 12",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_373",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 13",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_374",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 14",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_375",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 15",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_376",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 16",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_377",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 17",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_378",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 18",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_379",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 19",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_380",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 20",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_381",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 21",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_382",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 22",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_383",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 23",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_384",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 24",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_385",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 25",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_386",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 26",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_387",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 27",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_388",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 28",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_389",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 29",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_390",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 30",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_391",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 31",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_392",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 32",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_393",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 33",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_394",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 34",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_395",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 35",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_396",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 36",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_397",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 37",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_398",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 38",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_399",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 39",
-    "category": "چالش سرعتی"
-  },
-  {
-    "id": "potato_400",
-    "topic": "موضوع بمب ساعتی دورهمی گروهی شماره 40",
-    "category": "چالش سرعتی"
+    "id": "potato_curated_200_free",
+    "topic": "وسایل موردنیاز آزمایشگاه",
+    "category": "مدرسه و کار"
   }
 ]

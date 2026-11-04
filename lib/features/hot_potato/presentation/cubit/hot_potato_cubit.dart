@@ -17,6 +17,20 @@ import '../../data/hot_potato_repository.dart';
 import '../../data/hot_potato_topic_model.dart';
 import 'hot_potato_state.dart';
 
+class BombPulseSchedule {
+  int _nextPulseAtMs = 0;
+
+  void reset() => _nextPulseAtMs = 0;
+
+  bool shouldPulse(int elapsedMs, double tension) {
+    if (elapsedMs < _nextPulseAtMs) return false;
+    final urgency = tension * tension;
+    final interval = (800 - urgency * 550).round().clamp(250, 800);
+    _nextPulseAtMs = elapsedMs + interval;
+    return true;
+  }
+}
+
 class HotPotatoCubit extends Cubit<HotPotatoState> {
   GameResult? get result => GameResult.fromManager(
     _turnManager,
@@ -41,7 +55,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
   final GameSetupConfig? _setup;
   final bool _usesPlayers;
   int _completedRounds = 0;
-  int _lastPulseBucket = -1;
+  final _pulseSchedule = BombPulseSchedule();
   int get _participantCount => _turnManager?.teams.length ?? 4;
 
   HotPotatoCubit({
@@ -210,7 +224,7 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
         clearLoser: true,
       ),
     );
-    _lastPulseBucket = -1;
+    _pulseSchedule.reset();
 
     _clock.start(Duration(seconds: randomSeconds));
   }
@@ -224,11 +238,8 @@ class HotPotatoCubit extends Cubit<HotPotatoState> {
       1.0,
     );
     // The fuse begins restrained and becomes sharply more urgent near the end.
-    final urgency = tension * tension;
-    final pulseInterval = (800 - urgency * 650).round().clamp(150, 800);
-    final pulseBucket = elapsedMs ~/ pulseInterval;
-    if (pulseBucket != _lastPulseBucket) {
-      _lastPulseBucket = pulseBucket;
+    if (remaining > Duration.zero &&
+        _pulseSchedule.shouldPulse(elapsedMs, tension)) {
       _audio.playBombTick(tension);
       if (tension > .82) _haptics.mediumBump();
     }

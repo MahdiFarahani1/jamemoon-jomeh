@@ -49,6 +49,7 @@ class ContentService {
       if (storage.isPackPurchased(productIds[gameKey]!))
         ...await _pack('assets/data/$gameKey/pack_full.json'),
     ];
+    final customRecords = <Map<String, dynamic>>[];
     if (gameKey == 'charades' || gameKey == 'drawing') {
       for (final card in storage.getCustomCards()) {
         if (card['word'] is! String ||
@@ -60,13 +61,21 @@ class ContentService {
             card['gameKey'] != 'both') {
           continue;
         }
-        records.add({
+        customRecords.add({
           ...card,
-          'category': card['category'] ?? 'کارت جمع ما',
-          'points': 2,
-          'difficulty': 2,
+          'category': gameKey == 'charades'
+              ? 'کارت‌های من'
+              : card['category'] ?? 'کارت جمع ما',
+          'isCustom': true,
+          'points': card['points'] ?? 2,
+          'difficulty': card['difficulty'] ?? 2,
         });
       }
+    }
+    if (gameKey == 'charades') {
+      records.insertAll(0, customRecords);
+    } else {
+      records.addAll(customRecords);
     }
     final field = gameKey == 'hot_potato'
         ? 'topic'

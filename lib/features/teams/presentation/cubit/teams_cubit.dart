@@ -10,6 +10,21 @@ class TeamsCubit extends Cubit<TeamsState> {
   final StorageService _storageService;
   int _idSequence = 0;
 
+  static const _defaultTeams = [
+    Team(
+      id: 'team_1',
+      name: 'تیم پلنگ‌ها',
+      colorValue: 0xFFFF5252,
+      iconKey: 'flash',
+    ),
+    Team(
+      id: 'team_2',
+      name: 'تیم عقاب‌ها',
+      colorValue: 0xFF448AFF,
+      iconKey: 'star',
+    ),
+  ];
+
   String _newId(String prefix) =>
       '${prefix}_${DateTime.now().microsecondsSinceEpoch}_${_idSequence++}';
 
@@ -21,74 +36,53 @@ class TeamsCubit extends Cubit<TeamsState> {
     final savedTeamsData = _storageService.getSavedTeams();
     final savedPlayersData = _storageService.getSavedPlayers();
 
-    if (savedTeamsData.isEmpty) {
-      // Default initial 2 teams for instant fun
-      final defaultTeams = [
-        const Team(
-          id: 'team_1',
-          name: 'تیم پلنگ‌ها',
-          colorValue: 0xFFFF5252,
-          iconKey: 'flash',
-        ),
-        const Team(
-          id: 'team_2',
-          name: 'تیم عقاب‌ها',
-          colorValue: 0xFF448AFF,
-          iconKey: 'star',
-        ),
-      ];
-      emit(state.copyWith(teams: defaultTeams, players: const []));
-      _persistTeams(defaultTeams);
-    } else {
-      final teams = savedTeamsData.map((e) => Team.fromJson(e)).toList();
-      final players = savedPlayersData.map((e) => Player.fromJson(e)).toList();
-      emit(state.copyWith(teams: teams, players: players));
+    final savedTeams = savedTeamsData.map((e) => Team.fromJson(e)).toList();
+    final teams = [
+      ...savedTeams.take(2),
+      if (savedTeams.isEmpty) ..._defaultTeams,
+      if (savedTeams.length == 1) _defaultTeams[1],
+    ];
+    final validIds = teams.map((team) => team.id).toSet();
+    final savedPlayers = savedPlayersData
+        .map((e) => Player.fromJson(e))
+        .toList();
+    final players = [
+      for (final player in savedPlayers)
+        validIds.contains(player.teamId)
+            ? player
+            : player.copyWith(teamId: null),
+    ];
+    emit(state.copyWith(teams: teams, players: players));
+    if (savedTeams.length != 2) _persistTeams(teams);
+    if (savedPlayers.any(
+      (player) => player.teamId != null && !validIds.contains(player.teamId),
+    )) {
+      _persistPlayers(players);
     }
   }
 
-  void addTeam({
-    required String name,
-    required int colorValue,
-    String iconKey = 'star',
-  }) {
-    final newTeam = Team(
-      id: _newId('team'),
-      name: name.trim().isEmpty ? 'تیم ${state.teams.length + 1}' : name.trim(),
-      colorValue: colorValue,
-      iconKey: iconKey,
-    );
-    final updatedTeams = List<Team>.from(state.teams)..add(newTeam);
-    emit(state.copyWith(teams: updatedTeams));
-    _persistTeams(updatedTeams);
-  }
-
-  void updateTeamAppearance(
+  void updateTeam(
     String teamId, {
+    required String name,
     required int colorValue,
     required String iconKey,
   }) {
-    if (!state.teams.any((team) => team.id == teamId)) return;
+    final trimmedName = name.trim();
+    if (trimmedName.isEmpty || !state.teams.any((team) => team.id == teamId)) {
+      return;
+    }
     final updatedTeams = [
       for (final team in state.teams)
         team.id == teamId
-            ? team.copyWith(colorValue: colorValue, iconKey: iconKey)
+            ? team.copyWith(
+                name: trimmedName,
+                colorValue: colorValue,
+                iconKey: iconKey,
+              )
             : team,
     ];
     emit(state.copyWith(teams: updatedTeams));
     _persistTeams(updatedTeams);
-  }
-
-  void removeTeam(String teamId) {
-    if (state.teams.length <= 2) return; // Keep at least 2 teams
-    final updatedTeams = state.teams.where((t) => t.id != teamId).toList();
-    final updatedPlayers = state.players.map((p) {
-      if (p.teamId == teamId) return p.copyWith(teamId: null);
-      return p;
-    }).toList();
-
-    emit(state.copyWith(teams: updatedTeams, players: updatedPlayers));
-    _persistTeams(updatedTeams);
-    _persistPlayers(updatedPlayers);
   }
 
   void addPlayer({required String name, String? teamId}) {

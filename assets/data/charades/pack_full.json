@@ -1,2801 +1,2101 @@
 [
   {
-    "id": "charades_401",
-    "word": "کودک بازیگوش در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_1_full",
+    "word": "شتر",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_402",
-    "word": "کودک بازیگوش در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_403",
-    "word": "کودک بازیگوش در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_2_full",
+    "word": "گرگ",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_404",
-    "word": "کودک بازیگوش در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_405",
-    "word": "کودک بازیگوش در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_3_full",
+    "word": "دارکوب",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_406",
-    "word": "کودک بازیگوش در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_4_full",
+    "word": "کلاغ",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_5_full",
+    "word": "اردک",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_407",
-    "word": "کودک بازیگوش در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_6_full",
+    "word": "کرم",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_408",
-    "word": "کودک بازیگوش در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_7_full",
+    "word": "سیر",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_409",
-    "word": "کودک بازیگوش در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_8_full",
+    "word": "پلو",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_410",
-    "word": "کودک بازیگوش در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_9_full",
+    "word": "کره",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_411",
-    "word": "کودک بازیگوش در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_10_full",
+    "word": "بادام",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
+  },
+  {
+    "id": "charades_curated_11_full",
+    "word": "نخود",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_12_full",
+    "word": "آبنبات",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_412",
-    "word": "کودک بازیگوش در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_13_full",
+    "word": "خرما",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_14_full",
+    "word": "یخ",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_413",
-    "word": "کودک بازیگوش در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_15_full",
+    "word": "شمع",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_414",
-    "word": "کودک بازیگوش در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_16_full",
+    "word": "تلفن",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_415",
-    "word": "کودک بازیگوش در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_17_full",
+    "word": "قفل",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_416",
-    "word": "دانشجوی خسته در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_417",
-    "word": "دانشجوی خسته در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_18_full",
+    "word": "جارو",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_418",
-    "word": "دانشجوی خسته در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_19_full",
+    "word": "سطل",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_419",
-    "word": "دانشجوی خسته در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_20_full",
+    "word": "کاسه",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_420",
-    "word": "دانشجوی خسته در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_21_full",
+    "word": "مداد",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_421",
-    "word": "دانشجوی خسته در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_22_full",
+    "word": "ساز",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_422",
-    "word": "دانشجوی خسته در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_23_full",
+    "word": "سنگ",
+    "category": "طبیعت",
+    "points": 2,
+    "difficulty": 2
   },
   {
-    "id": "charades_423",
-    "word": "دانشجوی خسته در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_24_full",
+    "word": "برگ",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_424",
-    "word": "دانشجوی خسته در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_25_full",
+    "word": "لاله",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_425",
-    "word": "دانشجوی خسته در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_26_full",
+    "word": "خزه",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_426",
-    "word": "دانشجوی خسته در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_27_full",
+    "word": "دانه",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_427",
-    "word": "دانشجوی خسته در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_28_full",
+    "word": "چمن",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_428",
-    "word": "دانشجوی خسته در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_29_full",
+    "word": "پیک",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_429",
-    "word": "دانشجوی خسته در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_30_full",
+    "word": "تیر",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_430",
-    "word": "دانشجوی خسته در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_31_full",
+    "word": "وزنه",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_431",
-    "word": "دانشجوی خسته در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_32_full",
+    "word": "فکر",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_432",
-    "word": "دانشجوی خسته در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_33_full",
+    "word": "شرم",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_433",
-    "word": "دانشجوی خسته در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_34_full",
+    "word": "حسد",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_434",
-    "word": "دانشجوی خسته در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_435",
-    "word": "دانشجوی خسته در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_35_full",
+    "word": "مهر",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_436",
-    "word": "استاد دانشگاه در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_36_full",
+    "word": "موزه",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_37_full",
+    "word": "گوسفند",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_437",
-    "word": "استاد دانشگاه در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_38_full",
+    "word": "تخم مرغ",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_438",
-    "word": "استاد دانشگاه در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_39_full",
+    "word": "قاشق",
+    "category": "وسایل",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_439",
-    "word": "استاد دانشگاه در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_40_full",
+    "word": "نانوا",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_440",
-    "word": "استاد دانشگاه در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_41_full",
+    "word": "طناب زدن",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_441",
-    "word": "استاد دانشگاه در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_42_full",
+    "word": "باران",
+    "category": "طبیعت",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_442",
-    "word": "استاد دانشگاه در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_43_full",
+    "word": "نانوایی",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_443",
-    "word": "استاد دانشگاه در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_44_full",
+    "word": "تعجب",
+    "category": "احساسات",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_444",
-    "word": "استاد دانشگاه در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_45_full",
+    "word": "پیرمرد",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_445",
-    "word": "استاد دانشگاه در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_46_full",
+    "word": "بیدار شدن",
+    "category": "کارها و حرکت‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_446",
-    "word": "استاد دانشگاه در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_47_full",
+    "word": "راه رفتن با پای خواب رفته",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_447",
-    "word": "استاد دانشگاه در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_48_full",
+    "word": "جوجه تیغی",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_448",
-    "word": "استاد دانشگاه در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_49_full",
+    "word": "ذرت مکزیکی",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_449",
-    "word": "استاد دانشگاه در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_50_full",
+    "word": "چوب لباسی",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_450",
-    "word": "استاد دانشگاه در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_51_full",
+    "word": "قصه گو",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_451",
-    "word": "استاد دانشگاه در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_52_full",
+    "word": "تیراندازی با کمان",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_452",
-    "word": "استاد دانشگاه در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_53_full",
+    "word": "رعد و برق",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_453",
-    "word": "استاد دانشگاه در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_54_full",
+    "word": "ترس از تاریکی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_454",
-    "word": "استاد دانشگاه در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_455",
-    "word": "استاد دانشگاه در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_55_full",
+    "word": "شبح",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_456",
-    "word": "راننده اتوبوس در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_457",
-    "word": "راننده اتوبوس در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_458",
-    "word": "راننده اتوبوس در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_56_full",
+    "word": "گوش دادن به موسیقی",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_459",
-    "word": "راننده اتوبوس در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_460",
-    "word": "راننده اتوبوس در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_461",
-    "word": "راننده اتوبوس در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_57_full",
+    "word": "راه رفتن روی زمین داغ",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_462",
-    "word": "راننده اتوبوس در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_463",
-    "word": "راننده اتوبوس در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_58_full",
+    "word": "آفتاب‌پرست",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_464",
-    "word": "راننده اتوبوس در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_59_full",
+    "word": "دلمه",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_465",
-    "word": "راننده اتوبوس در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_60_full",
+    "word": "دوربین دوچشمی",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_466",
-    "word": "راننده اتوبوس در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_61_full",
+    "word": "باستان شناس",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_467",
-    "word": "راننده اتوبوس در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_62_full",
+    "word": "اسکیت روی یخ",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_468",
-    "word": "راننده اتوبوس در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_63_full",
+    "word": "طلوع خورشید",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_469",
-    "word": "راننده اتوبوس در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_64_full",
+    "word": "گلخانه",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_470",
-    "word": "راننده اتوبوس در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_65_full",
+    "word": "شوق دیدار دوست",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_471",
-    "word": "راننده اتوبوس در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_66_full",
+    "word": "رئیس سیرک",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_472",
-    "word": "راننده اتوبوس در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_67_full",
+    "word": "باز کردن چتر",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_473",
-    "word": "راننده اتوبوس در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_68_full",
+    "word": "تلاش برای باز کردن شیشه مربا",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_474",
-    "word": "راننده اتوبوس در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_69_full",
+    "word": "اسب آبی",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_475",
-    "word": "راننده اتوبوس در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_70_full",
+    "word": "گلابی",
+    "category": "خوراکی‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_476",
-    "word": "ورزشکار قهرمان در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_71_full",
+    "word": "چنگال",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_477",
-    "word": "ورزشکار قهرمان در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_72_full",
+    "word": "کشاورز",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_478",
-    "word": "ورزشکار قهرمان در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_73_full",
+    "word": "دویدن",
+    "category": "ورزش‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_479",
-    "word": "ورزشکار قهرمان در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_74_full",
+    "word": "رنگین کمان",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_480",
-    "word": "ورزشکار قهرمان در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_75_full",
+    "word": "داروخانه",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_481",
-    "word": "ورزشکار قهرمان در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_76_full",
+    "word": "اطمینان",
+    "category": "احساسات",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_482",
-    "word": "ورزشکار قهرمان در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_77_full",
+    "word": "نوزاد",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_483",
-    "word": "ورزشکار قهرمان در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_78_full",
+    "word": "آب خوردن",
+    "category": "کارها و حرکت‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_484",
-    "word": "ورزشکار قهرمان در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_79_full",
+    "word": "گوش دادن به صدای دریا",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_485",
-    "word": "ورزشکار قهرمان در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_80_full",
+    "word": "راسو",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_486",
-    "word": "ورزشکار قهرمان در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_81_full",
+    "word": "عدسی",
+    "category": "خوراکی‌ها",
+    "points": 2,
+    "difficulty": 2
   },
   {
-    "id": "charades_487",
-    "word": "ورزشکار قهرمان در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_82_full",
+    "word": "سنجاق",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_488",
-    "word": "ورزشکار قهرمان در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_83_full",
+    "word": "برقکار",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_489",
-    "word": "ورزشکار قهرمان در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_84_full",
+    "word": "پرتاب نیزه",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_490",
-    "word": "ورزشکار قهرمان در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_85_full",
+    "word": "طوفان",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_491",
-    "word": "ورزشکار قهرمان در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_86_full",
+    "word": "سیرک",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_492",
-    "word": "ورزشکار قهرمان در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_87_full",
+    "word": "اشتیاق برای هدیه",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_493",
-    "word": "ورزشکار قهرمان در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_88_full",
+    "word": "مومیایی",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_494",
-    "word": "ورزشکار قهرمان در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_89_full",
+    "word": "پاره کردن کاغذ",
+    "category": "کارها و حرکت‌ها",
+    "points": 2,
+    "difficulty": 2
   },
   {
-    "id": "charades_495",
-    "word": "ورزشکار قهرمان در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_90_full",
+    "word": "تلاش برای گرفتن پشه",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
+  },
+  {
+    "id": "charades_curated_91_full",
+    "word": "فلامینگو",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_92_full",
+    "word": "آش رشته",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_93_full",
+    "word": "قطب نما",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_94_full",
+    "word": "دامپزشک",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_95_full",
+    "word": "هاکی روی یخ",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_96_full",
+    "word": "غروب خورشید",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_496",
-    "word": "مسافر خسته در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_97_full",
+    "word": "رصدخانه",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_98_full",
+    "word": "ترس از ارتفاع",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_99_full",
+    "word": "بندباز",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_100_full",
+    "word": "دوختن دکمه",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_101_full",
+    "word": "پنهان کردن هدیه پشت سر",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_102_full",
+    "word": "روباه",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_497",
-    "word": "مسافر خسته در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_103_full",
+    "word": "انگور",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_498",
-    "word": "مسافر خسته در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_104_full",
+    "word": "بشقاب",
+    "category": "وسایل",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_499",
-    "word": "مسافر خسته در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_105_full",
+    "word": "پرستار",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_500",
-    "word": "مسافر خسته در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_106_full",
+    "word": "دوچرخه ثابت",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_501",
-    "word": "مسافر خسته در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_107_full",
+    "word": "خورشید",
+    "category": "طبیعت",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_502",
-    "word": "مسافر خسته در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_108_full",
+    "word": "بازار",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_503",
-    "word": "مسافر خسته در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_109_full",
+    "word": "قدردانی",
+    "category": "احساسات",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_504",
-    "word": "مسافر خسته در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_110_full",
+    "word": "پادشاه",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_505",
-    "word": "مسافر خسته در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_111_full",
+    "word": "دست شستن",
+    "category": "کارها و حرکت‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_506",
-    "word": "مسافر خسته در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_112_full",
+    "word": "گم کردن کلید خانه",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_507",
-    "word": "مسافر خسته در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_113_full",
+    "word": "بوقلمون",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_508",
-    "word": "مسافر خسته در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_114_full",
+    "word": "ساندویچ",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_509",
-    "word": "مسافر خسته در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_115_full",
+    "word": "جعبه ابزار",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_510",
-    "word": "مسافر خسته در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_116_full",
+    "word": "لوله کش",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_511",
-    "word": "مسافر خسته در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_117_full",
+    "word": "پرتاب دیسک",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_512",
-    "word": "مسافر خسته در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_118_full",
+    "word": "گردباد",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_513",
-    "word": "مسافر خسته در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_119_full",
+    "word": "باغ وحش",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_514",
-    "word": "مسافر خسته در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_515",
-    "word": "مسافر خسته در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_120_full",
+    "word": "ناامیدی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_516",
-    "word": "هنرمند نقاش در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_517",
-    "word": "هنرمند نقاش در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_518",
-    "word": "هنرمند نقاش در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_121_full",
+    "word": "گرگینه",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_519",
-    "word": "هنرمند نقاش در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_520",
-    "word": "هنرمند نقاش در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_521",
-    "word": "هنرمند نقاش در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_122_full",
+    "word": "تا کردن لباس",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_522",
-    "word": "هنرمند نقاش در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_523",
-    "word": "هنرمند نقاش در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_123_full",
+    "word": "فرار از زنبور",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_524",
-    "word": "هنرمند نقاش در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_124_full",
+    "word": "اسب دریایی",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_525",
-    "word": "هنرمند نقاش در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_125_full",
+    "word": "شله زرد",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_526",
-    "word": "هنرمند نقاش در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_126_full",
+    "word": "دماسنج",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_527",
-    "word": "هنرمند نقاش در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_127_full",
+    "word": "نجات غریق",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_528",
-    "word": "هنرمند نقاش در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_128_full",
+    "word": "بازی چوگان",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_529",
-    "word": "هنرمند نقاش در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_129_full",
+    "word": "ماه گرفتگی",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_530",
-    "word": "هنرمند نقاش در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_130_full",
+    "word": "قلعه",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_531",
-    "word": "هنرمند نقاش در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_131_full",
+    "word": "ذوق برنده شدن",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_532",
-    "word": "هنرمند نقاش در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_132_full",
+    "word": "مرد عنکبوتی",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_533",
-    "word": "هنرمند نقاش در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_133_full",
+    "word": "نواختن ویولن",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "charades_curated_134_full",
+    "word": "حمل سینی پر از لیوان",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_534",
-    "word": "هنرمند نقاش در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_135_full",
+    "word": "پلنگ",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_535",
-    "word": "هنرمند نقاش در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_136_full",
+    "word": "پرتقال",
+    "category": "خوراکی‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_536",
-    "word": "شاعر رمانتیک در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_137_full",
+    "word": "لیوان",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_537",
-    "word": "شاعر رمانتیک در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_138_full",
+    "word": "داروساز",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_538",
-    "word": "شاعر رمانتیک در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_139_full",
+    "word": "قایقرانی",
+    "category": "ورزش‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_539",
-    "word": "شاعر رمانتیک در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_140_full",
+    "word": "دریا",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_540",
-    "word": "شاعر رمانتیک در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_141_full",
+    "word": "فروشگاه",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_541",
-    "word": "شاعر رمانتیک در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_142_full",
+    "word": "دلگرمی",
+    "category": "احساسات",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_542",
-    "word": "شاعر رمانتیک در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_143_full",
+    "word": "ملکه",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_543",
-    "word": "شاعر رمانتیک در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_144_full",
+    "word": "صورت شستن",
+    "category": "کارها و حرکت‌ها",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_544",
-    "word": "شاعر رمانتیک در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_145_full",
+    "word": "پیدا کردن پول روی زمین",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_545",
-    "word": "شاعر رمانتیک در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_146_full",
+    "word": "غاز",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_546",
-    "word": "شاعر رمانتیک در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_147_full",
+    "word": "کوکو سبزی",
+    "category": "خوراکی‌ها",
+    "points": 2,
+    "difficulty": 2
   },
   {
-    "id": "charades_547",
-    "word": "شاعر رمانتیک در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_148_full",
+    "word": "دریل",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_548",
-    "word": "شاعر رمانتیک در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_149_full",
+    "word": "ساعت ساز",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_549",
-    "word": "شاعر رمانتیک در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_150_full",
+    "word": "پرش ارتفاع",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_550",
-    "word": "شاعر رمانتیک در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_151_full",
+    "word": "زمین لرزه",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_551",
-    "word": "شاعر رمانتیک در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_152_full",
+    "word": "آکواریوم",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_552",
-    "word": "شاعر رمانتیک در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_153_full",
+    "word": "دلخوری",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_553",
-    "word": "شاعر رمانتیک در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_154_full",
+    "word": "جادوگر مهربان",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_554",
-    "word": "شاعر رمانتیک در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_155_full",
+    "word": "پاک کردن شیشه",
+    "category": "کارها و حرکت‌ها",
+    "points": 2,
+    "difficulty": 2
   },
   {
-    "id": "charades_555",
-    "word": "شاعر رمانتیک در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_156_full",
+    "word": "بیدار کردن دوست خواب آلود",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_556",
-    "word": "سرباز وظیفه در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_157_full",
+    "word": "سگ آبی",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_557",
-    "word": "سرباز وظیفه در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_158_full",
+    "word": "خورش بامیه",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_558",
-    "word": "سرباز وظیفه در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_159_full",
+    "word": "چرخ خیاطی",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_559",
-    "word": "سرباز وظیفه در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_160_full",
+    "word": "راهبر قطار",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_560",
-    "word": "سرباز وظیفه در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_161_full",
+    "word": "طناب کشی",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_561",
-    "word": "سرباز وظیفه در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_162_full",
+    "word": "ستاره دنباله دار",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_562",
-    "word": "سرباز وظیفه در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_163_full",
+    "word": "غار یخی",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_563",
-    "word": "سرباز وظیفه در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_164_full",
+    "word": "خجالت از اشتباه",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_564",
-    "word": "سرباز وظیفه در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_565",
-    "word": "سرباز وظیفه در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_566",
-    "word": "سرباز وظیفه در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_567",
-    "word": "سرباز وظیفه در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_568",
-    "word": "سرباز وظیفه در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_569",
-    "word": "سرباز وظیفه در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_570",
-    "word": "سرباز وظیفه در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_571",
-    "word": "سرباز وظیفه در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_572",
-    "word": "سرباز وظیفه در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_573",
-    "word": "سرباز وظیفه در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_574",
-    "word": "سرباز وظیفه در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_575",
-    "word": "سرباز وظیفه در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_576",
-    "word": "پلیس وظیفه‌شناس در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_577",
-    "word": "پلیس وظیفه‌شناس در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_165_full",
+    "word": "دزد ناشی",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_578",
-    "word": "پلیس وظیفه‌شناس در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_166_full",
+    "word": "نواختن فلوت",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_579",
-    "word": "پلیس وظیفه‌شناس در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_167_full",
+    "word": "دنبال کردن سگ بازیگوش",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_580",
-    "word": "پلیس وظیفه‌شناس در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_168_full",
+    "word": "ببر",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_581",
-    "word": "پلیس وظیفه‌شناس در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_582",
-    "word": "پلیس وظیفه‌شناس در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_169_full",
+    "word": "هلو",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_583",
-    "word": "پلیس وظیفه‌شناس در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_584",
-    "word": "پلیس وظیفه‌شناس در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_170_full",
+    "word": "قابلمه",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_585",
-    "word": "پلیس وظیفه‌شناس در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_586",
-    "word": "پلیس وظیفه‌شناس در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_171_full",
+    "word": "آهنگر",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_587",
-    "word": "پلیس وظیفه‌شناس در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_588",
-    "word": "پلیس وظیفه‌شناس در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_589",
-    "word": "پلیس وظیفه‌شناس در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_590",
-    "word": "پلیس وظیفه‌شناس در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_591",
-    "word": "پلیس وظیفه‌شناس در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_592",
-    "word": "پلیس وظیفه‌شناس در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_593",
-    "word": "پلیس وظیفه‌شناس در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_594",
-    "word": "پلیس وظیفه‌شناس در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_172_full",
+    "word": "قایق پارویی",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_595",
-    "word": "پلیس وظیفه‌شناس در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_596",
-    "word": "رفتگر پرتلاش در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_173_full",
+    "word": "آبشار",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_597",
-    "word": "رفتگر پرتلاش در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_174_full",
+    "word": "سالن ورزشی",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_598",
-    "word": "رفتگر پرتلاش در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_599",
-    "word": "رفتگر پرتلاش در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_175_full",
+    "word": "هیجان",
+    "category": "احساسات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_600",
-    "word": "رفتگر پرتلاش در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_176_full",
+    "word": "شاهزاده",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_601",
-    "word": "رفتگر پرتلاش در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_602",
-    "word": "رفتگر پرتلاش در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_177_full",
+    "word": "کف زدن",
+    "category": "کارها و حرکت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_603",
-    "word": "رفتگر پرتلاش در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_604",
-    "word": "رفتگر پرتلاش در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_178_full",
+    "word": "حمل کردن چمدان سنگین",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_605",
-    "word": "رفتگر پرتلاش در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_179_full",
+    "word": "کبوتر",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_606",
-    "word": "رفتگر پرتلاش در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_607",
-    "word": "رفتگر پرتلاش در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_180_full",
+    "word": "سمبوسه",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_608",
-    "word": "رفتگر پرتلاش در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_181_full",
+    "word": "سوزن",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_609",
-    "word": "رفتگر پرتلاش در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_182_full",
+    "word": "تعمیرکار موبایل",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_610",
-    "word": "رفتگر پرتلاش در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_183_full",
+    "word": "پرش طول",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_611",
-    "word": "رفتگر پرتلاش در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_184_full",
+    "word": "بهمن",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_612",
-    "word": "رفتگر پرتلاش در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_185_full",
+    "word": "ساحل دریا",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_613",
-    "word": "رفتگر پرتلاش در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_186_full",
+    "word": "پشیمانی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_614",
-    "word": "رفتگر پرتلاش در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_615",
-    "word": "رفتگر پرتلاش در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_187_full",
+    "word": "پری دریایی",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_616",
-    "word": "باغبان مهربان در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_617",
-    "word": "باغبان مهربان در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_618",
-    "word": "باغبان مهربان در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_188_full",
+    "word": "جارو کشیدن",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_619",
-    "word": "باغبان مهربان در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_620",
-    "word": "باغبان مهربان در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_621",
-    "word": "باغبان مهربان در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_189_full",
+    "word": "عکس گرفتن از پرنده",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_622",
-    "word": "باغبان مهربان در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_623",
-    "word": "باغبان مهربان در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_190_full",
+    "word": "عروس دریایی",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_624",
-    "word": "باغبان مهربان در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_191_full",
+    "word": "باقالی پلو",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_625",
-    "word": "باغبان مهربان در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_192_full",
+    "word": "سماور",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_626",
-    "word": "باغبان مهربان در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_193_full",
+    "word": "شیرینی پز",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_627",
-    "word": "باغبان مهربان در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_194_full",
+    "word": "قایق بادبانی",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_628",
-    "word": "باغبان مهربان در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_195_full",
+    "word": "موج دریا",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_629",
-    "word": "باغبان مهربان در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_196_full",
+    "word": "جزیره متروک",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_630",
-    "word": "باغبان مهربان در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_197_full",
+    "word": "تعجب از هدیه",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_631",
-    "word": "باغبان مهربان در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_198_full",
+    "word": "شوالیه ترسو",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_632",
-    "word": "باغبان مهربان در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_199_full",
+    "word": "خاموش کردن شمع",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_633",
-    "word": "باغبان مهربان در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_200_full",
+    "word": "خوردن لیموی ترش",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_634",
-    "word": "باغبان مهربان در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_201_full",
+    "word": "سنجاقک",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_635",
-    "word": "باغبان مهربان در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_636",
-    "word": "نجار ماهر در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_202_full",
+    "word": "توت فرنگی",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_637",
-    "word": "نجار ماهر در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_203_full",
+    "word": "کتری",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_638",
-    "word": "نجار ماهر در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_639",
-    "word": "نجار ماهر در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_204_full",
+    "word": "قالیباف",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_640",
-    "word": "نجار ماهر در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_205_full",
+    "word": "اسب دوانی",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_641",
-    "word": "نجار ماهر در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_642",
-    "word": "نجار ماهر در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_206_full",
+    "word": "جزیره",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_643",
-    "word": "نجار ماهر در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_644",
-    "word": "نجار ماهر در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_207_full",
+    "word": "آرایشگاه",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_645",
-    "word": "نجار ماهر در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_646",
-    "word": "نجار ماهر در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_208_full",
+    "word": "نگرانی",
+    "category": "احساسات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_647",
-    "word": "نجار ماهر در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_648",
-    "word": "نجار ماهر در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_649",
-    "word": "نجار ماهر در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_650",
-    "word": "نجار ماهر در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_651",
-    "word": "نجار ماهر در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_652",
-    "word": "نجار ماهر در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_653",
-    "word": "نجار ماهر در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_654",
-    "word": "نجار ماهر در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_209_full",
+    "word": "شوالیه",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_655",
-    "word": "نجار ماهر در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_656",
-    "word": "خیاط دستپاچه در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_210_full",
+    "word": "دست تکان دادن",
+    "category": "کارها و حرکت‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_657",
-    "word": "خیاط دستپاچه در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_211_full",
+    "word": "جا گذاشتن چتر در باران",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_658",
-    "word": "خیاط دستپاچه در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_212_full",
+    "word": "کشک بادمجان",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_659",
-    "word": "خیاط دستپاچه در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_660",
-    "word": "خیاط دستپاچه در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_661",
-    "word": "خیاط دستپاچه در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_213_full",
+    "word": "قرقره نخ",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_662",
-    "word": "خیاط دستپاچه در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_663",
-    "word": "خیاط دستپاچه در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_214_full",
+    "word": "مجری",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_664",
-    "word": "خیاط دستپاچه در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_665",
-    "word": "خیاط دستپاچه در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_215_full",
+    "word": "شیرجه",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_666",
-    "word": "خیاط دستپاچه در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_667",
-    "word": "خیاط دستپاچه در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_216_full",
+    "word": "تگرگ",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_668",
-    "word": "خیاط دستپاچه در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_217_full",
+    "word": "زمین بازی",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_669",
-    "word": "خیاط دستپاچه در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_218_full",
+    "word": "مهربانی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_670",
-    "word": "خیاط دستپاچه در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_219_full",
+    "word": "غول چراغ جادو",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_671",
-    "word": "خیاط دستپاچه در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_220_full",
+    "word": "شستن ماشین",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_672",
-    "word": "خیاط دستپاچه در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_221_full",
+    "word": "گرفتن توپ با دستکش بزرگ",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_673",
-    "word": "خیاط دستپاچه در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_222_full",
+    "word": "خرچنگ",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_674",
-    "word": "خیاط دستپاچه در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_223_full",
+    "word": "رولت",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_675",
-    "word": "خیاط دستپاچه در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_224_full",
+    "word": "گوشت کوب",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_676",
-    "word": "آشپز سنتی در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_225_full",
+    "word": "چوپان",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_677",
-    "word": "آشپز سنتی در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_226_full",
+    "word": "ورزش زورخانه",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_678",
-    "word": "آشپز سنتی در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_227_full",
+    "word": "جنگل بارانی",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_679",
-    "word": "آشپز سنتی در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_228_full",
+    "word": "آبشار جنگلی",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_680",
-    "word": "آشپز سنتی در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_229_full",
+    "word": "حسرت خوردن",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_681",
-    "word": "آشپز سنتی در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_230_full",
+    "word": "ربات خراب",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_682",
-    "word": "آشپز سنتی در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_231_full",
+    "word": "باز کردن قفل",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_683",
-    "word": "آشپز سنتی در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_232_full",
+    "word": "جمع کردن برگ های پاییزی",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_684",
-    "word": "آشپز سنتی در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_233_full",
+    "word": "پشه",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_685",
-    "word": "آشپز سنتی در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_686",
-    "word": "آشپز سنتی در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_234_full",
+    "word": "لیمو",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_687",
-    "word": "آشپز سنتی در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_688",
-    "word": "آشپز سنتی در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_689",
-    "word": "آشپز سنتی در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_690",
-    "word": "آشپز سنتی در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_691",
-    "word": "آشپز سنتی در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_692",
-    "word": "آشپز سنتی در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_693",
-    "word": "آشپز سنتی در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_694",
-    "word": "آشپز سنتی در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_235_full",
+    "word": "فنجان",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_695",
-    "word": "آشپز سنتی در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_696",
-    "word": "نانوای سنگک در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_236_full",
+    "word": "راننده تاکسی",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_697",
-    "word": "نانوای سنگک در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_237_full",
+    "word": "ژیمناستیک",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_698",
-    "word": "نانوای سنگک در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_699",
-    "word": "نانوای سنگک در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_238_full",
+    "word": "بیابان",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_700",
-    "word": "نانوای سنگک در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_239_full",
+    "word": "آشپزخانه",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_701",
-    "word": "نانوای سنگک در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_702",
-    "word": "نانوای سنگک در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_240_full",
+    "word": "غرور",
+    "category": "احساسات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_703",
-    "word": "نانوای سنگک در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_704",
-    "word": "نانوای سنگک در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_241_full",
+    "word": "کابوی",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_705",
-    "word": "نانوای سنگک در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_706",
-    "word": "نانوای سنگک در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_242_full",
+    "word": "اشاره کردن",
+    "category": "کارها و حرکت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_707",
-    "word": "نانوای سنگک در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_708",
-    "word": "نانوای سنگک در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_709",
-    "word": "نانوای سنگک در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_710",
-    "word": "نانوای سنگک در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_711",
-    "word": "نانوای سنگک در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_712",
-    "word": "نانوای سنگک در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_713",
-    "word": "نانوای سنگک در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_714",
-    "word": "نانوای سنگک در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_243_full",
+    "word": "ترسیدن از یک سوسک",
+    "category": "چالش‌های نمایشی",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_715",
-    "word": "نانوای سنگک در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_244_full",
+    "word": "قورباغه",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_716",
-    "word": "شیرینی‌پز حرفه‌ای در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_717",
-    "word": "شیرینی‌پز حرفه‌ای در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_718",
-    "word": "شیرینی‌پز حرفه‌ای در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_245_full",
+    "word": "سالاد",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_719",
-    "word": "شیرینی‌پز حرفه‌ای در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_720",
-    "word": "شیرینی‌پز حرفه‌ای در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_721",
-    "word": "شیرینی‌پز حرفه‌ای در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_246_full",
+    "word": "چسب",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_722",
-    "word": "شیرینی‌پز حرفه‌ای در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_723",
-    "word": "شیرینی‌پز حرفه‌ای در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_247_full",
+    "word": "کتابدار",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_724",
-    "word": "شیرینی‌پز حرفه‌ای در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_725",
-    "word": "شیرینی‌پز حرفه‌ای در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_248_full",
+    "word": "موج سواری",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_726",
-    "word": "شیرینی‌پز حرفه‌ای در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_727",
-    "word": "شیرینی‌پز حرفه‌ای در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
+    "id": "charades_curated_249_full",
+    "word": "مه",
+    "category": "طبیعت",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_728",
-    "word": "شیرینی‌پز حرفه‌ای در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
+    "id": "charades_curated_250_full",
+    "word": "تئاتر",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_729",
-    "word": "شیرینی‌پز حرفه‌ای در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_251_full",
+    "word": "بی حوصلگی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_730",
-    "word": "شیرینی‌پز حرفه‌ای در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_252_full",
+    "word": "آدم برفی",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_731",
-    "word": "شیرینی‌پز حرفه‌ای در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_253_full",
+    "word": "باد کردن بادکنک",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_732",
-    "word": "شیرینی‌پز حرفه‌ای در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_254_full",
+    "word": "سوار شدن به اتوبوس شلوغ",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_733",
-    "word": "شیرینی‌پز حرفه‌ای در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_255_full",
+    "word": "خارپشت دریایی",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_734",
-    "word": "شیرینی‌پز حرفه‌ای در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_256_full",
+    "word": "باقلوا",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_735",
-    "word": "شیرینی‌پز حرفه‌ای در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_257_full",
+    "word": "چراغ مطالعه",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_736",
-    "word": "قصاب تنومند در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_258_full",
+    "word": "کارآگاه",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_737",
-    "word": "قصاب تنومند در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_259_full",
+    "word": "پرتاب چکش",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_738",
-    "word": "قصاب تنومند در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_260_full",
+    "word": "تپه شنی",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_739",
-    "word": "قصاب تنومند در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_261_full",
+    "word": "ایستگاه آتش نشانی",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_740",
-    "word": "قصاب تنومند در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_262_full",
+    "word": "احساس پیروزی",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_741",
-    "word": "قصاب تنومند در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_263_full",
+    "word": "خون آشام خواب آلود",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_742",
-    "word": "قصاب تنومند در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_264_full",
+    "word": "تمیز کردن کفش",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_743",
-    "word": "قصاب تنومند در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_265_full",
+    "word": "ترسیدن از سایه خود",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_744",
-    "word": "قصاب تنومند در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_266_full",
+    "word": "زنبور",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_745",
-    "word": "قصاب تنومند در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_746",
-    "word": "قصاب تنومند در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_267_full",
+    "word": "خیار",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_747",
-    "word": "قصاب تنومند در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_748",
-    "word": "قصاب تنومند در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_749",
-    "word": "قصاب تنومند در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_750",
-    "word": "قصاب تنومند در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_751",
-    "word": "قصاب تنومند در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_752",
-    "word": "قصاب تنومند در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
-  },
-  {
-    "id": "charades_753",
-    "word": "قصاب تنومند در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_754",
-    "word": "قصاب تنومند در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
+    "id": "charades_curated_268_full",
+    "word": "جوراب",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_755",
-    "word": "قصاب تنومند در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_756",
-    "word": "ماهیگیر باتجربه در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
+    "id": "charades_curated_269_full",
+    "word": "قصاب",
+    "category": "شغل‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_757",
-    "word": "ماهیگیر باتجربه در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_270_full",
+    "word": "فوتسال",
+    "category": "ورزش‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_758",
-    "word": "ماهیگیر باتجربه در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_759",
-    "word": "ماهیگیر باتجربه در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_271_full",
+    "word": "کوه آتشفشان",
+    "category": "طبیعت",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_760",
-    "word": "ماهیگیر باتجربه در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_272_full",
+    "word": "اتاق خواب",
+    "category": "جاها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_761",
-    "word": "ماهیگیر باتجربه در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_762",
-    "word": "ماهیگیر باتجربه در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
+    "id": "charades_curated_273_full",
+    "word": "کنجکاوی",
+    "category": "احساسات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_763",
-    "word": "ماهیگیر باتجربه در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_764",
-    "word": "ماهیگیر باتجربه در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
+    "id": "charades_curated_274_full",
+    "word": "سرآشپز",
+    "category": "شخصیت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_765",
-    "word": "ماهیگیر باتجربه در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_766",
-    "word": "ماهیگیر باتجربه در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
+    "id": "charades_curated_275_full",
+    "word": "زانو زدن",
+    "category": "کارها و حرکت‌ها",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_767",
-    "word": "ماهیگیر باتجربه در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_768",
-    "word": "ماهیگیر باتجربه در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_276_full",
+    "word": "پوشیدن کفش اشتباهی",
+    "category": "چالش‌های نمایشی",
+    "points": 1,
+    "difficulty": 1
   },
   {
-    "id": "charades_769",
-    "word": "ماهیگیر باتجربه در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
+    "id": "charades_curated_277_full",
+    "word": "سوسمار",
+    "category": "حیوانات",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_770",
-    "word": "ماهیگیر باتجربه در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
+    "id": "charades_curated_278_full",
+    "word": "حلوا",
+    "category": "خوراکی‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_771",
-    "word": "ماهیگیر باتجربه در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
+    "id": "charades_curated_279_full",
+    "word": "پیچ گوشتی",
+    "category": "وسایل",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_772",
-    "word": "ماهیگیر باتجربه در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
+    "id": "charades_curated_280_full",
+    "word": "خلبان هلیکوپتر",
+    "category": "شغل‌ها",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_773",
-    "word": "ماهیگیر باتجربه در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
+    "id": "charades_curated_281_full",
+    "word": "اسکی روی آب",
+    "category": "ورزش‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_774",
-    "word": "ماهیگیر باتجربه در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_775",
-    "word": "ماهیگیر باتجربه در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
+    "id": "charades_curated_282_full",
+    "word": "آزمایشگاه",
+    "category": "جاها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_776",
-    "word": "کوهنورد شجاع در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_777",
-    "word": "کوهنورد شجاع در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_778",
-    "word": "کوهنورد شجاع در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
+    "id": "charades_curated_283_full",
+    "word": "گیجی",
+    "category": "احساسات",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_779",
-    "word": "کوهنورد شجاع در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
-    "points": 1,
-    "difficulty": 1
-  },
-  {
-    "id": "charades_780",
-    "word": "کوهنورد شجاع در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_781",
-    "word": "کوهنورد شجاع در حال پاک کردن پیاز با عینک غواصی",
-    "category": "طنز آشپزخانه",
+    "id": "charades_curated_284_full",
+    "word": "آدم فضایی",
+    "category": "شخصیت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_782",
-    "word": "کوهنورد شجاع در حال باز کردن هندوانه شب یلدا",
-    "category": "آیین‌های سنتی",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_783",
-    "word": "کوهنورد شجاع در حال فرار از دست گله زنبورها",
-    "category": "ماجراجویی در طبیعت",
+    "id": "charades_curated_285_full",
+    "word": "بستن چمدان",
+    "category": "کارها و حرکت‌ها",
     "points": 2,
     "difficulty": 2
-  },
-  {
-    "id": "charades_784",
-    "word": "کوهنورد شجاع در حال پیدا کردن کنترل زیر مبل",
-    "category": "زندگی روزمره",
-    "points": 1,
-    "difficulty": 1
   },
   {
-    "id": "charades_785",
-    "word": "کوهنورد شجاع در حال حل جدول کلمات متقاطع",
-    "category": "سرگرمی فکری",
+    "id": "charades_curated_286_full",
+    "word": "عبور از خیابان یخ زده",
+    "category": "چالش‌های نمایشی",
     "points": 2,
     "difficulty": 2
   },
   {
-    "id": "charades_786",
-    "word": "کوهنورد شجاع در حال تماشای مسابقه فوتبال در تلویزیون",
-    "category": "هیجان و تماشا",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_287_full",
+    "word": "شاهین",
+    "category": "حیوانات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_787",
-    "word": "کوهنورد شجاع در حال تعمیر دوچرخه پنچر شده",
-    "category": "تعمیرات دستی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_288_full",
+    "word": "فالوده",
+    "category": "خوراکی‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_788",
-    "word": "کوهنورد شجاع در حال پختن شله‌زرد نذری در دیگ بزرگ",
-    "category": "فرهنگ سنتی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_289_full",
+    "word": "چوب ماهیگیری",
+    "category": "وسایل",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_789",
-    "word": "کوهنورد شجاع در حال شستن فرش با شلنگ و فرچه",
-    "category": "خانه‌تکانی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_290_full",
+    "word": "داور مسابقه",
+    "category": "شغل‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_790",
-    "word": "کوهنورد شجاع در حال عکس سلفی گرفتن روی صخره",
-    "category": "هیجان و خطر",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_291_full",
+    "word": "کشتی فرنگی",
+    "category": "ورزش‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_791",
-    "word": "کوهنورد شجاع در حال بیدار کردن همسایه خواب‌آلود",
-    "category": "شوخی دوستانه",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_292_full",
+    "word": "جزر و مد",
+    "category": "طبیعت",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_792",
-    "word": "کوهنورد شجاع در حال چیدن سفره عقد با آینه و شمعدان",
-    "category": "جشن و مراسم",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_293_full",
+    "word": "ترمینال اتوبوس",
+    "category": "جاها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_793",
-    "word": "کوهنورد شجاع در حال کوک کردن سنتور سنتی",
-    "category": "هنر و موسیقی",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_294_full",
+    "word": "نگرانی برای امتحان",
+    "category": "احساسات",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_794",
-    "word": "کوهنورد شجاع در حال رانندگی با ماشین اسباب‌بازی",
-    "category": "بازی‌های شاد",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_295_full",
+    "word": "دلقک غمگین",
+    "category": "شخصیت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_795",
-    "word": "کوهنورد شجاع در حال باد کردن قایق بادی در ساحل",
-    "category": "سفر و دریا",
-    "points": 2,
-    "difficulty": 2
+    "id": "charades_curated_296_full",
+    "word": "در زدن",
+    "category": "کارها و حرکت‌ها",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_796",
-    "word": "خلبان مسافربری در حال چیدن میوه از درخت بلند",
-    "category": "باغداری",
-    "points": 1,
-    "difficulty": 1
+    "id": "charades_curated_297_full",
+    "word": "پوشیدن بارانی زیر باران",
+    "category": "چالش‌های نمایشی",
+    "points": 3,
+    "difficulty": 3
   },
   {
-    "id": "charades_797",
-    "word": "خلبان مسافربری در حال دویدن در ساحل ماسه‌ای",
-    "category": "تفریح و ورزش",
+    "id": "charades_curated_298_full",
+    "word": "مورچه",
+    "category": "حیوانات",
     "points": 1,
     "difficulty": 1
-  },
-  {
-    "id": "charades_798",
-    "word": "خلبان مسافربری در حال تعقیب دزد در بازارچه",
-    "category": "پلیسی و اکشن",
-    "points": 2,
-    "difficulty": 2
   },
   {
-    "id": "charades_799",
-    "word": "خلبان مسافربری در حال خوردن بستنی قیفی در هوای داغ",
-    "category": "طنز روزمره",
+    "id": "charades_curated_299_full",
+    "word": "گوجه",
+    "category": "خوراکی‌ها",
     "points": 1,
     "difficulty": 1
   },
   {
-    "id": "charades_800",
-    "word": "خلبان مسافربری در حال تمیز کردن پنجره‌های باران‌خورده",
-    "category": "کارهای خانه",
+    "id": "charades_curated_300_full",
+    "word": "دستکش",
+    "category": "وسایل",
     "points": 1,
     "difficulty": 1
   }

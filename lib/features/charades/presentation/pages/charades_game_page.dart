@@ -20,6 +20,7 @@ import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cu
 import '../cubit/charades_cubit.dart';
 import '../cubit/charades_state.dart';
 import '../../data/charades_repository.dart';
+import '../widgets/charades_category_badge.dart';
 
 // Charades Game Page (Zero setState)
 class CharadesGamePage extends StatelessWidget {
@@ -95,7 +96,7 @@ class _CharadesGameView extends StatelessWidget {
         }
 
         final currentWord = state.currentWord;
-        final points = currentWord?.points ?? 1;
+        final points = currentWord?.points ?? 0;
 
         return Scaffold(
           appBar: AppBar(
@@ -157,6 +158,27 @@ class _CharadesGameView extends StatelessWidget {
                     quick: state.isQuickMode,
                   ),
                   const SizedBox(height: 20),
+
+                  if (currentWord != null)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CharadesCategoryBadge(
+                            category: CharadesCategoryStyle.forKey(
+                              currentWord.category,
+                            ),
+                            size: 32,
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            currentWord.category,
+                            style: AppTypography.titleLarge,
+                          ),
+                        ],
+                      ),
+                    ),
 
                   Expanded(
                     child: Padding(
@@ -282,14 +304,6 @@ class _CharadesGameView extends StatelessWidget {
                         : Icons.arrow_forward_rounded,
                     color: AppColors.charadesPrimary,
                     onPressed: () => context.read<CharadesCubit>().nextTurn(),
-                  ),
-                  const SizedBox(height: 10),
-                  PartyButton(
-                    label: 'خروج به منوی اصلی',
-                    color: AppColors.surfaceLight,
-                    textColor: AppColors.textHeadline,
-                    shadowColor: AppColors.surfaceBorder,
-                    onPressed: () => Navigator.of(context).pop(),
                   ),
                 ],
               ),

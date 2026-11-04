@@ -51,12 +51,23 @@ void main() {
       'drawing',
     ];
 
-    test('each supported game contains 800 unique cards', () {
+    test('each supported game has distinct, curated free and full cards', () {
       for (final game in games) {
         final free = _readPack('assets/data/$game/pack_free.json');
         final full = _readPack('assets/data/$game/pack_full.json');
-        expect(free, hasLength(400), reason: '$game free pack');
-        expect(full, hasLength(400), reason: '$game full pack');
+        if (game == 'charades') {
+          expect(full, hasLength(300), reason: 'charades full pack');
+        }
+        expect(
+          free.length,
+          greaterThanOrEqualTo(40),
+          reason: '$game free pack',
+        );
+        expect(
+          full.length,
+          greaterThanOrEqualTo(20),
+          reason: '$game full pack',
+        );
         _validatePack(game, free);
         _validatePack(game, full);
         final primary = _primaryField(game);
@@ -85,6 +96,162 @@ void main() {
       expect(ContentService.productIds.keys, unorderedEquals(games));
       expect(ContentService.productIds, isNot(contains('decoder')));
     });
+
+    test('charades subscription adds 300 different playable cards', () async {
+      final free = _readPack('assets/data/charades/pack_free.json');
+      final full = _readPack('assets/data/charades/pack_full.json');
+      String compact(String word) =>
+          ContentService.normalize(word)
+              .replaceAll(RegExp(r'[\s\u200c\u200d-]'), '');
+      final freeWords = free
+          .map((row) => compact(row['word'] as String))
+          .toSet();
+      final fullWords = full
+          .map((row) => compact(row['word'] as String))
+          .toSet();
+      expect(full, hasLength(300));
+      expect(fullWords, hasLength(300));
+      expect(fullWords.intersection(freeWords), isEmpty);
+
+      await storage.addPurchasedPack('pack_charades_full');
+      final loaded = await ContentService(storage).load('charades');
+      expect(loaded, hasLength(600));
+      expect(
+        loaded.where((row) => row['id'].toString().endsWith('_full')),
+        hasLength(300),
+      );
+    });
+
+    test(
+      'drawing has 300 distinct cards in each pack and loads all 600',
+      () async {
+        final free = _readPack('assets/data/drawing/pack_free.json');
+        final full = _readPack('assets/data/drawing/pack_full.json');
+        String compact(String word) =>
+            ContentService.normalize(word)
+                .replaceAll(RegExp(r'[\s\u200c\u200d-]'), '');
+        final freeWords = free
+            .map((row) => compact(row['word'] as String))
+            .toSet();
+        final fullWords = full
+            .map((row) => compact(row['word'] as String))
+            .toSet();
+        expect(free, hasLength(300));
+        expect(full, hasLength(300));
+        expect(freeWords, hasLength(300));
+        expect(fullWords, hasLength(300));
+        expect(freeWords.intersection(fullWords), isEmpty);
+        expect(
+          [...free, ...full].map((row) => row['id']).toSet(),
+          hasLength(600),
+        );
+        expect(
+          [...free, ...full].every(
+            (row) =>
+                row['difficulty'] is int &&
+                (row['difficulty'] as int) >= 1 &&
+                (row['difficulty'] as int) <= 3,
+          ),
+          isTrue,
+        );
+        final service = ContentService(storage);
+        expect(await service.load('drawing'), hasLength(300));
+        await storage.addPurchasedPack('pack_drawing_full');
+        expect(await service.load('drawing'), hasLength(600));
+      },
+    );
+
+    test('five seconds loads 200 unique prompts per pack', () async {
+      final free = _readPack('assets/data/five_seconds/pack_free.json');
+      final full = _readPack('assets/data/five_seconds/pack_full.json');
+      String compact(String question) =>
+          ContentService.normalize(question)
+              .replaceAll(RegExp(r'[\s\u200c\u200d!؟?,.،-]'), '');
+      final freeQuestions = free
+          .map((row) => compact(row['question'] as String))
+          .toSet();
+      final fullQuestions = full
+          .map((row) => compact(row['question'] as String))
+          .toSet();
+      expect(free, hasLength(200));
+      expect(full, hasLength(200));
+      expect(freeQuestions, hasLength(200));
+      expect(fullQuestions, hasLength(200));
+      expect(freeQuestions.intersection(fullQuestions), isEmpty);
+      expect(
+        [...free, ...full].map((row) => row['id']).toSet(),
+        hasLength(400),
+      );
+      final service = ContentService(storage);
+      expect(await service.load('five_seconds'), hasLength(200));
+      await storage.addPurchasedPack('pack_five_full');
+      expect(await service.load('five_seconds'), hasLength(400));
+    });
+    test('hot potato loads 200 distinct topics per pack', () async {
+      final free = _readPack('assets/data/hot_potato/pack_free.json');
+      final full = _readPack('assets/data/hot_potato/pack_full.json');
+      String compact(String topic) =>
+          ContentService.normalize(topic)
+              .replaceAll(RegExp(r'[\s\u200c\u200d!؟?,.،-]'), '');
+      final freeTopics = free
+          .map((row) => compact(row['topic'] as String))
+          .toSet();
+      final fullTopics = full
+          .map((row) => compact(row['topic'] as String))
+          .toSet();
+      expect(free, hasLength(200));
+      expect(full, hasLength(200));
+      expect(freeTopics, hasLength(200));
+      expect(fullTopics, hasLength(200));
+      expect(freeTopics.intersection(fullTopics), isEmpty);
+      expect(
+        [...free, ...full].map((row) => row['id']).toSet(),
+        hasLength(400),
+      );
+      final service = ContentService(storage);
+      expect(await service.load('hot_potato'), hasLength(200));
+      await storage.addPurchasedPack('pack_bomb_full');
+      expect(await service.load('hot_potato'), hasLength(400));
+    });
+    test(
+      'taboo loads 200 distinct cards per pack with five forbidden words',
+      () async {
+        final free = _readPack('assets/data/taboo/pack_free.json');
+        final full = _readPack('assets/data/taboo/pack_full.json');
+        String compact(String word) =>
+            ContentService.normalize(word)
+                .replaceAll(RegExp(r'[\s\u200c\u200d!؟?,.،-]'), '');
+        final freeWords = free
+            .map((row) => compact(row['word'] as String))
+            .toSet();
+        final fullWords = full
+            .map((row) => compact(row['word'] as String))
+            .toSet();
+        expect(free, hasLength(200));
+        expect(full, hasLength(200));
+        expect(freeWords, hasLength(200));
+        expect(fullWords, hasLength(200));
+        expect(freeWords.intersection(fullWords), isEmpty);
+        expect(
+          [...free, ...full].map((row) => row['id']).toSet(),
+          hasLength(400),
+        );
+        for (final card in [...free, ...full]) {
+          final word = compact(card['word'] as String);
+          final forbidden = (card['forbiddenWords'] as List).cast<String>();
+          expect(forbidden, hasLength(5), reason: word);
+          final forbiddenWords = forbidden.map(compact).toSet();
+          expect(forbiddenWords, hasLength(5), reason: word);
+          expect(forbiddenWords, isNot(contains('')), reason: word);
+          expect(forbiddenWords, isNot(contains(word)), reason: word);
+          expect(card['difficulty'], inInclusiveRange(1, 3), reason: word);
+        }
+        final service = ContentService(storage);
+        expect(await service.load('taboo'), hasLength(200));
+        await storage.addPurchasedPack('pack_taboo_full');
+        expect(await service.load('taboo'), hasLength(400));
+      },
+    );
   });
 
   group('ContentService composition and validation', () {
@@ -94,7 +261,7 @@ void main() {
           _word('free', 'کتاب'),
         ]),
         'assets/data/charades/pack_full.json': jsonEncode([
-          _word('full', 'باران'),
+          _word('full', 'دشت'),
         ]),
         'assets/data/drawing/pack_free.json': jsonEncode([
           _word('drawing-free', 'ابر'),
@@ -130,6 +297,12 @@ void main() {
         charades.map((row) => row['id']),
         isNot(contains('custom-drawing')),
       );
+      expect(
+        charades.firstWhere(
+          (row) => row['id'] == 'custom-charades',
+        )['category'],
+        'کارت‌های من',
+      );
       expect(charades.map((row) => row['id']), isNot(contains('wrong-game')));
       expect(charades.map((row) => row['id']), isNot(contains('blank')));
 
@@ -151,7 +324,7 @@ void main() {
         'assets/data/charades/pack_free.json': jsonEncode([
           _word('first', '  کتاب  '),
           _word('duplicate-normalized-word', 'کتاب'),
-          _word('next', 'باران'),
+          _word('next', 'درخت'),
         ]),
         'assets/data/drawing/pack_free.json': '[]',
         'assets/data/taboo/pack_free.json': jsonEncode([

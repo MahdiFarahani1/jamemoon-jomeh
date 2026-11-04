@@ -1,2402 +1,1802 @@
 [
   {
-    "id": "draw_401",
-    "word": "پایه‌میکروفون رومیزی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_1_full",
+    "word": "بادکنک",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_402",
-    "word": "رینگ‌لایت عکاسی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_2_full",
+    "word": "بادبادک",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_403",
-    "word": "سه‌پایه دوربین آلومینیومی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_3_full",
+    "word": "عروسک",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_404",
-    "word": "لنز زوم تله‌فوتو",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_4_full",
+    "word": "شمع",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_405",
-    "word": "فلاش اکسترنال دوربین",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_5_full",
+    "word": "توپ",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_406",
-    "word": "فیلم عکاسی نگاتیو",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_6_full",
+    "word": "چرخ‌وفلک",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_407",
-    "word": "آلبوم عکس قدیمی چرمی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_7_full",
+    "word": "کادو",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_408",
-    "word": "پروژکتور سینمای خانگی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_8_full",
+    "word": "کیک‌تولد",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_409",
-    "word": "رادیو ترانزیستوری چوبی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_9_full",
+    "word": "تاج",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_410",
-    "word": "گرامافون شیپوری آنتیک",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_10_full",
+    "word": "طبل",
+    "category": "بازی و جشن",
     "difficulty": 1
   },
   {
-    "id": "draw_411",
-    "word": "نوار کاست مغناطیسی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_11_full",
+    "word": "قلعه",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_412",
-    "word": "سی‌دی نقره‌ای براق",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_12_full",
+    "word": "پل",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_413",
-    "word": "سنتور چوبی منبت",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_13_full",
+    "word": "مسجد",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_414",
-    "word": "تار سنتی پوست‌دار",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_14_full",
+    "word": "مدرسه",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_415",
-    "word": "سه‌تار کاسه کوچک",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_15_full",
+    "word": "پارک",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_416",
-    "word": "کمانچه لری با آرشه",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_16_full",
+    "word": "برج‌میلاد",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_417",
-    "word": "نی هفت‌بند",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_17_full",
+    "word": "برج‌ایفل",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_418",
-    "word": "دف چرمی با حلقه‌ها",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_18_full",
+    "word": "اهرام",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_419",
-    "word": "تنبک چوبی شیرازی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_19_full",
+    "word": "فانوس‌دریایی",
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "draw_curated_20_full",
+    "word": "آسیاب‌بادی",
+    "category": "جاها",
     "difficulty": 1
   },
   {
-    "id": "draw_420",
-    "word": "دهل بزرگ محلی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_21_full",
+    "word": "دوربین",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_421",
-    "word": "سرنا و کرنا سنتی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_22_full",
+    "word": "گیتار",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_422",
-    "word": "قانون ارکستری",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_23_full",
+    "word": "پیانو",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_423",
-    "word": "هارمونیکا ساز دهنی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_24_full",
+    "word": "راکت",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_424",
-    "word": "ساکسیفون برنجی طلایی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_25_full",
+    "word": "موشک",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_425",
-    "word": "ترومپت بادی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_26_full",
+    "word": "تلسکوپ",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_426",
-    "word": "فلوت کلیددار",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_27_full",
+    "word": "میکروسکوپ",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_427",
-    "word": "ویولنسل بزرگ",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_28_full",
+    "word": "جاروبرقی",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_428",
-    "word": "چنگ رومی با سیم‌ها",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_29_full",
+    "word": "چرخ‌خیاطی",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_429",
-    "word": "ارگ بادی کلیسا",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_30_full",
+    "word": "ساعت‌شنی",
+    "category": "ابزار و فناوری",
     "difficulty": 1
   },
   {
-    "id": "draw_430",
-    "word": "آکاردئون دکمه‌ای",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_31_full",
+    "word": "دایناسور",
+    "category": "حیوانات",
     "difficulty": 1
   },
   {
-    "id": "draw_431",
-    "word": "تنبور با دسته بلند",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_32_full",
+    "word": "اژدها",
+    "category": "حیوانات",
     "difficulty": 1
   },
   {
-    "id": "draw_432",
-    "word": "دوتار خراسانی",
-    "category": "اشیاء و ابزارها",
+    "id": "draw_curated_33_full",
+    "word": "پنگوئن",
+    "category": "حیوانات",
     "difficulty": 1
   },
   {
-    "id": "draw_433",
-    "word": "آلبالو در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_434",
-    "word": "آلبالو در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_34_full",
+    "word": "دلفین",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_435",
-    "word": "آلبالو در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_35_full",
+    "word": "خرچنگ",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_436",
-    "word": "آلبالو روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_36_full",
+    "word": "اختاپوس",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_437",
-    "word": "آلبالو در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_37_full",
+    "word": "تمساح",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_438",
-    "word": "آلبالو در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_38_full",
+    "word": "طاووس",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_439",
-    "word": "آلبالو در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_39_full",
+    "word": "خفاش",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_440",
-    "word": "آلبالو در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_40_full",
+    "word": "کانگورو",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_441",
-    "word": "آلبالو در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_41_full",
+    "word": "خرس",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_442",
-    "word": "آلبالو در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_42_full",
+    "word": "گلابی",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_443",
-    "word": "انار در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_43_full",
+    "word": "پیراهن",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_444",
-    "word": "انار در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_44_full",
+    "word": "جزیره",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_445",
-    "word": "انار در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_45_full",
+    "word": "تاکسی",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_446",
-    "word": "انار روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_46_full",
+    "word": "دفتر",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_447",
-    "word": "انار در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_47_full",
+    "word": "پزشک",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_448",
-    "word": "انار در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_48_full",
+    "word": "اسب آبی",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_449",
-    "word": "انار در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_49_full",
+    "word": "انار",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_450",
-    "word": "انار در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_50_full",
+    "word": "قوری",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_451",
-    "word": "انار در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_51_full",
+    "word": "درخت نخل",
+    "category": "طبیعت",
     "difficulty": 2
-  },
-  {
-    "id": "draw_452",
-    "word": "انار در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_453",
-    "word": "انگور در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_52_full",
+    "word": "جرثقیل",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_454",
-    "word": "انگور در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_53_full",
+    "word": "آرایشگاه",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_455",
-    "word": "انگور در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_54_full",
+    "word": "تخته شنا",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_456",
-    "word": "انگور روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_55_full",
+    "word": "شوالیه",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_457",
-    "word": "انگور در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_56_full",
+    "word": "آفتاب‌پرست",
+    "category": "حیوانات",
     "difficulty": 3
-  },
-  {
-    "id": "draw_458",
-    "word": "انگور در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_459",
-    "word": "انگور در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_460",
-    "word": "انگور در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_461",
-    "word": "انگور در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_462",
-    "word": "انگور در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_57_full",
+    "word": "دونات",
+    "category": "خوراکی‌ها",
     "difficulty": 3
-  },
-  {
-    "id": "draw_463",
-    "word": "انجیر در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_464",
-    "word": "انجیر در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_465",
-    "word": "انجیر در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_466",
-    "word": "انجیر روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_467",
-    "word": "انجیر در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_58_full",
+    "word": "ظرفشویی",
+    "category": "خانه و وسایل",
     "difficulty": 3
-  },
-  {
-    "id": "draw_468",
-    "word": "انجیر در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_469",
-    "word": "انجیر در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_470",
-    "word": "انجیر در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_471",
-    "word": "انجیر در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_472",
-    "word": "انجیر در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_59_full",
+    "word": "غار",
+    "category": "طبیعت",
     "difficulty": 3
-  },
-  {
-    "id": "draw_473",
-    "word": "کیوی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_474",
-    "word": "کیوی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_475",
-    "word": "کیوی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_476",
-    "word": "کیوی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_477",
-    "word": "کیوی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_60_full",
+    "word": "تله‌کابین",
+    "category": "رفت‌وآمد",
     "difficulty": 3
-  },
-  {
-    "id": "draw_478",
-    "word": "کیوی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_479",
-    "word": "کیوی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_480",
-    "word": "کیوی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_481",
-    "word": "کیوی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_482",
-    "word": "کیوی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_61_full",
+    "word": "آکواریوم",
+    "category": "جاها",
     "difficulty": 3
-  },
-  {
-    "id": "draw_483",
-    "word": "نارگیل در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_484",
-    "word": "نارگیل در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_485",
-    "word": "نارگیل در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_486",
-    "word": "نارگیل روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_487",
-    "word": "نارگیل در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_62_full",
+    "word": "میز بیلیارد",
+    "category": "ورزش",
     "difficulty": 3
-  },
-  {
-    "id": "draw_488",
-    "word": "نارگیل در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_489",
-    "word": "نارگیل در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_490",
-    "word": "نارگیل در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_491",
-    "word": "نارگیل در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_492",
-    "word": "نارگیل در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_63_full",
+    "word": "سیاره زحل",
+    "category": "فضا و خیال",
     "difficulty": 3
-  },
-  {
-    "id": "draw_493",
-    "word": "آناناس در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_494",
-    "word": "آناناس در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_495",
-    "word": "آناناس در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_496",
-    "word": "آناناس روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_497",
-    "word": "آناناس در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_64_full",
+    "word": "ببر",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_498",
-    "word": "آناناس در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_65_full",
+    "word": "انگور",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_499",
-    "word": "آناناس در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_66_full",
+    "word": "شلوار",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_500",
-    "word": "آناناس در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_67_full",
+    "word": "جنگل",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_501",
-    "word": "آناناس در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_68_full",
+    "word": "کامیون",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_502",
-    "word": "آناناس در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_69_full",
+    "word": "دفتر نقاشی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_503",
-    "word": "گیلاس در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_70_full",
+    "word": "پرستار",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_504",
-    "word": "گیلاس در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_71_full",
+    "word": "کرگدن",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_505",
-    "word": "گیلاس در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_72_full",
+    "word": "انجیر",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_506",
-    "word": "گیلاس روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_73_full",
+    "word": "کلاه آشپزی",
+    "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "draw_507",
-    "word": "گیلاس در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
-  },
-  {
-    "id": "draw_508",
-    "word": "گیلاس در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_74_full",
+    "word": "درخت کاج",
+    "category": "طبیعت",
     "difficulty": 2
   },
   {
-    "id": "draw_509",
-    "word": "گیلاس در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_75_full",
+    "word": "بولدوزر",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_510",
-    "word": "گیلاس در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_76_full",
+    "word": "سه‌تار",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_511",
-    "word": "گیلاس در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_77_full",
+    "word": "آهنگر",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_512",
-    "word": "گیلاس در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_78_full",
+    "word": "عروس دریایی",
+    "category": "حیوانات",
     "difficulty": 3
-  },
-  {
-    "id": "draw_513",
-    "word": "زردآلو در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_514",
-    "word": "زردآلو در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_515",
-    "word": "زردآلو در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_516",
-    "word": "زردآلو روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_517",
-    "word": "زردآلو در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_79_full",
+    "word": "کروسان",
+    "category": "خوراکی‌ها",
     "difficulty": 3
-  },
-  {
-    "id": "draw_518",
-    "word": "زردآلو در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_519",
-    "word": "زردآلو در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_520",
-    "word": "زردآلو در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_521",
-    "word": "زردآلو در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_522",
-    "word": "زردآلو در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_80_full",
+    "word": "ماشین لباسشویی",
+    "category": "خانه و وسایل",
     "difficulty": 3
   },
   {
-    "id": "draw_523",
-    "word": "هلو در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_524",
-    "word": "هلو در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_525",
-    "word": "هلو در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_526",
-    "word": "هلو روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_527",
-    "word": "هلو در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_81_full",
+    "word": "دره",
+    "category": "طبیعت",
     "difficulty": 3
-  },
-  {
-    "id": "draw_528",
-    "word": "هلو در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_529",
-    "word": "هلو در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_530",
-    "word": "هلو در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_531",
-    "word": "هلو در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_532",
-    "word": "هلو در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_82_full",
+    "word": "تله‌سیژ",
+    "category": "رفت‌وآمد",
     "difficulty": 3
-  },
-  {
-    "id": "draw_533",
-    "word": "گوجه سبز در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_534",
-    "word": "گوجه سبز در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_535",
-    "word": "گوجه سبز در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_536",
-    "word": "گوجه سبز روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_537",
-    "word": "گوجه سبز در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_83_full",
+    "word": "رصدخانه",
+    "category": "جاها",
     "difficulty": 3
-  },
-  {
-    "id": "draw_538",
-    "word": "گوجه سبز در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_539",
-    "word": "گوجه سبز در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_540",
-    "word": "گوجه سبز در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_541",
-    "word": "گوجه سبز در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_542",
-    "word": "گوجه سبز در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_84_full",
+    "word": "چوب بیلیارد",
+    "category": "ورزش",
     "difficulty": 3
-  },
-  {
-    "id": "draw_543",
-    "word": "تمشک در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_544",
-    "word": "تمشک در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_545",
-    "word": "تمشک در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_546",
-    "word": "تمشک روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_547",
-    "word": "تمشک در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_85_full",
+    "word": "سیاره زمین",
+    "category": "فضا و خیال",
     "difficulty": 3
   },
   {
-    "id": "draw_548",
-    "word": "تمشک در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_86_full",
+    "word": "هلو",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_549",
-    "word": "تمشک در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_87_full",
+    "word": "دامن",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_550",
-    "word": "تمشک در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_88_full",
+    "word": "بیابان",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_551",
-    "word": "تمشک در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_89_full",
+    "word": "وانت",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_552",
-    "word": "تمشک در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_90_full",
+    "word": "پاک‌کن",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_553",
-    "word": "طالبی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_91_full",
+    "word": "ربات",
+    "category": "فضا و خیال",
+    "difficulty": 1
   },
   {
-    "id": "draw_554",
-    "word": "طالبی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_92_full",
+    "word": "خرما",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_555",
-    "word": "طالبی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_93_full",
+    "word": "آبکش",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_556",
-    "word": "طالبی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_94_full",
+    "word": "درخت بید",
+    "category": "طبیعت",
     "difficulty": 2
-  },
-  {
-    "id": "draw_557",
-    "word": "طالبی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_558",
-    "word": "طالبی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_95_full",
+    "word": "لودر",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_559",
-    "word": "طالبی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_96_full",
+    "word": "تعمیرگاه",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_560",
-    "word": "طالبی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_97_full",
+    "word": "چوب اسکی",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_561",
-    "word": "طالبی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_98_full",
+    "word": "بنّا",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_562",
-    "word": "طالبی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_99_full",
+    "word": "اسب دریایی",
+    "category": "حیوانات",
     "difficulty": 3
-  },
-  {
-    "id": "draw_563",
-    "word": "خربزه در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_564",
-    "word": "خربزه در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_565",
-    "word": "خربزه در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_566",
-    "word": "خربزه روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_567",
-    "word": "خربزه در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_100_full",
+    "word": "چوب شور",
+    "category": "خوراکی‌ها",
     "difficulty": 3
-  },
-  {
-    "id": "draw_568",
-    "word": "خربزه در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_569",
-    "word": "خربزه در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_570",
-    "word": "خربزه در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_571",
-    "word": "خربزه در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_572",
-    "word": "خربزه در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_101_full",
+    "word": "لباس غواصی",
+    "category": "پوشاک",
     "difficulty": 3
-  },
-  {
-    "id": "draw_573",
-    "word": "خیار چنبر در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_574",
-    "word": "خیار چنبر در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_575",
-    "word": "خیار چنبر در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_576",
-    "word": "خیار چنبر روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_577",
-    "word": "خیار چنبر در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_102_full",
+    "word": "شفق قطبی",
+    "category": "طبیعت",
     "difficulty": 3
-  },
-  {
-    "id": "draw_578",
-    "word": "خیار چنبر در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_579",
-    "word": "خیار چنبر در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_580",
-    "word": "خیار چنبر در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_581",
-    "word": "خیار چنبر در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_582",
-    "word": "خیار چنبر در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_103_full",
+    "word": "تک‌چرخ",
+    "category": "رفت‌وآمد",
     "difficulty": 3
-  },
-  {
-    "id": "draw_583",
-    "word": "کلم بروکلی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_584",
-    "word": "کلم بروکلی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_585",
-    "word": "کلم بروکلی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_586",
-    "word": "کلم بروکلی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_587",
-    "word": "کلم بروکلی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_104_full",
+    "word": "مهره اسب",
+    "category": "هنر و سرگرمی",
     "difficulty": 3
-  },
-  {
-    "id": "draw_588",
-    "word": "کلم بروکلی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_589",
-    "word": "کلم بروکلی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_590",
-    "word": "کلم بروکلی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_591",
-    "word": "کلم بروکلی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_592",
-    "word": "کلم بروکلی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_105_full",
+    "word": "سیاره مریخ",
+    "category": "فضا و خیال",
     "difficulty": 3
   },
   {
-    "id": "draw_593",
-    "word": "بادمجان در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_106_full",
+    "word": "گیلاس",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_594",
-    "word": "بادمجان در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_107_full",
+    "word": "کاسه",
+    "category": "خانه و وسایل",
+    "difficulty": 1
   },
   {
-    "id": "draw_595",
-    "word": "بادمجان در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_108_full",
+    "word": "دشت",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_596",
-    "word": "بادمجان روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_109_full",
+    "word": "تراکتور",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_597",
-    "word": "بادمجان در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_110_full",
+    "word": "داروخانه",
+    "category": "جاها",
+    "difficulty": 1
   },
   {
-    "id": "draw_598",
-    "word": "بادمجان در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_111_full",
+    "word": "توپ فوتبال",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_599",
-    "word": "بادمجان در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_112_full",
+    "word": "خارپشت",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_600",
-    "word": "بادمجان در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_113_full",
+    "word": "خرمالو",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_601",
-    "word": "بادمجان در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_114_full",
+    "word": "رنده",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_602",
-    "word": "بادمجان در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_115_full",
+    "word": "جنگل برفی",
+    "category": "طبیعت",
+    "difficulty": 2
   },
   {
-    "id": "draw_603",
-    "word": "کدو حلوایی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_116_full",
+    "word": "کارخانه",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_604",
-    "word": "کدو حلوایی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_117_full",
+    "word": "دف",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_605",
-    "word": "کدو حلوایی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_118_full",
+    "word": "رفتگر",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_606",
-    "word": "کدو حلوایی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_119_full",
+    "word": "زره",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_607",
-    "word": "کدو حلوایی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_120_full",
+    "word": "کیک یزدی",
+    "category": "خوراکی‌ها",
     "difficulty": 3
   },
   {
-    "id": "draw_608",
-    "word": "کدو حلوایی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_121_full",
+    "word": "لباس عروس",
+    "category": "پوشاک",
+    "difficulty": 3
   },
   {
-    "id": "draw_609",
-    "word": "کدو حلوایی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_122_full",
+    "word": "ساحل",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_610",
-    "word": "کدو حلوایی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_123_full",
+    "word": "دوچرخه برقی",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_611",
-    "word": "کدو حلوایی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_124_full",
+    "word": "فلش مموری",
+    "category": "ابزار و فناوری",
+    "difficulty": 3
   },
   {
-    "id": "draw_612",
-    "word": "کدو حلوایی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_125_full",
+    "word": "پین بولینگ",
+    "category": "ورزش",
     "difficulty": 3
   },
   {
-    "id": "draw_613",
-    "word": "فلفل دلمه‌ای در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_126_full",
+    "word": "میمون",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_614",
-    "word": "فلفل دلمه‌ای در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_127_full",
+    "word": "آلبالو",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_615",
-    "word": "فلفل دلمه‌ای در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_128_full",
+    "word": "پالتو",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_616",
-    "word": "فلفل دلمه‌ای روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_129_full",
+    "word": "تپه",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_617",
-    "word": "فلفل دلمه‌ای در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_130_full",
+    "word": "آچار",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_618",
-    "word": "فلفل دلمه‌ای در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_131_full",
+    "word": "توپ بسکتبال",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_619",
-    "word": "فلفل دلمه‌ای در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_132_full",
+    "word": "آتش‌نشان",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_620",
-    "word": "فلفل دلمه‌ای در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_133_full",
+    "word": "راسو",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_621",
-    "word": "فلفل دلمه‌ای در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_134_full",
+    "word": "چاقو",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_622",
-    "word": "فلفل دلمه‌ای در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_135_full",
+    "word": "آبگیر",
+    "category": "طبیعت",
+    "difficulty": 2
   },
   {
-    "id": "draw_623",
-    "word": "قارچ چتری در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_136_full",
+    "word": "کارگاه نجاری",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_624",
-    "word": "قارچ چتری در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_137_full",
+    "word": "دایره زنگی",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_625",
-    "word": "قارچ چتری در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_138_full",
+    "word": "آرایشگر",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_626",
-    "word": "قارچ چتری روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_139_full",
+    "word": "کلاهخود",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_627",
-    "word": "قارچ چتری در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_140_full",
+    "word": "بخاری",
+    "category": "خانه و وسایل",
     "difficulty": 3
   },
   {
-    "id": "draw_628",
-    "word": "قارچ چتری در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_141_full",
+    "word": "صخره",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_629",
-    "word": "قارچ چتری در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_142_full",
+    "word": "کامیون کمپرسی",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_630",
-    "word": "قارچ چتری در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_143_full",
+    "word": "دیوار چین",
+    "category": "جاها",
+    "difficulty": 3
   },
   {
-    "id": "draw_631",
-    "word": "قارچ چتری در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_144_full",
+    "word": "دومینو",
+    "category": "هنر و سرگرمی",
+    "difficulty": 3
   },
   {
-    "id": "draw_632",
-    "word": "قارچ چتری در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_145_full",
+    "word": "کهکشان",
+    "category": "فضا و خیال",
     "difficulty": 3
   },
   {
-    "id": "draw_633",
-    "word": "بلال کبابی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_146_full",
+    "word": "لیمو",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_634",
-    "word": "بلال کبابی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_147_full",
+    "word": "بارانی",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_635",
-    "word": "بلال کبابی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_148_full",
+    "word": "سنگ",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_636",
-    "word": "بلال کبابی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_149_full",
+    "word": "ماشین پلیس",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_637",
-    "word": "بلال کبابی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_150_full",
+    "word": "انبردست",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_638",
-    "word": "بلال کبابی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_151_full",
+    "word": "توپ والیبال",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_639",
-    "word": "بلال کبابی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_152_full",
+    "word": "گوزن",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_640",
-    "word": "بلال کبابی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_153_full",
+    "word": "کیوی",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_641",
-    "word": "بلال کبابی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_154_full",
+    "word": "گوشی پزشکی",
+    "category": "پوشاک",
     "difficulty": 2
-  },
-  {
-    "id": "draw_642",
-    "word": "بلال کبابی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_643",
-    "word": "سیب زمینی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_155_full",
+    "word": "دریاچه",
+    "category": "طبیعت",
     "difficulty": 2
   },
   {
-    "id": "draw_644",
-    "word": "سیب زمینی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_156_full",
+    "word": "قطب‌نما",
+    "category": "ابزار و فناوری",
     "difficulty": 2
   },
   {
-    "id": "draw_645",
-    "word": "سیب زمینی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_157_full",
+    "word": "تیر و کمان",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_646",
-    "word": "سیب زمینی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_158_full",
+    "word": "دندان‌پزشک",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_647",
-    "word": "سیب زمینی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_159_full",
+    "word": "فک دریایی",
+    "category": "حیوانات",
     "difficulty": 3
   },
   {
-    "id": "draw_648",
-    "word": "سیب زمینی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_160_full",
+    "word": "شومینه",
+    "category": "خانه و وسایل",
+    "difficulty": 3
   },
   {
-    "id": "draw_649",
-    "word": "سیب زمینی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_161_full",
+    "word": "تپه شنی",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_650",
-    "word": "سیب زمینی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_162_full",
+    "word": "تاج محل",
+    "category": "جاها",
+    "difficulty": 3
   },
   {
-    "id": "draw_651",
-    "word": "سیب زمینی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_163_full",
+    "word": "پازل",
+    "category": "هنر و سرگرمی",
+    "difficulty": 3
   },
   {
-    "id": "draw_652",
-    "word": "سیب زمینی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_164_full",
+    "word": "ستاره‌شناس",
+    "category": "شغل‌ها",
     "difficulty": 3
   },
   {
-    "id": "draw_653",
-    "word": "پیاز سرخ در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_165_full",
+    "word": "ستاره دنباله دار",
+    "category": "فضا و خیال",
+    "difficulty": 3
   },
   {
-    "id": "draw_654",
-    "word": "پیاز سرخ در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_166_full",
+    "word": "استکان",
+    "category": "خانه و وسایل",
+    "difficulty": 1
   },
   {
-    "id": "draw_655",
-    "word": "پیاز سرخ در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_167_full",
+    "word": "شن",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_656",
-    "word": "پیاز سرخ روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_168_full",
+    "word": "ماشین آتش‌نشانی",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_657",
-    "word": "پیاز سرخ در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_169_full",
+    "word": "اره",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_658",
-    "word": "پیاز سرخ در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_170_full",
+    "word": "توپ تنیس",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_659",
-    "word": "پیاز سرخ در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_171_full",
+    "word": "بز کوهی",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_660",
-    "word": "پیاز سرخ در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_172_full",
+    "word": "تربچه",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_661",
-    "word": "پیاز سرخ در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_173_full",
+    "word": "عینک آفتابی",
+    "category": "پوشاک",
     "difficulty": 2
-  },
-  {
-    "id": "draw_662",
-    "word": "پیاز سرخ در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_663",
-    "word": "سیر حبه‌ای در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_174_full",
+    "word": "ایستگاه اتوبوس",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_664",
-    "word": "سیر حبه‌ای در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_175_full",
+    "word": "ساکسیفون",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_665",
-    "word": "سیر حبه‌ای در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_176_full",
+    "word": "دامپزشک",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_666",
-    "word": "سیر حبه‌ای روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_177_full",
+    "word": "پرچم دزد دریایی",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_667",
-    "word": "سیر حبه‌ای در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_178_full",
+    "word": "پنکه",
+    "category": "خانه و وسایل",
     "difficulty": 3
-  },
-  {
-    "id": "draw_668",
-    "word": "سیر حبه‌ای در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_669",
-    "word": "سیر حبه‌ای در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_670",
-    "word": "سیر حبه‌ای در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_179_full",
+    "word": "یخچال طبیعی",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_671",
-    "word": "سیر حبه‌ای در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_180_full",
+    "word": "کالسکه کودک",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_672",
-    "word": "سیر حبه‌ای در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_181_full",
+    "word": "آنتن",
+    "category": "ابزار و فناوری",
     "difficulty": 3
   },
   {
-    "id": "draw_673",
-    "word": "تربچه در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_182_full",
+    "word": "پارالل",
+    "category": "ورزش",
+    "difficulty": 3
   },
   {
-    "id": "draw_674",
-    "word": "تربچه در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_183_full",
+    "word": "اردک",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_675",
-    "word": "تربچه در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_184_full",
+    "word": "آناناس",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_676",
-    "word": "تربچه روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_185_full",
+    "word": "دستکش",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_677",
-    "word": "تربچه در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_186_full",
+    "word": "رستوران",
+    "category": "جاها",
+    "difficulty": 1
   },
   {
-    "id": "draw_678",
-    "word": "تربچه در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_187_full",
+    "word": "پالت نقاشی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_679",
-    "word": "تربچه در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_188_full",
+    "word": "باغبان",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_680",
-    "word": "تربچه در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_189_full",
+    "word": "مومیایی",
+    "category": "فضا و خیال",
+    "difficulty": 1
   },
   {
-    "id": "draw_681",
-    "word": "تربچه در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_190_full",
+    "word": "ظرف نمک",
+    "category": "خانه و وسایل",
     "difficulty": 2
-  },
-  {
-    "id": "draw_682",
-    "word": "تربچه در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_683",
-    "word": "نان بربری در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_191_full",
+    "word": "رعد و برق",
+    "category": "طبیعت",
     "difficulty": 2
   },
   {
-    "id": "draw_684",
-    "word": "نان بربری در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_192_full",
+    "word": "خودروی برفی",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_685",
-    "word": "نان بربری در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_193_full",
+    "word": "ترازو",
+    "category": "ابزار و فناوری",
     "difficulty": 2
   },
   {
-    "id": "draw_686",
-    "word": "نان بربری روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_194_full",
+    "word": "نیزه",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_687",
-    "word": "نان بربری در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_195_full",
+    "word": "گورکن",
+    "category": "حیوانات",
     "difficulty": 3
   },
   {
-    "id": "draw_688",
-    "word": "نان بربری در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_196_full",
+    "word": "ظرف سوپ",
+    "category": "خوراکی‌ها",
+    "difficulty": 3
   },
   {
-    "id": "draw_689",
-    "word": "نان بربری در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_197_full",
+    "word": "لباس کار",
+    "category": "پوشاک",
+    "difficulty": 3
   },
   {
-    "id": "draw_690",
-    "word": "نان بربری در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_198_full",
+    "word": "گنبد",
+    "category": "جاها",
+    "difficulty": 3
   },
   {
-    "id": "draw_691",
-    "word": "نان بربری در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_199_full",
+    "word": "تیله",
+    "category": "هنر و سرگرمی",
+    "difficulty": 3
   },
   {
-    "id": "draw_692",
-    "word": "نان بربری در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_200_full",
+    "word": "فیلمبردار",
+    "category": "شغل‌ها",
     "difficulty": 3
   },
   {
-    "id": "draw_693",
-    "word": "نان سنگک در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_201_full",
+    "word": "دیش ماهواره",
+    "category": "فضا و خیال",
+    "difficulty": 3
   },
   {
-    "id": "draw_694",
-    "word": "نان سنگک در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_202_full",
+    "word": "بطری",
+    "category": "خانه و وسایل",
+    "difficulty": 1
   },
   {
-    "id": "draw_695",
-    "word": "نان سنگک در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_203_full",
+    "word": "چمن",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_696",
-    "word": "نان سنگک روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_204_full",
+    "word": "مترو",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_697",
-    "word": "نان سنگک در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_205_full",
+    "word": "دریل",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_698",
-    "word": "نان سنگک در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_206_full",
+    "word": "چوب گلف",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_699",
-    "word": "نان سنگک در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_207_full",
+    "word": "بوقلمون",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_700",
-    "word": "نان سنگک در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_208_full",
+    "word": "بادمجان",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_701",
-    "word": "نان سنگک در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_209_full",
+    "word": "ساعت مچی",
+    "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "draw_702",
-    "word": "نان سنگک در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
-  },
-  {
-    "id": "draw_703",
-    "word": "نان لواش در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_210_full",
+    "word": "زمین بسکتبال",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_704",
-    "word": "نان لواش در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_211_full",
+    "word": "ارگ",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_705",
-    "word": "نان لواش در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_212_full",
+    "word": "فروشنده",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_706",
-    "word": "نان لواش روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_213_full",
+    "word": "صندوق گنج",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_707",
-    "word": "نان لواش در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_214_full",
+    "word": "اتو",
+    "category": "خانه و وسایل",
     "difficulty": 3
-  },
-  {
-    "id": "draw_708",
-    "word": "نان لواش در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
-  },
-  {
-    "id": "draw_709",
-    "word": "نان لواش در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_710",
-    "word": "نان لواش در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_215_full",
+    "word": "چشمه آب گرم",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_711",
-    "word": "نان لواش در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_216_full",
+    "word": "کشتی باربری",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_712",
-    "word": "نان لواش در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_217_full",
+    "word": "دوربین فیلمبرداری",
+    "category": "ابزار و فناوری",
     "difficulty": 3
   },
   {
-    "id": "draw_713",
-    "word": "همبرگر دوبل در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_218_full",
+    "word": "راکت بدمینتون",
+    "category": "ورزش",
+    "difficulty": 3
   },
   {
-    "id": "draw_714",
-    "word": "همبرگر دوبل در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_219_full",
+    "word": "خروس",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_715",
-    "word": "همبرگر دوبل در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_220_full",
+    "word": "خیار",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_716",
-    "word": "همبرگر دوبل روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_221_full",
+    "word": "روسری",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_717",
-    "word": "همبرگر دوبل در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_222_full",
+    "word": "سینما",
+    "category": "جاها",
+    "difficulty": 1
   },
   {
-    "id": "draw_718",
-    "word": "همبرگر دوبل در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_223_full",
+    "word": "مداد رنگی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_719",
-    "word": "همبرگر دوبل در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_224_full",
+    "word": "خلبان",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_720",
-    "word": "همبرگر دوبل در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_225_full",
+    "word": "جادوگر با کلاه",
+    "category": "فضا و خیال",
+    "difficulty": 1
   },
   {
-    "id": "draw_721",
-    "word": "همبرگر دوبل در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_226_full",
+    "word": "قفسه کتاب",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_722",
-    "word": "همبرگر دوبل در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
-  },
-  {
-    "id": "draw_723",
-    "word": "سوسیس کبابی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_227_full",
+    "word": "گردباد",
+    "category": "طبیعت",
     "difficulty": 2
   },
   {
-    "id": "draw_724",
-    "word": "سوسیس کبابی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_228_full",
+    "word": "لوکوموتیو",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_725",
-    "word": "سوسیس کبابی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_229_full",
+    "word": "ماشین حساب",
+    "category": "ابزار و فناوری",
     "difficulty": 2
   },
   {
-    "id": "draw_726",
-    "word": "سوسیس کبابی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_230_full",
+    "word": "کفش کوهنوردی",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_727",
-    "word": "سوسیس کبابی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_231_full",
+    "word": "پلیکان",
+    "category": "حیوانات",
     "difficulty": 3
   },
   {
-    "id": "draw_728",
-    "word": "سوسیس کبابی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_232_full",
+    "word": "ظرف سالاد",
+    "category": "خوراکی‌ها",
+    "difficulty": 3
   },
   {
-    "id": "draw_729",
-    "word": "سوسیس کبابی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_233_full",
+    "word": "ماسک پزشکی",
+    "category": "پوشاک",
+    "difficulty": 3
   },
   {
-    "id": "draw_730",
-    "word": "سوسیس کبابی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_234_full",
+    "word": "پل معلق",
+    "category": "جاها",
+    "difficulty": 3
   },
   {
-    "id": "draw_731",
-    "word": "سوسیس کبابی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_235_full",
+    "word": "ماشین اسباب بازی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 3
   },
   {
-    "id": "draw_732",
-    "word": "سوسیس کبابی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_236_full",
+    "word": "برقکار",
+    "category": "شغل‌ها",
     "difficulty": 3
   },
   {
-    "id": "draw_733",
-    "word": "سیب زمینی سرخ‌کرده در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_237_full",
+    "word": "ردپای فضانورد",
+    "category": "فضا و خیال",
+    "difficulty": 3
   },
   {
-    "id": "draw_734",
-    "word": "سیب زمینی سرخ‌کرده در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_238_full",
+    "word": "آینه",
+    "category": "خانه و وسایل",
+    "difficulty": 1
   },
   {
-    "id": "draw_735",
-    "word": "سیب زمینی سرخ‌کرده در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_239_full",
+    "word": "ریشه",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_736",
-    "word": "سیب زمینی سرخ‌کرده روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_240_full",
+    "word": "هلیکوپتر",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_737",
-    "word": "سیب زمینی سرخ‌کرده در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_241_full",
+    "word": "کلنگ",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_738",
-    "word": "سیب زمینی سرخ‌کرده در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_242_full",
+    "word": "تور بدمینتون",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_739",
-    "word": "سیب زمینی سرخ‌کرده در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_243_full",
+    "word": "کبوتر",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_740",
-    "word": "سیب زمینی سرخ‌کرده در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_244_full",
+    "word": "کلم بروکلی",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_741",
-    "word": "سیب زمینی سرخ‌کرده در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_245_full",
+    "word": "دستبند",
+    "category": "پوشاک",
     "difficulty": 2
-  },
-  {
-    "id": "draw_742",
-    "word": "سیب زمینی سرخ‌کرده در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_743",
-    "word": "فلافل با ترشی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_246_full",
+    "word": "شهرداری",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "draw_744",
-    "word": "فلافل با ترشی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_247_full",
+    "word": "چنگ",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_745",
-    "word": "فلافل با ترشی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_248_full",
+    "word": "کتابدار",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_746",
-    "word": "فلافل با ترشی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_249_full",
+    "word": "کلید طلایی",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_747",
-    "word": "فلافل با ترشی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_250_full",
+    "word": "ترازوی آشپزخانه",
+    "category": "خانه و وسایل",
     "difficulty": 3
-  },
-  {
-    "id": "draw_748",
-    "word": "فلافل با ترشی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
   },
   {
-    "id": "draw_749",
-    "word": "فلافل با ترشی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_251_full",
+    "word": "جزیره آتشفشانی",
+    "category": "طبیعت",
+    "difficulty": 3
   },
   {
-    "id": "draw_750",
-    "word": "فلافل با ترشی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_252_full",
+    "word": "هواپیمای کاغذی",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_751",
-    "word": "فلافل با ترشی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_253_full",
+    "word": "دوربین مداربسته",
+    "category": "ابزار و فناوری",
+    "difficulty": 3
   },
   {
-    "id": "draw_752",
-    "word": "فلافل با ترشی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_254_full",
+    "word": "تخته دارت",
+    "category": "ورزش",
     "difficulty": 3
   },
   {
-    "id": "draw_753",
-    "word": "مرغ بریان در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_255_full",
+    "word": "مار",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_754",
-    "word": "مرغ بریان در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_256_full",
+    "word": "سیب زمینی",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_755",
-    "word": "مرغ بریان در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_257_full",
+    "word": "کراوات",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_756",
-    "word": "مرغ بریان روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_258_full",
+    "word": "کتابخانه",
+    "category": "جاها",
+    "difficulty": 1
   },
   {
-    "id": "draw_757",
-    "word": "مرغ بریان در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_259_full",
+    "word": "گچ",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_758",
-    "word": "مرغ بریان در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_260_full",
+    "word": "عکاس",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_759",
-    "word": "مرغ بریان در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_261_full",
+    "word": "چوب جادو",
+    "category": "فضا و خیال",
+    "difficulty": 1
   },
   {
-    "id": "draw_760",
-    "word": "مرغ بریان در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_262_full",
+    "word": "پرده",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_761",
-    "word": "مرغ بریان در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_263_full",
+    "word": "مه",
+    "category": "طبیعت",
     "difficulty": 2
-  },
-  {
-    "id": "draw_762",
-    "word": "مرغ بریان در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_763",
-    "word": "ماهی سوخاری در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_264_full",
+    "word": "قطار باری",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "draw_764",
-    "word": "ماهی سوخاری در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_265_full",
+    "word": "لپ‌تاپ",
+    "category": "ابزار و فناوری",
     "difficulty": 2
   },
   {
-    "id": "draw_765",
-    "word": "ماهی سوخاری در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_266_full",
+    "word": "چوب کوهنوردی",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "draw_766",
-    "word": "ماهی سوخاری روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_267_full",
+    "word": "خفاش میوه‌خوار",
+    "category": "حیوانات",
+    "difficulty": 3
   },
   {
-    "id": "draw_767",
-    "word": "ماهی سوخاری در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_268_full",
+    "word": "سیخ کباب",
+    "category": "خوراکی‌ها",
     "difficulty": 3
   },
   {
-    "id": "draw_768",
-    "word": "ماهی سوخاری در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_269_full",
+    "word": "دستکش بوکس",
+    "category": "پوشاک",
+    "difficulty": 3
   },
   {
-    "id": "draw_769",
-    "word": "ماهی سوخاری در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_270_full",
+    "word": "سد",
+    "category": "جاها",
+    "difficulty": 3
   },
   {
-    "id": "draw_770",
-    "word": "ماهی سوخاری در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_271_full",
+    "word": "خرس عروسکی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 3
   },
   {
-    "id": "draw_771",
-    "word": "ماهی سوخاری در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_272_full",
+    "word": "جنگلبان",
+    "category": "شغل‌ها",
+    "difficulty": 3
   },
   {
-    "id": "draw_772",
-    "word": "ماهی سوخاری در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_273_full",
+    "word": "تلسکوپ فضایی",
+    "category": "فضا و خیال",
     "difficulty": 3
   },
   {
-    "id": "draw_773",
-    "word": "کله پاچه در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_274_full",
+    "word": "پتو",
+    "category": "خانه و وسایل",
+    "difficulty": 1
   },
   {
-    "id": "draw_774",
-    "word": "کله پاچه در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_275_full",
+    "word": "غنچه",
+    "category": "طبیعت",
+    "difficulty": 1
   },
   {
-    "id": "draw_775",
-    "word": "کله پاچه در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_276_full",
+    "word": "قایق بادبانی",
+    "category": "رفت‌وآمد",
+    "difficulty": 1
   },
   {
-    "id": "draw_776",
-    "word": "کله پاچه روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_277_full",
+    "word": "قیف",
+    "category": "ابزار و فناوری",
+    "difficulty": 1
   },
   {
-    "id": "draw_777",
-    "word": "کله پاچه در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_278_full",
+    "word": "دستکش بیسبال",
+    "category": "ورزش",
+    "difficulty": 1
   },
   {
-    "id": "draw_778",
-    "word": "کله پاچه در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_279_full",
+    "word": "فلامینگو",
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "draw_779",
-    "word": "کله پاچه در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_280_full",
+    "word": "گردو",
+    "category": "خوراکی‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_780",
-    "word": "کله پاچه در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_281_full",
+    "word": "گوشواره",
+    "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "draw_781",
-    "word": "کله پاچه در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_282_full",
+    "word": "مدرسه روستایی",
+    "category": "جاها",
     "difficulty": 2
-  },
-  {
-    "id": "draw_782",
-    "word": "کله پاچه در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
   },
   {
-    "id": "draw_783",
-    "word": "قورمه سبزی در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_283_full",
+    "word": "زنگوله",
+    "category": "هنر و سرگرمی",
     "difficulty": 2
   },
   {
-    "id": "draw_784",
-    "word": "قورمه سبزی در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_284_full",
+    "word": "قصاب",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "draw_785",
-    "word": "قورمه سبزی در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_285_full",
+    "word": "فرش پرنده",
+    "category": "فضا و خیال",
     "difficulty": 2
   },
   {
-    "id": "draw_786",
-    "word": "قورمه سبزی روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_286_full",
+    "word": "گوشت‌کوب",
+    "category": "خانه و وسایل",
+    "difficulty": 3
   },
   {
-    "id": "draw_787",
-    "word": "قورمه سبزی در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_287_full",
+    "word": "جنگل بارانی",
+    "category": "طبیعت",
     "difficulty": 3
   },
   {
-    "id": "draw_788",
-    "word": "قورمه سبزی در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_288_full",
+    "word": "سفینه فضایی",
+    "category": "رفت‌وآمد",
+    "difficulty": 3
   },
   {
-    "id": "draw_789",
-    "word": "قورمه سبزی در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_289_full",
+    "word": "گوشی بی‌سیم",
+    "category": "ابزار و فناوری",
+    "difficulty": 3
   },
   {
-    "id": "draw_790",
-    "word": "قورمه سبزی در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_290_full",
+    "word": "دوچرخه مسابقه",
+    "category": "ورزش",
+    "difficulty": 3
   },
   {
-    "id": "draw_791",
-    "word": "قورمه سبزی در کارخانه شکلات‌سازی",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_291_full",
+    "word": "حلزون",
+    "category": "حیوانات",
+    "difficulty": 1
   },
   {
-    "id": "draw_792",
-    "word": "قورمه سبزی در شهر آینده با ماشین‌های پرنده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_292_full",
+    "word": "سیر",
+    "category": "خوراکی‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_793",
-    "word": "قیمه بادمجان در جزیره دورافتاده",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_293_full",
+    "word": "چکمه",
+    "category": "پوشاک",
+    "difficulty": 1
   },
   {
-    "id": "draw_794",
-    "word": "قیمه بادمجان در اعماق دریا با مرجان‌ها",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_294_full",
+    "word": "فرودگاه",
+    "category": "جاها",
+    "difficulty": 1
   },
   {
-    "id": "draw_795",
-    "word": "قیمه بادمجان در شب مهتابی پرستاره",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_295_full",
+    "word": "دفتر موسیقی",
+    "category": "هنر و سرگرمی",
+    "difficulty": 1
   },
   {
-    "id": "draw_796",
-    "word": "قیمه بادمجان روی قله برفی کوهستان",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 2
+    "id": "draw_curated_296_full",
+    "word": "خواننده",
+    "category": "شغل‌ها",
+    "difficulty": 1
   },
   {
-    "id": "draw_797",
-    "word": "قیمه بادمجان در ایستگاه فضایی معلق",
-    "category": "صحنه‌ها و موقعیت‌ها",
-    "difficulty": 3
+    "id": "draw_curated_297_full",
+    "word": "تاج پادشاه",
+    "category": "فضا و خیال",
+    "difficulty": 1
   },
   {
-    "id": "draw_798",
-    "word": "قیمه بادمجان در دل جنگل بارانی آمازون",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_298_full",
+    "word": "چوب لباسی",
+    "category": "خانه و وسایل",
     "difficulty": 2
   },
   {
-    "id": "draw_799",
-    "word": "قیمه بادمجان در موزه باستان‌شناسی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_299_full",
+    "word": "سنجاق سینه",
+    "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "draw_800",
-    "word": "قیمه بادمجان در بالن هوای گرم طلایی",
-    "category": "صحنه‌ها و موقعیت‌ها",
+    "id": "draw_curated_300_full",
+    "word": "قایق پارویی",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   }
 ]

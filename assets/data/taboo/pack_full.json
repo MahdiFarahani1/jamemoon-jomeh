@@ -1,5202 +1,2602 @@
 [
   {
-    "id": "taboo_401",
-    "word": "پدیده جوی نادر شماره 276",
+    "id": "taboo_curated_1_full",
+    "word": "انار",
     "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_402",
-    "word": "حیوان درنده شماره 277",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_403",
-    "word": "پرنده مهاجر شماره 278",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_404",
-    "word": "گل زینتی شماره 279",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_405",
-    "word": "درخت کهنسال شماره 280",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_406",
-    "word": "ابزار صنعتی شماره 281",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_407",
-    "word": "ماشین‌آلات راهسازی شماره 282",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_408",
-    "word": "بنای یادبود تاریخی شماره 283",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_409",
-    "word": "ساز موسیقی زهی شماره 284",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_410",
-    "word": "پوشاک محلی اصیل شماره 285",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_411",
-    "word": "غذای سنتی محلی شماره 286",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "یلدا",
+      "دانه",
+      "قرمز",
+      "پوست",
+      "میوه"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_412",
-    "word": "شخصیت داستانی کهن شماره 287",
+    "id": "taboo_curated_2_full",
+    "word": "خرما",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_413",
-    "word": "پدیده جوی نادر شماره 288",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_414",
-    "word": "حیوان درنده شماره 289",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_415",
-    "word": "پرنده مهاجر شماره 290",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_416",
-    "word": "گل زینتی شماره 291",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_417",
-    "word": "درخت کهنسال شماره 292",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_418",
-    "word": "ابزار صنعتی شماره 293",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_419",
-    "word": "ماشین‌آلات راهسازی شماره 294",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_420",
-    "word": "بنای یادبود تاریخی شماره 295",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_421",
-    "word": "ساز موسیقی زهی شماره 296",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_422",
-    "word": "پوشاک محلی اصیل شماره 297",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_423",
-    "word": "غذای سنتی محلی شماره 298",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "نخل",
+      "شیرین",
+      "جنوب",
+      "هسته",
+      "ماه رمضان"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_424",
-    "word": "شخصیت داستانی کهن شماره 299",
+    "id": "taboo_curated_3_full",
+    "word": "زعفران",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_425",
-    "word": "پدیده جوی نادر شماره 300",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_426",
-    "word": "حیوان درنده شماره 301",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_427",
-    "word": "پرنده مهاجر شماره 302",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_428",
-    "word": "گل زینتی شماره 303",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_429",
-    "word": "درخت کهنسال شماره 304",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_430",
-    "word": "ابزار صنعتی شماره 305",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_431",
-    "word": "ماشین‌آلات راهسازی شماره 306",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_432",
-    "word": "بنای یادبود تاریخی شماره 307",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_433",
-    "word": "ساز موسیقی زهی شماره 308",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_434",
-    "word": "پوشاک محلی اصیل شماره 309",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_435",
-    "word": "غذای سنتی محلی شماره 310",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "ادویه",
+      "رنگ",
+      "طلایی",
+      "پلو",
+      "خراسان"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_436",
-    "word": "شخصیت داستانی کهن شماره 311",
+    "id": "taboo_curated_4_full",
+    "word": "ماست",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_437",
-    "word": "پدیده جوی نادر شماره 312",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_438",
-    "word": "حیوان درنده شماره 313",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_439",
-    "word": "پرنده مهاجر شماره 314",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_440",
-    "word": "گل زینتی شماره 315",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_441",
-    "word": "درخت کهنسال شماره 316",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_442",
-    "word": "ابزار صنعتی شماره 317",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_443",
-    "word": "ماشین‌آلات راهسازی شماره 318",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_444",
-    "word": "بنای یادبود تاریخی شماره 319",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_445",
-    "word": "ساز موسیقی زهی شماره 320",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_446",
-    "word": "پوشاک محلی اصیل شماره 321",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_447",
-    "word": "غذای سنتی محلی شماره 322",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "شیر",
+      "سفید",
+      "ترش",
+      "خیار",
+      "لبنیات"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_448",
-    "word": "شخصیت داستانی کهن شماره 323",
+    "id": "taboo_curated_5_full",
+    "word": "ساندویچ",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_449",
-    "word": "پدیده جوی نادر شماره 324",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_450",
-    "word": "حیوان درنده شماره 325",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_451",
-    "word": "پرنده مهاجر شماره 326",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_452",
-    "word": "گل زینتی شماره 327",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_453",
-    "word": "درخت کهنسال شماره 328",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_454",
-    "word": "ابزار صنعتی شماره 329",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_455",
-    "word": "ماشین‌آلات راهسازی شماره 330",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_456",
-    "word": "بنای یادبود تاریخی شماره 331",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_457",
-    "word": "ساز موسیقی زهی شماره 332",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_458",
-    "word": "پوشاک محلی اصیل شماره 333",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_459",
-    "word": "غذای سنتی محلی شماره 334",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "نان",
+      "مواد",
+      "دست",
+      "غذای سریع",
+      "لقمه"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_460",
-    "word": "شخصیت داستانی کهن شماره 335",
+    "id": "taboo_curated_6_full",
+    "word": "مداد",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
+      "نوک",
+      "پاک‌کن",
+      "نوشتن",
+      "تراش",
+      "چوب"
     ],
-    "category": "ادبیات",
-    "difficulty": 3
+    "category": "وسایل",
+    "difficulty": 2
   },
   {
-    "id": "taboo_461",
-    "word": "پدیده جوی نادر شماره 336",
+    "id": "taboo_curated_7_full",
+    "word": "قیچی",
     "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
+      "بریدن",
+      "تیغه",
+      "کاغذ",
+      "دسته",
+      "آرایشگر"
     ],
-    "category": "نجوم",
-    "difficulty": 3
+    "category": "وسایل",
+    "difficulty": 2
   },
   {
-    "id": "taboo_462",
-    "word": "حیوان درنده شماره 337",
+    "id": "taboo_curated_8_full",
+    "word": "چمدان",
     "forbiddenWords": [
-      "شکار",
+      "سفر",
+      "لباس",
+      "چرخ",
+      "فرودگاه",
+      "بستن"
+    ],
+    "category": "وسایل",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_9_full",
+    "word": "دوربین",
+    "forbiddenWords": [
+      "عکس",
+      "لنز",
+      "تصویر",
+      "فلاش",
+      "ثبت"
+    ],
+    "category": "وسایل",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_10_full",
+    "word": "جاروبرقی",
+    "forbiddenWords": [
+      "تمیز",
+      "گردوغبار",
+      "مکش",
+      "خانه",
+      "برق"
+    ],
+    "category": "وسایل",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_11_full",
+    "word": "بازار",
+    "forbiddenWords": [
+      "خرید",
+      "فروشنده",
+      "مغازه",
+      "قیمت",
+      "شلوغ"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_12_full",
+    "word": "ایستگاه",
+    "forbiddenWords": [
+      "قطار",
+      "اتوبوس",
+      "انتظار",
+      "سکو",
+      "مسافر"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_13_full",
+    "word": "کوهستان",
+    "forbiddenWords": [
+      "قله",
+      "برف",
+      "ارتفاع",
+      "صعود",
+      "صخره"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_14_full",
+    "word": "استخر",
+    "forbiddenWords": [
+      "آب",
+      "شنا",
+      "غریق‌نجات",
+      "سرپوشیده",
+      "عمیق"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_15_full",
+    "word": "باغ‌وحش",
+    "forbiddenWords": [
+      "حیوان",
+      "قفس",
+      "تماشا",
+      "بازدید",
+      "پارک"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_16_full",
+    "word": "شتر",
+    "forbiddenWords": [
+      "کوهان",
+      "بیابان",
+      "کاروان",
+      "شن",
+      "سوار"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_17_full",
+    "word": "پنگوئن",
+    "forbiddenWords": [
+      "قطب",
+      "سیاه‌وسفید",
+      "یخ",
+      "پرنده",
+      "سرما"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_18_full",
+    "word": "زنبور",
+    "forbiddenWords": [
+      "عسل",
+      "نیش",
+      "کندو",
+      "گل",
+      "بال"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_19_full",
+    "word": "گرگ",
+    "forbiddenWords": [
+      "زوزه",
+      "گله",
       "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
+      "درنده",
+      "خاکستری"
     ],
     "category": "حیوانات",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
-    "id": "taboo_463",
-    "word": "پرنده مهاجر شماره 338",
+    "id": "taboo_curated_20_full",
+    "word": "دلفین",
     "forbiddenWords": [
-      "پرواز",
+      "دریا",
+      "شنا",
+      "باهوش",
+      "پرش",
+      "پستاندار"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_21_full",
+    "word": "آتشفشان",
+    "forbiddenWords": [
+      "گدازه",
+      "کوه",
+      "دود",
+      "فوران",
+      "زمین"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_22_full",
+    "word": "آبشار",
+    "forbiddenWords": [
+      "رود",
+      "ارتفاع",
+      "ریزش",
+      "صخره",
+      "آب"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_23_full",
+    "word": "کویر",
+    "forbiddenWords": [
+      "شن",
+      "گرما",
+      "بیابان",
+      "شتر",
+      "خشک"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_24_full",
+    "word": "جنگل",
+    "forbiddenWords": [
+      "درخت",
+      "سبز",
+      "حیوان",
+      "انبوه",
+      "طبیعت"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_25_full",
+    "word": "رنگین‌کمان",
+    "forbiddenWords": [
+      "رنگ",
+      "باران",
       "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
+      "قوس",
+      "خورشید"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_26_full",
+    "word": "رعدوبرق",
+    "forbiddenWords": [
+      "آسمان",
+      "ابر",
+      "صدا",
+      "نور",
+      "باران"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_27_full",
+    "word": "آتش‌نشان",
+    "forbiddenWords": [
+      "حریق",
+      "آب",
+      "ماشین",
+      "نجات",
+      "کلاه"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_28_full",
+    "word": "خلبان",
+    "forbiddenWords": [
+      "هواپیما",
+      "پرواز",
+      "کابین",
+      "مسافر",
+      "آسمان"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_29_full",
+    "word": "نجار",
+    "forbiddenWords": [
+      "چوب",
+      "اره",
+      "میز",
+      "چکش",
+      "کارگاه"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_30_full",
+    "word": "آشپز",
+    "forbiddenWords": [
+      "غذا",
+      "آشپزخانه",
+      "قابلمه",
+      "رستوران",
+      "پخت"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_31_full",
+    "word": "نقاش",
+    "forbiddenWords": [
+      "رنگ",
+      "قلم‌مو",
+      "بوم",
+      "تابلو",
+      "هنر"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_32_full",
+    "word": "باغبان",
+    "forbiddenWords": [
+      "گل",
+      "بیل",
+      "آبیاری",
+      "درخت",
+      "باغچه"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_33_full",
+    "word": "شطرنج",
+    "forbiddenWords": [
+      "شاه",
+      "مهره",
+      "صفحه",
+      "حرکت",
+      "مات"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_34_full",
+    "word": "فوتبال",
+    "forbiddenWords": [
+      "توپ",
+      "گل",
+      "دروازه",
+      "بازیکن",
+      "زمین"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_35_full",
+    "word": "پانتومیم",
+    "forbiddenWords": [
+      "اشاره",
+      "حرف",
+      "حدس",
+      "اجرا",
+      "بازی"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_36_full",
+    "word": "نقاشی",
+    "forbiddenWords": [
+      "رنگ",
+      "قلم‌مو",
+      "کاغذ",
+      "کشیدن",
+      "طرح"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_37_full",
+    "word": "بادبادک",
+    "forbiddenWords": [
+      "نخ",
+      "باد",
+      "آسمان",
+      "پرواز",
+      "کاغذ"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_38_full",
+    "word": "دوچرخه‌سواری",
+    "forbiddenWords": [
+      "رکاب",
+      "چرخ",
+      "فرمان",
+      "کلاه",
+      "جاده"
+    ],
+    "category": "سرگرمی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_39_full",
+    "word": "نوروز",
+    "forbiddenWords": [
+      "عید",
+      "بهار",
+      "هفت‌سین",
+      "تحویل",
+      "دیدوبازدید"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_40_full",
+    "word": "یلدا",
+    "forbiddenWords": [
+      "شب",
+      "هندوانه",
+      "انار",
+      "بلند",
+      "زمستان"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_41_full",
+    "word": "سفره",
+    "forbiddenWords": [
+      "غذا",
+      "پهن",
+      "ناهار",
+      "پارچه",
+      "دورهمی"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_42_full",
+    "word": "عروسی",
+    "forbiddenWords": [
+      "عروس",
+      "داماد",
+      "جشن",
+      "حلقه",
+      "مهمان"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_43_full",
+    "word": "تولد",
+    "forbiddenWords": [
+      "کیک",
+      "شمع",
+      "هدیه",
+      "سن",
+      "جشن"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_44_full",
+    "word": "کنسرت",
+    "forbiddenWords": [
+      "موسیقی",
+      "خواننده",
+      "سالن",
+      "تماشاگر",
+      "اجرا"
+    ],
+    "category": "فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_45_full",
+    "word": "پنیر",
+    "forbiddenWords": [
+      "شیر",
+      "سفید",
+      "صبحانه",
+      "لبنیات",
+      "نان"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_46_full",
+    "word": "خرس",
+    "forbiddenWords": [
+      "جنگل",
+      "عسل",
+      "بزرگ",
+      "پنجه",
+      "زمستان"
     ],
     "category": "حیوانات",
     "difficulty": 1
   },
   {
-    "id": "taboo_464",
-    "word": "گل زینتی شماره 339",
+    "id": "taboo_curated_47_full",
+    "word": "میز",
     "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
+      "صندلی",
+      "پایه",
+      "روی",
+      "غذا",
+      "چوب"
     ],
-    "category": "طبیعت",
+    "category": "خانه",
     "difficulty": 1
   },
   {
-    "id": "taboo_465",
-    "word": "درخت کهنسال شماره 340",
+    "id": "taboo_curated_48_full",
+    "word": "پیراهن",
     "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_466",
-    "word": "ابزار صنعتی شماره 341",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_467",
-    "word": "ماشین‌آلات راهسازی شماره 342",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_468",
-    "word": "بنای یادبود تاریخی شماره 343",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_469",
-    "word": "ساز موسیقی زهی شماره 344",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_470",
-    "word": "پوشاک محلی اصیل شماره 345",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "لباس",
+      "دکمه",
+      "تنه",
+      "آستین",
+      "پوشیدن"
     ],
     "category": "پوشاک",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_49_full",
+    "word": "رستوران",
+    "forbiddenWords": [
+      "غذا",
+      "سفارش",
+      "میز",
+      "منو",
+      "پیشخدمت"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_50_full",
+    "word": "رایانه",
+    "forbiddenWords": [
+      "صفحه",
+      "کیبورد",
+      "ماوس",
+      "برنامه",
+      "دستگاه"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_51_full",
+    "word": "والیبال",
+    "forbiddenWords": [
+      "تور",
+      "توپ",
+      "تیم",
+      "دست",
+      "زمین"
+    ],
+    "category": "ورزش",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_52_full",
+    "word": "هدیه",
+    "forbiddenWords": [
+      "کادو",
+      "دادن",
+      "تولد",
+      "بسته",
+      "دوست"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_53_full",
+    "word": "خنده",
+    "forbiddenWords": [
+      "شاد",
+      "صورت",
+      "صدا",
+      "گریه",
+      "لبخند"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_54_full",
+    "word": "تخم‌مرغ",
+    "forbiddenWords": [
+      "مرغ",
+      "زرده",
+      "سفیده",
+      "پوسته",
+      "نیمرو"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_55_full",
+    "word": "انگور",
+    "forbiddenWords": [
+      "خوشه",
+      "کشمش",
+      "میوه",
+      "دانه",
+      "تاک"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_56_full",
+    "word": "میمون",
+    "forbiddenWords": [
+      "موز",
+      "درخت",
+      "جنگل",
+      "دم",
+      "بازیگوش"
+    ],
+    "category": "حیوانات",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_57_full",
+    "word": "چنگال",
+    "forbiddenWords": [
+      "غذا",
+      "قاشق",
+      "دندانه",
+      "بشقاب",
+      "خوردن"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_58_full",
+    "word": "کافه",
+    "forbiddenWords": [
+      "قهوه",
+      "نوشیدنی",
+      "فنجان",
+      "میز",
+      "کافی‌شاپ"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_59_full",
+    "word": "اتوبوس",
+    "forbiddenWords": [
+      "مسافر",
+      "بزرگ",
+      "ایستگاه",
+      "صندلی",
+      "راننده"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_60_full",
+    "word": "پیانو",
+    "forbiddenWords": [
+      "ساز",
+      "کلید",
+      "موسیقی",
+      "نواختن",
+      "سیاه"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_61_full",
+    "word": "پاک‌کن",
+    "forbiddenWords": [
+      "اشتباه",
+      "مداد",
+      "کاغذ",
+      "پاک",
+      "نوشتن"
+    ],
+    "category": "مدرسه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_62_full",
+    "word": "گوش",
+    "forbiddenWords": [
+      "شنیدن",
+      "صدا",
+      "شنوایی",
+      "صورت",
+      "گوشواره"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_63_full",
+    "word": "سوپ",
+    "forbiddenWords": [
+      "قاشق",
+      "داغ",
+      "آبکی",
+      "سرماخوردگی",
+      "کاسه"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_64_full",
+    "word": "ببر",
+    "forbiddenWords": [
+      "راه‌راه",
+      "جنگل",
+      "گربه",
+      "نارنجی",
+      "درنده"
+    ],
+    "category": "حیوانات",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_65_full",
+    "word": "بالش",
+    "forbiddenWords": [
+      "سر",
+      "خواب",
+      "نرم",
+      "تخت",
+      "بستر"
+    ],
+    "category": "خانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_66_full",
+    "word": "دامن",
+    "forbiddenWords": [
+      "لباس",
+      "زنانه",
+      "کمر",
+      "پارچه",
+      "پوشیدن"
+    ],
+    "category": "پوشاک",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_67_full",
+    "word": "داروخانه",
+    "forbiddenWords": [
+      "دارو",
+      "نسخه",
+      "قرص",
+      "بیمار",
+      "داروساز"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_68_full",
+    "word": "ماوس",
+    "forbiddenWords": [
+      "رایانه",
+      "کلیک",
+      "نشانگر",
+      "دست",
+      "میز"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_69_full",
+    "word": "تنیس",
+    "forbiddenWords": [
+      "راکت",
+      "توپ",
+      "تور",
+      "زمین",
+      "ضربه"
+    ],
+    "category": "ورزش",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_70_full",
+    "word": "کتابفروشی",
+    "forbiddenWords": [
+      "کتاب",
+      "خرید",
+      "فروشگاه",
+      "نویسنده",
+      "قفسه"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_71_full",
+    "word": "شادی",
+    "forbiddenWords": [
+      "خوشحال",
+      "خنده",
+      "جشن",
+      "احساس",
+      "سرور"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_72_full",
+    "word": "آش",
+    "forbiddenWords": [
+      "رشته",
+      "کشک",
+      "سبزی",
+      "قابلمه",
+      "کاسه"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_73_full",
+    "word": "آلبالو",
+    "forbiddenWords": [
+      "ترش",
+      "قرمز",
+      "هسته",
+      "مربا",
+      "میوه"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_74_full",
+    "word": "پلنگ",
+    "forbiddenWords": [
+      "خال",
+      "درنده",
+      "گربه",
+      "کوه",
+      "سریع"
+    ],
+    "category": "حیوانات",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_75_full",
+    "word": "لیوان",
+    "forbiddenWords": [
+      "آب",
+      "نوشیدن",
+      "ظرف",
+      "شیشه",
+      "دسته"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_76_full",
+    "word": "قطار",
+    "forbiddenWords": [
+      "ریل",
+      "واگن",
+      "ایستگاه",
+      "مسافر",
+      "راه‌آهن"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_77_full",
+    "word": "ویولن",
+    "forbiddenWords": [
+      "ساز",
+      "آرشه",
+      "سیم",
+      "نواختن",
+      "موسیقی"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_78_full",
+    "word": "خودکار",
+    "forbiddenWords": [
+      "جوهر",
+      "نوشتن",
+      "دست",
+      "قلم",
+      "آبی"
+    ],
+    "category": "مدرسه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_79_full",
+    "word": "دهان",
+    "forbiddenWords": [
+      "حرف",
+      "خوردن",
+      "لب",
+      "دندان",
+      "صورت"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_80_full",
+    "word": "ماکارونی",
+    "forbiddenWords": [
+      "رشته",
+      "سس",
+      "فرنگی",
+      "قابلمه",
+      "دم"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_81_full",
+    "word": "هلو",
+    "forbiddenWords": [
+      "میوه",
+      "هسته",
+      "پوست",
+      "تابستان",
+      "پرز"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_82_full",
+    "word": "روباه",
+    "forbiddenWords": [
+      "دم",
+      "نارنجی",
+      "مکار",
+      "جنگل",
+      "حیوان"
+    ],
+    "category": "حیوانات",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_83_full",
+    "word": "قابلمه",
+    "forbiddenWords": [
+      "اجاق",
+      "غذا",
+      "درب",
+      "پختن",
+      "فلز"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_84_full",
+    "word": "استادیوم",
+    "forbiddenWords": [
+      "ورزش",
+      "تماشاگر",
+      "مسابقه",
+      "سکو",
+      "زمین"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_85_full",
+    "word": "هواپیما",
+    "forbiddenWords": [
+      "پرواز",
+      "بال",
+      "فرودگاه",
+      "خلبان",
+      "آسمان"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_86_full",
+    "word": "فلوت",
+    "forbiddenWords": [
+      "ساز",
+      "دمیدن",
+      "سوراخ",
+      "بادی",
+      "موسیقی"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_87_full",
+    "word": "دفتر",
+    "forbiddenWords": [
+      "کاغذ",
+      "نوشتن",
+      "صفحه",
+      "مشق",
+      "مدرسه"
+    ],
+    "category": "مدرسه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_88_full",
+    "word": "دندان",
+    "forbiddenWords": [
+      "دهان",
+      "مسواک",
+      "جویدن",
+      "درد",
+      "سفید"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_89_full",
+    "word": "همبرگر",
+    "forbiddenWords": [
+      "گوشت",
+      "نان",
+      "فست‌فود",
+      "ساندویچ",
+      "دست"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_90_full",
+    "word": "گوسفند",
+    "forbiddenWords": [
+      "پشم",
+      "گله",
+      "چوپان",
+      "بره",
+      "بع‌بع"
+    ],
+    "category": "حیوانات",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_91_full",
+    "word": "پرده",
+    "forbiddenWords": [
+      "پنجره",
+      "پارچه",
+      "نور",
+      "آویزان",
+      "حریم"
+    ],
+    "category": "خانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_92_full",
+    "word": "شال",
+    "forbiddenWords": [
+      "گردن",
+      "سرما",
+      "بافت",
+      "دراز",
+      "لباس"
+    ],
+    "category": "پوشاک",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_93_full",
+    "word": "هدفون",
+    "forbiddenWords": [
+      "گوش",
+      "صدا",
+      "موسیقی",
+      "شنیدن",
+      "سیم"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_94_full",
+    "word": "بوکس",
+    "forbiddenWords": [
+      "دستکش",
+      "مشت",
+      "رینگ",
+      "مبارزه",
+      "ورزش"
+    ],
+    "category": "ورزش",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_95_full",
+    "word": "مهمان",
+    "forbiddenWords": [
+      "خانه",
+      "میزبان",
+      "دعوت",
+      "پذیرایی",
+      "دیدار"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_96_full",
+    "word": "خشم",
+    "forbiddenWords": [
+      "عصبانیت",
+      "ناراحتی",
+      "دعوا",
+      "عصبانی",
+      "اعصاب"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_97_full",
+    "word": "فلافل",
+    "forbiddenWords": [
+      "نخود",
+      "سرخ",
+      "ساندویچ",
+      "جنوب",
+      "توپک"
+    ],
+    "category": "خوراکی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_98_full",
+    "word": "خیار",
+    "forbiddenWords": [
+      "سبز",
+      "سالاد",
+      "پوست",
+      "ماست",
+      "بوته"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_99_full",
+    "word": "آینه",
+    "forbiddenWords": [
+      "تصویر",
+      "دیدن",
+      "شیشه",
+      "صورت",
+      "بازتاب"
+    ],
+    "category": "خانه",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_100_full",
+    "word": "روسری",
+    "forbiddenWords": [
+      "سر",
+      "مو",
+      "گره",
+      "پارچه",
+      "پوشیدن"
+    ],
+    "category": "پوشاک",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_101_full",
+    "word": "تئاتر",
+    "forbiddenWords": [
+      "بازیگر",
+      "صحنه",
+      "نمایش",
+      "تماشاگر",
+      "پرده"
+    ],
+    "category": "جاها",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_102_full",
+    "word": "قایق",
+    "forbiddenWords": [
+      "آب",
+      "پاروزدن",
+      "دریا",
+      "شناور",
+      "رودخانه"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_103_full",
+    "word": "تار",
+    "forbiddenWords": [
+      "ساز",
+      "سیم",
+      "مضراب",
+      "ایرانی",
+      "نواختن"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_104_full",
+    "word": "جشن",
+    "forbiddenWords": [
+      "شادی",
+      "مهمانی",
+      "تزئین",
+      "مناسبت",
+      "رقص"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_105_full",
+    "word": "عشق",
+    "forbiddenWords": [
+      "محبت",
+      "دوست‌داشتن",
+      "قلب",
+      "احساس",
+      "علاقه"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 1
+  },
+  {
+    "id": "taboo_curated_106_full",
+    "word": "بز",
+    "forbiddenWords": [
+      "شاخ",
+      "شیر",
+      "کوه",
+      "ریش",
+      "گله"
+    ],
+    "category": "حیوانات",
     "difficulty": 2
   },
   {
-    "id": "taboo_471",
-    "word": "غذای سنتی محلی شماره 346",
+    "id": "taboo_curated_107_full",
+    "word": "دریا",
     "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "آب",
+      "موج",
+      "ساحل",
+      "نمک",
+      "ماهی"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_108_full",
+    "word": "قوری",
+    "forbiddenWords": [
+      "چای",
+      "دم",
+      "کتری",
+      "فنجان",
+      "ریختن"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_109_full",
+    "word": "خواننده",
+    "forbiddenWords": [
+      "آواز",
+      "صدا",
+      "ترانه",
+      "میکروفون",
+      "موسیقی"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_110_full",
+    "word": "رادیو",
+    "forbiddenWords": [
+      "موج",
+      "شنیدن",
+      "صدا",
+      "برنامه",
+      "دستگاه"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_111_full",
+    "word": "شنا",
+    "forbiddenWords": [
+      "آب",
+      "استخر",
+      "دست",
+      "پا",
+      "ورزش"
+    ],
+    "category": "ورزش",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_112_full",
+    "word": "خط‌کش",
+    "forbiddenWords": [
+      "اندازه",
+      "خط",
+      "سانتی‌متر",
+      "صاف",
+      "مدرسه"
+    ],
+    "category": "مدرسه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_113_full",
+    "word": "پا",
+    "forbiddenWords": [
+      "راه",
+      "کفش",
+      "قدم",
+      "زانو",
+      "بدن"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_114_full",
+    "word": "کره",
+    "forbiddenWords": [
+      "شیر",
+      "صبحانه",
+      "چربی",
+      "نان",
+      "زرد"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_472",
-    "word": "شخصیت داستانی کهن شماره 347",
+    "id": "taboo_curated_115_full",
+    "word": "رودخانه",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_473",
-    "word": "پدیده جوی نادر شماره 348",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_474",
-    "word": "حیوان درنده شماره 349",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_475",
-    "word": "پرنده مهاجر شماره 350",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_476",
-    "word": "گل زینتی شماره 351",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
+      "آب",
+      "جریان",
+      "رود",
+      "پل",
+      "بستر"
     ],
     "category": "طبیعت",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
-    "id": "taboo_477",
-    "word": "درخت کهنسال شماره 352",
+    "id": "taboo_curated_116_full",
+    "word": "سماور",
     "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
+      "چای",
+      "زغال",
+      "جوش",
+      "آب",
+      "شیر"
     ],
-    "category": "طبیعت",
-    "difficulty": 1
+    "category": "آشپزخانه",
+    "difficulty": 2
   },
   {
-    "id": "taboo_478",
-    "word": "ابزار صنعتی شماره 353",
+    "id": "taboo_curated_117_full",
+    "word": "بازیگر",
     "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
+      "فیلم",
+      "نقش",
+      "تئاتر",
+      "سینما",
+      "صحنه"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_118_full",
+    "word": "اداره پست",
+    "forbiddenWords": [
+      "نامه",
+      "بسته",
+      "ارسال",
+      "تمبر",
+      "تحویل"
+    ],
+    "category": "جاها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_119_full",
+    "word": "باتری",
+    "forbiddenWords": [
+      "انرژی",
+      "شارژ",
+      "قلمی",
+      "برق",
       "دستگاه"
     ],
-    "category": "صنعت",
+    "category": "فناوری و ابزار",
     "difficulty": 2
   },
   {
-    "id": "taboo_479",
-    "word": "ماشین‌آلات راهسازی شماره 354",
+    "id": "taboo_curated_120_full",
+    "word": "پرگار",
     "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "دایره",
+      "رسم",
+      "نوک",
+      "هندسه",
+      "مداد"
     ],
-    "category": "مهندسی",
+    "category": "مدرسه",
     "difficulty": 2
   },
   {
-    "id": "taboo_480",
-    "word": "بنای یادبود تاریخی شماره 355",
+    "id": "taboo_curated_121_full",
+    "word": "قلب",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
+      "خون",
+      "تپش",
+      "بدن",
+      "سینه",
+      "ضربان"
     ],
-    "category": "تاریخ",
+    "category": "بدن و سلامت",
     "difficulty": 2
   },
   {
-    "id": "taboo_481",
-    "word": "ساز موسیقی زهی شماره 356",
+    "id": "taboo_curated_122_full",
+    "word": "شکلات",
     "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_482",
-    "word": "پوشاک محلی اصیل شماره 357",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_483",
-    "word": "غذای سنتی محلی شماره 358",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "کاکائو",
+      "شیرین",
+      "تلخ",
+      "قهوه‌ای",
+      "تخته‌ای"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_484",
-    "word": "شخصیت داستانی کهن شماره 359",
+    "id": "taboo_curated_123_full",
+    "word": "سیر",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
+      "بو",
+      "حبه",
+      "ترشی",
+      "سفید",
+      "چاشنی"
     ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_485",
-    "word": "پدیده جوی نادر شماره 360",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_486",
-    "word": "حیوان درنده شماره 361",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_487",
-    "word": "پرنده مهاجر شماره 362",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_488",
-    "word": "گل زینتی شماره 363",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_489",
-    "word": "درخت کهنسال شماره 364",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_490",
-    "word": "ابزار صنعتی شماره 365",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
+    "category": "میوه و سبزی",
     "difficulty": 2
   },
   {
-    "id": "taboo_491",
-    "word": "ماشین‌آلات راهسازی شماره 366",
+    "id": "taboo_curated_124_full",
+    "word": "پنجره",
     "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "شیشه",
+      "دیوار",
+      "باز",
+      "نور",
+      "اتاق"
     ],
-    "category": "مهندسی",
+    "category": "خانه",
     "difficulty": 2
   },
   {
-    "id": "taboo_492",
-    "word": "بنای یادبود تاریخی شماره 367",
+    "id": "taboo_curated_125_full",
+    "word": "چکمه",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_493",
-    "word": "ساز موسیقی زهی شماره 368",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_494",
-    "word": "پوشاک محلی اصیل شماره 369",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "پا",
+      "باران",
+      "بلند",
+      "کفش",
+      "زمستان"
     ],
     "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "taboo_495",
-    "word": "غذای سنتی محلی شماره 370",
+    "id": "taboo_curated_126_full",
+    "word": "رصدخانه",
     "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "ستاره",
+      "تلسکوپ",
+      "آسمان",
+      "نجوم",
+      "رصد"
     ],
-    "category": "خوراکی",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "taboo_496",
-    "word": "شخصیت داستانی کهن شماره 371",
+    "id": "taboo_curated_127_full",
+    "word": "کامیون",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_497",
-    "word": "پدیده جوی نادر شماره 372",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_498",
-    "word": "حیوان درنده شماره 373",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_499",
-    "word": "پرنده مهاجر شماره 374",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_500",
-    "word": "گل زینتی شماره 375",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_501",
-    "word": "درخت کهنسال شماره 376",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_502",
-    "word": "ابزار صنعتی شماره 377",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_503",
-    "word": "ماشین‌آلات راهسازی شماره 378",
-    "forbiddenWords": [
+      "بار",
+      "بزرگ",
       "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "چرخ",
+      "راننده"
     ],
-    "category": "مهندسی",
+    "category": "رفت‌وآمد",
     "difficulty": 2
   },
   {
-    "id": "taboo_504",
-    "word": "بنای یادبود تاریخی شماره 379",
+    "id": "taboo_curated_128_full",
+    "word": "فیلم",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
+      "سینما",
+      "تصویر",
+      "بازیگر",
+      "تماشا",
+      "کارگردان"
     ],
-    "category": "تاریخ",
+    "category": "هنر و بازی",
     "difficulty": 2
   },
   {
-    "id": "taboo_505",
-    "word": "ساز موسیقی زهی شماره 380",
+    "id": "taboo_curated_129_full",
+    "word": "خجالت",
     "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
+      "شرم",
+      "صورت",
+      "سرخ",
+      "کمرویی",
+      "نگاه"
     ],
-    "category": "موسیقی",
+    "category": "حس و رفتار",
     "difficulty": 2
   },
   {
-    "id": "taboo_506",
-    "word": "پوشاک محلی اصیل شماره 381",
+    "id": "taboo_curated_130_full",
+    "word": "هویج",
     "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "نارنجی",
+      "خرگوش",
+      "ریشه",
+      "آبمیوه",
+      "سبزی"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_131_full",
+    "word": "اردک",
+    "forbiddenWords": [
+      "منقار",
+      "پرنده",
+      "آب",
+      "شنا",
+      "زرد"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_132_full",
+    "word": "در",
+    "forbiddenWords": [
+      "باز",
+      "بسته",
+      "ورود",
+      "دستگیره",
+      "خانه"
+    ],
+    "category": "خانه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_133_full",
+    "word": "دمپایی",
+    "forbiddenWords": [
+      "پا",
+      "خانه",
+      "پوشیدن",
+      "صندل",
+      "جفت"
     ],
     "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "taboo_507",
-    "word": "غذای سنتی محلی شماره 382",
+    "id": "taboo_curated_134_full",
+    "word": "وانت",
     "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "بار",
+      "ماشین",
+      "عقب",
+      "حمل",
+      "چرخ"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_135_full",
+    "word": "یوگا",
+    "forbiddenWords": [
+      "تنفس",
+      "کشش",
+      "آرامش",
+      "تمرین",
+      "بدن"
+    ],
+    "category": "ورزش",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_136_full",
+    "word": "جامدادی",
+    "forbiddenWords": [
+      "مداد",
+      "خودکار",
+      "کیف",
+      "مدرسه",
+      "لوازم"
+    ],
+    "category": "مدرسه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_137_full",
+    "word": "گردش",
+    "forbiddenWords": [
+      "تفریح",
+      "بیرون",
+      "خانواده",
+      "پارک",
+      "قدم"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_138_full",
+    "word": "امید",
+    "forbiddenWords": [
+      "آینده",
+      "انتظار",
+      "آرزو",
+      "دلگرمی",
+      "امکان"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_139_full",
+    "word": "مار",
+    "forbiddenWords": [
+      "خزنده",
+      "زهر",
+      "نیش",
+      "زمین",
+      "بی‌پا"
+    ],
+    "category": "حیوانات",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_140_full",
+    "word": "غار",
+    "forbiddenWords": [
+      "تاریک",
+      "سنگ",
+      "کوه",
+      "زیرزمین",
+      "دهانه"
+    ],
+    "category": "طبیعت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_141_full",
+    "word": "رنده",
+    "forbiddenWords": [
+      "سوراخ",
+      "هویج",
+      "پنیر",
+      "ریختن",
+      "خرد"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_142_full",
+    "word": "آرایشگر",
+    "forbiddenWords": [
+      "مو",
+      "قیچی",
+      "کوتاه",
+      "آرایشگاه",
+      "شانه"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_143_full",
+    "word": "چراغ‌قوه",
+    "forbiddenWords": [
+      "نور",
+      "تاریکی",
+      "باتری",
+      "روشن",
+      "دست"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_144_full",
+    "word": "کارتون",
+    "forbiddenWords": [
+      "انیمیشن",
+      "کودک",
+      "نقاشی",
+      "شخصیت",
+      "تلویزیون"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_145_full",
+    "word": "اردو",
+    "forbiddenWords": [
+      "سفر",
+      "گروه",
+      "طبیعت",
+      "چادر",
+      "مدرسه"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_146_full",
+    "word": "عضله",
+    "forbiddenWords": [
+      "ماهیچه",
+      "قدرت",
+      "بدن",
+      "ورزش",
+      "انقباض"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_147_full",
+    "word": "سالاد",
+    "forbiddenWords": [
+      "کاهو",
+      "خیار",
+      "سس",
+      "سبزیجات",
+      "کاسه"
     ],
     "category": "خوراکی",
     "difficulty": 2
   },
   {
-    "id": "taboo_508",
-    "word": "شخصیت داستانی کهن شماره 383",
+    "id": "taboo_curated_148_full",
+    "word": "کوه",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
+      "بلند",
+      "قله",
+      "صعود",
+      "ارتفاع",
+      "صخره"
     ],
-    "category": "ادبیات",
-    "difficulty": 3
+    "category": "طبیعت",
+    "difficulty": 2
   },
   {
-    "id": "taboo_509",
-    "word": "پدیده جوی نادر شماره 384",
+    "id": "taboo_curated_149_full",
+    "word": "آبکش",
     "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
+      "سوراخ",
+      "ماکارونی",
+      "آب",
+      "ظرف",
+      "صاف"
     ],
-    "category": "نجوم",
-    "difficulty": 3
+    "category": "آشپزخانه",
+    "difficulty": 2
   },
   {
-    "id": "taboo_510",
-    "word": "حیوان درنده شماره 385",
+    "id": "taboo_curated_150_full",
+    "word": "دندان‌پزشک",
     "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
       "دندان",
-      "پنجه"
+      "دهان",
+      "عصب",
+      "مطب",
+      "درمان"
     ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_511",
-    "word": "پرنده مهاجر شماره 386",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_512",
-    "word": "گل زینتی شماره 387",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_513",
-    "word": "درخت کهنسال شماره 388",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_514",
-    "word": "ابزار صنعتی شماره 389",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
+    "category": "شغل‌ها",
     "difficulty": 2
   },
   {
-    "id": "taboo_515",
-    "word": "ماشین‌آلات راهسازی شماره 390",
+    "id": "taboo_curated_151_full",
+    "word": "آشپزخانه",
     "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "غذا",
+      "پخت",
+      "اجاق",
+      "ظرف",
+      "خانه"
     ],
-    "category": "مهندسی",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "taboo_516",
-    "word": "بنای یادبود تاریخی شماره 391",
+    "id": "taboo_curated_152_full",
+    "word": "چکش",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
+      "میخ",
+      "ضربه",
+      "ابزار",
+      "دسته",
+      "کوبیدن"
     ],
-    "category": "تاریخ",
+    "category": "فناوری و ابزار",
     "difficulty": 2
   },
   {
-    "id": "taboo_517",
-    "word": "ساز موسیقی زهی شماره 392",
+    "id": "taboo_curated_153_full",
+    "word": "دارت",
     "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
+      "هدف",
+      "پرتاب",
+      "تخته",
+      "نوک",
+      "امتیاز"
     ],
-    "category": "موسیقی",
+    "category": "ورزش",
     "difficulty": 2
   },
   {
-    "id": "taboo_518",
-    "word": "پوشاک محلی اصیل شماره 393",
+    "id": "taboo_curated_154_full",
+    "word": "ترشی",
     "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "سرکه",
+      "شور",
+      "شیشه",
+      "سبزیجات",
+      "چاشنی"
+    ],
+    "category": "خوراکی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_155_full",
+    "word": "قارچ",
+    "forbiddenWords": [
+      "چتر",
+      "جنگل",
+      "خوراکی",
+      "سفید",
+      "زمین"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_156_full",
+    "word": "بخاری",
+    "forbiddenWords": [
+      "گرما",
+      "سرما",
+      "گاز",
+      "زمستان",
+      "اتاق"
+    ],
+    "category": "خانه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_157_full",
+    "word": "کاپشن",
+    "forbiddenWords": [
+      "سرما",
+      "زمستان",
+      "زیپ",
+      "گرم",
+      "لباس"
     ],
     "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "taboo_519",
-    "word": "غذای سنتی محلی شماره 394",
+    "id": "taboo_curated_158_full",
+    "word": "حمام",
     "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "دوش",
+      "آب",
+      "شستن",
+      "صابون",
+      "حوله"
     ],
-    "category": "خوراکی",
+    "category": "جاها",
     "difficulty": 2
   },
   {
-    "id": "taboo_520",
-    "word": "شخصیت داستانی کهن شماره 395",
+    "id": "taboo_curated_159_full",
+    "word": "ماشین پلیس",
     "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
+      "آژیر",
+      "نیرو",
+      "قانون",
+      "خیابان",
+      "گشت"
     ],
-    "category": "ادبیات",
-    "difficulty": 3
+    "category": "رفت‌وآمد",
+    "difficulty": 2
   },
   {
-    "id": "taboo_521",
-    "word": "پدیده جوی نادر شماره 396",
+    "id": "taboo_curated_160_full",
+    "word": "بولینگ",
     "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
+      "گوی",
+      "پین",
+      "انداختن",
+      "مسیر",
+      "سالن"
     ],
-    "category": "نجوم",
-    "difficulty": 3
+    "category": "ورزش",
+    "difficulty": 2
   },
   {
-    "id": "taboo_522",
-    "word": "حیوان درنده شماره 397",
+    "id": "taboo_curated_161_full",
+    "word": "سوغاتی",
     "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
+      "سفر",
+      "هدیه",
+      "شهر",
+      "خرید",
+      "آوردن"
+    ],
+    "category": "جشن و فرهنگ",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_162_full",
+    "word": "مو",
+    "forbiddenWords": [
+      "سر",
+      "شانه",
+      "قیچی",
+      "آرایشگر",
+      "رشد"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_163_full",
+    "word": "ذرت",
+    "forbiddenWords": [
+      "بلال",
+      "زرد",
+      "دانه",
+      "مزرعه",
+      "مکزیکی"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_164_full",
+    "word": "جغد",
+    "forbiddenWords": [
+      "شب",
+      "پرنده",
+      "چشم",
+      "درخت",
+      "شکار"
     ],
     "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_523",
-    "word": "پرنده مهاجر شماره 398",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_524",
-    "word": "گل زینتی شماره 399",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_525",
-    "word": "درخت کهنسال شماره 400",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_526",
-    "word": "ابزار صنعتی شماره 401",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
     "difficulty": 2
   },
   {
-    "id": "taboo_527",
-    "word": "ماشین‌آلات راهسازی شماره 402",
+    "id": "taboo_curated_165_full",
+    "word": "اتو",
     "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "لباس",
+      "چروک",
+      "گرما",
+      "برق",
+      "صاف"
     ],
-    "category": "مهندسی",
+    "category": "خانه",
     "difficulty": 2
   },
   {
-    "id": "taboo_528",
-    "word": "بنای یادبود تاریخی شماره 403",
+    "id": "taboo_curated_166_full",
+    "word": "دکمه",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_529",
-    "word": "ساز موسیقی زهی شماره 404",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_530",
-    "word": "پوشاک محلی اصیل شماره 405",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "لباس",
+      "سوراخ",
+      "دوخت",
+      "بستن",
+      "پیراهن"
     ],
     "category": "پوشاک",
     "difficulty": 2
   },
   {
-    "id": "taboo_531",
-    "word": "غذای سنتی محلی شماره 406",
+    "id": "taboo_curated_167_full",
+    "word": "ماشین آتش‌نشانی",
     "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
+      "آتش",
+      "آژیر",
+      "خاموش",
+      "نردبان",
+      "قرمز"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_168_full",
+    "word": "تاس",
+    "forbiddenWords": [
+      "مکعب",
+      "بازی",
+      "نقطه",
+      "انداختن",
+      "شانس"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_169_full",
+    "word": "آبرنگ",
+    "forbiddenWords": [
+      "نقاشی",
+      "آب",
+      "قلم‌مو",
+      "رنگ",
+      "کاغذ"
+    ],
+    "category": "مدرسه",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_170_full",
+    "word": "نبض",
+    "forbiddenWords": [
+      "ضربان",
+      "مچ",
+      "قلب",
+      "خون",
+      "تپش"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_171_full",
+    "word": "رقابت",
+    "forbiddenWords": [
+      "مسابقه",
+      "حریف",
+      "برنده",
+      "برد",
+      "تلاش"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 2
+  },
+  {
+    "id": "taboo_curated_172_full",
+    "word": "طاووس",
+    "forbiddenWords": [
+      "پر",
+      "دم",
+      "رنگارنگ",
+      "پرنده",
+      "باغ"
+    ],
+    "category": "حیوانات",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_173_full",
+    "word": "برگ",
+    "forbiddenWords": [
+      "درخت",
+      "سبز",
+      "پاییز",
+      "شاخه",
+      "گیاه"
+    ],
+    "category": "طبیعت",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_174_full",
+    "word": "فنجان",
+    "forbiddenWords": [
+      "چای",
+      "قهوه",
+      "نعلبکی",
+      "دسته",
+      "کوچک"
+    ],
+    "category": "آشپزخانه",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_175_full",
+    "word": "نانوا",
+    "forbiddenWords": [
+      "نان",
+      "تنور",
+      "خمیر",
+      "آرد",
+      "پخت"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_176_full",
+    "word": "پیچ‌گوشتی",
+    "forbiddenWords": [
+      "پیچ",
+      "دسته",
+      "چرخاندن",
+      "ابزار",
+      "تعمیر"
+    ],
+    "category": "فناوری و ابزار",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_177_full",
+    "word": "دومینو",
+    "forbiddenWords": [
+      "مهره",
+      "ردیف",
+      "افتادن",
+      "بازی",
+      "چیدن"
+    ],
+    "category": "هنر و بازی",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_178_full",
+    "word": "قلم‌مو",
+    "forbiddenWords": [
+      "رنگ",
+      "نقاشی",
+      "دسته",
+      "مو",
+      "بوم"
+    ],
+    "category": "مدرسه",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_179_full",
+    "word": "همکاری",
+    "forbiddenWords": [
+      "گروه",
+      "کمک",
+      "باهم",
+      "تیم",
+      "کار"
+    ],
+    "category": "حس و رفتار",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_180_full",
+    "word": "پسته",
+    "forbiddenWords": [
+      "آجیل",
+      "پوسته",
+      "سبز",
+      "خندان",
+      "مغز"
     ],
     "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_532",
-    "word": "شخصیت داستانی کهن شماره 407",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
     "difficulty": 3
   },
   {
-    "id": "taboo_533",
-    "word": "پدیده جوی نادر شماره 408",
+    "id": "taboo_curated_181_full",
+    "word": "کاکتوس",
     "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_534",
-    "word": "حیوان درنده شماره 409",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_535",
-    "word": "پرنده مهاجر شماره 410",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_536",
-    "word": "گل زینتی شماره 411",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
+      "خار",
       "گلدان",
-      "آبیاری"
+      "بیابان",
+      "آب",
+      "گیاه"
     ],
     "category": "طبیعت",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
-    "id": "taboo_537",
-    "word": "درخت کهنسال شماره 412",
+    "id": "taboo_curated_182_full",
+    "word": "قندان",
     "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
+      "قند",
+      "شکر",
+      "چای",
+      "ظرف",
+      "حبه"
     ],
-    "category": "طبیعت",
-    "difficulty": 1
+    "category": "آشپزخانه",
+    "difficulty": 3
   },
   {
-    "id": "taboo_538",
-    "word": "ابزار صنعتی شماره 413",
+    "id": "taboo_curated_183_full",
+    "word": "ماهیگیر",
     "forbiddenWords": [
-      "کارگاه",
+      "دریا",
+      "تور",
+      "ماهی",
+      "قلاب",
+      "قایق"
+    ],
+    "category": "شغل‌ها",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_184_full",
+    "word": "هتل",
+    "forbiddenWords": [
+      "مسافر",
+      "اتاق",
+      "اقامت",
+      "تخت",
+      "سفر"
+    ],
+    "category": "جاها",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_185_full",
+    "word": "آچار",
+    "forbiddenWords": [
+      "مهره",
+      "ابزار",
       "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
+      "فلز",
+      "بستن"
     ],
-    "category": "صنعت",
-    "difficulty": 2
+    "category": "فناوری و ابزار",
+    "difficulty": 3
   },
   {
-    "id": "taboo_539",
-    "word": "ماشین‌آلات راهسازی شماره 414",
+    "id": "taboo_curated_186_full",
+    "word": "وزنه‌برداری",
     "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
+      "هالتر",
       "سنگین",
-      "موتور",
-      "چرخ زنجیری"
+      "بلندکردن",
+      "قدرت",
+      "ورزش"
     ],
-    "category": "مهندسی",
-    "difficulty": 2
+    "category": "ورزش",
+    "difficulty": 3
   },
   {
-    "id": "taboo_540",
-    "word": "بنای یادبود تاریخی شماره 415",
+    "id": "taboo_curated_187_full",
+    "word": "کادوپیچ",
     "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
+      "کاغذ",
+      "هدیه",
+      "بسته",
+      "روبان",
+      "جعبه"
     ],
-    "category": "تاریخ",
-    "difficulty": 2
+    "category": "جشن و فرهنگ",
+    "difficulty": 3
   },
   {
-    "id": "taboo_541",
-    "word": "ساز موسیقی زهی شماره 416",
+    "id": "taboo_curated_188_full",
+    "word": "گردو",
     "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
+      "آجیل",
+      "مغز",
+      "پوسته",
+      "قهوه‌ای",
+      "درخت"
     ],
-    "category": "موسیقی",
-    "difficulty": 2
+    "category": "خوراکی",
+    "difficulty": 3
   },
   {
-    "id": "taboo_542",
-    "word": "پوشاک محلی اصیل شماره 417",
+    "id": "taboo_curated_189_full",
+    "word": "لیمو",
     "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "ترش",
+      "زرد",
+      "آب",
+      "مرکبات",
+      "چای"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_190_full",
+    "word": "نردبان",
+    "forbiddenWords": [
+      "پله",
+      "بالا",
+      "ارتفاع",
+      "دیواره",
+      "چوب"
+    ],
+    "category": "خانه",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_191_full",
+    "word": "گردنبند",
+    "forbiddenWords": [
+      "گردن",
+      "زنجیر",
+      "طلا",
+      "آویز",
+      "زیور"
     ],
     "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_543",
-    "word": "غذای سنتی محلی شماره 418",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_544",
-    "word": "شخصیت داستانی کهن شماره 419",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
     "difficulty": 3
   },
   {
-    "id": "taboo_545",
-    "word": "پدیده جوی نادر شماره 420",
+    "id": "taboo_curated_192_full",
+    "word": "آزمایشگاه",
     "forbiddenWords": [
+      "آزمایش",
+      "دانشمند",
+      "لوله",
+      "پژوهش",
+      "مواد"
+    ],
+    "category": "جاها",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_193_full",
+    "word": "اسکیت",
+    "forbiddenWords": [
+      "چرخ",
+      "کفش",
+      "تعادل",
+      "پا",
+      "حرکت"
+    ],
+    "category": "رفت‌وآمد",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_194_full",
+    "word": "کوهنوردی",
+    "forbiddenWords": [
+      "قله",
+      "صعود",
+      "کوه",
+      "کوله",
+      "مسیر"
+    ],
+    "category": "ورزش",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_195_full",
+    "word": "آتش‌بازی",
+    "forbiddenWords": [
+      "نور",
       "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
+      "جشن",
+      "رنگ",
+      "ترقه"
     ],
-    "category": "نجوم",
+    "category": "جشن و فرهنگ",
     "difficulty": 3
   },
   {
-    "id": "taboo_546",
-    "word": "حیوان درنده شماره 421",
+    "id": "taboo_curated_196_full",
+    "word": "سرفه",
     "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
+      "گلو",
+      "بیماری",
+      "صدا",
+      "سرماخوردگی",
+      "دهان"
+    ],
+    "category": "بدن و سلامت",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_197_full",
+    "word": "نارگیل",
+    "forbiddenWords": [
+      "میوه",
+      "پوست",
+      "آب",
+      "سخت",
+      "نخل"
+    ],
+    "category": "میوه و سبزی",
+    "difficulty": 3
+  },
+  {
+    "id": "taboo_curated_198_full",
+    "word": "کوسه",
+    "forbiddenWords": [
+      "دریا",
+      "باله",
       "دندان",
-      "پنجه"
+      "شکارچی",
+      "ماهی"
     ],
     "category": "حیوانات",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
-    "id": "taboo_547",
-    "word": "پرنده مهاجر شماره 422",
+    "id": "taboo_curated_199_full",
+    "word": "گلدان",
     "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
+      "گل",
+      "خاک",
+      "گیاه",
+      "آب",
+      "ظرف"
     ],
-    "category": "حیوانات",
-    "difficulty": 1
+    "category": "خانه",
+    "difficulty": 3
   },
   {
-    "id": "taboo_548",
-    "word": "گل زینتی شماره 423",
+    "id": "taboo_curated_200_full",
+    "word": "گوشواره",
     "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_549",
-    "word": "درخت کهنسال شماره 424",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_550",
-    "word": "ابزار صنعتی شماره 425",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_551",
-    "word": "ماشین‌آلات راهسازی شماره 426",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_552",
-    "word": "بنای یادبود تاریخی شماره 427",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_553",
-    "word": "ساز موسیقی زهی شماره 428",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_554",
-    "word": "پوشاک محلی اصیل شماره 429",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
+      "گوش",
+      "طلا",
+      "آویز",
+      "زیور",
+      "جفت"
     ],
     "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_555",
-    "word": "غذای سنتی محلی شماره 430",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_556",
-    "word": "شخصیت داستانی کهن شماره 431",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
     "difficulty": 3
-  },
-  {
-    "id": "taboo_557",
-    "word": "پدیده جوی نادر شماره 432",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_558",
-    "word": "حیوان درنده شماره 433",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_559",
-    "word": "پرنده مهاجر شماره 434",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_560",
-    "word": "گل زینتی شماره 435",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_561",
-    "word": "درخت کهنسال شماره 436",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_562",
-    "word": "ابزار صنعتی شماره 437",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_563",
-    "word": "ماشین‌آلات راهسازی شماره 438",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_564",
-    "word": "بنای یادبود تاریخی شماره 439",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_565",
-    "word": "ساز موسیقی زهی شماره 440",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_566",
-    "word": "پوشاک محلی اصیل شماره 441",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_567",
-    "word": "غذای سنتی محلی شماره 442",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_568",
-    "word": "شخصیت داستانی کهن شماره 443",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_569",
-    "word": "پدیده جوی نادر شماره 444",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_570",
-    "word": "حیوان درنده شماره 445",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_571",
-    "word": "پرنده مهاجر شماره 446",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_572",
-    "word": "گل زینتی شماره 447",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_573",
-    "word": "درخت کهنسال شماره 448",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_574",
-    "word": "ابزار صنعتی شماره 449",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_575",
-    "word": "ماشین‌آلات راهسازی شماره 450",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_576",
-    "word": "بنای یادبود تاریخی شماره 451",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_577",
-    "word": "ساز موسیقی زهی شماره 452",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_578",
-    "word": "پوشاک محلی اصیل شماره 453",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_579",
-    "word": "غذای سنتی محلی شماره 454",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_580",
-    "word": "شخصیت داستانی کهن شماره 455",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_581",
-    "word": "پدیده جوی نادر شماره 456",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_582",
-    "word": "حیوان درنده شماره 457",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_583",
-    "word": "پرنده مهاجر شماره 458",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_584",
-    "word": "گل زینتی شماره 459",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_585",
-    "word": "درخت کهنسال شماره 460",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_586",
-    "word": "ابزار صنعتی شماره 461",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_587",
-    "word": "ماشین‌آلات راهسازی شماره 462",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_588",
-    "word": "بنای یادبود تاریخی شماره 463",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_589",
-    "word": "ساز موسیقی زهی شماره 464",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_590",
-    "word": "پوشاک محلی اصیل شماره 465",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_591",
-    "word": "غذای سنتی محلی شماره 466",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_592",
-    "word": "شخصیت داستانی کهن شماره 467",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_593",
-    "word": "پدیده جوی نادر شماره 468",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_594",
-    "word": "حیوان درنده شماره 469",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_595",
-    "word": "پرنده مهاجر شماره 470",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_596",
-    "word": "گل زینتی شماره 471",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_597",
-    "word": "درخت کهنسال شماره 472",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_598",
-    "word": "ابزار صنعتی شماره 473",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_599",
-    "word": "ماشین‌آلات راهسازی شماره 474",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_600",
-    "word": "بنای یادبود تاریخی شماره 475",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_601",
-    "word": "ساز موسیقی زهی شماره 476",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_602",
-    "word": "پوشاک محلی اصیل شماره 477",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_603",
-    "word": "غذای سنتی محلی شماره 478",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_604",
-    "word": "شخصیت داستانی کهن شماره 479",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_605",
-    "word": "پدیده جوی نادر شماره 480",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_606",
-    "word": "حیوان درنده شماره 481",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_607",
-    "word": "پرنده مهاجر شماره 482",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_608",
-    "word": "گل زینتی شماره 483",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_609",
-    "word": "درخت کهنسال شماره 484",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_610",
-    "word": "ابزار صنعتی شماره 485",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_611",
-    "word": "ماشین‌آلات راهسازی شماره 486",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_612",
-    "word": "بنای یادبود تاریخی شماره 487",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_613",
-    "word": "ساز موسیقی زهی شماره 488",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_614",
-    "word": "پوشاک محلی اصیل شماره 489",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_615",
-    "word": "غذای سنتی محلی شماره 490",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_616",
-    "word": "شخصیت داستانی کهن شماره 491",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_617",
-    "word": "پدیده جوی نادر شماره 492",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_618",
-    "word": "حیوان درنده شماره 493",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_619",
-    "word": "پرنده مهاجر شماره 494",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_620",
-    "word": "گل زینتی شماره 495",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_621",
-    "word": "درخت کهنسال شماره 496",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_622",
-    "word": "ابزار صنعتی شماره 497",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_623",
-    "word": "ماشین‌آلات راهسازی شماره 498",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_624",
-    "word": "بنای یادبود تاریخی شماره 499",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_625",
-    "word": "ساز موسیقی زهی شماره 500",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_626",
-    "word": "پوشاک محلی اصیل شماره 501",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_627",
-    "word": "غذای سنتی محلی شماره 502",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_628",
-    "word": "شخصیت داستانی کهن شماره 503",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_629",
-    "word": "پدیده جوی نادر شماره 504",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_630",
-    "word": "حیوان درنده شماره 505",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_631",
-    "word": "پرنده مهاجر شماره 506",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_632",
-    "word": "گل زینتی شماره 507",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_633",
-    "word": "درخت کهنسال شماره 508",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_634",
-    "word": "ابزار صنعتی شماره 509",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_635",
-    "word": "ماشین‌آلات راهسازی شماره 510",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_636",
-    "word": "بنای یادبود تاریخی شماره 511",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_637",
-    "word": "ساز موسیقی زهی شماره 512",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_638",
-    "word": "پوشاک محلی اصیل شماره 513",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_639",
-    "word": "غذای سنتی محلی شماره 514",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_640",
-    "word": "شخصیت داستانی کهن شماره 515",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_641",
-    "word": "پدیده جوی نادر شماره 516",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_642",
-    "word": "حیوان درنده شماره 517",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_643",
-    "word": "پرنده مهاجر شماره 518",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_644",
-    "word": "گل زینتی شماره 519",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_645",
-    "word": "درخت کهنسال شماره 520",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_646",
-    "word": "ابزار صنعتی شماره 521",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_647",
-    "word": "ماشین‌آلات راهسازی شماره 522",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_648",
-    "word": "بنای یادبود تاریخی شماره 523",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_649",
-    "word": "ساز موسیقی زهی شماره 524",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_650",
-    "word": "پوشاک محلی اصیل شماره 525",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_651",
-    "word": "غذای سنتی محلی شماره 526",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_652",
-    "word": "شخصیت داستانی کهن شماره 527",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_653",
-    "word": "پدیده جوی نادر شماره 528",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_654",
-    "word": "حیوان درنده شماره 529",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_655",
-    "word": "پرنده مهاجر شماره 530",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_656",
-    "word": "گل زینتی شماره 531",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_657",
-    "word": "درخت کهنسال شماره 532",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_658",
-    "word": "ابزار صنعتی شماره 533",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_659",
-    "word": "ماشین‌آلات راهسازی شماره 534",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_660",
-    "word": "بنای یادبود تاریخی شماره 535",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_661",
-    "word": "ساز موسیقی زهی شماره 536",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_662",
-    "word": "پوشاک محلی اصیل شماره 537",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_663",
-    "word": "غذای سنتی محلی شماره 538",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_664",
-    "word": "شخصیت داستانی کهن شماره 539",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_665",
-    "word": "پدیده جوی نادر شماره 540",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_666",
-    "word": "حیوان درنده شماره 541",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_667",
-    "word": "پرنده مهاجر شماره 542",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_668",
-    "word": "گل زینتی شماره 543",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_669",
-    "word": "درخت کهنسال شماره 544",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_670",
-    "word": "ابزار صنعتی شماره 545",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_671",
-    "word": "ماشین‌آلات راهسازی شماره 546",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_672",
-    "word": "بنای یادبود تاریخی شماره 547",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_673",
-    "word": "ساز موسیقی زهی شماره 548",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_674",
-    "word": "پوشاک محلی اصیل شماره 549",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_675",
-    "word": "غذای سنتی محلی شماره 550",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_676",
-    "word": "شخصیت داستانی کهن شماره 551",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_677",
-    "word": "پدیده جوی نادر شماره 552",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_678",
-    "word": "حیوان درنده شماره 553",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_679",
-    "word": "پرنده مهاجر شماره 554",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_680",
-    "word": "گل زینتی شماره 555",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_681",
-    "word": "درخت کهنسال شماره 556",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_682",
-    "word": "ابزار صنعتی شماره 557",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_683",
-    "word": "ماشین‌آلات راهسازی شماره 558",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_684",
-    "word": "بنای یادبود تاریخی شماره 559",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_685",
-    "word": "ساز موسیقی زهی شماره 560",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_686",
-    "word": "پوشاک محلی اصیل شماره 561",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_687",
-    "word": "غذای سنتی محلی شماره 562",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_688",
-    "word": "شخصیت داستانی کهن شماره 563",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_689",
-    "word": "پدیده جوی نادر شماره 564",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_690",
-    "word": "حیوان درنده شماره 565",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_691",
-    "word": "پرنده مهاجر شماره 566",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_692",
-    "word": "گل زینتی شماره 567",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_693",
-    "word": "درخت کهنسال شماره 568",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_694",
-    "word": "ابزار صنعتی شماره 569",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_695",
-    "word": "ماشین‌آلات راهسازی شماره 570",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_696",
-    "word": "بنای یادبود تاریخی شماره 571",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_697",
-    "word": "ساز موسیقی زهی شماره 572",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_698",
-    "word": "پوشاک محلی اصیل شماره 573",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_699",
-    "word": "غذای سنتی محلی شماره 574",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_700",
-    "word": "شخصیت داستانی کهن شماره 575",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_701",
-    "word": "پدیده جوی نادر شماره 576",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_702",
-    "word": "حیوان درنده شماره 577",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_703",
-    "word": "پرنده مهاجر شماره 578",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_704",
-    "word": "گل زینتی شماره 579",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_705",
-    "word": "درخت کهنسال شماره 580",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_706",
-    "word": "ابزار صنعتی شماره 581",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_707",
-    "word": "ماشین‌آلات راهسازی شماره 582",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_708",
-    "word": "بنای یادبود تاریخی شماره 583",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_709",
-    "word": "ساز موسیقی زهی شماره 584",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_710",
-    "word": "پوشاک محلی اصیل شماره 585",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_711",
-    "word": "غذای سنتی محلی شماره 586",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_712",
-    "word": "شخصیت داستانی کهن شماره 587",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_713",
-    "word": "پدیده جوی نادر شماره 588",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_714",
-    "word": "حیوان درنده شماره 589",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_715",
-    "word": "پرنده مهاجر شماره 590",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_716",
-    "word": "گل زینتی شماره 591",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_717",
-    "word": "درخت کهنسال شماره 592",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_718",
-    "word": "ابزار صنعتی شماره 593",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_719",
-    "word": "ماشین‌آلات راهسازی شماره 594",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_720",
-    "word": "بنای یادبود تاریخی شماره 595",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_721",
-    "word": "ساز موسیقی زهی شماره 596",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_722",
-    "word": "پوشاک محلی اصیل شماره 597",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_723",
-    "word": "غذای سنتی محلی شماره 598",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_724",
-    "word": "شخصیت داستانی کهن شماره 599",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_725",
-    "word": "پدیده جوی نادر شماره 600",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_726",
-    "word": "حیوان درنده شماره 601",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_727",
-    "word": "پرنده مهاجر شماره 602",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_728",
-    "word": "گل زینتی شماره 603",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_729",
-    "word": "درخت کهنسال شماره 604",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_730",
-    "word": "ابزار صنعتی شماره 605",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_731",
-    "word": "ماشین‌آلات راهسازی شماره 606",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_732",
-    "word": "بنای یادبود تاریخی شماره 607",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_733",
-    "word": "ساز موسیقی زهی شماره 608",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_734",
-    "word": "پوشاک محلی اصیل شماره 609",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_735",
-    "word": "غذای سنتی محلی شماره 610",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_736",
-    "word": "شخصیت داستانی کهن شماره 611",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_737",
-    "word": "پدیده جوی نادر شماره 612",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_738",
-    "word": "حیوان درنده شماره 613",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_739",
-    "word": "پرنده مهاجر شماره 614",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_740",
-    "word": "گل زینتی شماره 615",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_741",
-    "word": "درخت کهنسال شماره 616",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_742",
-    "word": "ابزار صنعتی شماره 617",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_743",
-    "word": "ماشین‌آلات راهسازی شماره 618",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_744",
-    "word": "بنای یادبود تاریخی شماره 619",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_745",
-    "word": "ساز موسیقی زهی شماره 620",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_746",
-    "word": "پوشاک محلی اصیل شماره 621",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_747",
-    "word": "غذای سنتی محلی شماره 622",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_748",
-    "word": "شخصیت داستانی کهن شماره 623",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_749",
-    "word": "پدیده جوی نادر شماره 624",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_750",
-    "word": "حیوان درنده شماره 625",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_751",
-    "word": "پرنده مهاجر شماره 626",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_752",
-    "word": "گل زینتی شماره 627",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_753",
-    "word": "درخت کهنسال شماره 628",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_754",
-    "word": "ابزار صنعتی شماره 629",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_755",
-    "word": "ماشین‌آلات راهسازی شماره 630",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_756",
-    "word": "بنای یادبود تاریخی شماره 631",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_757",
-    "word": "ساز موسیقی زهی شماره 632",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_758",
-    "word": "پوشاک محلی اصیل شماره 633",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_759",
-    "word": "غذای سنتی محلی شماره 634",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_760",
-    "word": "شخصیت داستانی کهن شماره 635",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_761",
-    "word": "پدیده جوی نادر شماره 636",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_762",
-    "word": "حیوان درنده شماره 637",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_763",
-    "word": "پرنده مهاجر شماره 638",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_764",
-    "word": "گل زینتی شماره 639",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_765",
-    "word": "درخت کهنسال شماره 640",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_766",
-    "word": "ابزار صنعتی شماره 641",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_767",
-    "word": "ماشین‌آلات راهسازی شماره 642",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_768",
-    "word": "بنای یادبود تاریخی شماره 643",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_769",
-    "word": "ساز موسیقی زهی شماره 644",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_770",
-    "word": "پوشاک محلی اصیل شماره 645",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_771",
-    "word": "غذای سنتی محلی شماره 646",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_772",
-    "word": "شخصیت داستانی کهن شماره 647",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_773",
-    "word": "پدیده جوی نادر شماره 648",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_774",
-    "word": "حیوان درنده شماره 649",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_775",
-    "word": "پرنده مهاجر شماره 650",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_776",
-    "word": "گل زینتی شماره 651",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_777",
-    "word": "درخت کهنسال شماره 652",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_778",
-    "word": "ابزار صنعتی شماره 653",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_779",
-    "word": "ماشین‌آلات راهسازی شماره 654",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_780",
-    "word": "بنای یادبود تاریخی شماره 655",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_781",
-    "word": "ساز موسیقی زهی شماره 656",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_782",
-    "word": "پوشاک محلی اصیل شماره 657",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_783",
-    "word": "غذای سنتی محلی شماره 658",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_784",
-    "word": "شخصیت داستانی کهن شماره 659",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_785",
-    "word": "پدیده جوی نادر شماره 660",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_786",
-    "word": "حیوان درنده شماره 661",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_787",
-    "word": "پرنده مهاجر شماره 662",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_788",
-    "word": "گل زینتی شماره 663",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_789",
-    "word": "درخت کهنسال شماره 664",
-    "forbiddenWords": [
-      "شاخه",
-      "چوب",
-      "ریشه",
-      "سایه",
-      "برگ"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_790",
-    "word": "ابزار صنعتی شماره 665",
-    "forbiddenWords": [
-      "کارگاه",
-      "تعمیر",
-      "فلزی",
-      "پیچ",
-      "دستگاه"
-    ],
-    "category": "صنعت",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_791",
-    "word": "ماشین‌آلات راهسازی شماره 666",
-    "forbiddenWords": [
-      "جاده",
-      "خاکبرداری",
-      "سنگین",
-      "موتور",
-      "چرخ زنجیری"
-    ],
-    "category": "مهندسی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_792",
-    "word": "بنای یادبود تاریخی شماره 667",
-    "forbiddenWords": [
-      "معماری",
-      "سنگی",
-      "توریست",
-      "قدیمی",
-      "ستون"
-    ],
-    "category": "تاریخ",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_793",
-    "word": "ساز موسیقی زهی شماره 668",
-    "forbiddenWords": [
-      "نوازنده",
-      "سیم",
-      "مضراب",
-      "آهنگ",
-      "کنسرت"
-    ],
-    "category": "موسیقی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_794",
-    "word": "پوشاک محلی اصیل شماره 669",
-    "forbiddenWords": [
-      "لباس سنتی",
-      "پارچه",
-      "دست‌دوز",
-      "فرهنگ",
-      "روستایی"
-    ],
-    "category": "پوشاک",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_795",
-    "word": "غذای سنتی محلی شماره 670",
-    "forbiddenWords": [
-      "آشپزخانه",
-      "دیگ",
-      "خورشت",
-      "دستور پخت",
-      "خوشمزه"
-    ],
-    "category": "خوراکی",
-    "difficulty": 2
-  },
-  {
-    "id": "taboo_796",
-    "word": "شخصیت داستانی کهن شماره 671",
-    "forbiddenWords": [
-      "افسانه",
-      "حماسه",
-      "قهرمان",
-      "کتاب",
-      "اسطوره"
-    ],
-    "category": "ادبیات",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_797",
-    "word": "پدیده جوی نادر شماره 672",
-    "forbiddenWords": [
-      "آسمان",
-      "طوفان",
-      "هواشناسی",
-      "ابرهای تیره",
-      "باد سهمگین"
-    ],
-    "category": "نجوم",
-    "difficulty": 3
-  },
-  {
-    "id": "taboo_798",
-    "word": "حیوان درنده شماره 673",
-    "forbiddenWords": [
-      "شکار",
-      "جنگل",
-      "وحشی",
-      "دندان",
-      "پنجه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_799",
-    "word": "پرنده مهاجر شماره 674",
-    "forbiddenWords": [
-      "پرواز",
-      "آسمان",
-      "کوچ",
-      "فصل",
-      "لانه"
-    ],
-    "category": "حیوانات",
-    "difficulty": 1
-  },
-  {
-    "id": "taboo_800",
-    "word": "گل زینتی شماره 675",
-    "forbiddenWords": [
-      "باغچه",
-      "عطر",
-      "گلبرگ",
-      "گلدان",
-      "آبیاری"
-    ],
-    "category": "طبیعت",
-    "difficulty": 1
   }
 ]

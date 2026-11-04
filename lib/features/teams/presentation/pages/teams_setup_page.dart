@@ -18,24 +18,18 @@ class TeamsSetupPage extends StatelessWidget {
     final cubit = context.read<TeamsCubit>();
     final appearance = await TeamAppearanceSheet.show(context, team);
     if (!context.mounted || appearance == null) return;
-    cubit.updateTeamAppearance(
+    cubit.updateTeam(
       team.id,
-      colorValue: appearance.$1,
-      iconKey: appearance.$2,
+      name: appearance.$1,
+      colorValue: appearance.$2,
+      iconKey: appearance.$3,
     );
   }
 
-  void _open(
-    BuildContext context, {
-    required bool team,
-    required List<Team> teams,
-  }) => showDialog<void>(
+  void _open(BuildContext context, List<Team> teams) => showDialog<void>(
     context: context,
-    builder: (_) => _EntryDialog(
-      cubit: context.read<TeamsCubit>(),
-      team: team,
-      teams: teams,
-    ),
+    builder: (_) =>
+        _EntryDialog(cubit: context.read<TeamsCubit>(), teams: teams),
   );
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -84,16 +78,9 @@ class TeamsSetupPage extends StatelessWidget {
                 runSpacing: 10,
                 children: [
                   ActionChip(
-                    avatar: const Icon(Icons.group_add_outlined),
-                    label: const Text('تیم جدید'),
-                    onPressed: () =>
-                        _open(context, team: true, teams: state.teams),
-                  ),
-                  ActionChip(
                     avatar: const Icon(Icons.person_add_alt_1_rounded),
                     label: const Text('بازیکن جدید'),
-                    onPressed: () =>
-                        _open(context, team: false, teams: state.teams),
+                    onPressed: () => _open(context, state.teams),
                   ),
                 ],
               ),
@@ -123,18 +110,10 @@ class TeamsSetupPage extends StatelessWidget {
                             ),
                           ),
                           IconButton(
-                            tooltip: 'رنگ و نشان تیم',
-                            icon: const Icon(Icons.palette_outlined),
+                            tooltip: 'ویرایش تیم',
+                            icon: const Icon(Icons.edit_outlined),
                             onPressed: () => _editTeam(context, team),
                           ),
-                          if (state.teams.length > 2)
-                            IconButton(
-                              tooltip: 'حذف تیم',
-                              onPressed: () => context
-                                  .read<TeamsCubit>()
-                                  .removeTeam(team.id),
-                              icon: const Icon(Icons.delete_outline_rounded),
-                            ),
                         ],
                       ),
                       Text(
@@ -166,8 +145,7 @@ class TeamsSetupPage extends StatelessWidget {
               PartyButton(
                 label: 'افزودن بازیکن',
                 icon: Icons.person_add_alt_1_rounded,
-                onPressed: () =>
-                    _open(context, team: false, teams: state.teams),
+                onPressed: () => _open(context, state.teams),
               ),
             ],
           ),
@@ -178,13 +156,8 @@ class TeamsSetupPage extends StatelessWidget {
 }
 
 class _EntryDialog extends StatefulWidget {
-  const _EntryDialog({
-    required this.cubit,
-    required this.team,
-    required this.teams,
-  });
+  const _EntryDialog({required this.cubit, required this.teams});
   final TeamsCubit cubit;
-  final bool team;
   final List<Team> teams;
   @override
   State<_EntryDialog> createState() => _EntryDialogState();
@@ -192,8 +165,6 @@ class _EntryDialog extends StatefulWidget {
 
 class _EntryDialogState extends State<_EntryDialog> {
   final name = TextEditingController();
-  final color = ValueNotifier<int>(AppColors.teamPalette.first.toARGB32());
-  final icon = ValueNotifier<String>('star');
   late final ValueNotifier<String?> selectedTeam;
   @override
   void initState() {
@@ -206,8 +177,6 @@ class _EntryDialogState extends State<_EntryDialog> {
   @override
   void dispose() {
     name.dispose();
-    color.dispose();
-    icon.dispose();
     selectedTeam.dispose();
     super.dispose();
   }
@@ -220,57 +189,32 @@ class _EntryDialogState extends State<_EntryDialog> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            widget.team ? 'تیم جدید' : 'بازیکن جدید',
-            style: AppTypography.headlineLarge,
-          ),
+          const Text('بازیکن جدید', style: AppTypography.headlineLarge),
           const SizedBox(height: 16),
           TextField(
             controller: name,
-            decoration: InputDecoration(
-              labelText: widget.team ? 'نام تیم' : 'نام بازیکن',
-            ),
+            decoration: const InputDecoration(labelText: 'نام بازیکن'),
           ),
           const SizedBox(height: 18),
-          if (widget.team)
-            AnimatedBuilder(
-              animation: Listenable.merge([color, icon]),
-              builder: (context, _) => TeamAppearancePicker(
-                colorValue: color.value,
-                iconKey: icon.value,
-                onColorChanged: (value) => color.value = value,
-                onIconChanged: (value) => icon.value = value,
-              ),
-            )
-          else
-            ValueListenableBuilder<String?>(
-              valueListenable: selectedTeam,
-              builder: (context, selected, _) =>
-                  DropdownButtonFormField<String>(
-                    initialValue: selected,
-                    decoration: const InputDecoration(labelText: 'تیم'),
-                    items: [
-                      for (final t in widget.teams)
-                        DropdownMenuItem(value: t.id, child: Text(t.name)),
-                    ],
-                    onChanged: (value) => selectedTeam.value = value,
-                  ),
+          ValueListenableBuilder<String?>(
+            valueListenable: selectedTeam,
+            builder: (context, selected, _) => DropdownButtonFormField<String>(
+              initialValue: selected,
+              decoration: const InputDecoration(labelText: 'تیم'),
+              items: [
+                for (final t in widget.teams)
+                  DropdownMenuItem(value: t.id, child: Text(t.name)),
+              ],
+              onChanged: (value) => selectedTeam.value = value,
             ),
+          ),
           const SizedBox(height: 22),
           PartyButton(
             label: 'ثبت',
             onPressed: () {
               final text = name.text.trim();
               if (text.isEmpty) return;
-              if (widget.team) {
-                widget.cubit.addTeam(
-                  name: text,
-                  colorValue: color.value,
-                  iconKey: icon.value,
-                );
-              } else {
-                widget.cubit.addPlayer(name: text, teamId: selectedTeam.value);
-              }
+              widget.cubit.addPlayer(name: text, teamId: selectedTeam.value);
               Navigator.pop(context);
             },
           ),

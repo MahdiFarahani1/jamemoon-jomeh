@@ -287,14 +287,6 @@ class _HotPotatoGameView extends StatelessWidget {
                       }
                     },
                   ),
-                  const SizedBox(height: 10),
-                  PartyButton(
-                    label: 'خروج به منوی اصلی',
-                    color: AppColors.surfaceLight,
-                    textColor: AppColors.textHeadline,
-                    shadowColor: AppColors.surfaceBorder,
-                    onPressed: () => Navigator.of(context).pop(),
-                  ),
                 ],
               ),
             ),

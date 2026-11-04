@@ -198,8 +198,8 @@ class TeamAppearanceSheet extends StatefulWidget {
   const TeamAppearanceSheet({super.key, required this.team});
   final Team team;
 
-  static Future<(int, String)?> show(BuildContext context, Team team) =>
-      showModalBottomSheet<(int, String)>(
+  static Future<(String, int, String)?> show(BuildContext context, Team team) =>
+      showModalBottomSheet<(String, int, String)>(
         context: context,
         isScrollControlled: true,
         builder: (_) => TeamAppearanceSheet(team: team),
@@ -210,52 +210,77 @@ class TeamAppearanceSheet extends StatefulWidget {
 }
 
 class _TeamAppearanceSheetState extends State<TeamAppearanceSheet> {
+  final ValueNotifier<int> _revision = ValueNotifier(0);
+  late final TextEditingController _name = TextEditingController(
+    text: widget.team.name,
+  );
   late int _color = widget.team.colorValue;
   late String _icon = widget.team.iconKey;
 
   @override
-  Widget build(BuildContext context) => SafeArea(
-    child: Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 540),
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(20, 14, 20, 28),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Row(
-                children: [
-                  TeamAvatar(
-                    team: widget.team.copyWith(
-                      colorValue: _color,
-                      iconKey: _icon,
+  void dispose() {
+    _name.dispose();
+    _revision.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => ValueListenableBuilder<int>(
+    valueListenable: _revision,
+    builder: (context, _, _) => SafeArea(
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 540),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(20, 14, 20, 28),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
+                  children: [
+                    TeamAvatar(
+                      team: widget.team.copyWith(
+                        colorValue: _color,
+                        iconKey: _icon,
+                      ),
+                      size: 58,
                     ),
-                    size: 58,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      widget.team.name,
-                      style: AppTypography.headlineLarge,
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: TextField(
+                        controller: _name,
+                        maxLength: 32,
+                        decoration: const InputDecoration(labelText: 'نام تیم'),
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 22),
-              TeamAppearancePicker(
-                colorValue: _color,
-                iconKey: _icon,
-                onColorChanged: (value) => setState(() => _color = value),
-                onIconChanged: (value) => setState(() => _icon = value),
-              ),
-              const SizedBox(height: 24),
-              PartyButton(
-                label: 'ذخیرهٔ ظاهر تیم',
-                icon: Icons.check_rounded,
-                onPressed: () => Navigator.of(context).pop((_color, _icon)),
-              ),
-            ],
+                  ],
+                ),
+                const SizedBox(height: 22),
+                TeamAppearancePicker(
+                  colorValue: _color,
+                  iconKey: _icon,
+                  onColorChanged: (value) {
+                    _color = value;
+                    _revision.value++;
+                  },
+                  onIconChanged: (value) {
+                    _icon = value;
+                    _revision.value++;
+                  },
+                ),
+                const SizedBox(height: 24),
+                PartyButton(
+                  label: 'ذخیرهٔ تیم',
+                  icon: Icons.check_rounded,
+                  onPressed: () {
+                    final name = _name.text.trim();
+                    if (name.isEmpty) return;
+                    Navigator.of(context).pop((name, _color, _icon));
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),

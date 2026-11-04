@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_application_1/app/theme/app_colors.dart';
 import 'package:flutter_application_1/core/widgets/team_identity.dart';
+import 'package:flutter_application_1/core/models/team_model.dart';
 import 'package:flutter_application_1/core/services/storage_service.dart';
 import 'package:flutter_application_1/core/services/purchase_service.dart';
 import 'package:flutter_application_1/features/teams/presentation/cubit/teams_cubit.dart';
@@ -28,15 +29,16 @@ void main() {
       expect(cubit.state.teams[0].name, contains('پلنگ'));
     });
 
-    test('Adds and removes a team correctly', () {
+    test('keeps only the two existing saved teams', () {
+      storage.saveTeams([
+        const Team(id: 'first', name: 'اول', colorValue: 0xFF123456).toJson(),
+        const Team(id: 'second', name: 'دوم', colorValue: 0xFF654321).toJson(),
+        const Team(id: 'third', name: 'سوم', colorValue: 0xFF123456).toJson(),
+      ]);
       final cubit = TeamsCubit(storage);
-      cubit.addTeam(name: 'تیم شاهین', colorValue: 0xFF123456);
-      expect(cubit.state.teams.length, equals(3));
-      final addedTeam = cubit.state.teams.last;
-      expect(addedTeam.name, equals('تیم شاهین'));
-
-      cubit.removeTeam(addedTeam.id);
       expect(cubit.state.teams.length, equals(2));
+      expect(cubit.state.teams.map((team) => team.id), ['first', 'second']);
+      expect(storage.getSavedTeams(), hasLength(2));
     });
 
     test('rapidly added players retain distinct identities', () {
@@ -51,15 +53,18 @@ void main() {
     test('team color and icon remain saved', () {
       final cubit = TeamsCubit(storage);
       final teamId = cubit.state.teams.first.id;
-      cubit.updateTeamAppearance(
+      cubit.updateTeam(
         teamId,
+        name: 'تیم تازه',
         colorValue: 0xFF26C6DA,
         iconKey: 'rocket',
       );
       expect(cubit.state.teams.first.colorValue, 0xFF26C6DA);
+      expect(cubit.state.teams.first.name, 'تیم تازه');
       expect(cubit.state.teams.first.iconKey, 'rocket');
       final restored = TeamsCubit(storage);
       expect(restored.state.teams.first.colorValue, 0xFF26C6DA);
+      expect(restored.state.teams.first.name, 'تیم تازه');
       expect(restored.state.teams.first.iconKey, 'rocket');
     });
 
@@ -79,8 +84,9 @@ void main() {
       final cubit = TeamsCubit(storage);
       final newColor = AppColors.teamPalette.last.toARGB32();
       const newIcon = 'trophy';
-      cubit.updateTeamAppearance(
+      cubit.updateTeam(
         cubit.state.teams.first.id,
+        name: cubit.state.teams.first.name,
         colorValue: newColor,
         iconKey: newIcon,
       );
@@ -120,22 +126,25 @@ void main() {
   });
 
   group('ShopCubit Tests', () {
-    test('Loads single 99k subscription product and handles purchase flow', () async {
-      final cubit = ShopCubit(purchase);
-      expect(cubit.state.products.length, equals(1));
-      expect(cubit.state.products.first.priceToman, equals(99000));
-      expect(cubit.state.products.first.id, equals('season_1_bundle'));
-      expect(cubit.state.purchasedIds.isEmpty, isTrue);
+    test(
+      'Loads single 99k subscription product and handles purchase flow',
+      () async {
+        final cubit = ShopCubit(purchase);
+        expect(cubit.state.products.length, equals(1));
+        expect(cubit.state.products.first.priceToman, equals(99000));
+        expect(cubit.state.products.first.id, equals('season_1_bundle'));
+        expect(cubit.state.purchasedIds.isEmpty, isTrue);
 
-      final success = await cubit.buy('season_1_bundle');
-      expect(success, isTrue);
-      expect(cubit.state.purchasedIds.contains('season_1_bundle'), isTrue);
-      expect(storage.isPackPurchased('season_1_bundle'), isTrue);
-      expect(storage.isPackPurchased('heist'), isTrue);
-      expect(storage.isPackPurchased('pack_taboo_full'), isTrue);
-      expect(storage.isPackPurchased('pack_bomb_full'), isTrue);
-      expect(storage.isPackPurchased('pack_charades_full'), isTrue);
-    });
+        final success = await cubit.buy('season_1_bundle');
+        expect(success, isTrue);
+        expect(cubit.state.purchasedIds.contains('season_1_bundle'), isTrue);
+        expect(storage.isPackPurchased('season_1_bundle'), isTrue);
+        expect(storage.isPackPurchased('heist'), isTrue);
+        expect(storage.isPackPurchased('pack_taboo_full'), isTrue);
+        expect(storage.isPackPurchased('pack_bomb_full'), isTrue);
+        expect(storage.isPackPurchased('pack_charades_full'), isTrue);
+      },
+    );
 
     test('Subscription unlocks all packs and heist game', () async {
       final cubit = ShopCubit(purchase);

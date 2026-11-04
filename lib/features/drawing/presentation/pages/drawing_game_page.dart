@@ -293,7 +293,9 @@ class _DrawingGameView extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    won ? 'آفرین! حدس درست بود!' : 'زمان نقاشی تموم شد!',
+                    won
+                        ? 'آفرین! حدس درست بود!'
+                        : 'زمان تمام شد؛ امتیازی نگرفتید',
                     style: AppTypography.displayMedium,
                     textAlign: TextAlign.center,
                   ),
@@ -329,7 +331,7 @@ class _DrawingGameView extends StatelessWidget {
                               style: AppTypography.bodyLarge,
                             ),
                             Text(
-                              '+${state.roundScore}',
+                              won ? '+${state.roundScore}' : '۰',
                               style: AppTypography.headlineLarge.copyWith(
                                 color: won
                                     ? AppColors.success
@@ -351,14 +353,6 @@ class _DrawingGameView extends StatelessWidget {
                         : Icons.arrow_forward_rounded,
                     color: AppColors.drawPrimary,
                     onPressed: () => context.read<DrawingCubit>().nextTurn(),
-                  ),
-                  const SizedBox(height: 10),
-                  PartyButton(
-                    label: 'خروج به منوی اصلی',
-                    color: AppColors.surfaceLight,
-                    textColor: AppColors.textHeadline,
-                    shadowColor: AppColors.surfaceBorder,
-                    onPressed: () => Navigator.of(context).pop(),
                   ),
                 ],
               ),

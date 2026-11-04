@@ -202,6 +202,7 @@ class DrawingCubit extends Cubit<DrawingState> {
         isWordRevealed: true,
         isRoundOver: false,
         isTimerRunning: false,
+        roundScore: 0,
         strokes: [],
       ),
     );
@@ -237,6 +238,7 @@ class DrawingCubit extends Cubit<DrawingState> {
         remainingSeconds: 0,
         isTimerRunning: false,
         isRoundOver: true,
+        roundScore: 0,
       ),
     );
   }
@@ -269,7 +271,12 @@ class DrawingCubit extends Cubit<DrawingState> {
   }
 
   void onCorrectGuess() {
-    if (!state.isTimerRunning || state.isRoundOver || _finished) return;
+    if (!state.isTimerRunning ||
+        state.isRoundOver ||
+        _finished ||
+        _clock.remaining == Duration.zero) {
+      return;
+    }
     _clock.pause();
     _stats.add(_actorName, GameStatMetric.correct);
     _audio.playCorrect();

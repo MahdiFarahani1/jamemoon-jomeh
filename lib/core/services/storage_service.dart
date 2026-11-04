@@ -175,6 +175,7 @@ class StorageService {
   Future<void> clearAll() async {
     final keys = <String>{
       'sound_enabled',
+      'music_enabled',
       'vibration_enabled',
       'saved_teams',
       'saved_players',

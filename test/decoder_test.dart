@@ -173,7 +173,7 @@ void main() {
           guessesLeft: 2,
         ),
       );
-      final cubit = DecoderCubit(repository: repository);
+      final cubit = DecoderCubit(repository: repository, resumeSaved: true);
       cubit.dismissShield();
       final oldTeam = cubit.state.activeTeam;
       cubit.guess(index);
@@ -196,7 +196,7 @@ void main() {
         guessesLeft: 2,
       );
       await repository.save(guessing);
-      final cubit = DecoderCubit(repository: repository);
+      final cubit = DecoderCubit(repository: repository, resumeSaved: true);
       cubit.dismissShield();
       final hazard = cubit.state.cards.indexWhere(
         (card) => card.role == DecoderRole.hazard,
@@ -232,7 +232,7 @@ void main() {
           guessesLeft: 3,
         ),
       );
-      final cubit = DecoderCubit(repository: repository);
+      final cubit = DecoderCubit(repository: repository, resumeSaved: true);
       cubit.dismissShield();
       cubit.guess(ownIndex);
       final guessesAfterFirstTap = cubit.state.guessesLeft;
@@ -267,7 +267,7 @@ void main() {
       guessesLeft: 2,
     );
     await repository.save(nearWin);
-    final cubit = DecoderCubit(repository: repository);
+    final cubit = DecoderCubit(repository: repository, resumeSaved: true);
     cubit.dismissShield();
     cubit.guess(otherIndices.last);
     expect(cubit.state.phase, DecoderPhase.result);
@@ -278,7 +278,7 @@ void main() {
   test('invalid persisted snapshots are ignored', () async {
     await storage.saveActiveDecoder({'version': 1, 'cards': 'not a card list'});
     expect(repository.restore(), isNull);
-    final cubit = DecoderCubit(repository: repository);
+    final cubit = DecoderCubit(repository: repository, resumeSaved: true);
     expect(cubit.state.phase, DecoderPhase.setup);
     await cubit.close();
   });
@@ -286,12 +286,22 @@ void main() {
   test('persisted games resume behind a shield at their prior phase', () async {
     final game = await repository.newGame(first, second);
     await repository.save(game.copyWith(phase: DecoderPhase.guide));
-    final resumed = DecoderCubit(repository: repository);
+    final resumed = DecoderCubit(repository: repository, resumeSaved: true);
     expect(resumed.state.phase, DecoderPhase.shield);
     expect(resumed.state.shieldTarget, DecoderPhase.guide);
     resumed.dismissShield();
     expect(resumed.state.phase, DecoderPhase.guide);
     await resumed.close();
+  });
+
+  test('starting a new game does not restore the saved decoder game', () async {
+    final game = await repository.newGame(first, second);
+    await repository.save(game.copyWith(phase: DecoderPhase.guide));
+
+    final fresh = DecoderCubit(repository: repository);
+    expect(fresh.state.phase, DecoderPhase.setup);
+    await fresh.close();
+    expect(repository.restore(), isNotNull);
   });
 
   test(

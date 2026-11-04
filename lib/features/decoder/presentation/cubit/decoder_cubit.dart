@@ -11,8 +11,9 @@ class DecoderCubit extends Cubit<DecoderState> {
   Future<void> _writes = Future.value();
   bool _starting = false;
 
-  DecoderCubit({required this.repository}) : super(DecoderState()) {
-    final restored = repository.restore();
+  DecoderCubit({required this.repository, bool resumeSaved = false})
+    : super(DecoderState()) {
+    final restored = resumeSaved ? repository.restore() : null;
     if (restored != null) {
       emit(restored);
       if (restored.winner != null) _record(restored);

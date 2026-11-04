@@ -14,7 +14,10 @@ void main() {
 
   setUp(() async {
     await sl.reset();
-    SharedPreferences.setMockInitialValues({});
+    SharedPreferences.setMockInitialValues({
+      'sound_enabled': false,
+      'music_enabled': false,
+    });
     await initDependencies();
   });
 

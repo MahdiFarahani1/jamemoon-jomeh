@@ -21,14 +21,7 @@ class JamemoonJomehApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<TeamsCubit>(
-          create: (_) {
-            if (!sl.isRegistered<TeamsCubit>()) {
-              sl.registerLazySingleton<TeamsCubit>(
-                () => TeamsCubit(sl<StorageService>()),
-              );
-            }
-            return sl<TeamsCubit>();
-          },
+          create: (_) => TeamsCubit(sl<StorageService>()),
         ),
         BlocProvider<SettingsCubit>(
           create: (_) => SettingsCubit(sl<StorageService>()),
@@ -37,9 +30,9 @@ class JamemoonJomehApp extends StatelessWidget {
           create: (_) => ShopCubit(sl<PurchaseService>()),
         ),
         BlocProvider<TournamentCubit>(
-          create: (_) => TournamentCubit(
+          create: (context) => TournamentCubit(
             storageService: sl<StorageService>(),
-            teamsCubit: sl<TeamsCubit>(),
+            teamsCubit: context.read<TeamsCubit>(),
           ),
         ),
       ],

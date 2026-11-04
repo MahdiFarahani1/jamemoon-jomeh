@@ -17,8 +17,37 @@ class HeistGamePage extends StatelessWidget {
   );
 }
 
-class _HeistView extends StatelessWidget {
+class _HeistView extends StatefulWidget {
   const _HeistView();
+
+  @override
+  State<_HeistView> createState() => _HeistViewState();
+}
+
+class _HeistViewState extends State<_HeistView> with WidgetsBindingObserver {
+  late final HeistCubit _cubit;
+
+  @override
+  void initState() {
+    super.initState();
+    _cubit = context.read<HeistCubit>();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _cubit.resumeMusic();
+    } else {
+      _cubit.pauseMusic();
+    }
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) => Scaffold(

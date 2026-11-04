@@ -30,9 +30,8 @@ class ShopPage extends StatelessWidget {
         child: BlocConsumer<ShopCubit, ShopState>(
           listener: (context, state) {
             if (state.messageFa != null) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(state.messageFa!)),
-              );
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(SnackBar(content: Text(state.messageFa!)));
             }
           },
           builder: (context, state) {
@@ -90,8 +89,9 @@ class ShopPage extends StatelessWidget {
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: (isOwned ? AppColors.success : AppColors.accent)
-                              .withValues(alpha: .08),
+                          color:
+                              (isOwned ? AppColors.success : AppColors.accent)
+                                  .withValues(alpha: .08),
                           blurRadius: 18,
                           offset: const Offset(0, 6),
                         ),
@@ -129,8 +129,12 @@ class ShopPage extends StatelessWidget {
                                     ),
                                     decoration: BoxDecoration(
                                       color: isOwned
-                                          ? AppColors.success.withValues(alpha: .15)
-                                          : AppColors.accent.withValues(alpha: .15),
+                                          ? AppColors.success.withValues(
+                                              alpha: .15,
+                                            )
+                                          : AppColors.accent.withValues(
+                                              alpha: .15,
+                                            ),
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Text(
@@ -167,43 +171,46 @@ class ShopPage extends StatelessWidget {
                           icon: Icons.shield_rounded,
                           color: const Color(0xFFE6B85C),
                           title: 'بازی استراتژیک و جذاب «سرقت بزرگ»',
-                          desc: 'نقش مخفی، خیانت، دزدی از بانک‌ها و تقسیم غنیمت',
+                          desc:
+                              'نقش مخفی، خیانت، دزدی از بانک‌ها و تقسیم غنیمت',
                         ),
                         _buildFeatureItem(
                           icon: Icons.auto_awesome_rounded,
                           color: AppColors.primary,
-                          title: '۴۰۰ کارت جدید پانتومیم',
-                          desc: 'مجموعاً ۸۰۰ سوژه از کلمات آسان تا ضرب‌المثل‌های دشوار',
+                          title: '۳۰۰ کارت جدید پانتومیم',
+                          desc: 'مجموعاً ۶۰۰ سوژه در دسته‌ها و درجه‌های سختی مختلف',
                         ),
                         _buildFeatureItem(
                           icon: Icons.forum_rounded,
                           color: AppColors.tabooPrimary,
-                          title: '۴۰۰ کارت جدید «حرف نزن، بفهمون!» (تابو)',
-                          desc: 'مجموعاً ۸۰۰ کارت با ۲٬۰۰۰ کلمه ممنوعه هیجان‌انگیز',
+                          title: '۲۰۰ کارت جدید «حرف نزن، بفهمون!» (تابو)',
+                          desc:
+                              'مجموعاً ۴۰۰ کارت با پنج کلمهٔ ممنوع در هر کارت',
                         ),
                         _buildFeatureItem(
                           icon: Icons.bolt_rounded,
                           color: AppColors.bombPrimary,
-                          title: '۴۰۰ موضوع چالشی «بمب ساعتی»',
-                          desc: 'مجموعاً ۸۰۰ موضوع داغ برای پاس‌دادن بمب در جمع',
+                          title: '۲۰۰ موضوع چالشی «بمب ساعتی»',
+                          desc: 'مجموعاً ۴۰۰ موضوع متنوع برای پاس‌دادن بمب در جمع',
                         ),
                         _buildFeatureItem(
                           icon: Icons.speed_rounded,
                           color: AppColors.accent,
-                          title: '۴۰۰ چالش سرعتی «سه‌تا در ۵ ثانیه»',
-                          desc: 'مجموعاً ۸۰۰ پرسش سریع برای سنجش حضور ذهن',
+                          title: '۲۰۰ چالش سرعتی «سه‌تا در ۵ ثانیه»',
+                          desc: 'مجموعاً ۴۰۰ پرسش سریع برای سنجش حضور ذهن',
                         ),
                         _buildFeatureItem(
                           icon: Icons.gesture_rounded,
                           color: AppColors.secondary,
-                          title: '۴۰۰ سوژه تصویری «نقاشی سریع»',
-                          desc: 'مجموعاً ۸۰۰ سوژه خنده‌دار برای کشیدن و حدس‌زدن',
+                          title: '۳۰۰ سوژه تصویری «نقاشی سریع»',
+                          desc: 'مجموعاً ۶۰۰ سوژه متنوع برای کشیدن و حدس‌زدن',
                         ),
                         _buildFeatureItem(
                           icon: Icons.wifi_off_rounded,
                           color: AppColors.textMuted,
                           title: '۱۰۰٪ آفلاین و دائمی',
-                          desc: 'بدون نیاز به اینترنت، مصرف حجم یا تمدید ماهیانه',
+                          desc:
+                              'بدون نیاز به اینترنت، مصرف حجم یا تمدید ماهیانه',
                         ),
                         const SizedBox(height: 20),
 
@@ -224,7 +231,8 @@ class ShopPage extends StatelessWidget {
                             color: AppColors.accent,
                             onPressed: state.isBusy
                                 ? null
-                                : () => context.read<ShopCubit>().buy(product.id),
+                                : () =>
+                                      context.read<ShopCubit>().buy(product.id),
                           )
                         else
                           OutlinedButton(

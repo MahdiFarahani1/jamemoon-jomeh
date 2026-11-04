@@ -50,6 +50,8 @@ class CharadesCubit extends Cubit<CharadesState> {
   TurnManager? _turnManager;
   final TeamsCubit? _teamsCubit;
   final GameSetupConfig? _setup;
+  String _category = 'all';
+  String get selectedCategory => _category;
   bool _finished = false;
   String get _actorName {
     if (_turnManager == null || _teamsCubit == null) {
@@ -73,6 +75,8 @@ class CharadesCubit extends Cubit<CharadesState> {
            totalSeconds: setup?.roundSeconds ?? 60,
          ),
        ) {
+    _category = setup?.charadesCategory ?? 'all';
+    if (!_repository.hasCategory(_category)) _category = 'all';
     if (!isQuickMode && teamsCubit != null) {
       _startingScores = {
         for (final team in teamsCubit.state.teams) team.id: team.score,
@@ -114,9 +118,21 @@ class CharadesCubit extends Cubit<CharadesState> {
           throw const FormatException();
         }
         final rawItem = data['item'];
-        final item = rawItem == null
+        final savedCategory = data['charadesCategory'];
+        if (savedCategory is String && _repository.hasCategory(savedCategory)) {
+          _category = savedCategory;
+        }
+        final savedItem = rawItem == null
             ? null
             : CharadesWord.fromJson(Map<String, dynamic>.from(rawItem as Map));
+        final item = savedItem == null
+            ? null
+            : _repository.findById(savedItem.id) ?? savedItem;
+        if (item != null && !CharadesWord.isValid(item.word)) {
+          throw const FormatException(
+            'واژهٔ ذخیره‌شده با قوانین جدید سازگار نیست.',
+          );
+        }
         final remainingMs = data['remainingMs'] as int;
         if (remainingMs < 0 || remainingMs > state.totalSeconds * 1000) {
           throw const FormatException();
@@ -151,6 +167,8 @@ class CharadesCubit extends Cubit<CharadesState> {
         );
         hasRestoredSession = true;
       } catch (_) {
+        _category = _setup?.charadesCategory ?? 'all';
+        if (!_repository.hasCategory(_category)) _category = 'all';
         _turnManager = state.isQuickMode || _teamsCubit == null
             ? null
             : TurnManager.randomStart(
@@ -172,6 +190,7 @@ class CharadesCubit extends Cubit<CharadesState> {
     _session.save({
       'startingScores': _startingScores,
       'roundSeconds': state.totalSeconds,
+      'charadesCategory': _category,
       'isQuickMode': state.isQuickMode,
       'stats': _stats.toJson(),
       'manager': _session.encodeManager(_turnManager),
@@ -197,7 +216,7 @@ class CharadesCubit extends Cubit<CharadesState> {
 
   void startRound() {
     if (state.isTimerRunning || _finished) return;
-    final nextWord = _repository.getNextWord();
+    final nextWord = _repository.getNextWord(category: _category);
     emit(
       state.copyWith(
         currentWord: nextWord,
@@ -232,19 +251,24 @@ class CharadesCubit extends Cubit<CharadesState> {
   }
 
   void onCorrect() {
-    if (!state.isTimerRunning || state.isRoundOver || _finished) return;
+    if (!state.isTimerRunning ||
+        state.isRoundOver ||
+        _finished ||
+        state.currentWord == null) {
+      return;
+    }
     _audio.playCorrect();
     _haptics.lightClick();
     _stats.add(_actorName, GameStatMetric.correct);
 
-    final points = state.currentWord?.points ?? 1;
+    final points = state.currentWord!.points;
     if (_turnManager != null) {
       final activeTeam = _turnManager!.currentTeam;
       _teamsCubit?.updateTeamScore(activeTeam.id, points);
       _turnManager = _turnManager!.updateTeamScore(activeTeam.id, points);
     }
 
-    final nextWord = _repository.getNextWord();
+    final nextWord = _repository.getNextWord(category: _category);
     emit(
       state.copyWith(
         currentWord: nextWord,
@@ -259,7 +283,7 @@ class CharadesCubit extends Cubit<CharadesState> {
     _audio.playSkip();
     _haptics.lightClick();
     _stats.add(_actorName, GameStatMetric.skip);
-    final nextWord = _repository.getNextWord();
+    final nextWord = _repository.getNextWord(category: _category);
     emit(state.copyWith(currentWord: nextWord, skipCount: state.skipCount + 1));
   }
 

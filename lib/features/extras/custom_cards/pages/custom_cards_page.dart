@@ -56,6 +56,11 @@ class _CardsView extends StatelessWidget {
                 'کلمه‌ها و خاطره‌های خودتان را به بازی بیاورید.',
                 style: AppTypography.bodyLarge,
               ),
+              const SizedBox(height: 4),
+              const Text(
+                'کارت‌های شما در دستهٔ «کارت‌های من» پانتومیم هم نمایش داده می‌شوند.',
+                style: AppTypography.bodyMedium,
+              ),
               const SizedBox(height: 22),
               if (cards.isEmpty) ...[
                 const SizedBox(height: 40),

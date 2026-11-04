@@ -12,6 +12,15 @@ class CharadesRepository {
   final List<CharadesWord> _deck = [];
 
   bool get isLoaded => _allWords.isNotEmpty;
+  bool hasCategory(String category) =>
+      category == 'all' || _allWords.any((word) => word.category == category);
+
+  CharadesWord? findById(String id) {
+    for (final word in _allWords) {
+      if (word.id == id) return word;
+    }
+    return null;
+  }
 
   Future<void> loadWords() async {
     final List decoded;
@@ -26,7 +35,11 @@ class CharadesRepository {
     if (decoded.isEmpty) throw const FormatException('بسته بازی خالی است.');
     final loaded = decoded
         .map((e) => CharadesWord.fromJson(Map<String, dynamic>.from(e as Map)))
+        .where((word) => CharadesWord.isValid(word.word))
         .toList();
+    if (loaded.isEmpty) {
+      throw const FormatException('واژهٔ مناسب پانتومیم پیدا نشد.');
+    }
     _allWords = loaded;
     _resetDeck();
   }
@@ -38,25 +51,26 @@ class CharadesRepository {
     );
   }
 
-  CharadesWord getNextWord({int? filterPoints}) {
+  CharadesWord getNextWord({int? filterPoints, String category = 'all'}) {
+    bool matches(CharadesWord word) =>
+        (category == 'all' || word.category == category) &&
+        (filterPoints == null || word.points == filterPoints);
+    if (!_allWords.any(matches)) {
+      throw StateError('در این دسته واژه‌ای پیدا نشد.');
+    }
     if (_deck.isEmpty) {
       _resetDeck();
     }
-    if (filterPoints != null) {
-      final matchingIndex = _deck.indexWhere((w) => w.points == filterPoints);
-      if (matchingIndex != -1) {
-        final word = _deck.removeAt(matchingIndex);
-        ContentHistoryService.markSeen('charades', word.id);
-        return word;
-      }
+    var matchingIndex = _deck.indexWhere(matches);
+    if (matchingIndex == -1) {
       ContentHistoryService.reset('charades');
       _deck
         ..clear()
-        ..addAll(_allWords.where((word) => word.points == filterPoints))
+        ..addAll(_allWords.where(matches))
         ..shuffle();
+      matchingIndex = _deck.indexWhere(matches);
     }
-    if (_deck.isEmpty) throw StateError('بسته بازی آماده نیست.');
-    final word = _deck.removeLast();
+    final word = _deck.removeAt(matchingIndex);
     ContentHistoryService.markSeen('charades', word.id);
     return word;
   }

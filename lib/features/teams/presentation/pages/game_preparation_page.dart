@@ -17,6 +17,7 @@ import '../../../../core/widgets/team_identity.dart';
 import '../../../../core/widgets/party_button.dart';
 import '../../../../core/widgets/party_card.dart';
 import '../../../../core/widgets/party_dialog.dart';
+import '../../../charades/presentation/widgets/charades_category_badge.dart';
 import '../cubit/teams_cubit.dart';
 import '../cubit/teams_state.dart';
 
@@ -29,28 +30,40 @@ class GamePreparationPage extends StatefulWidget {
 }
 
 class _GamePreparationPageState extends State<GamePreparationPage> {
+  final ValueNotifier<int> _revision = ValueNotifier(0);
   late GameSetupConfig _config = GameSetupConfig.initial(widget.gameKey);
   String? _error;
+
+  void _refresh() => _revision.value++;
+
+  @override
+  void dispose() {
+    _revision.dispose();
+    super.dispose();
+  }
 
   Future<void> _addMember(String teamId) async {
     final name = await MemberNameDialog.show(context);
     if (!mounted || name == null) return;
     if (name.isEmpty) {
-      setState(() => _error = 'نام بازیکن را وارد کنید.');
+      _error = 'نام بازیکن را وارد کنید.';
+      _refresh();
       return;
     }
     context.read<TeamsCubit>().addPlayer(name: name, teamId: teamId);
-    setState(() => _error = null);
+    _error = null;
+    _refresh();
   }
 
   Future<void> _editTeam(Team team) async {
     final cubit = context.read<TeamsCubit>();
     final appearance = await TeamAppearanceSheet.show(context, team);
     if (!mounted || appearance == null) return;
-    cubit.updateTeamAppearance(
+    cubit.updateTeam(
       team.id,
-      colorValue: appearance.$1,
-      iconKey: appearance.$2,
+      name: appearance.$1,
+      colorValue: appearance.$2,
+      iconKey: appearance.$3,
     );
   }
 
@@ -62,7 +75,8 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
       participationMode: _config.participationMode,
     );
     if (error != null) {
-      setState(() => _error = error);
+      _error = error;
+      _refresh();
       return;
     }
     if (sl.isRegistered<StorageService>() &&
@@ -87,187 +101,258 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
   Widget build(BuildContext context) {
     final game = GameInfo.allGames.firstWhere((g) => g.key == widget.gameKey);
     final minimum = GameSetupConfig.minimumMembers(widget.gameKey);
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(game.titleFa),
-        actions: [
-          IconButton(
-            tooltip: 'آموزش بازی',
-            icon: const Icon(Icons.help_outline_rounded),
-            onPressed: () => HowToPlaySheet.show(context, widget.gameKey),
-          ),
-        ],
-      ),
-      body: AnimatedPartyBackground(
-        gameKey: widget.gameKey,
-        child: SafeArea(
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 640),
-              child: BlocBuilder<TeamsCubit, TeamsState>(
-                builder: (context, state) => ListView(
-                  padding: const EdgeInsets.fromLTRB(20, 12, 20, 32),
-                  children: [
-                    GameEmblem(gameKey: widget.gameKey, size: 92),
-                    const SizedBox(height: 12),
-                    Text(
-                      'آماده‌سازی ${game.titleFa}',
-                      textAlign: TextAlign.center,
-                      style: AppTypography.displayMedium,
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      game.subtitleFa,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.bodyLarge,
-                    ),
-                    const SizedBox(height: 20),
-                    if (GameSetupConfig.supportsPlayerMode(widget.gameKey)) ...[
-                      _participationCard(),
+    return ValueListenableBuilder<int>(
+      valueListenable: _revision,
+      builder: (context, _, _) => Scaffold(
+        appBar: AppBar(
+          title: Text(game.titleFa),
+          actions: [
+            IconButton(
+              tooltip: 'آموزش بازی',
+              icon: const Icon(Icons.help_outline_rounded),
+              onPressed: () => HowToPlaySheet.show(context, widget.gameKey),
+            ),
+          ],
+        ),
+        body: AnimatedPartyBackground(
+          gameKey: widget.gameKey,
+          child: SafeArea(
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 640),
+                child: BlocBuilder<TeamsCubit, TeamsState>(
+                  builder: (context, state) => ListView(
+                    padding: const EdgeInsets.fromLTRB(20, 12, 20, 32),
+                    children: [
+                      GameEmblem(gameKey: widget.gameKey, size: 92),
                       const SizedBox(height: 12),
-                    ],
-                    if (GameSetupConfig.hasRoundDuration(widget.gameKey)) ...[
-                      _choiceCard(
-                        title: 'زمان هر نوبت',
-                        icon: Icons.timer_outlined,
-                        values: GameSetupConfig.allowedSeconds,
-                        selected: _config.roundSeconds!,
-                        suffix: 'ثانیه',
-                        onSelected: (value) => setState(
-                          () => _config = _config.copyWith(roundSeconds: value),
-                        ),
+                      Text(
+                        'آماده‌سازی ${game.titleFa}',
+                        textAlign: TextAlign.center,
+                        style: AppTypography.displayMedium,
                       ),
-                      const SizedBox(height: 12),
-                    ],
-                    if (GameSetupConfig.hasRounds(widget.gameKey)) ...[
-                      _choiceCard(
-                        title: 'تعداد دور',
-                        icon: Icons.repeat_rounded,
-                        values: GameSetupConfig.allowedRounds,
-                        selected: _config.totalRounds,
-                        suffix: 'دور',
-                        onSelected: (value) => setState(
-                          () => _config = _config.copyWith(totalRounds: value),
-                        ),
+                      const SizedBox(height: 8),
+                      Text(
+                        game.subtitleFa,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.bodyLarge,
                       ),
-                      const SizedBox(height: 12),
-                    ],
-                    PartyCard(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Text(
-                            _config.participationMode ==
-                                    GameParticipationMode.players
-                                ? 'بازیکن‌های این بازی *'
-                                : minimum > 0
-                                ? 'تیم‌ها و بازیکنان *'
-                                : 'تیم‌های بازی *',
-                            style: AppTypography.headlineMedium,
-                          ),
-                          const SizedBox(height: 6),
-                          if (_config.participationMode ==
-                              GameParticipationMode.players)
-                            Text(
-                              'نوبت بین اسم بازیکن‌ها می‌چرخد؛ تیم‌بندی لازم نیست.',
-                              style: AppTypography.bodyMedium,
-                            )
-                          else if (minimum > 0)
-                            Text(
-                              'هر تیم دست‌کم $minimum عضو لازم دارد؛ در هر دور همهٔ اعضا یک نوبت اجرا می‌کنند.',
-                              style: AppTypography.bodyMedium,
-                            ),
-                          const SizedBox(height: 12),
-                          if (_config.participationMode ==
-                              GameParticipationMode.players) ...[
-                            Wrap(
-                              spacing: 8,
-                              runSpacing: 8,
-                              children: [
-                                for (final player in state.players)
-                                  Chip(
-                                    avatar: const Icon(
-                                      Icons.person_outline_rounded,
-                                      size: 18,
-                                    ),
-                                    label: Text(player.name),
-                                  ),
-                              ],
-                            ),
-                            if (state.players.isEmpty)
+                      const SizedBox(height: 20),
+                      if (GameSetupConfig.supportsPlayerMode(
+                        widget.gameKey,
+                      )) ...[
+                        _participationCard(),
+                        const SizedBox(height: 12),
+                      ],
+                      if (GameSetupConfig.hasRoundDuration(widget.gameKey)) ...[
+                        _choiceCard(
+                          title: 'زمان هر نوبت',
+                          icon: Icons.timer_outlined,
+                          values: GameSetupConfig.allowedSeconds,
+                          selected: _config.roundSeconds!,
+                          suffix: 'ثانیه',
+                          onSelected: (value) {
+                            _config = _config.copyWith(roundSeconds: value);
+                            _refresh();
+                          },
+                        ),
+                        const SizedBox(height: 12),
+                      ],
+                      if (GameSetupConfig.hasRounds(widget.gameKey)) ...[
+                        _choiceCard(
+                          title: 'تعداد دور',
+                          icon: Icons.repeat_rounded,
+                          values: GameSetupConfig.allowedRounds,
+                          selected: _config.totalRounds,
+                          suffix: 'دور',
+                          onSelected: (value) {
+                            _config = _config.copyWith(totalRounds: value);
+                            _refresh();
+                          },
+                        ),
+                        const SizedBox(height: 12),
+                      ],
+                      if (widget.gameKey == 'charades') ...[
+                        PartyCard(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
                               const Text(
-                                'هنوز بازیکنی ثبت نشده است.',
+                                'دستهٔ پانتومیم',
+                                style: AppTypography.headlineMedium,
+                              ),
+                              const SizedBox(height: 6),
+                              const Text(
+                                'یک دسته را انتخاب کنید یا از همهٔ واژه‌ها بازی کنید.',
                                 style: AppTypography.bodyMedium,
                               ),
-                          ] else
-                            for (final team in state.teams) ...[
-                              const Divider(),
-                              Row(
+                              const SizedBox(height: 12),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
                                 children: [
-                                  TeamAvatar(team: team, size: 40),
-                                  const SizedBox(width: 8),
-                                  Expanded(
-                                    child: Text(
-                                      team.name,
-                                      style: AppTypography.titleLarge,
-                                    ),
-                                  ),
-                                  IconButton(
-                                    tooltip: 'رنگ و نشان تیم',
-                                    onPressed: () => _editTeam(team),
-                                    icon: const Icon(Icons.palette_outlined),
-                                  ),
-                                  if (minimum > 0)
-                                    TextButton.icon(
-                                      onPressed: () => _addMember(team.id),
-                                      icon: const Icon(
-                                        Icons.person_add_alt_1_rounded,
+                                  for (final category
+                                      in CharadesCategoryStyle.categories)
+                                    ChoiceChip(
+                                      avatar: CharadesCategoryBadge(
+                                        category: category,
+                                        size: 30,
                                       ),
-                                      label: const Text('عضو'),
+                                      label: Text(category.title),
+                                      selected:
+                                          _config.charadesCategory ==
+                                          category.key,
+                                      selectedColor: AppColors.surfaceLight,
+                                      backgroundColor: AppColors.surface,
+                                      checkmarkColor: AppColors.charadesPrimary,
+                                      labelStyle: AppTypography.bodyMedium
+                                          .copyWith(
+                                            color: AppColors.textHeadline,
+                                            fontWeight: FontWeight.w700,
+                                          ),
+                                      side: BorderSide(
+                                        color:
+                                            _config.charadesCategory ==
+                                                category.key
+                                            ? AppColors.charadesPrimary
+                                            : AppColors.surfaceBorder,
+                                        width:
+                                            _config.charadesCategory ==
+                                                category.key
+                                            ? 2
+                                            : 1,
+                                      ),
+                                      onSelected: (_) {
+                                        _config = _config.copyWith(
+                                          charadesCategory: category.key,
+                                        );
+                                        _refresh();
+                                      },
                                     ),
                                 ],
                               ),
-                              if (minimum > 0)
-                                Wrap(
-                                  spacing: 6,
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
+                      PartyCard(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              _config.participationMode ==
+                                      GameParticipationMode.players
+                                  ? 'بازیکن‌های این بازی *'
+                                  : minimum > 0
+                                  ? 'تیم‌ها و بازیکنان *'
+                                  : 'تیم‌های بازی *',
+                              style: AppTypography.headlineMedium,
+                            ),
+                            const SizedBox(height: 6),
+                            if (_config.participationMode ==
+                                GameParticipationMode.players)
+                              Text(
+                                'نوبت بین اسم بازیکن‌ها می‌چرخد؛ تیم‌بندی لازم نیست.',
+                                style: AppTypography.bodyMedium,
+                              )
+                            else if (minimum > 0)
+                              Text(
+                                'هر تیم دست‌کم $minimum عضو لازم دارد؛ در هر دور همهٔ اعضا یک نوبت اجرا می‌کنند.',
+                                style: AppTypography.bodyMedium,
+                              ),
+                            const SizedBox(height: 12),
+                            if (_config.participationMode ==
+                                GameParticipationMode.players) ...[
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                children: [
+                                  for (final player in state.players)
+                                    Chip(
+                                      avatar: const Icon(
+                                        Icons.person_outline_rounded,
+                                        size: 18,
+                                      ),
+                                      label: Text(player.name),
+                                    ),
+                                ],
+                              ),
+                              if (state.players.isEmpty)
+                                const Text(
+                                  'هنوز بازیکنی ثبت نشده است.',
+                                  style: AppTypography.bodyMedium,
+                                ),
+                            ] else
+                              for (final team in state.teams) ...[
+                                const Divider(),
+                                Row(
                                   children: [
-                                    for (final player in state.players.where(
-                                      (p) => p.teamId == team.id,
-                                    ))
-                                      InputChip(
-                                        label: Text(player.name),
-                                        onDeleted: () => context
-                                            .read<TeamsCubit>()
-                                            .removePlayer(player.id),
+                                    TeamAvatar(team: team, size: 40),
+                                    const SizedBox(width: 8),
+                                    Expanded(
+                                      child: Text(
+                                        team.name,
+                                        style: AppTypography.titleLarge,
+                                      ),
+                                    ),
+                                    IconButton(
+                                      tooltip: 'ویرایش تیم',
+                                      onPressed: () => _editTeam(team),
+                                      icon: const Icon(Icons.palette_outlined),
+                                    ),
+                                    if (minimum > 0)
+                                      TextButton.icon(
+                                        onPressed: () => _addMember(team.id),
+                                        icon: const Icon(
+                                          Icons.person_add_alt_1_rounded,
+                                        ),
+                                        label: const Text('عضو'),
                                       ),
                                   ],
                                 ),
-                            ],
-                          const SizedBox(height: 10),
-                          OutlinedButton.icon(
-                            onPressed: () =>
-                                Navigator.pushNamed(context, '/teams'),
-                            icon: const Icon(Icons.tune_rounded),
-                            label: const Text('مدیریت تیم‌ها'),
-                          ),
-                        ],
+                                if (minimum > 0)
+                                  Wrap(
+                                    spacing: 6,
+                                    children: [
+                                      for (final player in state.players.where(
+                                        (p) => p.teamId == team.id,
+                                      ))
+                                        InputChip(
+                                          label: Text(player.name),
+                                          onDeleted: () => context
+                                              .read<TeamsCubit>()
+                                              .removePlayer(player.id),
+                                        ),
+                                    ],
+                                  ),
+                              ],
+                            const SizedBox(height: 10),
+                            OutlinedButton.icon(
+                              onPressed: () =>
+                                  Navigator.pushNamed(context, '/teams'),
+                              icon: const Icon(Icons.tune_rounded),
+                              label: const Text('مدیریت تیم‌ها'),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    if (_error != null) ...[
-                      const SizedBox(height: 12),
-                      Text(
-                        _error!,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(color: AppColors.error),
+                      if (_error != null) ...[
+                        const SizedBox(height: 12),
+                        Text(
+                          _error!,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(color: AppColors.error),
+                        ),
+                      ],
+                      const SizedBox(height: 20),
+                      PartyButton(
+                        label: 'شروع بازی',
+                        icon: Icons.play_arrow_rounded,
+                        onPressed: () => _start(state),
                       ),
                     ],
-                    const SizedBox(height: 20),
-                    PartyButton(
-                      label: 'شروع بازی',
-                      icon: Icons.play_arrow_rounded,
-                      onPressed: () => _start(state),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
@@ -332,21 +417,23 @@ class _GamePreparationPageState extends State<GamePreparationPage> {
               label: 'تیمی',
               selected:
                   _config.participationMode == GameParticipationMode.teams,
-              onSelected: () => setState(
-                () => _config = _config.copyWith(
+              onSelected: () {
+                _config = _config.copyWith(
                   participationMode: GameParticipationMode.teams,
-                ),
-              ),
+                );
+                _refresh();
+              },
             ),
             _selectionChip(
               label: 'با اسم بازیکن‌ها',
               selected:
                   _config.participationMode == GameParticipationMode.players,
-              onSelected: () => setState(
-                () => _config = _config.copyWith(
+              onSelected: () {
+                _config = _config.copyWith(
                   participationMode: GameParticipationMode.players,
-                ),
-              ),
+                );
+                _refresh();
+              },
             ),
           ],
         ),

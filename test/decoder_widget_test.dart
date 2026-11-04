@@ -99,7 +99,9 @@ void main() {
         body: Center(
           child: TextButton(
             onPressed: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(builder: (_) => const DecoderGamePage()),
+              MaterialPageRoute<void>(
+                builder: (_) => const DecoderGamePage(resumeSaved: true),
+              ),
             ),
             child: const Text('Open decoder'),
           ),
@@ -111,7 +113,11 @@ void main() {
   testWidgets(
     'the guide cannot see secret roles until choosing to reveal the map',
     (tester) async {
-      await saveGuideGame(tester); await tester.pumpWidget(app()); await tester.tap(find.text('Open decoder')); await tester.pumpAndSettle(); expect(find.byIcon(Icons.lock_open_rounded), findsOneWidget);
+      await saveGuideGame(tester);
+      await tester.pumpWidget(app());
+      await tester.tap(find.text('Open decoder'));
+      await tester.pumpAndSettle();
+      expect(find.byIcon(Icons.lock_open_rounded), findsOneWidget);
       await tester.tap(find.byIcon(Icons.lock_open_rounded));
       await tester.pumpAndSettle();
       expect(find.text(_words.first), findsNothing);
@@ -127,10 +133,61 @@ void main() {
     },
   );
 
+  testWidgets('system and app bar back confirm exit and preserve the game', (
+    tester,
+  ) async {
+    await saveGuideGame(tester);
+    final original = repository.restore()!;
+    final originalCards = original.cards.map((card) => card.word).toList();
+    await tester.pumpWidget(app());
+    await tester.tap(find.text('Open decoder'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byIcon(Icons.lock_open_rounded));
+    await tester.pumpAndSettle();
+
+    await tester.binding.handlePopRoute();
+    await tester.pumpAndSettle();
+    expect(find.text('خروج از رمزگشا'), findsOneWidget);
+    expect(
+      find.text(
+        'می‌خواهید از بازی خارج شوید؟ بازی ذخیره می‌شود و می‌توانید بعداً ادامه دهید.',
+      ),
+      findsOneWidget,
+    );
+    await tester.tap(find.text('ادامه بازی'));
+    await tester.pumpAndSettle();
+    expect(find.text('رمزگشا'), findsOneWidget);
+    expect(find.text('خروج از رمزگشا'), findsNothing);
+    expect(find.byIcon(Icons.lock_open_rounded), findsOneWidget);
+
+    await tester.tap(find.byType(BackButton));
+    await tester.pumpAndSettle();
+    expect(find.text('خروج از رمزگشا'), findsOneWidget);
+    await tester.tap(find.text('خروج'));
+    await tester.pumpAndSettle();
+    expect(find.text('Open decoder'), findsOneWidget);
+    final restored = repository.restore()!;
+    expect(restored.cards.map((card) => card.word).toList(), originalCards);
+    expect(restored.phase, DecoderPhase.shield);
+    expect(restored.shieldTarget, DecoderPhase.guide);
+
+    await tester.tap(find.text('Open decoder'));
+    await tester.pumpAndSettle();
+    expect(find.byIcon(Icons.lock_open_rounded), findsOneWidget);
+    await tester.tap(find.byIcon(Icons.lock_open_rounded));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byIcon(Icons.visibility));
+    await tester.pumpAndSettle();
+    expect(find.text(originalCards.first), findsOneWidget);
+  });
+
   testWidgets(
     'lifecycle, covering route, and back navigation leave the game shielded',
     (tester) async {
-      await saveGuideGame(tester); await tester.pumpWidget(app()); await tester.tap(find.text('Open decoder')); await tester.pumpAndSettle();
+      await saveGuideGame(tester);
+      await tester.pumpWidget(app());
+      await tester.tap(find.text('Open decoder'));
+      await tester.pumpAndSettle();
       await tester.tap(find.byIcon(Icons.lock_open_rounded));
       await tester.pumpAndSettle();
 

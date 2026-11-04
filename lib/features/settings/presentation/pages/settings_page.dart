@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_typography.dart';
@@ -16,6 +18,46 @@ import '../cubit/settings_state.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
+
+  static final _bazaarUrl = Uri.parse(
+    'https://cafebazaar.ir/app/com.denver.jam',
+  );
+
+  static void _showError(BuildContext context, String message) {
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(message)));
+  }
+
+  Future<void> _rateApp(BuildContext context) async {
+    try {
+      if (await launchUrl(_bazaarUrl, mode: LaunchMode.externalApplication)) {
+        return;
+      }
+    } catch (_) {}
+    if (context.mounted) {
+      _showError(context, 'صفحهٔ برنامه در کافه‌بازار باز نشد.');
+    }
+  }
+
+  Future<void> _shareApp(BuildContext context) async {
+    try {
+      final box = context.findRenderObject() as RenderBox?;
+      await SharePlus.instance.share(
+        ShareParams(
+          text: 'بیا با «جمعمون جمعه!» بازی کنیم!\n$_bazaarUrl',
+          sharePositionOrigin: box == null
+              ? null
+              : box.localToGlobal(Offset.zero) & box.size,
+        ),
+      );
+    } catch (_) {
+      if (context.mounted) {
+        _showError(context, 'اشتراک‌گذاری برنامه انجام نشد.');
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(title: const Text('تنظیمات')),
@@ -59,6 +101,25 @@ class SettingsPage extends StatelessWidget {
                 description: 'موسیقی زمینه برنامه‌ریزی و عملیات',
                 value: state.musicEnabled,
                 onChanged: (_) => context.read<SettingsCubit>().toggleMusic(),
+              ),
+              const SizedBox(height: 32),
+              const Text(
+                'دوستان و بازخورد',
+                style: AppTypography.headlineLarge,
+              ),
+              const SizedBox(height: 12),
+              _ActionRow(
+                icon: Icons.star_rate_rounded,
+                title: 'نظر دادن به برنامه',
+                description: 'صفحهٔ برنامه در کافه‌بازار',
+                onTap: () => _rateApp(context),
+              ),
+              const SizedBox(height: 10),
+              _ActionRow(
+                icon: Icons.share_rounded,
+                title: 'ارسال اپ برای دوستان',
+                description: 'فرستادن لینک برنامه',
+                onTap: () => _shareApp(context),
               ),
               const SizedBox(height: 32),
               const Text('داده‌های بازی', style: AppTypography.headlineLarge),
@@ -119,6 +180,53 @@ class SettingsPage extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    ),
+  );
+}
+
+class _ActionRow extends StatelessWidget {
+  const _ActionRow({
+    required this.icon,
+    required this.title,
+    required this.description,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String description;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    color: AppColors.surface,
+    borderRadius: BorderRadius.circular(22),
+    child: InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(22),
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(22),
+          border: Border.all(color: AppColors.surfaceBorder),
+        ),
+        child: Row(
+          children: [
+            Icon(icon, color: AppColors.accent, size: 30),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppTypography.headlineMedium),
+                  Text(description, style: AppTypography.bodyMedium),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_left_rounded, color: AppColors.accent),
+          ],
         ),
       ),
     ),

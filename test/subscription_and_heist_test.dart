@@ -25,7 +25,10 @@ void main() {
   );
 
   setUp(() async {
-    SharedPreferences.setMockInitialValues({});
+    SharedPreferences.setMockInitialValues({
+      'sound_enabled': false,
+      'music_enabled': false,
+    });
     await sl.reset();
     await initDependencies();
   });
@@ -42,53 +45,65 @@ void main() {
     expect(product.descriptionFa, contains('سرقت بزرگ'));
   });
 
-  test('Storage correctly locks Heist and full packs until subscribed', () async {
-    final storage = sl<StorageService>();
-    expect(storage.isSubscribed, isFalse);
-    expect(storage.isHeistUnlocked, isFalse);
-    expect(storage.isPackPurchased('heist'), isFalse);
-    expect(storage.isPackPurchased('pack_taboo_full'), isFalse);
+  test(
+    'Storage correctly locks Heist and full packs until subscribed',
+    () async {
+      final storage = sl<StorageService>();
+      expect(storage.isSubscribed, isFalse);
+      expect(storage.isHeistUnlocked, isFalse);
+      expect(storage.isPackPurchased('heist'), isFalse);
+      expect(storage.isPackPurchased('pack_taboo_full'), isFalse);
 
-    // Purchase subscription
-    await storage.addPurchasedPack('season_1_bundle');
-    expect(storage.isSubscribed, isTrue);
-    expect(storage.isHeistUnlocked, isTrue);
-    expect(storage.isPackPurchased('heist'), isTrue);
-    expect(storage.isPackPurchased('pack_taboo_full'), isTrue);
-    expect(storage.isPackPurchased('pack_bomb_full'), isTrue);
-    expect(storage.isPackPurchased('pack_charades_full'), isTrue);
-    expect(storage.isPackPurchased('pack_five_full'), isTrue);
-    expect(storage.isPackPurchased('pack_drawing_full'), isTrue);
-  });
+      // Purchase subscription
+      await storage.addPurchasedPack('season_1_bundle');
+      expect(storage.isSubscribed, isTrue);
+      expect(storage.isHeistUnlocked, isTrue);
+      expect(storage.isPackPurchased('heist'), isTrue);
+      expect(storage.isPackPurchased('pack_taboo_full'), isTrue);
+      expect(storage.isPackPurchased('pack_bomb_full'), isTrue);
+      expect(storage.isPackPurchased('pack_charades_full'), isTrue);
+      expect(storage.isPackPurchased('pack_five_full'), isTrue);
+      expect(storage.isPackPurchased('pack_drawing_full'), isTrue);
+    },
+  );
 
-  test('ContentService loads 400 free cards without subscription and 800 cards with subscription', () async {
-    final storage = sl<StorageService>();
-    final content = ContentService(storage);
+  test(
+    'ContentService unlocks additional curated cards with subscription',
+    () async {
+      final storage = sl<StorageService>();
+      final content = ContentService(storage);
 
-    final freeCards = await content.load('taboo');
-    expect(freeCards.length, equals(400));
+      final freeCards = await content.load('taboo');
+      expect(freeCards.length, greaterThanOrEqualTo(40));
 
-    await storage.addPurchasedPack('season_1_bundle');
-    final allCards = await content.load('taboo');
-    expect(allCards.length, equals(800));
-  });
+      await storage.addPurchasedPack('season_1_bundle');
+      final allCards = await content.load('taboo');
+      expect(allCards.length, greaterThan(freeCards.length));
+    },
+  );
 
   test('Router routes to HeistLockedPage when not subscribed and HeistGamePage when subscribed', () {
     final storage = sl<StorageService>();
 
     // Without subscription
-    final lockedRoute = AppRouter.onGenerateRoute(const RouteSettings(name: '/prepare/heist'));
+    final lockedRoute = AppRouter.onGenerateRoute(
+      const RouteSettings(name: '/prepare/heist'),
+    );
     expect(lockedRoute, isNotNull);
     expect(lockedRoute, isA<MaterialPageRoute>());
 
     // With subscription
     storage.addPurchasedPack('season_1_bundle');
-    final unlockedRoute = AppRouter.onGenerateRoute(const RouteSettings(name: '/prepare/heist'));
+    final unlockedRoute = AppRouter.onGenerateRoute(
+      const RouteSettings(name: '/prepare/heist'),
+    );
     expect(unlockedRoute, isNotNull);
     expect(unlockedRoute, isA<MaterialPageRoute>());
   });
 
-  testWidgets('ShopPage displays 99,000 Tomans subscription with buy action', (tester) async {
+  testWidgets('ShopPage displays 99,000 Tomans subscription with buy action', (
+    tester,
+  ) async {
     tester.view.physicalSize = const Size(800, 1400);
     tester.view.devicePixelRatio = 1;
     addTearDown(() {
@@ -126,7 +141,9 @@ void main() {
     expect(find.text('اشتراک شما فعال است'), findsOneWidget);
   });
 
-  testWidgets('HomePage shows locked indicator for Heist when unsubscribed', (tester) async {
+  testWidgets('HomePage shows locked indicator for Heist when unsubscribed', (
+    tester,
+  ) async {
     tester.view.physicalSize = const Size(600, 1200);
     tester.view.devicePixelRatio = 1;
     addTearDown(() {

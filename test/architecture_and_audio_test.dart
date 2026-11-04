@@ -64,7 +64,7 @@ void main() {
       );
       for (final id in const [
         AudioService.bombChannelId,
-        AudioService.effectsChannelId,
+        AudioService.softEffectsChannelId,
       ]) {
         messenger.setMockMethodCallHandler(
           MethodChannel('xyz.luan/audioplayers/events/$id'),
@@ -84,7 +84,7 @@ void main() {
           .toSet();
       expect(createdIds, {
         AudioService.bombChannelId,
-        AudioService.effectsChannelId,
+        AudioService.softEffectsChannelId,
       });
 
       await audio.dispose();

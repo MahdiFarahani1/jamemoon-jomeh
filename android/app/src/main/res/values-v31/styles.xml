@@ -3,7 +3,7 @@
     <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:windowBackground">@color/brand_background</item>
         <item name="android:windowSplashScreenBackground">@color/brand_background</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground_art</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

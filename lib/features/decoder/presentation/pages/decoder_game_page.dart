@@ -13,6 +13,7 @@ import '../../../../core/models/game_setup_config.dart';
 import '../../../../core/widgets/animated_party_background.dart';
 import '../../../../core/widgets/party_button.dart';
 import '../../../../core/widgets/party_card.dart';
+import '../../../../core/widgets/party_dialog.dart';
 import '../../../../core/widgets/game_emblem.dart';
 import '../../../../core/widgets/game_lifecycle_guard.dart';
 import '../../../../core/widgets/game_scene.dart';
@@ -26,10 +27,18 @@ import '../cubit/decoder_state.dart';
 
 class DecoderGamePage extends StatelessWidget {
   final bool autoStart;
-  const DecoderGamePage({super.key, this.autoStart = false});
+  final bool resumeSaved;
+  const DecoderGamePage({
+    super.key,
+    this.autoStart = false,
+    this.resumeSaved = false,
+  });
   @override
   Widget build(BuildContext context) => BlocProvider(
-    create: (_) => DecoderCubit(repository: sl<DecoderRepository>()),
+    create: (_) => DecoderCubit(
+      repository: sl<DecoderRepository>(),
+      resumeSaved: resumeSaved,
+    ),
     child: _DecoderView(autoStart: autoStart),
   );
 }
@@ -47,6 +56,25 @@ class _DecoderViewState extends State<_DecoderView>
   final _number = TextEditingController();
   late DecoderCubit _cubit;
   Animation<double>? _secondaryAnimation;
+  bool _confirmingExit = false;
+
+  Future<void> _confirmExit() async {
+    if (_confirmingExit) return;
+    _confirmingExit = true;
+    _cubit.shield();
+    try {
+      final confirmed = await PartyDialog.show(
+        context,
+        title: 'خروج از رمزگشا',
+        message: 'می‌خواهید از بازی خارج شوید؟ بازی ذخیره می‌شود و می‌توانید بعداً ادامه دهید.',
+        confirmLabel: 'خروج',
+        cancelLabel: 'ادامه بازی',
+      );
+      if (confirmed == true && mounted) Navigator.of(context).pop();
+    } finally {
+      _confirmingExit = false;
+    }
+  }
 
   Future<void> _addMember(String teamId) async {
     final name = await MemberNameDialog.show(context);
@@ -63,10 +91,11 @@ class _DecoderViewState extends State<_DecoderView>
     final cubit = context.read<TeamsCubit>();
     final appearance = await TeamAppearanceSheet.show(context, team);
     if (!mounted || appearance == null) return;
-    cubit.updateTeamAppearance(
+    cubit.updateTeam(
       team.id,
-      colorValue: appearance.$1,
-      iconKey: appearance.$2,
+      name: appearance.$1,
+      colorValue: appearance.$2,
+      iconKey: appearance.$3,
     );
   }
 
@@ -131,29 +160,37 @@ class _DecoderViewState extends State<_DecoderView>
 
   @override
   Widget build(BuildContext context) => BlocBuilder<DecoderCubit, DecoderState>(
-    builder: (context, state) => Scaffold(
-      appBar: AppBar(
-        title: const Text('رمزگشا'),
-        actions: [
-          IconButton(
-            tooltip: 'آموزش بازی',
-            icon: const Icon(Icons.help_outline_rounded),
-            onPressed: () => HowToPlaySheet.show(context, 'decoder'),
+    builder: (context, state) => PopScope(
+      canPop:
+          state.phase == DecoderPhase.setup ||
+          state.phase == DecoderPhase.result,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _confirmExit();
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('رمزگشا'),
+          actions: [
+            IconButton(
+              tooltip: 'آموزش بازی',
+              icon: const Icon(Icons.help_outline_rounded),
+              onPressed: () => HowToPlaySheet.show(context, 'decoder'),
+            ),
+          ],
+          bottom: const GameSceneRibbon(gameKey: 'decoder'),
+        ),
+        body: AnimatedPartyBackground(
+          gameKey: 'decoder',
+          child: SafeArea(
+            child: switch (state.phase) {
+              DecoderPhase.setup => _setup(context, state),
+              DecoderPhase.shield => _shield(context, state),
+              DecoderPhase.guide => _guide(context, state),
+              DecoderPhase.guessing => _guessing(context, state),
+              DecoderPhase.reveal => _reveal(context, state),
+              DecoderPhase.result => _result(context, state),
+            },
           ),
-        ],
-        bottom: const GameSceneRibbon(gameKey: 'decoder'),
-      ),
-      body: AnimatedPartyBackground(
-        gameKey: 'decoder',
-        child: SafeArea(
-          child: switch (state.phase) {
-            DecoderPhase.setup => _setup(context, state),
-            DecoderPhase.shield => _shield(context, state),
-            DecoderPhase.guide => _guide(context, state),
-            DecoderPhase.guessing => _guessing(context, state),
-            DecoderPhase.reveal => _reveal(context, state),
-            DecoderPhase.result => _result(context, state),
-          },
         ),
       ),
     ),
@@ -230,7 +267,7 @@ class _DecoderViewState extends State<_DecoderView>
                       const SizedBox(width: 8),
                       Expanded(child: Text(team.name)),
                       IconButton(
-                        tooltip: 'رنگ و نشان تیم',
+                        tooltip: 'ویرایش تیم',
                         onPressed: () => _editTeam(team),
                         icon: const Icon(Icons.palette_outlined),
                       ),

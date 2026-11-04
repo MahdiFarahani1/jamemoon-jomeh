@@ -25,7 +25,7 @@ class _FakeCharadesRepository implements CharadesRepository {
   Future<void> loadWords() async {}
 
   @override
-  CharadesWord getNextWord({int? filterPoints}) {
+  CharadesWord getNextWord({int? filterPoints, String category = 'all'}) {
     final word = _words[_index % _words.length];
     _index++;
     return word;
@@ -33,6 +33,17 @@ class _FakeCharadesRepository implements CharadesRepository {
 
   @override
   bool get isLoaded => true;
+
+  @override
+  bool hasCategory(String category) => true;
+
+  @override
+  CharadesWord? findById(String id) {
+    for (final word in _words) {
+      if (word.id == id) return word;
+    }
+    return null;
+  }
 
   @override
   int get totalWords => _words.length;
@@ -231,24 +242,14 @@ void main() {
     }
 
     final words = [
-      const CharadesWord(
-        id: '1',
-        word: 'کلمه ساده',
-        category: 'ساده',
-        points: 1,
-      ),
+      const CharadesWord(id: '1', word: 'آ', category: 'ساده', points: 1),
       const CharadesWord(
         id: '2',
-        word: 'کلمه متوسط',
+        word: 'گربه ترساندن',
         category: 'متوسط',
         points: 2,
       ),
-      const CharadesWord(
-        id: '3',
-        word: 'کلمه دشوار',
-        category: 'دشوار',
-        points: 3,
-      ),
+      const CharadesWord(id: '3', word: 'کتاب', category: 'دشوار', points: 3),
     ];
     final repo = _FakeCharadesRepository(words);
     final teamsCubit = TeamsCubit(storage);

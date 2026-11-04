@@ -75,6 +75,30 @@ void main() {
     expect(find.text('3 دور'), findsOneWidget);
   });
 
+  testWidgets('charades category selection is passed to the game', (
+    tester,
+  ) async {
+    RouteSettings? launched;
+    await tester.pumpWidget(app('charades', (settings) => launched = settings));
+    await tester.scrollUntilVisible(find.text('دستهٔ پانتومیم'), 250);
+    expect(find.text('دستهٔ پانتومیم'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('حیوانات'), 250);
+    await tester.ensureVisible(find.text('حیوانات'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('حیوانات'));
+    await tester.pump();
+    for (final team in teams.state.teams) {
+      teams.addPlayer(name: 'عضو یک', teamId: team.id);
+      teams.addPlayer(name: 'عضو دو', teamId: team.id);
+    }
+    await tester.pump();
+    await tester.scrollUntilVisible(find.text('شروع بازی'), 300);
+    await tester.tap(find.text('شروع بازی'));
+    await tester.pump();
+    expect(launched?.name, '/game/charades');
+    expect((launched?.arguments as Map)['charadesCategory'], 'حیوانات');
+  });
+
   testWidgets(
     'adding a member closes the dialog without disposing dependencies early',
     (tester) async {
@@ -131,23 +155,28 @@ void main() {
     await tester.pumpWidget(app('taboo', (_) {}));
     await tester.drag(find.byType(Scrollable).first, const Offset(0, -420));
     await tester.pump();
-    await tester.tap(find.byTooltip('رنگ و نشان تیم').first);
+    await tester.tap(find.byTooltip('ویرایش تیم').first);
     await tester.pumpAndSettle();
+    await tester.enterText(
+      find.widgetWithText(TextField, 'نام تیم'),
+      'تیم آفتاب',
+    );
     await tester.tap(find.bySemanticsLabel('رنگ شمارهٔ 4'));
     await tester.ensureVisible(find.text('موشک'));
     await tester.tap(find.text('موشک'));
     await tester.scrollUntilVisible(
-      find.text('ذخیرهٔ ظاهر تیم'),
+      find.text('ذخیرهٔ تیم'),
       200,
       scrollable: find.byType(Scrollable).last,
     );
-    await tester.tap(find.text('ذخیرهٔ ظاهر تیم'));
+    await tester.tap(find.text('ذخیرهٔ تیم'));
     await tester.pumpAndSettle();
     expect(
       teams.state.teams.first.colorValue,
       AppColors.teamPalette[3].toARGB32(),
     );
     expect(teams.state.teams.first.iconKey, 'rocket');
+    expect(teams.state.teams.first.name, 'تیم آفتاب');
     expect(tester.takeException(), isNull);
   });
 }

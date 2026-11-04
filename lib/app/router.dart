@@ -42,6 +42,8 @@ class AppRouter {
         'totalRounds': savedSession!['totalRounds'],
       if (savedSession?['participationMode'] != null)
         'participationMode': savedSession!['participationMode'],
+      if (savedSession?['charadesCategory'] != null)
+        'charadesCategory': savedSession!['charadesCategory'],
     });
 
     Widget page;
@@ -69,7 +71,7 @@ class AppRouter {
         page = const TournamentPodiumPage();
         break;
       case '/game/decoder':
-        page = const DecoderGamePage();
+        page = DecoderGamePage(resumeSaved: resume);
         break;
       case '/prepare/heist':
         page = sl<StorageService>().isPackPurchased('heist')

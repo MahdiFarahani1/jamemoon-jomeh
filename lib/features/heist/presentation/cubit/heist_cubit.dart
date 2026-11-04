@@ -24,12 +24,25 @@ class HeistCubit extends Cubit<HeistState> {
         ),
       );
     }
+    if (resume) resumeMusic();
   }
 
   final Random _random;
   final StorageService _storage;
   final AudioService _audio;
   final HapticsService _haptics;
+
+  void resumeMusic() {
+    if (state.phase == HeistPhase.setup ||
+        state.phase == HeistPhase.rolePass ||
+        state.phase == HeistPhase.roleReveal ||
+        state.phase == HeistPhase.finalResult) {
+      return;
+    }
+    _audio.playHeistMusic(tension: state.phase != HeistPhase.planning);
+  }
+
+  void pauseMusic() => _audio.stopMusic();
 
   static HeistState _restore(StorageService storage, bool resume) {
     if (!resume) return const HeistState();
