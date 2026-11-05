@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_application_1/core/models/game_mode.dart';
 import 'package:flutter_application_1/core/models/player_model.dart';
 import 'package:flutter_application_1/core/services/purchase_service.dart';
+import 'package:flutter_application_1/core/services/bazaar_purchase_service.dart';
 import 'package:flutter_application_1/core/services/storage_service.dart';
 import 'package:flutter_application_1/core/utils/ranking.dart';
 import 'package:flutter_application_1/app/di/service_locator.dart';
@@ -235,8 +236,8 @@ void main() {
         await initDependencies();
 
         final registered = sl<PurchaseService>();
-        expect(registered, isA<LocalPurchaseService>());
-        expect(registered.purchasesAvailable, isFalse);
+        expect(registered, isA<BazaarPurchaseService>());
+        expect(registered.purchasesAvailable, isTrue);
         expect(await registered.buyProduct('pack_taboo_full'), isFalse);
         expect(sl<StorageService>().purchasedPacks, isEmpty);
       },

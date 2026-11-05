@@ -219,6 +219,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_poolakey:
+    dependency: "direct main"
+    description:
+      path: "vendor/flutter_poolakey"
+      relative: true
+    source: path
+    version: "2.2.0+1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter

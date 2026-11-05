@@ -9,6 +9,7 @@ import '../../core/services/storage_service.dart';
 import '../../core/services/audio_service.dart';
 import '../../core/services/haptics_service.dart';
 import '../../core/services/purchase_service.dart';
+import '../../core/services/bazaar_purchase_service.dart';
 import '../../features/taboo/data/taboo_repository.dart';
 import '../../features/hot_potato/data/hot_potato_repository.dart';
 import '../../features/charades/data/charades_repository.dart';
@@ -38,11 +39,20 @@ Future<void> initDependencies() async {
     () => HapticsService(sl<StorageService>()),
   );
 
-  // Keep the default app registration production-safe until a real Cafe Bazaar
-  // billing adapter is configured. This exposes saved entitlements and the
-  // catalog, but can never fabricate a successful checkout.
+  const bazaarPublicKey = String.fromEnvironment(
+    'BAZAAR_RSA_PUBLIC_KEY',
+    defaultValue: 'MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwC61wZioMKGl9j0r9X3di99kdTV+Vv+GVDszdY++rsJSutgv2RMMTKMGSxRRkW9hVFd0SBuiqq1qCj16fpNHl4oHT91tD4c+oxsYjzGwxXd6AaCfeF2Mp9PeFI0tFIxezTY1LrQBXfw+C/68YlUYFWqUpcuEVu7B6uAjXoyKUTYsWHoHVNPWmFDN3+gpI9PgPfhm5F6PfURJjIKvGGcIp5jC61sZMZDEe10CUFCqA8CAwEAAQ==',
+  );
   sl.registerLazySingleton<PurchaseService>(
-    () => LocalPurchaseService(sl<StorageService>()),
+    () =>
+        !kIsWeb &&
+            defaultTargetPlatform == TargetPlatform.android &&
+            bazaarPublicKey.isNotEmpty
+        ? BazaarPurchaseService(
+            sl<StorageService>(),
+            publicKey: bazaarPublicKey,
+          )
+        : LocalPurchaseService(sl<StorageService>()),
   );
 
   // Repositories for 5 Games

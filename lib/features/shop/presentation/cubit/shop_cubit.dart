@@ -67,7 +67,17 @@ class ShopCubit extends Cubit<ShopState> {
   Future<void> restore() async {
     emit(state.copyWith(isBusy: true, messageFa: null));
     try {
-      await _purchaseService.restorePurchases();
+      final restored = await _purchaseService.restorePurchases();
+      if (!restored) {
+        emit(
+          state.copyWith(
+            isBusy: false,
+            messageFa:
+                'بازیابی خریدها انجام نشد. اتصال به بازار را بررسی کنید.',
+          ),
+        );
+        return;
+      }
       loadProducts();
       emit(
         state.copyWith(isBusy: false, messageFa: 'خریدهای قبلی بازیابی شدند.'),
